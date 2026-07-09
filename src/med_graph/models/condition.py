@@ -1,5 +1,8 @@
-from pydantic import BaseModel, ConfigDict, Field, field_validator
+'''
+Pydantic model for a Condition node. Fields: id (auto-slugified), name, optional icd10 code. Frozen.
+'''
 
+from pydantic import BaseModel, ConfigDict, Field, field_validator
 from med_graph.models.slug import validate_slug
 
 

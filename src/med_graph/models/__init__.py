@@ -1,3 +1,7 @@
+'''
+Re-export all models for convenience
+'''
+
 from med_graph.models.condition import Condition
 from med_graph.models.edges import CausesEdge, EdgeSource, Frequency, TreatsEdge
 from med_graph.models.medication import Medication

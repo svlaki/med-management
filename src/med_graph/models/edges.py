@@ -1,13 +1,19 @@
+'''
+Defines the two relationship types:
+1) TreatsEdge -> (:Medication)-[:TREATS]->(:Condition) with a source provenance tag and approval_status.
+2) CausesEdge -> (:Medication)-[:CAUSES]->(:SideEffect) with source, frequency (CIOMS bands), severity, 
+   report_count (FAERS reports), and label_confirmed (whether the FDA drug label mentions it).
+
+EdgeSource enum: rxclass, openfda_label, faers.
+Frequency enum: very_common, common, uncommon, rare, unknown.
+'''
+
 from enum import StrEnum
-
 from pydantic import BaseModel, ConfigDict, Field, field_validator
-
 from med_graph.models.slug import validate_slug
-
 
 class EdgeSource(StrEnum):
     """Provenance of a relationship — every edge must say where it came from."""
-
     RXCLASS = "rxclass"
     OPENFDA_LABEL = "openfda_label"
     FAERS = "faers"
@@ -15,7 +21,6 @@ class EdgeSource(StrEnum):
 
 class Frequency(StrEnum):
     """CIOMS frequency bands used on drug labels."""
-
     VERY_COMMON = "very_common"  # >= 1/10
     COMMON = "common"  # 1/100 to 1/10
     UNCOMMON = "uncommon"  # 1/1000 to 1/100

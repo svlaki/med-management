@@ -1,5 +1,16 @@
-"""Idempotent graph loading: every write is MERGE-based so re-ingesting
-the same source updates properties instead of duplicating nodes or edges."""
+"""
+Idempotent graph loading: every write is MERGE-based so re-ingesting
+the same source updates properties instead of duplicating nodes or edges.
+
+Takes a GraphExecutor, a Condition, and a SourceBatch. Uses MERGE Cypher to:
+  1. Merge the condition node
+  2. Merge medication nodes
+  3. Merge side effect nodes
+  4. Merge TREATS edges
+  5. Merge CAUSES edges
+
+  Returns counts of each record type written.
+"""
 
 from med_graph.graph.executor import GraphExecutor
 from med_graph.models import Condition

@@ -1,10 +1,16 @@
+"""
+GraphClient — thin wrapper around the Neo4j Python driver.
+  - build_driver_from_env() reads NEO4J_URI/USER/PASSWORD from env vars and creates a driver.
+  - from_env() is a context manager that builds a driver, verifies connectivity, yields a GraphClient, and closes the driver.
+  - execute() runs a parameterized Cypher query and returns results as list[dict].
+  - apply_schema() runs all DDL statements from schema.py.
+"""
+
 import os
 from collections.abc import Iterator
 from contextlib import contextmanager
 from typing import Any
-
 from neo4j import Driver, GraphDatabase
-
 from med_graph.graph.schema import SCHEMA_STATEMENTS
 
 
@@ -23,6 +29,24 @@ def _require_env(name: str) -> str:
     return value
 
 
+def build_driver_from_env() -> Driver:
+    """Construct a Neo4j driver from environment configuration.
+
+    Callers own the driver's lifecycle (close it when done). The CLI uses the
+    short-lived `from_env` context manager; the API keeps one driver per app.
+    """
+    uri = _require_env("NEO4J_URI")
+    user = _require_env("NEO4J_USER")
+    password = _require_env("NEO4J_PASSWORD")
+    return GraphDatabase.driver(
+        uri,
+        auth=(user, password),
+        # Modeled properties (e.g. drug_class) may not be populated yet;
+        # silence the resulting benign "unknown property key" notices.
+        notifications_disabled_classifications=["UNRECOGNIZED"],
+    )
+
+
 class GraphClient:
     """Thin wrapper around the Neo4j driver for this project's graph."""
 
@@ -32,16 +56,7 @@ class GraphClient:
     @classmethod
     @contextmanager
     def from_env(cls) -> Iterator["GraphClient"]:
-        uri = _require_env("NEO4J_URI")
-        user = _require_env("NEO4J_USER")
-        password = _require_env("NEO4J_PASSWORD")
-        with GraphDatabase.driver(
-            uri,
-            auth=(user, password),
-            # Modeled properties (e.g. drug_class) may not be populated yet;
-            # silence the resulting benign "unknown property key" notices.
-            notifications_disabled_classifications=["UNRECOGNIZED"],
-        ) as driver:
+        with build_driver_from_env() as driver:
             driver.verify_connectivity()
             yield cls(driver)
 

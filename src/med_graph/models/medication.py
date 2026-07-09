@@ -1,3 +1,8 @@
+"""
+Pydantic model for a Medication node. Fields: rxcui (RxNorm concept ID, digits only), name, generic_name, and optional drug_class. 
+Frozen (immutable).
+"""
+
 from pydantic import BaseModel, ConfigDict, Field
 
 

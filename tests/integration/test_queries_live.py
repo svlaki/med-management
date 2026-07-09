@@ -16,6 +16,7 @@ from med_graph.models import (
     SideEffect,
     TreatsEdge,
 )
+from med_graph.queries.graph import condition_subgraph
 from med_graph.queries.medications import (
     medications_by_side_effect,
     medications_for_condition,
@@ -136,3 +137,21 @@ def test_medications_by_side_effect_accepts_display_form_term(client):
 def test_resolve_rxcui_is_case_insensitive(client):
     assert resolve_rxcui(client, "SERTRALINE") == "36437"
     assert resolve_rxcui(client, "unknown-drug") is None
+
+
+def test_condition_subgraph_builds_bounded_payload(client):
+    payload = condition_subgraph(client, "mdd", per_med=1)
+
+    node_types = {n.type for n in payload.nodes}
+    assert node_types == {"condition", "medication", "side_effect"}
+    # 3 meds treat mdd => 3 treats edges; per_med=1 caps causes edges at 3
+    treats = [e for e in payload.edges if e.kind == "treats"]
+    causes = [e for e in payload.edges if e.kind == "causes"]
+    assert len(treats) == 3
+    assert len(causes) <= 3
+
+
+def test_condition_subgraph_confirmed_only_filters_causes(client):
+    payload = condition_subgraph(client, "mdd", confirmed_only=True, per_med=10)
+    # every causes edge in the payload must be label-confirmed
+    assert all(e.label_confirmed is True for e in payload.edges if e.kind == "causes")

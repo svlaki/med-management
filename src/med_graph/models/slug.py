@@ -1,3 +1,8 @@
+"""
+Two utility functions: slugify() lowercases a string and replaces non-alphanumeric runs with hyphens (e.g., "Weight Gain" -> "weight-gain").
+validate_slug() does the same but rejects empty results.
+"""
+
 import re
 
 
