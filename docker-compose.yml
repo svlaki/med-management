@@ -1,0 +1,19 @@
+services:
+  neo4j:
+    image: neo4j:5.26-community
+    container_name: med-graph-neo4j
+    ports:
+      - "7474:7474" # HTTP browser UI
+      - "7687:7687" # Bolt driver
+    environment:
+      NEO4J_AUTH: neo4j/${NEO4J_PASSWORD:?set NEO4J_PASSWORD in .env}
+    volumes:
+      - neo4j-data:/data
+    healthcheck:
+      test: ["CMD", "cypher-shell", "-u", "neo4j", "-p", "${NEO4J_PASSWORD}", "RETURN 1"]
+      interval: 10s
+      timeout: 10s
+      retries: 10
+
+volumes:
+  neo4j-data:

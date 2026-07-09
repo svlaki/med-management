@@ -1,0 +1,11 @@
+{
+  "meta": {
+    "disclaimer": "Do not rely on openFDA to make decisions regarding medical care."
+  },
+  "results": [
+    {"term": "NAUSEA", "count": 13644},
+    {"term": "DRUG INEFFECTIVE", "count": 13426},
+    {"term": "DIARRHOEA", "count": 10168},
+    {"term": "SUICIDAL IDEATION", "count": 7420}
+  ]
+}

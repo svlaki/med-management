@@ -1,0 +1,15 @@
+{
+  "drugMemberGroup": {
+    "drugMember": [
+      {
+        "minConcept": {"rxcui": "36437", "name": "sertraline", "tty": "IN"}
+      },
+      {
+        "minConcept": {"rxcui": "4493", "name": "fluoxetine", "tty": "IN"}
+      },
+      {
+        "minConcept": {"rxcui": "704", "name": "amitriptyline", "tty": "IN"}
+      }
+    ]
+  }
+}

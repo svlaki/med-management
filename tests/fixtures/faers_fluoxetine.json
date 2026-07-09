@@ -1,0 +1,9 @@
+{
+  "meta": {
+    "disclaimer": "Do not rely on openFDA to make decisions regarding medical care."
+  },
+  "results": [
+    {"term": "NAUSEA", "count": 9120},
+    {"term": "INSOMNIA", "count": 5470}
+  ]
+}

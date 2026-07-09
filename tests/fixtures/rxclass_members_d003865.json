@@ -1,0 +1,19 @@
+{
+  "drugMemberGroup": {
+    "drugMember": [
+      {
+        "minConcept": {"rxcui": "1040028", "name": "lurasidone", "tty": "IN"},
+        "nodeAttr": [
+          {"attrName": "SourceId", "attrValue": "1040028"},
+          {"attrName": "Relation", "attrValue": "DIRECT"}
+        ]
+      },
+      {
+        "minConcept": {"rxcui": "321988", "name": "escitalopram", "tty": "IN"}
+      },
+      {
+        "minConcept": {"rxcui": "4493", "name": "fluoxetine", "tty": "IN"}
+      }
+    ]
+  }
+}
