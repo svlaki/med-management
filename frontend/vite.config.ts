@@ -8,14 +8,8 @@ export default defineConfig({
   resolve: {
     dedupe: ["three"],
   },
+  // The app is fully static (reads snapshot.json); no backend proxy needed.
   server: {
     port: 5173,
-    proxy: {
-      "/api": {
-        target: "http://127.0.0.1:8000",
-        changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, ""),
-      },
-    },
   },
 });

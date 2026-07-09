@@ -1,10 +1,13 @@
 import argparse
+import json
 import sys
+from pathlib import Path
 
 from dotenv import load_dotenv
 
 from med_graph.graph.client import GraphClient, GraphConfigError, GraphSchemaError
 from med_graph.graph.loader import load_batch
+from med_graph.snapshot import build_snapshot
 from med_graph.queries.medications import (
     medications_by_side_effect,
     medications_for_condition,
@@ -114,6 +117,19 @@ def _who_causes(side_effect_id: str) -> None:
         print(f"{_fmt_count(cause.report_count):>12}  {cause.generic_name}")
 
 
+def _export(out_path: str) -> None:
+    with GraphClient.from_env() as client:
+        snapshot = build_snapshot(client)
+    path = Path(out_path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(snapshot, indent=2))
+    med_count = sum(len(g["medications"]) for g in snapshot["graphs"].values())
+    print(
+        f"Wrote {path} — {len(snapshot['conditions'])} condition(s), "
+        f"{med_count} medication(s)."
+    )
+
+
 def _stats() -> None:
     with GraphClient.from_env() as client:
         rows = client.execute(
@@ -166,6 +182,15 @@ def main() -> int:
     )
     who_parser.add_argument("--side-effect", required=True, help="e.g. insomnia")
 
+    export_parser = subparsers.add_parser(
+        "export", help="Write a static JSON snapshot for the standalone web app"
+    )
+    export_parser.add_argument(
+        "--out",
+        default="frontend/public/snapshot.json",
+        help="Output path for the snapshot JSON",
+    )
+
     args = parser.parse_args()
     try:
         if args.command == "ingest":
@@ -178,6 +203,8 @@ def main() -> int:
             _avoid(args.condition, args.side_effect)
         elif args.command == "who-causes":
             _who_causes(args.side_effect)
+        elif args.command == "export":
+            _export(args.out)
         else:
             commands = {"init-schema": _init_schema, "stats": _stats}
             commands[args.command]()
