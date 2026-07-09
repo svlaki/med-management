@@ -134,3 +134,20 @@ class TestCausesEdge:
                 source=EdgeSource.FAERS,
                 report_count=-5,
             )
+
+    def test_label_confirmed_defaults_to_none(self):
+        edge = CausesEdge(
+            medication_rxcui="36437",
+            side_effect_id="nausea",
+            source=EdgeSource.FAERS,
+        )
+        assert edge.label_confirmed is None
+
+    def test_label_confirmed_accepts_bool(self):
+        edge = CausesEdge(
+            medication_rxcui="36437",
+            side_effect_id="nausea",
+            source=EdgeSource.FAERS,
+            label_confirmed=True,
+        )
+        assert edge.label_confirmed is True

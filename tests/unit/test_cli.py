@@ -146,3 +146,102 @@ def test_ingest_rejects_unknown_condition(fake_client, monkeypatch, capsys):
     monkeypatch.setattr("sys.argv", ["med-graph", "ingest", "--condition", "gout"])
     assert cli.main() == 1
     assert "Unknown condition" in capsys.readouterr().err
+
+
+def test_profile_by_rxcui_prints_side_effects(fake_client, monkeypatch, capsys):
+    fake_client.rows = [
+        {
+            "side_effect_id": "nausea",
+            "name": "Nausea",
+            "source": "faers",
+            "report_count": 13644,
+        }
+    ]
+    monkeypatch.setattr("sys.argv", ["med-graph", "profile", "--rxcui", "36437"])
+    assert cli.main() == 0
+    output = capsys.readouterr().out
+    assert "Nausea" in output
+    assert "13,644" in output
+
+
+def test_profile_shows_ascii_label_confirmation_marker(fake_client, monkeypatch, capsys):
+    fake_client.rows = [
+        {
+            "side_effect_id": "nausea",
+            "name": "Nausea",
+            "source": "faers",
+            "report_count": 100,
+            "label_confirmed": True,
+        }
+    ]
+    monkeypatch.setattr("sys.argv", ["med-graph", "profile", "--rxcui", "36437"])
+    assert cli.main() == 0
+    output = capsys.readouterr().out
+    assert "[label]" in output
+    assert "✓" not in output  # no check-mark glyph
+
+
+def test_profile_confirmed_flag_passes_through(fake_client, monkeypatch, capsys):
+    from med_graph.queries.medications import SIDE_EFFECT_PROFILE_CONFIRMED
+
+    fake_client.rows = []
+    monkeypatch.setattr(
+        "sys.argv", ["med-graph", "profile", "--rxcui", "36437", "--confirmed"]
+    )
+    assert cli.main() == 0
+    assert any(q == SIDE_EFFECT_PROFILE_CONFIRMED for q in fake_client.queries)
+
+
+def test_profile_by_unknown_name_exits_nonzero(fake_client, monkeypatch, capsys):
+    fake_client.rows = []  # resolve_rxcui finds nothing
+    monkeypatch.setattr("sys.argv", ["med-graph", "profile", "--name", "nope"])
+    assert cli.main() == 1
+    assert "No medication" in capsys.readouterr().err
+
+
+def test_profile_requires_rxcui_or_name(fake_client, monkeypatch):
+    monkeypatch.setattr("sys.argv", ["med-graph", "profile"])
+    with pytest.raises(SystemExit):
+        cli.main()
+
+
+def test_meds_lists_condition_medications(fake_client, monkeypatch, capsys):
+    fake_client.rows = [
+        {
+            "rxcui": "36437",
+            "generic_name": "sertraline",
+            "drug_class": None,
+            "side_effect_count": 12,
+        }
+    ]
+    monkeypatch.setattr("sys.argv", ["med-graph", "meds", "--condition", "mdd"])
+    assert cli.main() == 0
+    assert "sertraline" in capsys.readouterr().out
+
+
+def test_avoid_lists_medications(fake_client, monkeypatch, capsys):
+    fake_client.rows = [
+        {
+            "rxcui": "42347",
+            "generic_name": "bupropion",
+            "drug_class": None,
+            "side_effect_count": 5,
+        }
+    ]
+    monkeypatch.setattr(
+        "sys.argv",
+        ["med-graph", "avoid", "--condition", "mdd", "--side-effect", "weight"],
+    )
+    assert cli.main() == 0
+    assert "bupropion" in capsys.readouterr().out
+
+
+def test_who_causes_lists_medications(fake_client, monkeypatch, capsys):
+    fake_client.rows = [
+        {"rxcui": "4493", "generic_name": "fluoxetine", "report_count": 5470}
+    ]
+    monkeypatch.setattr(
+        "sys.argv", ["med-graph", "who-causes", "--side-effect", "insomnia"]
+    )
+    assert cli.main() == 0
+    assert "fluoxetine" in capsys.readouterr().out

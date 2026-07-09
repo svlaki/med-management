@@ -35,7 +35,13 @@ class GraphClient:
         uri = _require_env("NEO4J_URI")
         user = _require_env("NEO4J_USER")
         password = _require_env("NEO4J_PASSWORD")
-        with GraphDatabase.driver(uri, auth=(user, password)) as driver:
+        with GraphDatabase.driver(
+            uri,
+            auth=(user, password),
+            # Modeled properties (e.g. drug_class) may not be populated yet;
+            # silence the resulting benign "unknown property key" notices.
+            notifications_disabled_classifications=["UNRECOGNIZED"],
+        ) as driver:
             driver.verify_connectivity()
             yield cls(driver)
 

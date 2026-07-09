@@ -1,16 +1,9 @@
 """Idempotent graph loading: every write is MERGE-based so re-ingesting
 the same source updates properties instead of duplicating nodes or edges."""
 
-from typing import Any, Protocol
-
+from med_graph.graph.executor import GraphExecutor
 from med_graph.models import Condition
 from med_graph.sources.base import SourceBatch
-
-
-class GraphExecutor(Protocol):
-    def execute(
-        self, query: str, parameters: dict[str, Any] | None = None
-    ) -> list[dict[str, Any]]: ...
 
 MERGE_CONDITION = """
 MERGE (c:Condition {id: $id})
@@ -43,7 +36,7 @@ MATCH (m:Medication {rxcui: row.medication_rxcui})
 MATCH (s:SideEffect {id: row.side_effect_id})
 MERGE (m)-[r:CAUSES {source: row.source}]->(s)
 SET r.frequency = row.frequency, r.severity = row.severity,
-    r.report_count = row.report_count
+    r.report_count = row.report_count, r.label_confirmed = row.label_confirmed
 """
 
 

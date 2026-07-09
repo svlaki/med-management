@@ -29,6 +29,7 @@ BATCH = SourceBatch(
             source=EdgeSource.OPENFDA_LABEL,
             frequency=Frequency.COMMON,
             report_count=13644,
+            label_confirmed=True,
         ),
     ),
 )
@@ -76,6 +77,7 @@ def test_edge_parameters_serialize_enums_to_strings():
     assert row["source"] == "openfda_label"
     assert row["frequency"] == "common"
     assert row["report_count"] == 13644
+    assert row["label_confirmed"] is True
 
 
 def test_empty_batch_writes_only_the_condition():

@@ -52,6 +52,10 @@ class CausesEdge(BaseModel):
     report_count: int | None = Field(
         default=None, gt=0, description="FAERS adverse-event report count"
     )
+    label_confirmed: bool | None = Field(
+        default=None,
+        description="True/False if the FDA label was checked, None if unavailable",
+    )
 
     @field_validator("side_effect_id")
     @classmethod
