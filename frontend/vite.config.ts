@@ -1,3 +1,4 @@
+/// <reference types="vitest/config" />
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
@@ -11,5 +12,9 @@ export default defineConfig({
   // The app is fully static (reads snapshot.json); no backend proxy needed.
   server: {
     port: 5173,
+  },
+  // jsdom lets component tests render; api.test.ts stubs fetch and is unaffected.
+  test: {
+    environment: "jsdom",
   },
 });

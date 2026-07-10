@@ -1,39 +1,70 @@
+import { useEffect, useRef } from "react";
 import type { ConditionInfo } from "../types";
 
 interface Props {
   conditions: ConditionInfo[];
-  conditionId: string;
+  selectedIds: string[];
   confirmedOnly: boolean;
   perMed: number;
-  onConditionChange: (id: string) => void;
+  onSelectionChange: (ids: string[]) => void;
   onConfirmedChange: (value: boolean) => void;
   onPerMedChange: (value: number) => void;
 }
 
 export function Controls({
   conditions,
-  conditionId,
+  selectedIds,
   confirmedOnly,
   perMed,
-  onConditionChange,
+  onSelectionChange,
   onConfirmedChange,
   onPerMedChange,
 }: Props) {
+  const allSelected =
+    conditions.length > 0 && selectedIds.length === conditions.length;
+  const masterRef = useRef<HTMLInputElement>(null);
+
+  // React has no `indeterminate` prop; set it on the DOM node directly.
+  useEffect(() => {
+    if (masterRef.current) {
+      masterRef.current.indeterminate = selectedIds.length > 0 && !allSelected;
+    }
+  }, [selectedIds.length, allSelected]);
+
+  function toggle(id: string) {
+    onSelectionChange(
+      selectedIds.includes(id)
+        ? selectedIds.filter((s) => s !== id)
+        : [...selectedIds, id],
+    );
+  }
+
   return (
     <div className="controls">
-      <label className="control">
-        <span>Condition</span>
-        <select
-          value={conditionId}
-          onChange={(e) => onConditionChange(e.target.value)}
-        >
-          {conditions.map((c) => (
-            <option key={c.id} value={c.id}>
-              {c.name}
-            </option>
-          ))}
-        </select>
-      </label>
+      <fieldset className="control control--group">
+        <legend>Conditions</legend>
+        <label className="control control--row">
+          <input
+            ref={masterRef}
+            type="checkbox"
+            checked={allSelected}
+            onChange={(e) =>
+              onSelectionChange(e.target.checked ? conditions.map((c) => c.id) : [])
+            }
+          />
+          <span>All conditions</span>
+        </label>
+        {conditions.map((condition) => (
+          <label className="control control--row" key={condition.id}>
+            <input
+              type="checkbox"
+              checked={selectedIds.includes(condition.id)}
+              onChange={() => toggle(condition.id)}
+            />
+            <span>{condition.name}</span>
+          </label>
+        ))}
+      </fieldset>
 
       <label className="control control--row">
         <input

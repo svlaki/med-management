@@ -46,7 +46,30 @@ export interface MedicationCause {
 export interface PanelRow {
   id: string;
   primary: string;
-  count: number | null;
+  // undefined hides the count cell entirely (e.g. condition rows)
+  count?: number | null;
   // present for side-effect rows (label-confirmed state); absent otherwise
   badge?: boolean | null;
+}
+
+/** A titled group of rows in the side panel. */
+export interface PanelSection {
+  heading: string;
+  rows: PanelRow[];
+}
+
+/** One searchable node across the whole snapshot. */
+export interface SearchEntry {
+  nodeId: string; // e.g. "medication:36437"
+  label: string;
+  type: NodeType;
+  /** Conditions this entry appears under (itself, its treats, or its causes). */
+  conditionIds: string[];
+}
+
+/** A condition's medication with how many side effects are recorded for it. */
+export interface MedicationSummary {
+  rxcui: string;
+  generic_name: string;
+  side_effect_count: number;
 }

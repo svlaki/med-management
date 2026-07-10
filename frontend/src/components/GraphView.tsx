@@ -10,7 +10,11 @@ interface Props {
   height: number;
   onSelectNode: (node: GraphNode) => void;
   selectedId: string | null;
+  focusNodeId: string | null;
+  focusKey: number;
 }
+
+type PositionedNode = GraphNode & { x?: number; y?: number; z?: number };
 
 function edgeColor(edge: GraphEdge): string {
   if (edge.kind === "treats") return EDGE_COLORS.treats;
@@ -25,6 +29,8 @@ export function GraphView({
   height,
   onSelectNode,
   selectedId,
+  focusNodeId,
+  focusKey,
 }: Props) {
   const fgRef = useRef<ForceGraphMethods | undefined>(undefined);
 
@@ -60,11 +66,54 @@ export function GraphView({
     d3Force("link")?.distance?.((link) => (link.kind === "treats" ? 55 : 30));
   }, []);
 
-  // Frame the whole graph once the spread-out layout has settled.
+  // Frame the whole graph once the spread-out layout has settled — but NOT
+  // when this render came with a search focus request, or the fit would yank
+  // the camera away from the node the focus effect just centered on.
+  const handledFocusKeyRef = useRef(0);
   useEffect(() => {
+    const isFocusRender = focusKey !== handledFocusKeyRef.current;
+    handledFocusKeyRef.current = focusKey;
+    if (isFocusRender) return;
     const timer = setTimeout(() => fgRef.current?.zoomToFit(800, 60), 1200);
     return () => clearTimeout(timer);
-  }, [data]);
+  }, [data, focusKey]);
+
+  // Fly the camera to a focused node (from search). The node may not have a
+  // laid-out position yet if its condition was just added, so retry briefly.
+  useEffect(() => {
+    if (!focusNodeId || focusKey === 0) return;
+    const fg = fgRef.current as
+      | (ForceGraphMethods & {
+          graphData(): { nodes: PositionedNode[] };
+          cameraPosition(pos: object, lookAt: object, ms: number): void;
+        })
+      | undefined;
+    if (!fg) return;
+
+    let cancelled = false;
+    let attempts = 0;
+    const focus = () => {
+      if (cancelled) return;
+      const node = fg.graphData().nodes.find((n) => n.id === focusNodeId);
+      if (node?.x != null && node.y != null && node.z != null) {
+        const distance = 90;
+        const hypot = Math.hypot(node.x, node.y, node.z) || 1;
+        const ratio = 1 + distance / hypot;
+        fg.cameraPosition(
+          { x: node.x * ratio, y: node.y * ratio, z: node.z * ratio },
+          { x: node.x, y: node.y, z: node.z },
+          1200,
+        );
+      } else if (attempts++ < 25) {
+        setTimeout(focus, 150);
+      }
+    };
+    const timer = setTimeout(focus, 300);
+    return () => {
+      cancelled = true;
+      clearTimeout(timer);
+    };
+  }, [focusKey, focusNodeId]);
 
   return (
     <div className="graph-view">
@@ -73,7 +122,7 @@ export function GraphView({
         graphData={data}
         width={width}
         height={height}
-        backgroundColor="#0f172a"
+        backgroundColor="white"
         showNavInfo={false}
         rendererConfig={{ antialias: true }}
         nodeRelSize={5}
@@ -92,15 +141,9 @@ export function GraphView({
       />
 
       <div className="graph-view__controls">
-        <button
-          type="button"
-          onClick={() => fgRef.current?.zoomToFit(600, 50)}
-        >
-          Reset view
-        </button>
       </div>
       <p className="graph-view__hint">
-        Drag to rotate · scroll to zoom · click a medication or side effect
+        Drag to rotate || Scroll to zoom || Click a medication or side effect
       </p>
     </div>
   );

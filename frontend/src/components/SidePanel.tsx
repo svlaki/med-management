@@ -1,16 +1,17 @@
-import type { PanelRow } from "../types";
+import type { PanelSection } from "../types";
 
 interface Props {
   title: string | null;
   subtitle: string;
-  rows: PanelRow[];
+  sections: PanelSection[];
   loading: boolean;
   error: string | null;
   onClose: () => void;
 }
 
-function formatCount(value: number | null): string {
-  return value === null ? "—" : value.toLocaleString();
+function formatCount(value: number | null | undefined): string {
+  if (value === null || value === undefined) return "";
+  return value.toLocaleString();
 }
 
 function badgeClass(confirmed: boolean | null | undefined): string {
@@ -28,12 +29,14 @@ function badgeLabel(confirmed: boolean | null | undefined): string {
 export function SidePanel({
   title,
   subtitle,
-  rows,
+  sections,
   loading,
   error,
   onClose,
 }: Props) {
   if (title === null) return null;
+
+  const isEmpty = sections.every((s) => s.rows.length === 0);
 
   return (
     <aside className="side-panel">
@@ -43,26 +46,38 @@ export function SidePanel({
           ×
         </button>
       </div>
-      <p className="side-panel__subtitle">{subtitle}</p>
+      {subtitle && <p className="side-panel__subtitle">{subtitle}</p>}
 
       {loading && <p className="side-panel__status">Loading…</p>}
       {error && <p className="side-panel__status side-panel__status--error">{error}</p>}
 
       {!loading && !error && (
-        <ul className="side-panel__list">
-          {rows.map((row) => (
-            <li className="side-panel__row" key={row.id}>
-              <span className="side-panel__count">{formatCount(row.count)}</span>
-              <span className="side-panel__name">{row.primary}</span>
-              {row.badge !== undefined && (
-                <span className={badgeClass(row.badge)}>{badgeLabel(row.badge)}</span>
-              )}
-            </li>
+        <>
+          {sections.map((section) => (
+            <section className="side-panel__section" key={section.heading}>
+              <h3 className="side-panel__heading">{section.heading}</h3>
+              <ul className="side-panel__list">
+                {section.rows.map((row) => (
+                  <li className="side-panel__row" key={row.id}>
+                    <span className="side-panel__count">{formatCount(row.count)}</span>
+                    <span className="side-panel__name">{row.primary}</span>
+                    {row.badge !== undefined && (
+                      <span className={badgeClass(row.badge)}>
+                        {badgeLabel(row.badge)}
+                      </span>
+                    )}
+                  </li>
+                ))}
+                {section.rows.length === 0 && (
+                  <li className="side-panel__status">None recorded.</li>
+                )}
+              </ul>
+            </section>
           ))}
-          {rows.length === 0 && (
-            <li className="side-panel__status">Nothing recorded.</li>
+          {isEmpty && sections.length === 0 && (
+            <p className="side-panel__status">Nothing recorded.</p>
           )}
-        </ul>
+        </>
       )}
     </aside>
   );
