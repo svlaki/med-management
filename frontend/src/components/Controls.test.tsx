@@ -12,18 +12,21 @@ afterEach(cleanup);
 
 function setup(selectedIds: string[]) {
   const onSelectionChange = vi.fn();
+  const onApprovedChange = vi.fn();
   render(
     <Controls
       conditions={CONDITIONS}
       selectedIds={selectedIds}
       confirmedOnly={false}
+      approvedOnly={false}
       perMed={6}
       onSelectionChange={onSelectionChange}
       onConfirmedChange={vi.fn()}
+      onApprovedChange={onApprovedChange}
       onPerMedChange={vi.fn()}
     />,
   );
-  return { onSelectionChange };
+  return { onSelectionChange, onApprovedChange };
 }
 
 function box(name: RegExp) {
@@ -67,5 +70,11 @@ describe("Controls condition multi-select", () => {
     const master = box(/All conditions/);
     expect(master.checked).toBe(true);
     expect(master.indeterminate).toBe(false);
+  });
+
+  it("toggles the FDA-approved-only filter", () => {
+    const { onApprovedChange } = setup([]);
+    fireEvent.click(box(/FDA-approved for the condition only/));
+    expect(onApprovedChange).toHaveBeenCalledWith(true);
   });
 });

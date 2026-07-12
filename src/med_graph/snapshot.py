@@ -17,8 +17,19 @@ from med_graph.sources.conditions import CONDITION_REGISTRY
 # Effectively "all" side effects for a medication (far above any real count).
 ALL_SIDE_EFFECTS = 10_000
 
+# Ids the frontend reserves for synthetic views (e.g. the merged "All
+# conditions" option in api.ts). A real condition using one would be shadowed.
+RESERVED_CONDITION_IDS = frozenset({"all"})
+
 
 def build_snapshot(client: GraphExecutor) -> dict:
+    collisions = RESERVED_CONDITION_IDS & set(CONDITION_REGISTRY)
+    if collisions:
+        raise ValueError(
+            f"Condition id(s) {sorted(collisions)} are reserved by the frontend; "
+            "rename the condition in CONDITION_REGISTRY."
+        )
+
     conditions = []
     graphs: dict[str, dict] = {}
 
@@ -38,6 +49,7 @@ def build_snapshot(client: GraphExecutor) -> dict:
                     "rxcui": med.rxcui,
                     "generic_name": med.generic_name,
                     "drug_class": med.drug_class,
+                    "fda_approved": med.fda_approved,
                     "side_effects": [
                         {
                             "side_effect_id": e.side_effect_id,

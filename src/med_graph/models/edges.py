@@ -37,6 +37,10 @@ class TreatsEdge(BaseModel):
     condition_id: str = Field(min_length=1)
     source: EdgeSource
     approval_status: str = Field(default="approved")
+    fda_approved: bool = Field(
+        default=False,
+        description="True if an FDA label names this condition in its indications",
+    )
 
     @field_validator("condition_id")
     @classmethod

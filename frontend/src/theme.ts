@@ -26,7 +26,8 @@ export const NODE_VAL: Record<NodeType, number> = {
 };
 
 export const EDGE_COLORS = {
-  treats: "black", // slate
+  treatsApproved: "black", // FDA-approved for this condition
+  treatsMayTreat: "#c0c4cc", // RxClass "may treat" only (often off-label)
   causesConfirmed: "teal",
   causesUnconfirmed: "pink",
 };

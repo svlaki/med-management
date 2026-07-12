@@ -7,3 +7,6 @@ __pycache__/
 htmlcov/
 dist/
 *.egg-info/
+
+# generated dataset dumps (scripts/export_tables.py)
+data_exports/

@@ -1,5 +1,7 @@
+import pytest
+
 from med_graph.queries.medications import MEDS_FOR_CONDITION, SIDE_EFFECT_PROFILE
-from med_graph.snapshot import build_snapshot
+from med_graph.snapshot import RESERVED_CONDITION_IDS, build_snapshot
 
 
 class FakeExecutor:
@@ -40,6 +42,28 @@ def test_snapshot_nests_full_side_effects_per_medication():
     assert {e["side_effect_id"] for e in effects} == {"nausea", "insomnia"}
     assert effects[0]["report_count"] == 13644
     assert effects[0]["label_confirmed"] is True
+
+
+def test_reserved_condition_ids_are_rejected(monkeypatch):
+    # A real condition id colliding with the frontend's merged-view sentinel
+    # ("all") would shadow that condition; the exporter must refuse it.
+    from med_graph.models import Condition
+    from med_graph.sources import conditions as conditions_module
+    from med_graph.sources.conditions import ConditionSpec
+
+    reserved = next(iter(RESERVED_CONDITION_IDS))
+    bad_registry = {
+        reserved: ConditionSpec(
+            condition=Condition(id=reserved, name="Bad", icd10=None),
+            rxclass_ids=("D0",),
+        )
+    }
+    monkeypatch.setattr(conditions_module, "CONDITION_REGISTRY", bad_registry)
+    monkeypatch.setattr(
+        "med_graph.snapshot.CONDITION_REGISTRY", bad_registry, raising=False
+    )
+    with pytest.raises(ValueError, match=reserved):
+        build_snapshot(FakeExecutor())
 
 
 def test_snapshot_requests_all_side_effects_not_a_small_limit():

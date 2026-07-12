@@ -21,6 +21,9 @@ export interface GraphEdge {
   kind: "treats" | "causes";
   report_count: number | null;
   label_confirmed: boolean | null;
+  // treats edges only: true if an FDA label names this condition (approved),
+  // false if only RxClass "may treat" (often off-label)
+  fda_approved?: boolean;
 }
 
 export interface GraphPayload {
@@ -50,6 +53,8 @@ export interface PanelRow {
   count?: number | null;
   // present for side-effect rows (label-confirmed state); absent otherwise
   badge?: boolean | null;
+  // small muted tag, e.g. "FDA-approved" on a medication's Treats rows
+  note?: string;
 }
 
 /** A titled group of rows in the side panel. */
@@ -72,4 +77,12 @@ export interface MedicationSummary {
   rxcui: string;
   generic_name: string;
   side_effect_count: number;
+  fda_approved: boolean;
+}
+
+/** A condition a medication treats, plus whether it's FDA-approved for it. */
+export interface MedicationTreats {
+  id: string;
+  name: string;
+  fda_approved: boolean;
 }

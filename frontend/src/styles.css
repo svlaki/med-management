@@ -379,6 +379,12 @@ body {
   text-transform: capitalize;
 }
 
+.side-panel__note {
+  font-size: 10px;
+  color: var(--text-dim);
+  white-space: nowrap;
+}
+
 .side-panel__status {
   font-size: 13px;
   color: var(--text-dim);

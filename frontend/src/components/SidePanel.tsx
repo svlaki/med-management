@@ -61,6 +61,7 @@ export function SidePanel({
                   <li className="side-panel__row" key={row.id}>
                     <span className="side-panel__count">{formatCount(row.count)}</span>
                     <span className="side-panel__name">{row.primary}</span>
+                    {row.note && <span className="side-panel__note">{row.note}</span>}
                     {row.badge !== undefined && (
                       <span className={badgeClass(row.badge)}>
                         {badgeLabel(row.badge)}

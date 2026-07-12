@@ -21,16 +21,30 @@ export function Legend() {
         <div className="legend__item">
           <span
             className="legend__line"
+            style={{ background: EDGE_COLORS.treatsApproved, height: "3px" }}
+          />
+          Treats · FDA-approved
+        </div>
+        <div className="legend__item">
+          <span
+            className="legend__line"
+            style={{ background: EDGE_COLORS.treatsMayTreat }}
+          />
+          Treats · may treat (off-label)
+        </div>
+        <div className="legend__item">
+          <span
+            className="legend__line"
             style={{ background: EDGE_COLORS.causesConfirmed }}
           />
-          Label-confirmed
+          Causes · label-confirmed
         </div>
         <div className="legend__item">
           <span
             className="legend__line"
             style={{ background: EDGE_COLORS.causesUnconfirmed }}
           />
-          FAERS-only
+          Causes · FAERS-only
         </div>
       </div>
     </div>

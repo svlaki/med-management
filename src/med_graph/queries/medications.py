@@ -30,10 +30,11 @@ LIMIT $limit
 """
 
 MEDS_FOR_CONDITION = """
-MATCH (m:Medication)-[:TREATS]->(:Condition {id: $condition_id})
+MATCH (m:Medication)-[t:TREATS]->(:Condition {id: $condition_id})
 OPTIONAL MATCH (m)-[:CAUSES]->(s:SideEffect)
 RETURN m.rxcui AS rxcui, m.generic_name AS generic_name,
-       m.drug_class AS drug_class, count(DISTINCT s) AS side_effect_count
+       m.drug_class AS drug_class, count(DISTINCT s) AS side_effect_count,
+       any(x IN collect(t.fda_approved) WHERE x) AS fda_approved
 ORDER BY generic_name
 """
 

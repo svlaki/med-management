@@ -24,6 +24,7 @@ class MedicationSummary(BaseModel):
     generic_name: str
     drug_class: str | None
     side_effect_count: int
+    fda_approved: bool = False
 
 
 class MedicationCause(BaseModel):

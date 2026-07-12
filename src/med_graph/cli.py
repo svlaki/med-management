@@ -18,6 +18,7 @@ from med_graph.queries.medications import (
 from med_graph.sources.base import SourceFetchError
 from med_graph.sources.conditions import CONDITION_REGISTRY
 from med_graph.sources.openfda import OpenFdaFaersSource
+from med_graph.sources.openfda_indication import OpenFdaIndicationSource
 from med_graph.sources.openfda_label import OpenFdaLabelSource
 from med_graph.sources.rxclass import RxClassSource
 
@@ -45,7 +46,20 @@ def _ingest(condition_id: str) -> None:
         )
     with RxClassSource() as source:
         batch = source.fetch(spec)
-    print(f"fetched {len(batch.medications)} medications; fetching side effects...")
+    print(f"fetched {len(batch.medications)} medications; checking FDA-approved indications...")
+    with OpenFdaIndicationSource() as indications:
+        approved = indications.approved_rxcuis(spec, batch.medications)
+    batch = batch.model_copy(
+        update={
+            "treats": tuple(
+                edge.model_copy(
+                    update={"fda_approved": edge.medication_rxcui in approved}
+                )
+                for edge in batch.treats
+            )
+        }
+    )
+    print(f"  {len(approved)} of {len(batch.medications)} are FDA-approved; fetching side effects...")
     with OpenFdaFaersSource() as enricher:
         effects = enricher.enrich(batch.medications)
     print(f"cross-referencing {len(effects.causes)} side effects against FDA labels...")

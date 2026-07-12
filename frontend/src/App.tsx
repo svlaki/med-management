@@ -30,6 +30,7 @@ export default function App() {
   const [conditions, setConditions] = useState<ConditionInfo[]>([]);
   const [selectedIds, setSelectedIds] = useState<string[]>([]);
   const [confirmedOnly, setConfirmedOnly] = useState(false);
+  const [approvedOnly, setApprovedOnly] = useState(false);
   const [perMed, setPerMed] = useState(6);
   const [searchIndex, setSearchIndex] = useState<SearchEntry[]>([]);
 
@@ -63,7 +64,7 @@ export default function App() {
   useEffect(() => {
     let active = true;
     setGraphError(null);
-    fetchConditionGraph(selectedIds, confirmedOnly, perMed)
+    fetchConditionGraph(selectedIds, confirmedOnly, perMed, approvedOnly)
       .then((g) => {
         if (active) setGraph(g);
       })
@@ -75,7 +76,7 @@ export default function App() {
     return () => {
       active = false;
     };
-  }, [selectedIds, confirmedOnly, perMed]);
+  }, [selectedIds, confirmedOnly, perMed, approvedOnly]);
 
   useEffect(() => {
     const element = canvasRef.current;
@@ -98,7 +99,11 @@ export default function App() {
       return [
         {
           heading: "Treats",
-          rows: treats.map((c) => ({ id: c.id, primary: c.name })),
+          rows: treats.map((c) => ({
+            id: c.id,
+            primary: c.name,
+            note: c.fda_approved ? "FDA-approved" : "may treat",
+          })),
         },
         {
           heading: "Reported side effects",
@@ -135,6 +140,7 @@ export default function App() {
           id: m.rxcui,
           primary: m.generic_name,
           count: m.side_effect_count,
+          note: m.fda_approved ? "FDA-approved" : undefined,
         })),
       },
     ];
@@ -199,9 +205,11 @@ export default function App() {
             conditions={conditions}
             selectedIds={selectedIds}
             confirmedOnly={confirmedOnly}
+            approvedOnly={approvedOnly}
             perMed={perMed}
             onSelectionChange={setSelectedIds}
             onConfirmedChange={setConfirmedOnly}
+            onApprovedChange={setApprovedOnly}
             onPerMedChange={setPerMed}
           />
           <Legend />

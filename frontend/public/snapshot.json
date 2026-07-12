@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-09T23:38:04.442268+00:00",
+  "generated_at": "2026-07-10T20:13:03.889824+00:00",
   "conditions": [
     {
       "id": "mdd",
@@ -24,6 +24,7 @@
           "rxcui": "596",
           "generic_name": "alprazolam",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": [
             {
               "side_effect_id": "nausea",
@@ -171,6 +172,7 @@
           "rxcui": "704",
           "generic_name": "amitriptyline",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": [
             {
               "side_effect_id": "pain",
@@ -318,6 +320,7 @@
           "rxcui": "722",
           "generic_name": "amoxapine",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": [
             {
               "side_effect_id": "poisoning",
@@ -465,12 +468,14 @@
           "rxcui": "2121777",
           "generic_name": "brexanolone",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": []
         },
         {
           "rxcui": "1658314",
           "generic_name": "brexpiprazole",
           "drug_class": null,
+          "fda_approved": true,
           "side_effects": [
             {
               "side_effect_id": "weight-increased",
@@ -618,6 +623,7 @@
           "rxcui": "42347",
           "generic_name": "bupropion",
           "drug_class": null,
+          "fda_approved": true,
           "side_effects": [
             {
               "side_effect_id": "nausea",
@@ -765,6 +771,7 @@
           "rxcui": "1827",
           "generic_name": "buspirone",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": [
             {
               "side_effect_id": "fatigue",
@@ -912,6 +919,7 @@
           "rxcui": "2556",
           "generic_name": "citalopram",
           "drug_class": null,
+          "fda_approved": true,
           "side_effects": [
             {
               "side_effect_id": "fatigue",
@@ -1059,6 +1067,7 @@
           "rxcui": "2597",
           "generic_name": "clomipramine",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": [
             {
               "side_effect_id": "drug-interaction",
@@ -1206,6 +1215,7 @@
           "rxcui": "3247",
           "generic_name": "desipramine",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": [
             {
               "side_effect_id": "fatigue",
@@ -1353,6 +1363,7 @@
           "rxcui": "734064",
           "generic_name": "desvenlafaxine",
           "drug_class": null,
+          "fda_approved": true,
           "side_effects": [
             {
               "side_effect_id": "nausea",
@@ -1500,18 +1511,21 @@
           "rxcui": "3332",
           "generic_name": "dibenzepin",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": []
         },
         {
           "rxcui": "3634",
           "generic_name": "dothiepin",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": []
         },
         {
           "rxcui": "3638",
           "generic_name": "doxepin",
           "drug_class": null,
+          "fda_approved": true,
           "side_effects": [
             {
               "side_effect_id": "toxicity-to-various-agents",
@@ -1659,6 +1673,7 @@
           "rxcui": "72625",
           "generic_name": "duloxetine",
           "drug_class": null,
+          "fda_approved": true,
           "side_effects": [
             {
               "side_effect_id": "nausea",
@@ -1806,6 +1821,7 @@
           "rxcui": "321988",
           "generic_name": "escitalopram",
           "drug_class": null,
+          "fda_approved": true,
           "side_effects": [
             {
               "side_effect_id": "fatigue",
@@ -1953,6 +1969,7 @@
           "rxcui": "2119365",
           "generic_name": "esketamine",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": [
             {
               "side_effect_id": "dissociation",
@@ -2100,6 +2117,7 @@
           "rxcui": "4493",
           "generic_name": "fluoxetine",
           "drug_class": null,
+          "fda_approved": true,
           "side_effects": [
             {
               "side_effect_id": "nausea",
@@ -2247,6 +2265,7 @@
           "rxcui": "42355",
           "generic_name": "fluvoxamine",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": [
             {
               "side_effect_id": "drug-interaction",
@@ -2394,12 +2413,14 @@
           "rxcui": "2672253",
           "generic_name": "gepirone",
           "drug_class": null,
+          "fda_approved": true,
           "side_effects": []
         },
         {
           "rxcui": "5691",
           "generic_name": "imipramine",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": [
             {
               "side_effect_id": "dizziness",
@@ -2547,6 +2568,7 @@
           "rxcui": "6011",
           "generic_name": "isocarboxazid",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": [
             {
               "side_effect_id": "completed-suicide",
@@ -2694,6 +2716,7 @@
           "rxcui": "6026",
           "generic_name": "isoflurane",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": [
             {
               "side_effect_id": "hypotension",
@@ -2841,12 +2864,14 @@
           "rxcui": "285228",
           "generic_name": "kava preparation",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": []
         },
         {
           "rxcui": "1433212",
           "generic_name": "levomilnacipran",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": [
             {
               "side_effect_id": "pain",
@@ -2994,6 +3019,7 @@
           "rxcui": "6448",
           "generic_name": "lithium",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": [
             {
               "side_effect_id": "toxicity-to-various-agents",
@@ -3141,12 +3167,14 @@
           "rxcui": "746070",
           "generic_name": "lithium aspartate",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": []
         },
         {
           "rxcui": "42351",
           "generic_name": "lithium carbonate",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": [
             {
               "side_effect_id": "toxicity-to-various-agents",
@@ -3294,12 +3322,14 @@
           "rxcui": "52105",
           "generic_name": "lithium citrate",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": []
         },
         {
           "rxcui": "6470",
           "generic_name": "lorazepam",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": [
             {
               "side_effect_id": "fatigue",
@@ -3447,6 +3477,7 @@
           "rxcui": "1040028",
           "generic_name": "lurasidone",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": [
             {
               "side_effect_id": "anxiety",
@@ -3594,152 +3625,154 @@
           "rxcui": "6646",
           "generic_name": "maprotiline",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": []
         },
         {
           "rxcui": "6711",
           "generic_name": "melatonin",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": [
             {
               "side_effect_id": "fatigue",
               "name": "Fatigue",
               "source": "faers",
               "report_count": 4352,
-              "label_confirmed": false
+              "label_confirmed": null
             },
             {
               "side_effect_id": "nausea",
               "name": "Nausea",
               "source": "faers",
               "report_count": 3684,
-              "label_confirmed": false
+              "label_confirmed": null
             },
             {
               "side_effect_id": "diarrhoea",
               "name": "Diarrhoea",
               "source": "faers",
               "report_count": 2960,
-              "label_confirmed": false
+              "label_confirmed": null
             },
             {
               "side_effect_id": "headache",
               "name": "Headache",
               "source": "faers",
               "report_count": 2899,
-              "label_confirmed": false
+              "label_confirmed": null
             },
             {
               "side_effect_id": "dyspnoea",
               "name": "Dyspnoea",
               "source": "faers",
               "report_count": 2522,
-              "label_confirmed": false
+              "label_confirmed": null
             },
             {
               "side_effect_id": "insomnia",
               "name": "Insomnia",
               "source": "faers",
               "report_count": 2487,
-              "label_confirmed": false
+              "label_confirmed": null
             },
             {
               "side_effect_id": "fall",
               "name": "Fall",
               "source": "faers",
               "report_count": 2386,
-              "label_confirmed": false
+              "label_confirmed": null
             },
             {
               "side_effect_id": "pain",
               "name": "Pain",
               "source": "faers",
               "report_count": 2318,
-              "label_confirmed": false
+              "label_confirmed": null
             },
             {
               "side_effect_id": "dizziness",
               "name": "Dizziness",
               "source": "faers",
               "report_count": 2299,
-              "label_confirmed": false
+              "label_confirmed": null
             },
             {
               "side_effect_id": "vomiting",
               "name": "Vomiting",
               "source": "faers",
               "report_count": 2172,
-              "label_confirmed": false
+              "label_confirmed": null
             },
             {
               "side_effect_id": "death",
               "name": "Death",
               "source": "faers",
               "report_count": 2114,
-              "label_confirmed": false
+              "label_confirmed": null
             },
             {
               "side_effect_id": "asthenia",
               "name": "Asthenia",
               "source": "faers",
               "report_count": 1893,
-              "label_confirmed": false
+              "label_confirmed": null
             },
             {
               "side_effect_id": "somnolence",
               "name": "Somnolence",
               "source": "faers",
               "report_count": 1893,
-              "label_confirmed": false
+              "label_confirmed": null
             },
             {
               "side_effect_id": "constipation",
               "name": "Constipation",
               "source": "faers",
               "report_count": 1858,
-              "label_confirmed": false
+              "label_confirmed": null
             },
             {
               "side_effect_id": "anxiety",
               "name": "Anxiety",
               "source": "faers",
               "report_count": 1747,
-              "label_confirmed": false
+              "label_confirmed": null
             },
             {
               "side_effect_id": "pneumonia",
               "name": "Pneumonia",
               "source": "faers",
               "report_count": 1676,
-              "label_confirmed": false
+              "label_confirmed": null
             },
             {
               "side_effect_id": "arthralgia",
               "name": "Arthralgia",
               "source": "faers",
               "report_count": 1567,
-              "label_confirmed": false
+              "label_confirmed": null
             },
             {
               "side_effect_id": "condition-aggravated",
               "name": "Condition aggravated",
               "source": "faers",
               "report_count": 1528,
-              "label_confirmed": false
+              "label_confirmed": null
             },
             {
               "side_effect_id": "weight-decreased",
               "name": "Weight decreased",
               "source": "faers",
               "report_count": 1507,
-              "label_confirmed": false
+              "label_confirmed": null
             },
             {
               "side_effect_id": "malaise",
               "name": "Malaise",
               "source": "faers",
               "report_count": 1464,
-              "label_confirmed": false
+              "label_confirmed": null
             }
           ]
         },
@@ -3747,6 +3780,7 @@
           "rxcui": "6901",
           "generic_name": "methylphenidate",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": [
             {
               "side_effect_id": "no-adverse-event",
@@ -3894,6 +3928,7 @@
           "rxcui": "588250",
           "generic_name": "milnacipran",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": [
             {
               "side_effect_id": "nausea",
@@ -4041,6 +4076,7 @@
           "rxcui": "15996",
           "generic_name": "mirtazapine",
           "drug_class": null,
+          "fda_approved": true,
           "side_effects": [
             {
               "side_effect_id": "nausea",
@@ -4188,6 +4224,7 @@
           "rxcui": "31565",
           "generic_name": "nefazodone",
           "drug_class": null,
+          "fda_approved": true,
           "side_effects": [
             {
               "side_effect_id": "depression",
@@ -4335,6 +4372,7 @@
           "rxcui": "7531",
           "generic_name": "nortriptyline",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": [
             {
               "side_effect_id": "pain",
@@ -4482,6 +4520,7 @@
           "rxcui": "679314",
           "generic_name": "paliperidone",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": [
             {
               "side_effect_id": "injury",
@@ -4629,6 +4668,7 @@
           "rxcui": "32937",
           "generic_name": "paroxetine",
           "drug_class": null,
+          "fda_approved": true,
           "side_effects": [
             {
               "side_effect_id": "drug-withdrawal-syndrome",
@@ -4776,6 +4816,7 @@
           "rxcui": "8123",
           "generic_name": "phenelzine",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": [
             {
               "side_effect_id": "depression",
@@ -4923,146 +4964,147 @@
           "rxcui": "8156",
           "generic_name": "phenylalanine",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": [
             {
               "side_effect_id": "nausea",
               "name": "Nausea",
               "source": "faers",
               "report_count": 51,
-              "label_confirmed": false
+              "label_confirmed": null
             },
             {
               "side_effect_id": "parenteral-nutrition-associated-liver-disease",
               "name": "Parenteral nutrition associated liver disease",
               "source": "faers",
               "report_count": 50,
-              "label_confirmed": false
+              "label_confirmed": null
             },
             {
               "side_effect_id": "pyrexia",
               "name": "Pyrexia",
               "source": "faers",
               "report_count": 44,
-              "label_confirmed": false
+              "label_confirmed": null
             },
             {
               "side_effect_id": "vomiting",
               "name": "Vomiting",
               "source": "faers",
               "report_count": 42,
-              "label_confirmed": false
+              "label_confirmed": null
             },
             {
               "side_effect_id": "death",
               "name": "Death",
               "source": "faers",
               "report_count": 36,
-              "label_confirmed": false
+              "label_confirmed": null
             },
             {
               "side_effect_id": "chills",
               "name": "Chills",
               "source": "faers",
               "report_count": 35,
-              "label_confirmed": false
+              "label_confirmed": null
             },
             {
               "side_effect_id": "condition-aggravated",
               "name": "Condition aggravated",
               "source": "faers",
               "report_count": 33,
-              "label_confirmed": false
+              "label_confirmed": null
             },
             {
               "side_effect_id": "diarrhoea",
               "name": "Diarrhoea",
               "source": "faers",
               "report_count": 32,
-              "label_confirmed": false
+              "label_confirmed": null
             },
             {
               "side_effect_id": "dyspnoea",
               "name": "Dyspnoea",
               "source": "faers",
               "report_count": 30,
-              "label_confirmed": false
+              "label_confirmed": null
             },
             {
               "side_effect_id": "no-adverse-event",
               "name": "No adverse event",
               "source": "faers",
               "report_count": 30,
-              "label_confirmed": false
+              "label_confirmed": null
             },
             {
               "side_effect_id": "fatigue",
               "name": "Fatigue",
               "source": "faers",
               "report_count": 28,
-              "label_confirmed": false
+              "label_confirmed": null
             },
             {
               "side_effect_id": "asthenia",
               "name": "Asthenia",
               "source": "faers",
               "report_count": 26,
-              "label_confirmed": false
+              "label_confirmed": null
             },
             {
               "side_effect_id": "palpitations",
               "name": "Palpitations",
               "source": "faers",
               "report_count": 23,
-              "label_confirmed": false
+              "label_confirmed": null
             },
             {
               "side_effect_id": "pruritus",
               "name": "Pruritus",
               "source": "faers",
               "report_count": 23,
-              "label_confirmed": false
+              "label_confirmed": null
             },
             {
               "side_effect_id": "chest-discomfort",
               "name": "Chest discomfort",
               "source": "faers",
               "report_count": 22,
-              "label_confirmed": false
+              "label_confirmed": null
             },
             {
               "side_effect_id": "hypotension",
               "name": "Hypotension",
               "source": "faers",
               "report_count": 22,
-              "label_confirmed": false
+              "label_confirmed": null
             },
             {
               "side_effect_id": "dizziness",
               "name": "Dizziness",
               "source": "faers",
               "report_count": 21,
-              "label_confirmed": false
+              "label_confirmed": null
             },
             {
               "side_effect_id": "pneumonia",
               "name": "Pneumonia",
               "source": "faers",
               "report_count": 21,
-              "label_confirmed": false
+              "label_confirmed": null
             },
             {
               "side_effect_id": "rash",
               "name": "Rash",
               "source": "faers",
               "report_count": 21,
-              "label_confirmed": false
+              "label_confirmed": null
             },
             {
               "side_effect_id": "cardiac-arrest",
               "name": "Cardiac arrest",
               "source": "faers",
               "report_count": 20,
-              "label_confirmed": false
+              "label_confirmed": null
             }
           ]
         },
@@ -5070,6 +5112,7 @@
           "rxcui": "746741",
           "generic_name": "pramipexole",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": [
             {
               "side_effect_id": "fatigue",
@@ -5217,6 +5260,7 @@
           "rxcui": "8886",
           "generic_name": "protriptyline",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": [
             {
               "side_effect_id": "fall",
@@ -5364,6 +5408,7 @@
           "rxcui": "51272",
           "generic_name": "quetiapine",
           "drug_class": null,
+          "fda_approved": true,
           "side_effects": [
             {
               "side_effect_id": "toxicity-to-various-agents",
@@ -5511,6 +5556,7 @@
           "rxcui": "9639",
           "generic_name": "selegiline",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": [
             {
               "side_effect_id": "hallucination",
@@ -5658,6 +5704,7 @@
           "rxcui": "36437",
           "generic_name": "sertraline",
           "drug_class": null,
+          "fda_approved": true,
           "side_effects": [
             {
               "side_effect_id": "nausea",
@@ -5805,6 +5852,7 @@
           "rxcui": "10355",
           "generic_name": "temazepam",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": [
             {
               "side_effect_id": "fatigue",
@@ -5952,6 +6000,7 @@
           "rxcui": "10734",
           "generic_name": "tranylcypromine",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": [
             {
               "side_effect_id": "drug-interaction",
@@ -6099,6 +6148,7 @@
           "rxcui": "10737",
           "generic_name": "trazodone",
           "drug_class": null,
+          "fda_approved": true,
           "side_effects": [
             {
               "side_effect_id": "fatigue",
@@ -6246,6 +6296,7 @@
           "rxcui": "10834",
           "generic_name": "trimipramine",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": [
             {
               "side_effect_id": "drug-interaction",
@@ -6393,6 +6444,7 @@
           "rxcui": "39786",
           "generic_name": "venlafaxine",
           "drug_class": null,
+          "fda_approved": true,
           "side_effects": [
             {
               "side_effect_id": "nausea",
@@ -6540,6 +6592,7 @@
           "rxcui": "1086769",
           "generic_name": "vilazodone",
           "drug_class": null,
+          "fda_approved": true,
           "side_effects": [
             {
               "side_effect_id": "diarrhoea",
@@ -6687,6 +6740,7 @@
           "rxcui": "1455099",
           "generic_name": "vortioxetine",
           "drug_class": null,
+          "fda_approved": true,
           "side_effects": [
             {
               "side_effect_id": "nausea",
@@ -6834,6 +6888,7 @@
           "rxcui": "2669905",
           "generic_name": "zuranolone",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": [
             {
               "side_effect_id": "somnolence",
@@ -6985,6 +7040,7 @@
           "rxcui": "784649",
           "generic_name": "asenapine",
           "drug_class": null,
+          "fda_approved": true,
           "side_effects": [
             {
               "side_effect_id": "sedation",
@@ -7132,6 +7188,7 @@
           "rxcui": "2002",
           "generic_name": "carbamazepine",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": [
             {
               "side_effect_id": "seizure",
@@ -7279,6 +7336,7 @@
           "rxcui": "1667655",
           "generic_name": "cariprazine",
           "drug_class": null,
+          "fda_approved": true,
           "side_effects": [
             {
               "side_effect_id": "weight-increased",
@@ -7426,6 +7484,7 @@
           "rxcui": "2598",
           "generic_name": "clonazepam",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": [
             {
               "side_effect_id": "fatigue",
@@ -7573,6 +7632,7 @@
           "rxcui": "2626",
           "generic_name": "clozapine",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": [
             {
               "side_effect_id": "neutropenia",
@@ -7720,6 +7780,7 @@
           "rxcui": "25480",
           "generic_name": "gabapentin",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": [
             {
               "side_effect_id": "fatigue",
@@ -7867,6 +7928,7 @@
           "rxcui": "28439",
           "generic_name": "lamotrigine",
           "drug_class": null,
+          "fda_approved": true,
           "side_effects": [
             {
               "side_effect_id": "rash",
@@ -8014,6 +8076,7 @@
           "rxcui": "6448",
           "generic_name": "lithium",
           "drug_class": null,
+          "fda_approved": true,
           "side_effects": [
             {
               "side_effect_id": "toxicity-to-various-agents",
@@ -8161,12 +8224,14 @@
           "rxcui": "746070",
           "generic_name": "lithium aspartate",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": []
         },
         {
           "rxcui": "42351",
           "generic_name": "lithium carbonate",
           "drug_class": null,
+          "fda_approved": true,
           "side_effects": [
             {
               "side_effect_id": "toxicity-to-various-agents",
@@ -8314,12 +8379,14 @@
           "rxcui": "52105",
           "generic_name": "lithium citrate",
           "drug_class": null,
+          "fda_approved": true,
           "side_effects": []
         },
         {
           "rxcui": "1040028",
           "generic_name": "lurasidone",
           "drug_class": null,
+          "fda_approved": true,
           "side_effects": [
             {
               "side_effect_id": "anxiety",
@@ -8467,18 +8534,21 @@
           "rxcui": "6646",
           "generic_name": "maprotiline",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": []
         },
         {
           "rxcui": "6852",
           "generic_name": "methotrimeprazine",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": []
         },
         {
           "rxcui": "61381",
           "generic_name": "olanzapine",
           "drug_class": null,
+          "fda_approved": true,
           "side_effects": [
             {
               "side_effect_id": "weight-increased",
@@ -8626,6 +8696,7 @@
           "rxcui": "679314",
           "generic_name": "paliperidone",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": [
             {
               "side_effect_id": "injury",
@@ -8773,6 +8844,7 @@
           "rxcui": "51272",
           "generic_name": "quetiapine",
           "drug_class": null,
+          "fda_approved": true,
           "side_effects": [
             {
               "side_effect_id": "toxicity-to-various-agents",
@@ -8920,6 +8992,7 @@
           "rxcui": "35636",
           "generic_name": "risperidone",
           "drug_class": null,
+          "fda_approved": true,
           "side_effects": [
             {
               "side_effect_id": "gynaecomastia",
@@ -9067,6 +9140,7 @@
           "rxcui": "2559612",
           "generic_name": "samidorphan",
           "drug_class": null,
+          "fda_approved": true,
           "side_effects": [
             {
               "side_effect_id": "contraindicated-product-administered",
@@ -9214,6 +9288,7 @@
           "rxcui": "31914",
           "generic_name": "tiagabine",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": [
             {
               "side_effect_id": "encephalopathy",
@@ -9361,6 +9436,7 @@
           "rxcui": "38404",
           "generic_name": "topiramate",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": [
             {
               "side_effect_id": "headache",
@@ -9512,12 +9588,14 @@
           "rxcui": "91235",
           "generic_name": "Digitalis preparation",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": []
         },
         {
           "rxcui": "596",
           "generic_name": "alprazolam",
           "drug_class": null,
+          "fda_approved": true,
           "side_effects": [
             {
               "side_effect_id": "nausea",
@@ -9665,30 +9743,35 @@
           "rxcui": "719",
           "generic_name": "amobarbital",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": []
         },
         {
           "rxcui": "1373",
           "generic_name": "benperidol",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": []
         },
         {
           "rxcui": "1749",
           "generic_name": "bromazepam",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": []
         },
         {
           "rxcui": "19759",
           "generic_name": "bromodiphenhydramine",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": []
         },
         {
           "rxcui": "1827",
           "generic_name": "buspirone",
           "drug_class": null,
+          "fda_approved": true,
           "side_effects": [
             {
               "side_effect_id": "fatigue",
@@ -9836,6 +9919,7 @@
           "rxcui": "2356",
           "generic_name": "chlordiazepoxide",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": [
             {
               "side_effect_id": "nausea",
@@ -9983,12 +10067,14 @@
           "rxcui": "2373",
           "generic_name": "chlormezanone",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": []
         },
         {
           "rxcui": "2403",
           "generic_name": "chlorpromazine",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": [
             {
               "side_effect_id": "toxicity-to-various-agents",
@@ -10136,6 +10222,7 @@
           "rxcui": "2556",
           "generic_name": "citalopram",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": [
             {
               "side_effect_id": "fatigue",
@@ -10283,6 +10370,7 @@
           "rxcui": "2597",
           "generic_name": "clomipramine",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": [
             {
               "side_effect_id": "drug-interaction",
@@ -10430,6 +10518,7 @@
           "rxcui": "2598",
           "generic_name": "clonazepam",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": [
             {
               "side_effect_id": "fatigue",
@@ -10577,12 +10666,14 @@
           "rxcui": "2603",
           "generic_name": "clopamide",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": []
         },
         {
           "rxcui": "2353",
           "generic_name": "clorazepate",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": [
             {
               "side_effect_id": "nausea",
@@ -10730,12 +10821,14 @@
           "rxcui": "2622",
           "generic_name": "clotiazepam",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": []
         },
         {
           "rxcui": "3322",
           "generic_name": "diazepam",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": [
             {
               "side_effect_id": "toxicity-to-various-agents",
@@ -10883,12 +10976,14 @@
           "rxcui": "3403",
           "generic_name": "digitoxin",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": []
         },
         {
           "rxcui": "3407",
           "generic_name": "digoxin",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": [
             {
               "side_effect_id": "dyspnoea",
@@ -11036,6 +11131,7 @@
           "rxcui": "3498",
           "generic_name": "diphenhydramine",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": [
             {
               "side_effect_id": "fatigue",
@@ -11183,6 +11279,7 @@
           "rxcui": "3638",
           "generic_name": "doxepin",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": [
             {
               "side_effect_id": "toxicity-to-various-agents",
@@ -11330,6 +11427,7 @@
           "rxcui": "72625",
           "generic_name": "duloxetine",
           "drug_class": null,
+          "fda_approved": true,
           "side_effects": [
             {
               "side_effect_id": "nausea",
@@ -11477,6 +11575,7 @@
           "rxcui": "4493",
           "generic_name": "fluoxetine",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": [
             {
               "side_effect_id": "nausea",
@@ -11624,6 +11723,7 @@
           "rxcui": "42355",
           "generic_name": "fluvoxamine",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": [
             {
               "side_effect_id": "drug-interaction",
@@ -11771,6 +11871,7 @@
           "rxcui": "25480",
           "generic_name": "gabapentin",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": [
             {
               "side_effect_id": "fatigue",
@@ -11918,12 +12019,14 @@
           "rxcui": "26412",
           "generic_name": "halazepam",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": []
         },
         {
           "rxcui": "5553",
           "generic_name": "hydroxyzine",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": [
             {
               "side_effect_id": "pruritus",
@@ -12071,6 +12174,7 @@
           "rxcui": "5691",
           "generic_name": "imipramine",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": [
             {
               "side_effect_id": "dizziness",
@@ -12218,12 +12322,14 @@
           "rxcui": "285228",
           "generic_name": "kava preparation",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": []
         },
         {
           "rxcui": "6470",
           "generic_name": "lorazepam",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": [
             {
               "side_effect_id": "fatigue",
@@ -12371,18 +12477,21 @@
           "rxcui": "6646",
           "generic_name": "maprotiline",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": []
         },
         {
           "rxcui": "6680",
           "generic_name": "medazepam",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": []
         },
         {
           "rxcui": "6760",
           "generic_name": "meprobamate",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": [
             {
               "side_effect_id": "toxicity-to-various-agents",
@@ -12530,12 +12639,14 @@
           "rxcui": "6852",
           "generic_name": "methotrimeprazine",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": []
         },
         {
           "rxcui": "6960",
           "generic_name": "midazolam",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": [
             {
               "side_effect_id": "seizure",
@@ -12683,12 +12794,14 @@
           "rxcui": "3155",
           "generic_name": "nordazepam",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": []
         },
         {
           "rxcui": "7531",
           "generic_name": "nortriptyline",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": [
             {
               "side_effect_id": "pain",
@@ -12836,6 +12949,7 @@
           "rxcui": "7781",
           "generic_name": "oxazepam",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": [
             {
               "side_effect_id": "toxicity-to-various-agents",
@@ -12983,6 +13097,7 @@
           "rxcui": "32937",
           "generic_name": "paroxetine",
           "drug_class": null,
+          "fda_approved": true,
           "side_effects": [
             {
               "side_effect_id": "drug-withdrawal-syndrome",
@@ -13130,12 +13245,14 @@
           "rxcui": "8627",
           "generic_name": "prazepam",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": []
         },
         {
           "rxcui": "8704",
           "generic_name": "prochlorperazine",
           "drug_class": null,
+          "fda_approved": true,
           "side_effects": [
             {
               "side_effect_id": "nausea",
@@ -13283,12 +13400,14 @@
           "rxcui": "8770",
           "generic_name": "propiomazine",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": []
         },
         {
           "rxcui": "8787",
           "generic_name": "propranolol",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": [
             {
               "side_effect_id": "nausea",
@@ -13436,12 +13555,14 @@
           "rxcui": "60842",
           "generic_name": "reboxetine",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": []
         },
         {
           "rxcui": "36437",
           "generic_name": "sertraline",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": [
             {
               "side_effect_id": "nausea",
@@ -13589,6 +13710,7 @@
           "rxcui": "10355",
           "generic_name": "temazepam",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": [
             {
               "side_effect_id": "fatigue",
@@ -13736,30 +13858,35 @@
           "rxcui": "37985",
           "generic_name": "tetrazepam",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": []
         },
         {
           "rxcui": "10437",
           "generic_name": "theobromine",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": []
         },
         {
           "rxcui": "10464",
           "generic_name": "thiamylal",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": []
         },
         {
           "rxcui": "38365",
           "generic_name": "tofisopam",
           "drug_class": null,
+          "fda_approved": false,
           "side_effects": []
         },
         {
           "rxcui": "10800",
           "generic_name": "trifluoperazine",
           "drug_class": null,
+          "fda_approved": true,
           "side_effects": [
             {
               "side_effect_id": "euphoric-mood",
@@ -13907,6 +14034,7 @@
           "rxcui": "39786",
           "generic_name": "venlafaxine",
           "drug_class": null,
+          "fda_approved": true,
           "side_effects": [
             {
               "side_effect_id": "nausea",

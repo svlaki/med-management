@@ -5,6 +5,7 @@ import type {
   GraphPayload,
   MedicationCause,
   MedicationSummary,
+  MedicationTreats,
   SearchEntry,
   SideEffectReport,
 } from "./types";
@@ -24,6 +25,8 @@ interface SnapshotMedication {
   rxcui: string;
   generic_name: string;
   drug_class: string | null;
+  // whether an FDA label names THIS condition (per-condition in the snapshot)
+  fda_approved: boolean;
   side_effects: SnapshotSideEffect[];
 }
 
@@ -87,6 +90,7 @@ export async function fetchConditionGraph(
   conditionIds: string[],
   confirmedOnly: boolean,
   perMed: number,
+  approvedOnly: boolean = false,
 ): Promise<GraphPayload> {
   const snapshot = await loadSnapshot();
   const unknown = conditionIds.filter((id) => !snapshot.graphs[id]);
@@ -115,6 +119,10 @@ export async function fetchConditionGraph(
     });
 
     for (const med of snapshot.graphs[id].medications) {
+      // approved-only hides meds that are only RxClass "may treat" for this
+      // condition (no FDA label naming it).
+      if (approvedOnly && !med.fda_approved) continue;
+
       const medNodeId = `medication:${med.rxcui}`;
       nodes.set(medNodeId, {
         id: medNodeId,
@@ -127,6 +135,7 @@ export async function fetchConditionGraph(
         kind: "treats",
         report_count: null,
         label_confirmed: null,
+        fda_approved: med.fda_approved,
       });
 
       if (processedRxcuis.has(med.rxcui)) continue;
@@ -184,17 +193,28 @@ export async function fetchMedicationsForSideEffect(
   });
 }
 
-/** The conditions a medication is indicated for, in registry order. */
+/** The conditions a medication treats, with FDA-approval per condition. */
 export async function fetchConditionsForMedication(
   rxcui: string,
-): Promise<ConditionInfo[]> {
+): Promise<MedicationTreats[]> {
   const snapshot = await loadSnapshot();
-  return snapshot.conditions.filter((condition) =>
-    snapshot.graphs[condition.id]?.medications.some((m) => m.rxcui === rxcui),
-  );
+  const treats: MedicationTreats[] = [];
+  for (const condition of snapshot.conditions) {
+    const med = snapshot.graphs[condition.id]?.medications.find(
+      (m) => m.rxcui === rxcui,
+    );
+    if (med) {
+      treats.push({
+        id: condition.id,
+        name: condition.name,
+        fda_approved: med.fda_approved,
+      });
+    }
+  }
+  return treats;
 }
 
-/** A condition's medications with their recorded side-effect counts. */
+/** A condition's medications with their side-effect counts and approval flag. */
 export async function fetchMedicationsForCondition(
   conditionId: string,
 ): Promise<MedicationSummary[]> {
@@ -206,6 +226,7 @@ export async function fetchMedicationsForCondition(
       rxcui: med.rxcui,
       generic_name: med.generic_name,
       side_effect_count: med.side_effects.length,
+      fda_approved: med.fda_approved,
     }))
     .sort((a, b) => a.generic_name.localeCompare(b.generic_name));
 }

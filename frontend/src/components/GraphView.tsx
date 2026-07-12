@@ -17,7 +17,11 @@ interface Props {
 type PositionedNode = GraphNode & { x?: number; y?: number; z?: number };
 
 function edgeColor(edge: GraphEdge): string {
-  if (edge.kind === "treats") return EDGE_COLORS.treats;
+  if (edge.kind === "treats") {
+    return edge.fda_approved
+      ? EDGE_COLORS.treatsApproved
+      : EDGE_COLORS.treatsMayTreat;
+  }
   return edge.label_confirmed
     ? EDGE_COLORS.causesConfirmed
     : EDGE_COLORS.causesUnconfirmed;
@@ -135,7 +139,11 @@ export function GraphView({
         nodeLabel={(node) => (node as GraphNode).label}
         nodeOpacity={0.95}
         linkColor={(link) => edgeColor(link as GraphEdge)}
-        linkWidth={(link) => ((link as GraphEdge).kind === "treats" ? 0.6 : 0.3)}
+        linkWidth={(link) => {
+          const edge = link as GraphEdge;
+          if (edge.kind !== "treats") return 0.3;
+          return edge.fda_approved ? 1.2 : 0.5; // approved edges stand out
+        }}
         linkOpacity={0.5}
         onNodeClick={(node) => onSelectNode(node as GraphNode)}
       />

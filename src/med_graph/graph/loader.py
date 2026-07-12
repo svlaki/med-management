@@ -38,7 +38,7 @@ UNWIND $rows AS row
 MATCH (m:Medication {rxcui: row.medication_rxcui})
 MATCH (c:Condition {id: row.condition_id})
 MERGE (m)-[r:TREATS {source: row.source}]->(c)
-SET r.approval_status = row.approval_status
+SET r.approval_status = row.approval_status, r.fda_approved = row.fda_approved
 """
 
 MERGE_CAUSES = """

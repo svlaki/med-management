@@ -5,9 +5,11 @@ interface Props {
   conditions: ConditionInfo[];
   selectedIds: string[];
   confirmedOnly: boolean;
+  approvedOnly: boolean;
   perMed: number;
   onSelectionChange: (ids: string[]) => void;
   onConfirmedChange: (value: boolean) => void;
+  onApprovedChange: (value: boolean) => void;
   onPerMedChange: (value: number) => void;
 }
 
@@ -15,9 +17,11 @@ export function Controls({
   conditions,
   selectedIds,
   confirmedOnly,
+  approvedOnly,
   perMed,
   onSelectionChange,
   onConfirmedChange,
+  onApprovedChange,
   onPerMedChange,
 }: Props) {
   const allSelected =
@@ -65,6 +69,15 @@ export function Controls({
           </label>
         ))}
       </fieldset>
+
+      <label className="control control--row">
+        <input
+          type="checkbox"
+          checked={approvedOnly}
+          onChange={(e) => onApprovedChange(e.target.checked)}
+        />
+        <span>FDA-approved for the condition only</span>
+      </label>
 
       <label className="control control--row">
         <input
