@@ -4,6 +4,7 @@ import type {
   GraphNode,
   GraphPayload,
   MedicationCause,
+  MedicationPharmacology,
   MedicationSummary,
   MedicationTreats,
   SearchEntry,
@@ -25,6 +26,9 @@ interface SnapshotMedication {
   rxcui: string;
   generic_name: string;
   drug_class: string | null;
+  atc_codes: string | null;
+  mechanism: string | null;
+  neurotransmitters: string | null;
   // whether an FDA label names THIS condition (per-condition in the snapshot)
   fda_approved: boolean;
   side_effects: SnapshotSideEffect[];
@@ -85,12 +89,15 @@ export async function fetchConditions(): Promise<ConditionInfo[]> {
   return (await loadSnapshot()).conditions;
 }
 
-/** Build the graph for any set of selected conditions (empty set = empty graph). */
+/** Build the graph for any set of selected conditions (empty set = empty graph).
+ * An empty `classes` list means "all drug classes"; otherwise only medications
+ * whose `drug_class` is in the list are included. */
 export async function fetchConditionGraph(
   conditionIds: string[],
   confirmedOnly: boolean,
   perMed: number,
   approvedOnly: boolean = false,
+  classes: string[] = [],
 ): Promise<GraphPayload> {
   const snapshot = await loadSnapshot();
   const unknown = conditionIds.filter((id) => !snapshot.graphs[id]);
@@ -122,12 +129,16 @@ export async function fetchConditionGraph(
       // approved-only hides meds that are only RxClass "may treat" for this
       // condition (no FDA label naming it).
       if (approvedOnly && !med.fda_approved) continue;
+      // class filter: keep only medications in the selected drug classes.
+      if (classes.length > 0 && (med.drug_class === null || !classes.includes(med.drug_class)))
+        continue;
 
       const medNodeId = `medication:${med.rxcui}`;
       nodes.set(medNodeId, {
         id: medNodeId,
         label: med.generic_name,
         type: "medication",
+        drug_class: med.drug_class,
       });
       edges.push({
         source: medNodeId,
@@ -193,6 +204,31 @@ export async function fetchMedicationsForSideEffect(
   });
 }
 
+/** A medication's pharmacology columns (class, mechanism, neurotransmitters, ATC). */
+export async function fetchMedicationPharmacology(
+  rxcui: string,
+): Promise<MedicationPharmacology | null> {
+  const snapshot = await loadSnapshot();
+  const med = dedupedMedications(snapshot).find((m) => m.rxcui === rxcui);
+  if (!med) return null;
+  return {
+    drug_class: med.drug_class,
+    atc_codes: med.atc_codes,
+    mechanism: med.mechanism,
+    neurotransmitters: med.neurotransmitters,
+  };
+}
+
+/** Distinct drug classes across all medications, sorted, for the class filter. */
+export async function fetchDrugClasses(): Promise<string[]> {
+  const snapshot = await loadSnapshot();
+  const classes = new Set<string>();
+  for (const med of dedupedMedications(snapshot)) {
+    if (med.drug_class) classes.add(med.drug_class);
+  }
+  return [...classes].sort();
+}
+
 /** The conditions a medication treats, with FDA-approval per condition. */
 export async function fetchConditionsForMedication(
   rxcui: string,
@@ -241,15 +277,29 @@ export async function fetchSearchIndex(): Promise<SearchEntry[]> {
     conditionIds: [condition.id],
   }));
 
-  const medConditions = new Map<string, { label: string; conditionIds: Set<string> }>();
+  const medConditions = new Map<string, { label: string; conditionIds: Set<string>; aliases: Set<string> }>();
   const effectConditions = new Map<string, { label: string; conditionIds: Set<string> }>();
   for (const condition of snapshot.conditions) {
     for (const med of snapshot.graphs[condition.id]?.medications ?? []) {
       const medEntry = medConditions.get(med.rxcui) ?? {
         label: med.generic_name,
         conditionIds: new Set<string>(),
+        aliases: new Set<string>(),
       };
       medEntry.conditionIds.add(condition.id);
+      if (med.drug_class) medEntry.aliases.add(med.drug_class);
+      if (med.mechanism) {
+        for (const term of med.mechanism.split(";")) {
+          const t = term.trim();
+          if (t) medEntry.aliases.add(t);
+        }
+      }
+      if (med.neurotransmitters) {
+        for (const term of med.neurotransmitters.split(";")) {
+          const t = term.trim();
+          if (t) medEntry.aliases.add(t);
+        }
+      }
       medConditions.set(med.rxcui, medEntry);
 
       for (const effect of med.side_effects) {
@@ -269,6 +319,7 @@ export async function fetchSearchIndex(): Promise<SearchEntry[]> {
       label: med.label,
       type: "medication",
       conditionIds: [...med.conditionIds],
+      aliases: [...med.aliases],
     });
   }
   for (const [effectId, effect] of effectConditions) {

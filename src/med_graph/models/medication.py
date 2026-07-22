@@ -15,3 +15,10 @@ class Medication(BaseModel):
     name: str = Field(min_length=1)
     generic_name: str = Field(min_length=1)
     drug_class: str | None = Field(default=None, description="e.g. 'SSRI'")
+    atc_codes: str | None = Field(default=None, description="ATC codes, e.g. 'N06AA; N06CA'")
+    mechanism: str | None = Field(
+        default=None, description="Mechanism-of-action class names"
+    )
+    neurotransmitters: str | None = Field(
+        default=None, description="Neurotransmitter effects, e.g. 'Serotonin(+)'"
+    )

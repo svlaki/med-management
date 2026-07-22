@@ -10,9 +10,10 @@ const CONDITIONS: ConditionInfo[] = [
 
 afterEach(cleanup);
 
-function setup(selectedIds: string[]) {
+function setup(selectedIds: string[], drugClasses: string[] = []) {
   const onSelectionChange = vi.fn();
   const onApprovedChange = vi.fn();
+  const onClassFilterChange = vi.fn();
   render(
     <Controls
       conditions={CONDITIONS}
@@ -20,13 +21,16 @@ function setup(selectedIds: string[]) {
       confirmedOnly={false}
       approvedOnly={false}
       perMed={6}
+      drugClasses={drugClasses}
+      classFilter={[]}
       onSelectionChange={onSelectionChange}
       onConfirmedChange={vi.fn()}
       onApprovedChange={onApprovedChange}
       onPerMedChange={vi.fn()}
+      onClassFilterChange={onClassFilterChange}
     />,
   );
-  return { onSelectionChange, onApprovedChange };
+  return { onSelectionChange, onApprovedChange, onClassFilterChange };
 }
 
 function box(name: RegExp) {
@@ -76,5 +80,24 @@ describe("Controls condition multi-select", () => {
     const { onApprovedChange } = setup([]);
     fireEvent.click(box(/FDA-approved for the condition only/));
     expect(onApprovedChange).toHaveBeenCalledWith(true);
+  });
+});
+
+describe("Controls drug-class filter", () => {
+  it("hides the drug-class fieldset when no classes are known", () => {
+    setup([]);
+    expect(screen.queryByText("Drug class")).toBeNull();
+  });
+
+  it("selects a class when toggled on", () => {
+    const { onClassFilterChange } = setup([], ["Antidepressant", "Antipsychotic"]);
+    fireEvent.click(box(/Antidepressant/));
+    expect(onClassFilterChange).toHaveBeenCalledWith(["Antidepressant"]);
+  });
+
+  it("the all-classes toggle clears the class filter", () => {
+    const { onClassFilterChange } = setup([], ["Antidepressant"]);
+    fireEvent.click(box(/All classes/));
+    expect(onClassFilterChange).toHaveBeenCalledWith([]);
   });
 });

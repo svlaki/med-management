@@ -9,10 +9,10 @@ from datetime import datetime, timezone
 
 from med_graph.graph.executor import GraphExecutor
 from med_graph.queries.medications import (
+    conditions_in_graph,
     medications_for_condition,
     side_effect_profile,
 )
-from med_graph.sources.conditions import CONDITION_REGISTRY
 
 # Effectively "all" side effects for a medication (far above any real count).
 ALL_SIDE_EFFECTS = 10_000
@@ -23,22 +23,24 @@ RESERVED_CONDITION_IDS = frozenset({"all"})
 
 
 def build_snapshot(client: GraphExecutor) -> dict:
-    collisions = RESERVED_CONDITION_IDS & set(CONDITION_REGISTRY)
+    graph_conditions = conditions_in_graph(client)
+    collisions = RESERVED_CONDITION_IDS & {c["id"] for c in graph_conditions}
     if collisions:
         raise ValueError(
             f"Condition id(s) {sorted(collisions)} are reserved by the frontend; "
-            "rename the condition in CONDITION_REGISTRY."
+            "rename the condition before loading it."
         )
 
     conditions = []
     graphs: dict[str, dict] = {}
 
-    for condition_id, spec in CONDITION_REGISTRY.items():
+    for condition in graph_conditions:
+        condition_id = condition["id"]
         conditions.append(
             {
-                "id": spec.condition.id,
-                "name": spec.condition.name,
-                "icd10": spec.condition.icd10,
+                "id": condition_id,
+                "name": condition["name"],
+                "icd10": condition["icd10"],
             }
         )
         medications = []
@@ -50,6 +52,9 @@ def build_snapshot(client: GraphExecutor) -> dict:
                     "generic_name": med.generic_name,
                     "drug_class": med.drug_class,
                     "fda_approved": med.fda_approved,
+                    "atc_codes": med.atc_codes,
+                    "mechanism": med.mechanism,
+                    "neurotransmitters": med.neurotransmitters,
                     "side_effects": [
                         {
                             "side_effect_id": e.side_effect_id,

@@ -57,18 +57,25 @@ export function SidePanel({
             <section className="side-panel__section" key={section.heading}>
               <h3 className="side-panel__heading">{section.heading}</h3>
               <ul className="side-panel__list">
-                {section.rows.map((row) => (
-                  <li className="side-panel__row" key={row.id}>
-                    <span className="side-panel__count">{formatCount(row.count)}</span>
-                    <span className="side-panel__name">{row.primary}</span>
-                    {row.note && <span className="side-panel__note">{row.note}</span>}
-                    {row.badge !== undefined && (
-                      <span className={badgeClass(row.badge)}>
-                        {badgeLabel(row.badge)}
-                      </span>
-                    )}
-                  </li>
-                ))}
+                {section.rows.map((row) =>
+                  row.label !== undefined ? (
+                    <li className="side-panel__row side-panel__row--kv" key={row.id}>
+                      <span className="side-panel__key">{row.label}</span>
+                      <span className="side-panel__value">{row.primary}</span>
+                    </li>
+                  ) : (
+                    <li className="side-panel__row" key={row.id}>
+                      <span className="side-panel__count">{formatCount(row.count)}</span>
+                      <span className="side-panel__name">{row.primary}</span>
+                      {row.note && <span className="side-panel__note">{row.note}</span>}
+                      {row.badge !== undefined && (
+                        <span className={badgeClass(row.badge)}>
+                          {badgeLabel(row.badge)}
+                        </span>
+                      )}
+                    </li>
+                  ),
+                )}
                 {section.rows.length === 0 && (
                   <li className="side-panel__status">None recorded.</li>
                 )}

@@ -25,6 +25,9 @@ class MedicationSummary(BaseModel):
     drug_class: str | None
     side_effect_count: int
     fda_approved: bool = False
+    atc_codes: str | None = None
+    mechanism: str | None = None
+    neurotransmitters: str | None = None
 
 
 class MedicationCause(BaseModel):

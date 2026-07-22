@@ -34,8 +34,16 @@ MATCH (m:Medication)-[t:TREATS]->(:Condition {id: $condition_id})
 OPTIONAL MATCH (m)-[:CAUSES]->(s:SideEffect)
 RETURN m.rxcui AS rxcui, m.generic_name AS generic_name,
        m.drug_class AS drug_class, count(DISTINCT s) AS side_effect_count,
-       any(x IN collect(t.fda_approved) WHERE x) AS fda_approved
+       any(x IN collect(t.fda_approved) WHERE x) AS fda_approved,
+       m.atc_codes AS atc_codes, m.mechanism AS mechanism,
+       m.neurotransmitters AS neurotransmitters
 ORDER BY generic_name
+"""
+
+CONDITIONS_IN_GRAPH = """
+MATCH (c:Condition)
+RETURN c.id AS id, c.name AS name, c.icd10 AS icd10
+ORDER BY c.name
 """
 
 MEDS_WITHOUT_SIDE_EFFECT = """
@@ -57,6 +65,13 @@ WHERE toLower(s.id) = toLower($side_effect_id)
 RETURN m.rxcui AS rxcui, m.generic_name AS generic_name,
        r.report_count AS report_count
 ORDER BY coalesce(r.report_count, 0) DESC, generic_name
+"""
+
+MEDICATION_DETAIL = """
+MATCH (m:Medication {rxcui: $rxcui})
+RETURN m.rxcui AS rxcui, m.generic_name AS generic_name,
+       m.drug_class AS drug_class, m.atc_codes AS atc_codes,
+       m.mechanism AS mechanism, m.neurotransmitters AS neurotransmitters
 """
 
 RESOLVE_RXCUI = """
@@ -82,6 +97,11 @@ def medications_for_condition(
     return [MedicationSummary(**row) for row in rows]
 
 
+def conditions_in_graph(client: GraphExecutor) -> list[dict]:
+    """Every Condition node in the graph as {id, name, icd10} dicts."""
+    return client.execute(CONDITIONS_IN_GRAPH)
+
+
 def medications_without_side_effect(
     client: GraphExecutor, condition_id: str, term: str
 ) -> list[MedicationSummary]:
@@ -100,6 +120,12 @@ def medications_by_side_effect(
         MEDS_BY_SIDE_EFFECT, {"side_effect_id": slugify(side_effect_id)}
     )
     return [MedicationCause(**row) for row in rows]
+
+
+def medication_detail(client: GraphExecutor, rxcui: str) -> dict | None:
+    """Return a single medication's pharmacology columns, or None."""
+    rows = client.execute(MEDICATION_DETAIL, {"rxcui": rxcui})
+    return rows[0] if rows else None
 
 
 def resolve_rxcui(client: GraphExecutor, name: str) -> str | None:

@@ -1,9 +1,20 @@
 import type { NodeType } from "./types";
 
 export const NODE_COLORS: Record<NodeType, string> = {
-  condition: "red", 
+  condition: "red",
   medication: "blue",
   side_effect: "green"
+};
+
+/** Per-drug-class colors for medication nodes. Null/unknown falls back to NODE_COLORS.medication. */
+export const DRUG_CLASS_COLORS: Record<string, string> = {
+  "Antidepressant": "#4a90d9",
+  "Antipsychotic": "#e06c75",
+  "Anxiolytic": "#61afef",
+  "Mood stabilizer": "#e5c07b",
+  "Stimulant": "#c678dd",
+  "Sedative-Hypnotic": "#56b6c2",
+  "Other": "#98c379",
 };
 
 export const NODE_LABELS: Record<NodeType, string> = {

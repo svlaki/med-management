@@ -8,6 +8,8 @@ import {
   fetchConditionGraph,
   fetchConditions,
   fetchConditionsForMedication,
+  fetchDrugClasses,
+  fetchMedicationPharmacology,
   fetchMedicationsForCondition,
   fetchMedicationsForSideEffect,
   fetchSearchIndex,
@@ -33,6 +35,8 @@ export default function App() {
   const [approvedOnly, setApprovedOnly] = useState(false);
   const [perMed, setPerMed] = useState(6);
   const [searchIndex, setSearchIndex] = useState<SearchEntry[]>([]);
+  const [drugClasses, setDrugClasses] = useState<string[]>([]);
+  const [classFilter, setClassFilter] = useState<string[]>([]);
 
   const [graph, setGraph] = useState<GraphPayload | null>(null);
   const [graphError, setGraphError] = useState<string | null>(null);
@@ -53,10 +57,11 @@ export default function App() {
   const panelRequestRef = useRef(0);
 
   useEffect(() => {
-    Promise.all([fetchConditions(), fetchSearchIndex()])
-      .then(([conditionList, index]) => {
+    Promise.all([fetchConditions(), fetchSearchIndex(), fetchDrugClasses()])
+      .then(([conditionList, index, classes]) => {
         setConditions(conditionList);
         setSearchIndex(index);
+        setDrugClasses(classes);
       })
       .catch((err) => setGraphError(err.message));
   }, []);
@@ -64,7 +69,7 @@ export default function App() {
   useEffect(() => {
     let active = true;
     setGraphError(null);
-    fetchConditionGraph(selectedIds, confirmedOnly, perMed, approvedOnly)
+    fetchConditionGraph(selectedIds, confirmedOnly, perMed, approvedOnly, classFilter)
       .then((g) => {
         if (active) setGraph(g);
       })
@@ -76,7 +81,7 @@ export default function App() {
     return () => {
       active = false;
     };
-  }, [selectedIds, confirmedOnly, perMed, approvedOnly]);
+  }, [selectedIds, confirmedOnly, perMed, approvedOnly, classFilter]);
 
   useEffect(() => {
     const element = canvasRef.current;
@@ -92,11 +97,27 @@ export default function App() {
   async function buildSections(node: GraphNode): Promise<PanelSection[]> {
     if (node.type === "medication") {
       const rxcui = stripPrefix(node.id, "medication:");
-      const [treats, effects] = await Promise.all([
+      const [pharm, treats, effects] = await Promise.all([
+        fetchMedicationPharmacology(rxcui),
         fetchConditionsForMedication(rxcui),
         fetchSideEffects(rxcui, confirmedOnly),
       ]);
+      const pharmRows: PanelSection["rows"] = [
+        { id: "class", label: "Class", value: pharm?.drug_class },
+        { id: "mechanism", label: "Mechanism", value: pharm?.mechanism },
+        {
+          id: "neurotransmitters",
+          label: "Neurotransmitters",
+          value: pharm?.neurotransmitters,
+        },
+        { id: "atc", label: "ATC codes", value: pharm?.atc_codes },
+      ]
+        .filter((row) => row.value)
+        .map((row) => ({ id: row.id, label: row.label, primary: row.value as string }));
       return [
+        ...(pharmRows.length > 0
+          ? [{ heading: "Pharmacology", rows: pharmRows }]
+          : []),
         {
           heading: "Treats",
           rows: treats.map((c) => ({
@@ -207,10 +228,13 @@ export default function App() {
             confirmedOnly={confirmedOnly}
             approvedOnly={approvedOnly}
             perMed={perMed}
+            drugClasses={drugClasses}
+            classFilter={classFilter}
             onSelectionChange={setSelectedIds}
             onConfirmedChange={setConfirmedOnly}
             onApprovedChange={setApprovedOnly}
             onPerMedChange={setPerMed}
+            onClassFilterChange={setClassFilter}
           />
           <Legend />
           {graph && hasSelection && (

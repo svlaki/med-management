@@ -375,6 +375,23 @@ body {
   color: var(--text-dim);
 }
 
+.side-panel__row--kv {
+  display: block;
+}
+
+.side-panel__key {
+  display: block;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-dim);
+}
+
+.side-panel__value {
+  display: block;
+  margin-top: 2px;
+}
+
 .side-panel__name {
   text-transform: capitalize;
 }

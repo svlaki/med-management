@@ -16,10 +16,13 @@ export function SearchBar({ entries, onPick }: Props) {
   const results = useMemo(() => {
     const q = query.trim().toLowerCase();
     if (q === "") return [];
+    const matches = (e: SearchEntry) =>
+      e.label.toLowerCase().includes(q) ||
+      (e.aliases ?? []).some((a) => a.toLowerCase().includes(q));
     return entries
-      .filter((e) => e.label.toLowerCase().includes(q))
+      .filter(matches)
       .sort((a, b) => {
-        // Prefix matches first, then shorter labels (closer matches).
+        // Label prefix matches first, then alias matches, then shorter labels.
         const ap = a.label.toLowerCase().startsWith(q) ? 0 : 1;
         const bp = b.label.toLowerCase().startsWith(q) ? 0 : 1;
         return ap - bp || a.label.length - b.label.length;

@@ -3,6 +3,8 @@ import {
   fetchConditionGraph,
   fetchConditions,
   fetchConditionsForMedication,
+  fetchDrugClasses,
+  fetchMedicationPharmacology,
   fetchMedicationsForCondition,
   fetchMedicationsForSideEffect,
   fetchSearchIndex,
@@ -22,7 +24,10 @@ const SNAPSHOT = {
         {
           rxcui: "1",
           generic_name: "sertraline",
-          drug_class: null,
+          drug_class: "Antidepressant",
+          atc_codes: "N06AB",
+          mechanism: "Serotonin Uptake Inhibitors",
+          neurotransmitters: "Serotonin(+)",
           fda_approved: true, // approved for MDD
           side_effects: [
             { side_effect_id: "nausea", name: "Nausea", source: "faers",
@@ -34,7 +39,10 @@ const SNAPSHOT = {
         {
           rxcui: "3",
           generic_name: "quetiapine",
-          drug_class: null,
+          drug_class: "Antipsychotic",
+          atc_codes: "N05AH",
+          mechanism: "Dopamine Antagonists",
+          neurotransmitters: "Dopamine(-)",
           fda_approved: false, // "may treat" MDD only (off-label)
           side_effects: [
             { side_effect_id: "nausea", name: "Nausea", source: "faers",
@@ -48,7 +56,10 @@ const SNAPSHOT = {
         {
           rxcui: "2",
           generic_name: "lamotrigine",
-          drug_class: null,
+          drug_class: "Mood stabilizer",
+          atc_codes: "N03AX",
+          mechanism: null,
+          neurotransmitters: null,
           fda_approved: true,
           side_effects: [
             { side_effect_id: "rash", name: "Rash", source: "faers",
@@ -58,7 +69,10 @@ const SNAPSHOT = {
         {
           rxcui: "3",
           generic_name: "quetiapine",
-          drug_class: null,
+          drug_class: "Antipsychotic",
+          atc_codes: "N05AH",
+          mechanism: "Dopamine Antagonists",
+          neurotransmitters: "Dopamine(-)",
           fda_approved: true, // approved for bipolar
           side_effects: [
             { side_effect_id: "nausea", name: "Nausea", source: "faers",
@@ -176,6 +190,44 @@ describe("fetchConditionGraph — multi-select", () => {
     );
     expect(quetTreats.map((e) => e.target)).toEqual(["condition:bipolar"]);
   });
+
+  it("filters medications by drug class", async () => {
+    const graph = await fetchConditionGraph(["mdd"], false, 10, false, [
+      "Antidepressant",
+    ]);
+    const medNodes = graph.nodes.filter((n) => n.type === "medication");
+    expect(medNodes.map((n) => n.id)).toEqual(["medication:1"]); // quetiapine dropped
+  });
+
+  it("treats an empty class filter as all classes", async () => {
+    const graph = await fetchConditionGraph(["mdd"], false, 10, false, []);
+    const medNodes = graph.nodes.filter((n) => n.type === "medication");
+    expect(medNodes).toHaveLength(2);
+  });
+});
+
+describe("pharmacology & drug classes", () => {
+  it("lists distinct drug classes, sorted", async () => {
+    expect(await fetchDrugClasses()).toEqual([
+      "Antidepressant",
+      "Antipsychotic",
+      "Mood stabilizer",
+    ]);
+  });
+
+  it("returns a medication's pharmacology columns", async () => {
+    const pharm = await fetchMedicationPharmacology("1");
+    expect(pharm).toEqual({
+      drug_class: "Antidepressant",
+      atc_codes: "N06AB",
+      mechanism: "Serotonin Uptake Inhibitors",
+      neurotransmitters: "Serotonin(+)",
+    });
+  });
+
+  it("returns null for an unknown medication", async () => {
+    expect(await fetchMedicationPharmacology("999")).toBeNull();
+  });
 });
 
 describe("panel lookups", () => {
@@ -232,5 +284,23 @@ describe("fetchSearchIndex", () => {
     expect(shared?.conditionIds.sort()).toEqual(["bipolar", "mdd"]);
     const rash = index.find((e) => e.nodeId === "side_effect:rash");
     expect(rash?.conditionIds).toEqual(["bipolar"]);
+  });
+
+  it("includes pharmacology aliases on medication entries", async () => {
+    const index = await fetchSearchIndex();
+    const sertraline = index.find((e) => e.nodeId === "medication:1");
+    expect(sertraline?.aliases).toContain("Antidepressant");
+    expect(sertraline?.aliases).toContain("Serotonin Uptake Inhibitors");
+    expect(sertraline?.aliases).toContain("Serotonin(+)");
+  });
+});
+
+describe("fetchConditionGraph — drug_class on nodes", () => {
+  it("populates drug_class on medication nodes", async () => {
+    const graph = await fetchConditionGraph(["mdd"], false, 10);
+    const sertraline = graph.nodes.find((n) => n.id === "medication:1");
+    expect(sertraline?.drug_class).toBe("Antidepressant");
+    const quetiapine = graph.nodes.find((n) => n.id === "medication:3");
+    expect(quetiapine?.drug_class).toBe("Antipsychotic");
   });
 });

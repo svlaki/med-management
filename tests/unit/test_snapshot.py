@@ -1,16 +1,25 @@
 import pytest
 
-from med_graph.queries.medications import MEDS_FOR_CONDITION, SIDE_EFFECT_PROFILE
+from med_graph.queries.medications import (
+    CONDITIONS_IN_GRAPH,
+    MEDS_FOR_CONDITION,
+    SIDE_EFFECT_PROFILE,
+)
 from med_graph.snapshot import RESERVED_CONDITION_IDS, build_snapshot
 
 
 class FakeExecutor:
-    """Returns med rows for the condition query and side-effect rows per rxcui."""
+    """Returns the graph's conditions, med rows per condition, and side effects."""
 
-    def __init__(self):
+    def __init__(self, conditions=None):
+        self.conditions = conditions or [
+            {"id": "mdd", "name": "Major Depressive Disorder", "icd10": "F33"},
+        ]
         self.meds = [
-            {"rxcui": "36437", "generic_name": "sertraline", "drug_class": None,
-             "side_effect_count": 2},
+            {"rxcui": "36437", "generic_name": "sertraline", "drug_class": "Antidepressant",
+             "side_effect_count": 2, "fda_approved": True, "atc_codes": "N06AB",
+             "mechanism": "Serotonin Uptake Inhibitors",
+             "neurotransmitters": "Serotonin(+)"},
         ]
         self.side_effects = [
             {"side_effect_id": "nausea", "name": "Nausea", "source": "faers",
@@ -20,6 +29,8 @@ class FakeExecutor:
         ]
 
     def execute(self, query, parameters=None):
+        if query == CONDITIONS_IN_GRAPH:
+            return self.conditions
         if query == MEDS_FOR_CONDITION:
             return self.meds
         if query == SIDE_EFFECT_PROFILE:
@@ -44,26 +55,24 @@ def test_snapshot_nests_full_side_effects_per_medication():
     assert effects[0]["label_confirmed"] is True
 
 
-def test_reserved_condition_ids_are_rejected(monkeypatch):
+def test_snapshot_carries_pharmacology_fields():
+    snapshot = build_snapshot(FakeExecutor())
+    med = snapshot["graphs"]["mdd"]["medications"][0]
+    assert med["drug_class"] == "Antidepressant"
+    assert med["mechanism"] == "Serotonin Uptake Inhibitors"
+    assert med["neurotransmitters"] == "Serotonin(+)"
+    assert med["atc_codes"] == "N06AB"
+
+
+def test_reserved_condition_ids_are_rejected():
     # A real condition id colliding with the frontend's merged-view sentinel
     # ("all") would shadow that condition; the exporter must refuse it.
-    from med_graph.models import Condition
-    from med_graph.sources import conditions as conditions_module
-    from med_graph.sources.conditions import ConditionSpec
-
     reserved = next(iter(RESERVED_CONDITION_IDS))
-    bad_registry = {
-        reserved: ConditionSpec(
-            condition=Condition(id=reserved, name="Bad", icd10=None),
-            rxclass_ids=("D0",),
-        )
-    }
-    monkeypatch.setattr(conditions_module, "CONDITION_REGISTRY", bad_registry)
-    monkeypatch.setattr(
-        "med_graph.snapshot.CONDITION_REGISTRY", bad_registry, raising=False
+    executor = FakeExecutor(
+        conditions=[{"id": reserved, "name": "Bad", "icd10": None}]
     )
     with pytest.raises(ValueError, match=reserved):
-        build_snapshot(FakeExecutor())
+        build_snapshot(executor)
 
 
 def test_snapshot_requests_all_side_effects_not_a_small_limit():

@@ -7,10 +7,13 @@ interface Props {
   confirmedOnly: boolean;
   approvedOnly: boolean;
   perMed: number;
+  drugClasses: string[];
+  classFilter: string[];
   onSelectionChange: (ids: string[]) => void;
   onConfirmedChange: (value: boolean) => void;
   onApprovedChange: (value: boolean) => void;
   onPerMedChange: (value: number) => void;
+  onClassFilterChange: (classes: string[]) => void;
 }
 
 export function Controls({
@@ -19,10 +22,13 @@ export function Controls({
   confirmedOnly,
   approvedOnly,
   perMed,
+  drugClasses,
+  classFilter,
   onSelectionChange,
   onConfirmedChange,
   onApprovedChange,
   onPerMedChange,
+  onClassFilterChange,
 }: Props) {
   const allSelected =
     conditions.length > 0 && selectedIds.length === conditions.length;
@@ -40,6 +46,14 @@ export function Controls({
       selectedIds.includes(id)
         ? selectedIds.filter((s) => s !== id)
         : [...selectedIds, id],
+    );
+  }
+
+  function toggleClass(name: string) {
+    onClassFilterChange(
+      classFilter.includes(name)
+        ? classFilter.filter((c) => c !== name)
+        : [...classFilter, name],
     );
   }
 
@@ -69,6 +83,30 @@ export function Controls({
           </label>
         ))}
       </fieldset>
+
+      {drugClasses.length > 0 && (
+        <fieldset className="control control--group">
+          <legend>Drug class</legend>
+          <label className="control control--row">
+            <input
+              type="checkbox"
+              checked={classFilter.length === 0}
+              onChange={() => onClassFilterChange([])}
+            />
+            <span>All classes</span>
+          </label>
+          {drugClasses.map((name) => (
+            <label className="control control--row" key={name}>
+              <input
+                type="checkbox"
+                checked={classFilter.includes(name)}
+                onChange={() => toggleClass(name)}
+              />
+              <span>{name}</span>
+            </label>
+          ))}
+        </fieldset>
+      )}
 
       <label className="control control--row">
         <input

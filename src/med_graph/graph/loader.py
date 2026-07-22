@@ -24,7 +24,9 @@ SET c.name = $name, c.icd10 = $icd10
 MERGE_MEDICATIONS = """
 UNWIND $rows AS row
 MERGE (m:Medication {rxcui: row.rxcui})
-SET m.name = row.name, m.generic_name = row.generic_name, m.drug_class = row.drug_class
+SET m.name = row.name, m.generic_name = row.generic_name, m.drug_class = row.drug_class,
+    m.atc_codes = row.atc_codes, m.mechanism = row.mechanism,
+    m.neurotransmitters = row.neurotransmitters
 """
 
 MERGE_SIDE_EFFECTS = """

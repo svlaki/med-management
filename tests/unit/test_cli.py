@@ -28,11 +28,17 @@ class FakeClient:
 
     def __init__(self, rows):
         self.rows = rows
+        self.row_sequence: list[list[dict]] = []
+        self._call_index = 0
         self.queries = []
         self.schema_applied = False
 
     def execute(self, query, parameters=None):
         self.queries.append(query)
+        if self.row_sequence:
+            idx = min(self._call_index, len(self.row_sequence) - 1)
+            self._call_index += 1
+            return self.row_sequence[idx]
         return self.rows
 
     def apply_schema(self):
@@ -148,31 +154,49 @@ def test_ingest_rejects_unknown_condition(fake_client, monkeypatch, capsys):
     assert "Unknown condition" in capsys.readouterr().err
 
 
+_DETAIL_ROW = {
+    "rxcui": "36437",
+    "generic_name": "Sertraline",
+    "drug_class": "Antidepressant",
+    "atc_codes": "N06AB06",
+    "mechanism": "Serotonin Reuptake Inhibitors",
+    "neurotransmitters": "Serotonin(+)",
+}
+
+
 def test_profile_by_rxcui_prints_side_effects(fake_client, monkeypatch, capsys):
-    fake_client.rows = [
-        {
-            "side_effect_id": "nausea",
-            "name": "Nausea",
-            "source": "faers",
-            "report_count": 13644,
-        }
+    fake_client.row_sequence = [
+        [_DETAIL_ROW],
+        [
+            {
+                "side_effect_id": "nausea",
+                "name": "Nausea",
+                "source": "faers",
+                "report_count": 13644,
+            }
+        ],
     ]
     monkeypatch.setattr("sys.argv", ["med-graph", "profile", "--rxcui", "36437"])
     assert cli.main() == 0
     output = capsys.readouterr().out
+    assert "Sertraline" in output
+    assert "Antidepressant" in output
     assert "Nausea" in output
     assert "13,644" in output
 
 
 def test_profile_shows_ascii_label_confirmation_marker(fake_client, monkeypatch, capsys):
-    fake_client.rows = [
-        {
-            "side_effect_id": "nausea",
-            "name": "Nausea",
-            "source": "faers",
-            "report_count": 100,
-            "label_confirmed": True,
-        }
+    fake_client.row_sequence = [
+        [_DETAIL_ROW],
+        [
+            {
+                "side_effect_id": "nausea",
+                "name": "Nausea",
+                "source": "faers",
+                "report_count": 100,
+                "label_confirmed": True,
+            }
+        ],
     ]
     monkeypatch.setattr("sys.argv", ["med-graph", "profile", "--rxcui", "36437"])
     assert cli.main() == 0
