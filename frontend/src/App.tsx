@@ -213,7 +213,7 @@ export default function App() {
         <div className="app__titles">
           <h1>med-graph</h1>
           <p className="app__disclaimer">
-            Research prototype · data from openFDA &amp; RxClass · not medical advice
+            Research prototype
             or for clinical use
           </p>
         </div>
