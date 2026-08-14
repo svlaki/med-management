@@ -1,0 +1,1524 @@
+class_id,class_name,depth,rxcui,generic_name,tty,rela
+D000379,Agoraphobia,3,596,alprazolam,IN,may_treat
+D000430,Alcohol Withdrawal Delirium,3,4850,glucose,IN,ci_with
+D000430,Alcohol Withdrawal Delirium,3,2356,chlordiazepoxide,IN,may_treat
+D000430,Alcohol Withdrawal Delirium,3,2353,clorazepate,IN,may_treat
+D000430,Alcohol Withdrawal Delirium,3,3322,diazepam,IN,may_treat
+D000430,Alcohol Withdrawal Delirium,3,7486,nitrous oxide,IN,may_treat
+D000430,Alcohol Withdrawal Delirium,3,7781,oxazepam,IN,may_treat
+D000430,Alcohol Withdrawal Delirium,3,8627,prazepam,IN,may_treat
+D019973,Alcohol-Related Disorders,2,17941,anisindione,IN,ci_with
+D019973,Alcohol-Related Disorders,2,1359,belladonna alkaloids,IN,ci_with
+D019973,Alcohol-Related Disorders,2,89781,"belladonna extract, USP",IN,ci_with
+D019973,Alcohol-Related Disorders,2,314517,belladonna leaf extract,IN,ci_with
+D019973,Alcohol-Related Disorders,2,3007,cycloserine,IN,ci_with
+D019973,Alcohol-Related Disorders,2,1598,dicumarol,IN,ci_with
+D019973,Alcohol-Related Disorders,2,1653781,eluxadoline,IN,ci_with
+D019973,Alcohol-Related Disorders,2,4850,glucose,IN,ci_with
+D019973,Alcohol-Related Disorders,2,6851,methotrexate,IN,ci_with
+D019973,Alcohol-Related Disorders,2,8150,phenprocoumon,IN,ci_with
+D019973,Alcohol-Related Disorders,2,8702,procarbazine,IN,ci_with
+D019973,Alcohol-Related Disorders,2,8704,prochlorperazine,IN,ci_with
+D019973,Alcohol-Related Disorders,2,11289,warfarin,IN,ci_with
+D019973,Alcohol-Related Disorders,2,82819,acamprosate,IN,may_treat
+D019973,Alcohol-Related Disorders,2,2356,chlordiazepoxide,IN,may_treat
+D019973,Alcohol-Related Disorders,2,2556,citalopram,IN,may_treat
+D019973,Alcohol-Related Disorders,2,2599,clonidine,IN,may_treat
+D019973,Alcohol-Related Disorders,2,2353,clorazepate,IN,may_treat
+D019973,Alcohol-Related Disorders,2,3322,diazepam,IN,may_treat
+D019973,Alcohol-Related Disorders,2,3554,disulfiram,IN,may_treat
+D019973,Alcohol-Related Disorders,2,5514,hydroxocobalamin,IN,may_treat
+D019973,Alcohol-Related Disorders,2,700810,lisdexamfetamine,IN,may_treat
+D019973,Alcohol-Related Disorders,2,29421,mecobalamin,IN,may_treat
+D019973,Alcohol-Related Disorders,2,6779,mesoridazine,IN,may_treat
+D019973,Alcohol-Related Disorders,2,7243,naltrexone,IN,may_treat
+D019973,Alcohol-Related Disorders,2,7486,nitrous oxide,IN,may_treat
+D019973,Alcohol-Related Disorders,2,26225,ondansetron,IN,may_treat
+D019973,Alcohol-Related Disorders,2,7781,oxazepam,IN,may_treat
+D019973,Alcohol-Related Disorders,2,8627,prazepam,IN,may_treat
+D019973,Alcohol-Related Disorders,2,10454,thiamine,IN,may_treat
+D019973,Alcohol-Related Disorders,2,11248,vitamin B12,IN,may_treat
+D000435,Alcoholic Intoxication,3,8702,procarbazine,IN,ci_with
+D000437,Alcoholism,3,17941,anisindione,IN,ci_with
+D000437,Alcoholism,3,1359,belladonna alkaloids,IN,ci_with
+D000437,Alcoholism,3,89781,"belladonna extract, USP",IN,ci_with
+D000437,Alcoholism,3,314517,belladonna leaf extract,IN,ci_with
+D000437,Alcoholism,3,3007,cycloserine,IN,ci_with
+D000437,Alcoholism,3,1598,dicumarol,IN,ci_with
+D000437,Alcoholism,3,1653781,eluxadoline,IN,ci_with
+D000437,Alcoholism,3,8150,phenprocoumon,IN,ci_with
+D000437,Alcoholism,3,8704,prochlorperazine,IN,ci_with
+D000437,Alcoholism,3,11289,warfarin,IN,ci_with
+D000437,Alcoholism,3,82819,acamprosate,IN,may_treat
+D000437,Alcoholism,3,2556,citalopram,IN,may_treat
+D000437,Alcoholism,3,3554,disulfiram,IN,may_treat
+D000437,Alcoholism,3,6779,mesoridazine,IN,may_treat
+D000437,Alcoholism,3,7243,naltrexone,IN,may_treat
+D000437,Alcoholism,3,26225,ondansetron,IN,may_treat
+D000544,Alzheimer Disease,3,2557217,aducanumab,IN,may_treat
+D000544,Alzheimer Disease,3,2687966,donanemab,IN,may_treat
+D000544,Alzheimer Disease,3,135447,donepezil,IN,may_treat
+D000544,Alzheimer Disease,3,4637,galantamine,IN,may_treat
+D000544,Alzheimer Disease,3,2267703,huperzine A,IN,may_treat
+D000544,Alzheimer Disease,3,2626143,lecanemab,IN,may_treat
+D000544,Alzheimer Disease,3,6719,memantine,IN,may_treat
+D000544,Alzheimer Disease,3,183379,rivastigmine,IN,may_treat
+D000544,Alzheimer Disease,3,9639,selegiline,IN,may_treat
+D000544,Alzheimer Disease,3,10318,tacrine,IN,may_treat
+D000544,Alzheimer Disease,3,314875,"tocopheryl acid succinate,D-alpha",IN,may_treat
+D000544,Alzheimer Disease,3,1314420,tricaprylin,IN,may_treat
+D000544,Alzheimer Disease,3,11256,vitamin E,IN,may_treat
+D000856,Anorexia Nervosa,2,36514,sibutramine,IN,ci_with
+D001008,Anxiety Disorders,1,352372,dexmethylphenidate,IN,ci_with
+D001008,Anxiety Disorders,1,6694,mefloquine,IN,ci_with
+D001008,Anxiety Disorders,1,6901,methylphenidate,IN,ci_with
+D001008,Anxiety Disorders,1,91235,Digitalis preparation,IN,may_treat
+D001008,Anxiety Disorders,1,596,alprazolam,IN,may_treat
+D001008,Anxiety Disorders,1,719,amobarbital,IN,may_treat
+D001008,Anxiety Disorders,1,1373,benperidol,IN,may_treat
+D001008,Anxiety Disorders,1,1749,bromazepam,IN,may_treat
+D001008,Anxiety Disorders,1,19759,bromodiphenhydramine,IN,may_treat
+D001008,Anxiety Disorders,1,1827,buspirone,IN,may_treat
+D001008,Anxiety Disorders,1,2356,chlordiazepoxide,IN,may_treat
+D001008,Anxiety Disorders,1,2373,chlormezanone,IN,may_treat
+D001008,Anxiety Disorders,1,2403,chlorpromazine,IN,may_treat
+D001008,Anxiety Disorders,1,2556,citalopram,IN,may_treat
+D001008,Anxiety Disorders,1,2597,clomipramine,IN,may_treat
+D001008,Anxiety Disorders,1,2598,clonazepam,IN,may_treat
+D001008,Anxiety Disorders,1,2603,clopamide,IN,may_treat
+D001008,Anxiety Disorders,1,2353,clorazepate,IN,may_treat
+D001008,Anxiety Disorders,1,2622,clotiazepam,IN,may_treat
+D001008,Anxiety Disorders,1,3322,diazepam,IN,may_treat
+D001008,Anxiety Disorders,1,3403,digitoxin,IN,may_treat
+D001008,Anxiety Disorders,1,3407,digoxin,IN,may_treat
+D001008,Anxiety Disorders,1,3498,diphenhydramine,IN,may_treat
+D001008,Anxiety Disorders,1,3638,doxepin,IN,may_treat
+D001008,Anxiety Disorders,1,72625,duloxetine,IN,may_treat
+D001008,Anxiety Disorders,1,4493,fluoxetine,IN,may_treat
+D001008,Anxiety Disorders,1,42355,fluvoxamine,IN,may_treat
+D001008,Anxiety Disorders,1,25480,gabapentin,IN,may_treat
+D001008,Anxiety Disorders,1,26412,halazepam,IN,may_treat
+D001008,Anxiety Disorders,1,5553,hydroxyzine,IN,may_treat
+D001008,Anxiety Disorders,1,5691,imipramine,IN,may_treat
+D001008,Anxiety Disorders,1,285228,kava preparation,IN,may_treat
+D001008,Anxiety Disorders,1,6470,lorazepam,IN,may_treat
+D001008,Anxiety Disorders,1,6646,maprotiline,IN,may_treat
+D001008,Anxiety Disorders,1,6680,medazepam,IN,may_treat
+D001008,Anxiety Disorders,1,6760,meprobamate,IN,may_treat
+D001008,Anxiety Disorders,1,6852,methotrimeprazine,IN,may_treat
+D001008,Anxiety Disorders,1,6960,midazolam,IN,may_treat
+D001008,Anxiety Disorders,1,3155,nordazepam,IN,may_treat
+D001008,Anxiety Disorders,1,7531,nortriptyline,IN,may_treat
+D001008,Anxiety Disorders,1,7781,oxazepam,IN,may_treat
+D001008,Anxiety Disorders,1,32937,paroxetine,IN,may_treat
+D001008,Anxiety Disorders,1,8627,prazepam,IN,may_treat
+D001008,Anxiety Disorders,1,8704,prochlorperazine,IN,may_treat
+D001008,Anxiety Disorders,1,8770,propiomazine,IN,may_treat
+D001008,Anxiety Disorders,1,8787,propranolol,IN,may_treat
+D001008,Anxiety Disorders,1,60842,reboxetine,IN,may_treat
+D001008,Anxiety Disorders,1,36437,sertraline,IN,may_treat
+D001008,Anxiety Disorders,1,10355,temazepam,IN,may_treat
+D001008,Anxiety Disorders,1,37985,tetrazepam,IN,may_treat
+D001008,Anxiety Disorders,1,10437,theobromine,IN,may_treat
+D001008,Anxiety Disorders,1,10464,thiamylal,IN,may_treat
+D001008,Anxiety Disorders,1,38365,tofisopam,IN,may_treat
+D001008,Anxiety Disorders,1,10800,trifluoperazine,IN,may_treat
+D001008,Anxiety Disorders,1,39786,venlafaxine,IN,may_treat
+D001289,Attention Deficit Disorder with Hyperactivity,3,1422,benzphetamine,IN,ci_with
+D001289,Attention Deficit Disorder with Hyperactivity,3,725,amphetamine,IN,may_treat
+D001289,Attention Deficit Disorder with Hyperactivity,3,38400,atomoxetine,IN,may_treat
+D001289,Attention Deficit Disorder with Hyperactivity,3,42347,bupropion,IN,may_treat
+D001289,Attention Deficit Disorder with Hyperactivity,3,2599,clonidine,IN,may_treat
+D001289,Attention Deficit Disorder with Hyperactivity,3,3247,desipramine,IN,may_treat
+D001289,Attention Deficit Disorder with Hyperactivity,3,352372,dexmethylphenidate,IN,may_treat
+D001289,Attention Deficit Disorder with Hyperactivity,3,3288,dextroamphetamine,IN,may_treat
+D001289,Attention Deficit Disorder with Hyperactivity,3,40114,guanfacine,IN,may_treat
+D001289,Attention Deficit Disorder with Hyperactivity,3,5691,imipramine,IN,may_treat
+D001289,Attention Deficit Disorder with Hyperactivity,3,700810,lisdexamfetamine,IN,may_treat
+D001289,Attention Deficit Disorder with Hyperactivity,3,6816,methamphetamine,IN,may_treat
+D001289,Attention Deficit Disorder with Hyperactivity,3,6901,methylphenidate,IN,may_treat
+D001289,Attention Deficit Disorder with Hyperactivity,3,30125,modafinil,IN,may_treat
+D001289,Attention Deficit Disorder with Hyperactivity,3,7531,nortriptyline,IN,may_treat
+D001289,Attention Deficit Disorder with Hyperactivity,3,7966,pemoline,IN,may_treat
+D001289,Attention Deficit Disorder with Hyperactivity,3,60842,reboxetine,IN,may_treat
+D001289,Attention Deficit Disorder with Hyperactivity,3,9639,selegiline,IN,may_treat
+D001289,Attention Deficit Disorder with Hyperactivity,3,2562176,serdexmethylphenidate,IN,may_treat
+D001289,Attention Deficit Disorder with Hyperactivity,3,39786,venlafaxine,IN,may_treat
+D019958,Attention Deficit and Disruptive Behavior Disorders,2,1422,benzphetamine,IN,ci_with
+D019958,Attention Deficit and Disruptive Behavior Disorders,2,725,amphetamine,IN,may_treat
+D019958,Attention Deficit and Disruptive Behavior Disorders,2,38400,atomoxetine,IN,may_treat
+D019958,Attention Deficit and Disruptive Behavior Disorders,2,42347,bupropion,IN,may_treat
+D019958,Attention Deficit and Disruptive Behavior Disorders,2,2403,chlorpromazine,IN,may_treat
+D019958,Attention Deficit and Disruptive Behavior Disorders,2,2599,clonidine,IN,may_treat
+D019958,Attention Deficit and Disruptive Behavior Disorders,2,3247,desipramine,IN,may_treat
+D019958,Attention Deficit and Disruptive Behavior Disorders,2,352372,dexmethylphenidate,IN,may_treat
+D019958,Attention Deficit and Disruptive Behavior Disorders,2,3288,dextroamphetamine,IN,may_treat
+D019958,Attention Deficit and Disruptive Behavior Disorders,2,40114,guanfacine,IN,may_treat
+D019958,Attention Deficit and Disruptive Behavior Disorders,2,5691,imipramine,IN,may_treat
+D019958,Attention Deficit and Disruptive Behavior Disorders,2,700810,lisdexamfetamine,IN,may_treat
+D019958,Attention Deficit and Disruptive Behavior Disorders,2,6448,lithium,IN,may_treat
+D019958,Attention Deficit and Disruptive Behavior Disorders,2,746070,lithium aspartate,IN,may_treat
+D019958,Attention Deficit and Disruptive Behavior Disorders,2,42351,lithium carbonate,IN,may_treat
+D019958,Attention Deficit and Disruptive Behavior Disorders,2,52105,lithium citrate,IN,may_treat
+D019958,Attention Deficit and Disruptive Behavior Disorders,2,6816,methamphetamine,IN,may_treat
+D019958,Attention Deficit and Disruptive Behavior Disorders,2,6901,methylphenidate,IN,may_treat
+D019958,Attention Deficit and Disruptive Behavior Disorders,2,30125,modafinil,IN,may_treat
+D019958,Attention Deficit and Disruptive Behavior Disorders,2,7531,nortriptyline,IN,may_treat
+D019958,Attention Deficit and Disruptive Behavior Disorders,2,7966,pemoline,IN,may_treat
+D019958,Attention Deficit and Disruptive Behavior Disorders,2,60842,reboxetine,IN,may_treat
+D019958,Attention Deficit and Disruptive Behavior Disorders,2,9639,selegiline,IN,may_treat
+D019958,Attention Deficit and Disruptive Behavior Disorders,2,2562176,serdexmethylphenidate,IN,may_treat
+D019958,Attention Deficit and Disruptive Behavior Disorders,2,39786,venlafaxine,IN,may_treat
+D000067877,Autism Spectrum Disorder,3,4328,fenfluramine,IN,may_treat
+D000067877,Autism Spectrum Disorder,3,51272,quetiapine,IN,may_treat
+D000067877,Autism Spectrum Disorder,3,35636,risperidone,IN,may_treat
+D000067877,Autism Spectrum Disorder,3,39786,venlafaxine,IN,may_treat
+D001321,Autistic Disorder,4,4328,fenfluramine,IN,may_treat
+D001321,Autistic Disorder,4,51272,quetiapine,IN,may_treat
+D001321,Autistic Disorder,4,35636,risperidone,IN,may_treat
+D001321,Autistic Disorder,4,39786,venlafaxine,IN,may_treat
+D063425,Binge Drinking,3,700810,lisdexamfetamine,IN,may_treat
+D001714,Bipolar Disorder,3,784649,asenapine,IN,may_treat
+D001714,Bipolar Disorder,3,2002,carbamazepine,IN,may_treat
+D001714,Bipolar Disorder,3,1667655,cariprazine,IN,may_treat
+D001714,Bipolar Disorder,3,2598,clonazepam,IN,may_treat
+D001714,Bipolar Disorder,3,2626,clozapine,IN,may_treat
+D001714,Bipolar Disorder,3,25480,gabapentin,IN,may_treat
+D001714,Bipolar Disorder,3,28439,lamotrigine,IN,may_treat
+D001714,Bipolar Disorder,3,6448,lithium,IN,may_treat
+D001714,Bipolar Disorder,3,746070,lithium aspartate,IN,may_treat
+D001714,Bipolar Disorder,3,42351,lithium carbonate,IN,may_treat
+D001714,Bipolar Disorder,3,52105,lithium citrate,IN,may_treat
+D001714,Bipolar Disorder,3,1040028,lurasidone,IN,may_treat
+D001714,Bipolar Disorder,3,6646,maprotiline,IN,may_treat
+D001714,Bipolar Disorder,3,6852,methotrimeprazine,IN,may_treat
+D001714,Bipolar Disorder,3,61381,olanzapine,IN,may_treat
+D001714,Bipolar Disorder,3,679314,paliperidone,IN,may_treat
+D001714,Bipolar Disorder,3,51272,quetiapine,IN,may_treat
+D001714,Bipolar Disorder,3,35636,risperidone,IN,may_treat
+D001714,Bipolar Disorder,3,2559612,samidorphan,IN,may_treat
+D001714,Bipolar Disorder,3,31914,tiagabine,IN,may_treat
+D001714,Bipolar Disorder,3,38404,topiramate,IN,may_treat
+D000068105,Bipolar and Related Disorders,2,784649,asenapine,IN,may_treat
+D000068105,Bipolar and Related Disorders,2,2002,carbamazepine,IN,may_treat
+D000068105,Bipolar and Related Disorders,2,1667655,cariprazine,IN,may_treat
+D000068105,Bipolar and Related Disorders,2,2598,clonazepam,IN,may_treat
+D000068105,Bipolar and Related Disorders,2,2626,clozapine,IN,may_treat
+D000068105,Bipolar and Related Disorders,2,25480,gabapentin,IN,may_treat
+D000068105,Bipolar and Related Disorders,2,28439,lamotrigine,IN,may_treat
+D000068105,Bipolar and Related Disorders,2,6448,lithium,IN,may_treat
+D000068105,Bipolar and Related Disorders,2,746070,lithium aspartate,IN,may_treat
+D000068105,Bipolar and Related Disorders,2,42351,lithium carbonate,IN,may_treat
+D000068105,Bipolar and Related Disorders,2,52105,lithium citrate,IN,may_treat
+D000068105,Bipolar and Related Disorders,2,1040028,lurasidone,IN,may_treat
+D000068105,Bipolar and Related Disorders,2,6646,maprotiline,IN,may_treat
+D000068105,Bipolar and Related Disorders,2,6852,methotrimeprazine,IN,may_treat
+D000068105,Bipolar and Related Disorders,2,61381,olanzapine,IN,may_treat
+D000068105,Bipolar and Related Disorders,2,679314,paliperidone,IN,may_treat
+D000068105,Bipolar and Related Disorders,2,51272,quetiapine,IN,may_treat
+D000068105,Bipolar and Related Disorders,2,35636,risperidone,IN,may_treat
+D000068105,Bipolar and Related Disorders,2,2559612,samidorphan,IN,may_treat
+D000068105,Bipolar and Related Disorders,2,31914,tiagabine,IN,may_treat
+D000068105,Bipolar and Related Disorders,2,38404,topiramate,IN,may_treat
+D052018,Bulimia Nervosa,2,36514,sibutramine,IN,ci_with
+D002385,Cataplexy,6,2387302,oxybate,IN,may_treat
+D002653,Child Behavior Disorders,2,2403,chlorpromazine,IN,may_treat
+D002653,Child Behavior Disorders,2,5093,haloperidol,IN,may_treat
+D002659,"Child Development Disorders, Pervasive",2,4328,fenfluramine,IN,may_treat
+D002659,"Child Development Disorders, Pervasive",2,51272,quetiapine,IN,may_treat
+D002659,"Child Development Disorders, Pervasive",2,35636,risperidone,IN,may_treat
+D002659,"Child Development Disorders, Pervasive",2,39786,venlafaxine,IN,may_treat
+D019970,Cocaine-Related Disorders,2,6646,maprotiline,IN,may_treat
+D003072,Cognition Disorders,2,1292,baclofen,IN,may_treat
+D003072,Cognition Disorders,2,4024,"ergoloid mesylates, USP",IN,may_treat
+D003072,Cognition Disorders,2,8076,perphenazine,IN,may_treat
+D003072,Cognition Disorders,2,8331,pimozide,IN,may_treat
+D003072,Cognition Disorders,2,10390,tetrabenazine,IN,may_treat
+D003072,Cognition Disorders,2,21406,ubidecarenone,IN,may_treat
+D060825,Cognitive Dysfunction,3,4024,"ergoloid mesylates, USP",IN,may_treat
+D003147,Communication Disorders,2,2598,clonazepam,IN,may_treat
+D019955,Conduct Disorder,3,6448,lithium,IN,may_treat
+D019955,Conduct Disorder,3,746070,lithium aspartate,IN,may_treat
+D019955,Conduct Disorder,3,42351,lithium carbonate,IN,may_treat
+D019955,Conduct Disorder,3,52105,lithium citrate,IN,may_treat
+D003244,Consciousness Disorders,2,16735,acetophenazine,IN,ci_with
+D003244,Consciousness Disorders,2,70223,aldesleukin,IN,ci_with
+D003244,Consciousness Disorders,2,703,amiodarone,IN,ci_with
+D003244,Consciousness Disorders,2,2403,chlorpromazine,IN,ci_with
+D003244,Consciousness Disorders,2,2406,chlorprothixene,IN,ci_with
+D003244,Consciousness Disorders,2,2626,clozapine,IN,ci_with
+D003244,Consciousness Disorders,2,4496,fluphenazine,IN,ci_with
+D003244,Consciousness Disorders,2,4603,furosemide,IN,ci_with
+D003244,Consciousness Disorders,2,50749,halofantrine,IN,ci_with
+D003244,Consciousness Disorders,2,5093,haloperidol,IN,ci_with
+D003244,Consciousness Disorders,2,5975,ipecac,IN,ci_with
+D003244,Consciousness Disorders,2,6475,loxapine,IN,ci_with
+D003244,Consciousness Disorders,2,6779,mesoridazine,IN,ci_with
+D003244,Consciousness Disorders,2,29648,methdilazine,IN,ci_with
+D003244,Consciousness Disorders,2,6852,methotrimeprazine,IN,ci_with
+D003244,Consciousness Disorders,2,6916,metolazone,IN,ci_with
+D003244,Consciousness Disorders,2,7019,molindone,IN,ci_with
+D003244,Consciousness Disorders,2,8076,perphenazine,IN,ci_with
+D003244,Consciousness Disorders,2,8331,pimozide,IN,ci_with
+D003244,Consciousness Disorders,2,8704,prochlorperazine,IN,ci_with
+D003244,Consciousness Disorders,2,8742,promazine,IN,ci_with
+D003244,Consciousness Disorders,2,8745,promethazine,IN,ci_with
+D003244,Consciousness Disorders,2,51272,quetiapine,IN,ci_with
+D003244,Consciousness Disorders,2,10502,thioridazine,IN,ci_with
+D003244,Consciousness Disorders,2,10510,thiothixene,IN,ci_with
+D003244,Consciousness Disorders,2,10800,trifluoperazine,IN,ci_with
+D003244,Consciousness Disorders,2,10825,trimeprazine,IN,ci_with
+D003244,Consciousness Disorders,2,162,acetanilide,IN,may_treat
+D003693,Delirium,2,7909,paraldehyde,IN,may_treat
+D003693,Delirium,2,8782,propofol,IN,may_treat
+D003704,Dementia,2,2557217,aducanumab,IN,may_treat
+D003704,Dementia,2,1292,baclofen,IN,may_treat
+D003704,Dementia,2,1373,benperidol,IN,may_treat
+D003704,Dementia,2,2690627,benzgalantamine,IN,may_treat
+D003704,Dementia,2,2556,citalopram,IN,may_treat
+D003704,Dementia,2,2687966,donanemab,IN,may_treat
+D003704,Dementia,2,135447,donepezil,IN,may_treat
+D003704,Dementia,2,4637,galantamine,IN,may_treat
+D003704,Dementia,2,2267703,huperzine A,IN,may_treat
+D003704,Dementia,2,2626143,lecanemab,IN,may_treat
+D003704,Dementia,2,6719,memantine,IN,may_treat
+D003704,Dementia,2,8076,perphenazine,IN,may_treat
+D003704,Dementia,2,8331,pimozide,IN,may_treat
+D003704,Dementia,2,8704,prochlorperazine,IN,may_treat
+D003704,Dementia,2,35636,risperidone,IN,may_treat
+D003704,Dementia,2,183379,rivastigmine,IN,may_treat
+D003704,Dementia,2,9639,selegiline,IN,may_treat
+D003704,Dementia,2,10318,tacrine,IN,may_treat
+D003704,Dementia,2,10390,tetrabenazine,IN,may_treat
+D003704,Dementia,2,314875,"tocopheryl acid succinate,D-alpha",IN,may_treat
+D003704,Dementia,2,1314420,tricaprylin,IN,may_treat
+D003704,Dementia,2,21406,ubidecarenone,IN,may_treat
+D003704,Dementia,2,11256,vitamin E,IN,may_treat
+D019052,"Depression, Postpartum",3,2121777,brexanolone,IN,may_treat
+D019052,"Depression, Postpartum",3,2669905,zuranolone,IN,may_treat
+D003866,Depressive Disorder,2,62174,deserpidine,IN,ci_with
+D003866,Depressive Disorder,2,9260,reserpine,IN,ci_with
+D003866,Depressive Disorder,2,596,alprazolam,IN,may_treat
+D003866,Depressive Disorder,2,704,amitriptyline,IN,may_treat
+D003866,Depressive Disorder,2,722,amoxapine,IN,may_treat
+D003866,Depressive Disorder,2,2121777,brexanolone,IN,may_treat
+D003866,Depressive Disorder,2,1658314,brexpiprazole,IN,may_treat
+D003866,Depressive Disorder,2,42347,bupropion,IN,may_treat
+D003866,Depressive Disorder,2,1827,buspirone,IN,may_treat
+D003866,Depressive Disorder,2,2556,citalopram,IN,may_treat
+D003866,Depressive Disorder,2,2597,clomipramine,IN,may_treat
+D003866,Depressive Disorder,2,3247,desipramine,IN,may_treat
+D003866,Depressive Disorder,2,734064,desvenlafaxine,IN,may_treat
+D003866,Depressive Disorder,2,3332,dibenzepin,IN,may_treat
+D003866,Depressive Disorder,2,3634,dothiepin,IN,may_treat
+D003866,Depressive Disorder,2,3638,doxepin,IN,may_treat
+D003866,Depressive Disorder,2,72625,duloxetine,IN,may_treat
+D003866,Depressive Disorder,2,321988,escitalopram,IN,may_treat
+D003866,Depressive Disorder,2,2119365,esketamine,IN,may_treat
+D003866,Depressive Disorder,2,4493,fluoxetine,IN,may_treat
+D003866,Depressive Disorder,2,42355,fluvoxamine,IN,may_treat
+D003866,Depressive Disorder,2,2672253,gepirone,IN,may_treat
+D003866,Depressive Disorder,2,5691,imipramine,IN,may_treat
+D003866,Depressive Disorder,2,6011,isocarboxazid,IN,may_treat
+D003866,Depressive Disorder,2,6026,isoflurane,IN,may_treat
+D003866,Depressive Disorder,2,285228,kava preparation,IN,may_treat
+D003866,Depressive Disorder,2,1433212,levomilnacipran,IN,may_treat
+D003866,Depressive Disorder,2,6448,lithium,IN,may_treat
+D003866,Depressive Disorder,2,746070,lithium aspartate,IN,may_treat
+D003866,Depressive Disorder,2,42351,lithium carbonate,IN,may_treat
+D003866,Depressive Disorder,2,52105,lithium citrate,IN,may_treat
+D003866,Depressive Disorder,2,6470,lorazepam,IN,may_treat
+D003866,Depressive Disorder,2,1040028,lurasidone,IN,may_treat
+D003866,Depressive Disorder,2,6646,maprotiline,IN,may_treat
+D003866,Depressive Disorder,2,6711,melatonin,IN,may_treat
+D003866,Depressive Disorder,2,6901,methylphenidate,IN,may_treat
+D003866,Depressive Disorder,2,588250,milnacipran,IN,may_treat
+D003866,Depressive Disorder,2,15996,mirtazapine,IN,may_treat
+D003866,Depressive Disorder,2,31565,nefazodone,IN,may_treat
+D003866,Depressive Disorder,2,7531,nortriptyline,IN,may_treat
+D003866,Depressive Disorder,2,679314,paliperidone,IN,may_treat
+D003866,Depressive Disorder,2,32937,paroxetine,IN,may_treat
+D003866,Depressive Disorder,2,8123,phenelzine,IN,may_treat
+D003866,Depressive Disorder,2,8156,phenylalanine,IN,may_treat
+D003866,Depressive Disorder,2,746741,pramipexole,IN,may_treat
+D003866,Depressive Disorder,2,8886,protriptyline,IN,may_treat
+D003866,Depressive Disorder,2,51272,quetiapine,IN,may_treat
+D003866,Depressive Disorder,2,9639,selegiline,IN,may_treat
+D003866,Depressive Disorder,2,36437,sertraline,IN,may_treat
+D003866,Depressive Disorder,2,10355,temazepam,IN,may_treat
+D003866,Depressive Disorder,2,10734,tranylcypromine,IN,may_treat
+D003866,Depressive Disorder,2,10737,trazodone,IN,may_treat
+D003866,Depressive Disorder,2,10834,trimipramine,IN,may_treat
+D003866,Depressive Disorder,2,39786,venlafaxine,IN,may_treat
+D003866,Depressive Disorder,2,1086769,vilazodone,IN,may_treat
+D003866,Depressive Disorder,2,1455099,vortioxetine,IN,may_treat
+D003866,Depressive Disorder,2,2669905,zuranolone,IN,may_treat
+D061218,"Depressive Disorder, Treatment-Resistant",3,2119365,esketamine,IN,may_treat
+D002658,Developmental Disabilities,2,2387302,oxybate,IN,ci_with
+D006970,Disorders of Excessive Somnolence,4,2591497,daridorexant,IN,ci_with
+D006970,Disorders of Excessive Somnolence,4,1547099,suvorexant,IN,ci_with
+D006970,Disorders of Excessive Somnolence,4,725,amphetamine,IN,may_treat
+D006970,Disorders of Excessive Somnolence,4,3288,dextroamphetamine,IN,may_treat
+D006970,Disorders of Excessive Somnolence,4,6816,methamphetamine,IN,may_treat
+D006970,Disorders of Excessive Somnolence,4,6901,methylphenidate,IN,may_treat
+D006970,Disorders of Excessive Somnolence,4,30125,modafinil,IN,may_treat
+D006970,Disorders of Excessive Somnolence,4,2387302,oxybate,IN,may_treat
+D006970,Disorders of Excessive Somnolence,4,7966,pemoline,IN,may_treat
+D000076064,Drug Misuse,2,272,activated charcoal,IN,may_treat
+D000076064,Drug Misuse,2,2296,charcoal,IN,may_treat
+D000076064,Drug Misuse,2,203223,digoxin antibodies Fab fragments,IN,may_treat
+D000076064,Drug Misuse,2,3755,edetic acid,IN,may_treat
+D000076064,Drug Misuse,2,4457,flumazenil,IN,may_treat
+D000076064,Drug Misuse,2,5975,ipecac,IN,may_treat
+D000076064,Drug Misuse,2,52356,magnesium citrate,IN,may_treat
+D000076064,Drug Misuse,2,31479,nalmefene,IN,may_treat
+D000076064,Drug Misuse,2,7243,naltrexone,IN,may_treat
+D000076064,Drug Misuse,2,34345,pralidoxime,IN,may_treat
+D000076064,Drug Misuse,2,8825,protamine sulfate (USP),IN,may_treat
+D000076064,Drug Misuse,2,8826,protamines,IN,may_treat
+D000076064,Drug Misuse,2,9100,racemethionine,IN,may_treat
+D000076064,Drug Misuse,2,36676,sodium bicarbonate,IN,may_treat
+D000076064,Drug Misuse,2,11017,uridine,IN,may_treat
+D000076064,Drug Misuse,2,1665222,uridine triacetate,IN,may_treat
+D062787,Drug Overdose,4,272,activated charcoal,IN,may_treat
+D062787,Drug Overdose,4,2296,charcoal,IN,may_treat
+D062787,Drug Overdose,4,203223,digoxin antibodies Fab fragments,IN,may_treat
+D062787,Drug Overdose,4,3755,edetic acid,IN,may_treat
+D062787,Drug Overdose,4,4457,flumazenil,IN,may_treat
+D062787,Drug Overdose,4,5975,ipecac,IN,may_treat
+D062787,Drug Overdose,4,52356,magnesium citrate,IN,may_treat
+D062787,Drug Overdose,4,31479,nalmefene,IN,may_treat
+D062787,Drug Overdose,4,7243,naltrexone,IN,may_treat
+D062787,Drug Overdose,4,34345,pralidoxime,IN,may_treat
+D062787,Drug Overdose,4,8825,protamine sulfate (USP),IN,may_treat
+D062787,Drug Overdose,4,8826,protamines,IN,may_treat
+D062787,Drug Overdose,4,9100,racemethionine,IN,may_treat
+D062787,Drug Overdose,4,36676,sodium bicarbonate,IN,may_treat
+D062787,Drug Overdose,4,11017,uridine,IN,may_treat
+D062787,Drug Overdose,4,1665222,uridine triacetate,IN,may_treat
+D004414,Dyspareunia,2,1370971,ospemifene,IN,may_treat
+D004414,Dyspareunia,2,3143,prasterone,IN,may_treat
+D020920,Dyssomnias,2,2591497,daridorexant,IN,ci_with
+D020920,Dyssomnias,2,6470,lorazepam,IN,ci_with
+D020920,Dyssomnias,2,2288236,ozanimod,IN,ci_with
+D020920,Dyssomnias,2,35185,quazepam,IN,ci_with
+D020920,Dyssomnias,2,1547099,suvorexant,IN,ci_with
+D020920,Dyssomnias,2,161203,aceprometazine,IN,may_treat
+D020920,Dyssomnias,2,719,amobarbital,IN,may_treat
+D020920,Dyssomnias,2,725,amphetamine,IN,may_treat
+D020920,Dyssomnias,2,17381,aprobarbital,IN,may_treat
+D020920,Dyssomnias,2,1749,bromazepam,IN,may_treat
+D020920,Dyssomnias,2,19759,bromodiphenhydramine,IN,may_treat
+D020920,Dyssomnias,2,477631,butabarbital,IN,may_treat
+D020920,Dyssomnias,2,19874,butobarbital,IN,may_treat
+D020920,Dyssomnias,2,2002,carbamazepine,IN,may_treat
+D020920,Dyssomnias,2,2372,chlormethiazole,IN,may_treat
+D020920,Dyssomnias,2,2598,clonazepam,IN,may_treat
+D020920,Dyssomnias,2,2591497,daridorexant,IN,may_treat
+D020920,Dyssomnias,2,3288,dextroamphetamine,IN,may_treat
+D020920,Dyssomnias,2,3498,diphenhydramine,IN,may_treat
+D020920,Dyssomnias,2,3642,doxylamine,IN,may_treat
+D020920,Dyssomnias,2,4077,estazolam,IN,may_treat
+D020920,Dyssomnias,2,461016,eszopiclone,IN,may_treat
+D020920,Dyssomnias,2,4118,ethchlorvynol,IN,may_treat
+D020920,Dyssomnias,2,24474,ethinamate,IN,may_treat
+D020920,Dyssomnias,2,4460,flunitrazepam,IN,may_treat
+D020920,Dyssomnias,2,4501,flurazepam,IN,may_treat
+D020920,Dyssomnias,2,4903,glutethimide,IN,may_treat
+D020920,Dyssomnias,2,262150,iron carbonyl,IN,may_treat
+D020920,Dyssomnias,2,2272403,lemborexant,IN,may_treat
+D020920,Dyssomnias,2,6470,lorazepam,IN,may_treat
+D020920,Dyssomnias,2,28894,lormetazepam,IN,may_treat
+D020920,Dyssomnias,2,6711,melatonin,IN,may_treat
+D020920,Dyssomnias,2,6816,methamphetamine,IN,may_treat
+D020920,Dyssomnias,2,6823,methaqualone,IN,may_treat
+D020920,Dyssomnias,2,6901,methylphenidate,IN,may_treat
+D020920,Dyssomnias,2,6910,methyprylon,IN,may_treat
+D020920,Dyssomnias,2,30125,modafinil,IN,may_treat
+D020920,Dyssomnias,2,7440,nitrazepam,IN,may_treat
+D020920,Dyssomnias,2,2387302,oxybate,IN,may_treat
+D020920,Dyssomnias,2,7966,pemoline,IN,may_treat
+D020920,Dyssomnias,2,8770,propiomazine,IN,may_treat
+D020920,Dyssomnias,2,35185,quazepam,IN,may_treat
+D020920,Dyssomnias,2,596205,ramelteon,IN,may_treat
+D020920,Dyssomnias,2,616739,rotigotine,IN,may_treat
+D020920,Dyssomnias,2,9624,secobarbital,IN,may_treat
+D020920,Dyssomnias,2,1547099,suvorexant,IN,may_treat
+D020920,Dyssomnias,2,1490468,tasimelteon,IN,may_treat
+D020920,Dyssomnias,2,10355,temazepam,IN,may_treat
+D020920,Dyssomnias,2,38077,thiobutabarbital,IN,may_treat
+D020920,Dyssomnias,2,38260,tibolone,IN,may_treat
+D020920,Dyssomnias,2,10737,trazodone,IN,may_treat
+D020920,Dyssomnias,2,10767,triazolam,IN,may_treat
+D020920,Dyssomnias,2,10898,tryptophan,IN,may_treat
+D020920,Dyssomnias,2,253206,valerian root extract,IN,may_treat
+D020920,Dyssomnias,2,1424884,vilanterol,IN,may_treat
+D020920,Dyssomnias,2,74667,zaleplon,IN,may_treat
+D020920,Dyssomnias,2,39993,zolpidem,IN,may_treat
+D019263,Dysthymic Disorder,3,6646,maprotiline,IN,may_treat
+D019960,Elimination Disorders,1,3251,desmopressin,IN,may_treat
+D019960,Elimination Disorders,1,5691,imipramine,IN,may_treat
+D019960,Elimination Disorders,1,6646,maprotiline,IN,may_treat
+D019960,Elimination Disorders,1,7531,nortriptyline,IN,may_treat
+D004775,Enuresis,2,3251,desmopressin,IN,may_treat
+D004775,Enuresis,2,5691,imipramine,IN,may_treat
+D004775,Enuresis,2,6646,maprotiline,IN,may_treat
+D004775,Enuresis,2,7531,nortriptyline,IN,may_treat
+D007172,Erectile Dysfunction,2,598,alprostadil,IN,may_treat
+D007172,Erectile Dysfunction,2,1291301,avanafil,IN,may_treat
+D007172,Erectile Dysfunction,2,325526,ginseng preparation,IN,may_treat
+D007172,Erectile Dysfunction,2,6904,methyltestosterone,IN,may_treat
+D007172,Erectile Dysfunction,2,7895,papaverine,IN,may_treat
+D007172,Erectile Dysfunction,2,8013,pentoxifylline,IN,may_treat
+D007172,Erectile Dysfunction,2,136411,sildenafil,IN,may_treat
+D007172,Erectile Dysfunction,2,358263,tadalafil,IN,may_treat
+D007172,Erectile Dysfunction,2,306674,vardenafil,IN,may_treat
+D007172,Erectile Dysfunction,2,220982,yohimbine,IN,may_treat
+D001068,Feeding and Eating Disorders,1,36514,sibutramine,IN,ci_with
+D001068,Feeding and Eating Disorders,1,32937,paroxetine,IN,may_treat
+D001068,Feeding and Eating Disorders,1,36437,sertraline,IN,may_treat
+D006556,Heroin Dependence,4,1819,buprenorphine,IN,may_treat
+D006677,Histrionic Personality Disorder,2,325526,ginseng preparation,IN,ci_with
+D006816,Huntington Disease,3,1292,baclofen,IN,may_treat
+D006816,Huntington Disease,3,8076,perphenazine,IN,may_treat
+D006816,Huntington Disease,3,8331,pimozide,IN,may_treat
+D006816,Huntington Disease,3,10390,tetrabenazine,IN,may_treat
+D006816,Huntington Disease,3,21406,ubidecarenone,IN,may_treat
+D007046,Hysteria,3,325526,ginseng preparation,IN,ci_with
+D008607,Intellectual Disability,2,1731031,lesinurad,IN,ci_with
+D008607,Intellectual Disability,2,2569562,lonapegsomatropin,IN,ci_with
+D008607,Intellectual Disability,2,2644503,somatrogon,IN,ci_with
+D008607,Intellectual Disability,2,61148,somatropin,IN,ci_with
+D008607,Intellectual Disability,2,1827,buspirone,IN,may_treat
+D008607,Intellectual Disability,2,2732215,copper histidinate,IN,may_treat
+D008607,Intellectual Disability,2,2612527,elivaldogene autotemcel,IN,may_treat
+D008607,Intellectual Disability,2,644101,idursulfase,IN,may_treat
+D008607,Intellectual Disability,2,56570,somatrem,IN,may_treat
+D008607,Intellectual Disability,2,61148,somatropin,IN,may_treat
+D008607,Intellectual Disability,2,2740012,tividenofusp alfa,IN,may_treat
+D008607,Intellectual Disability,2,2632852,trofinetide,IN,may_treat
+D020179,Jet Lag Syndrome,4,6711,melatonin,IN,may_treat
+D003865,Major Depressive Disorder,3,1658314,brexpiprazole,IN,may_treat
+D003865,Major Depressive Disorder,3,734064,desvenlafaxine,IN,may_treat
+D003865,Major Depressive Disorder,3,72625,duloxetine,IN,may_treat
+D003865,Major Depressive Disorder,3,321988,escitalopram,IN,may_treat
+D003865,Major Depressive Disorder,3,4493,fluoxetine,IN,may_treat
+D003865,Major Depressive Disorder,3,2672253,gepirone,IN,may_treat
+D003865,Major Depressive Disorder,3,1433212,levomilnacipran,IN,may_treat
+D003865,Major Depressive Disorder,3,1040028,lurasidone,IN,may_treat
+D003865,Major Depressive Disorder,3,588250,milnacipran,IN,may_treat
+D003865,Major Depressive Disorder,3,51272,quetiapine,IN,may_treat
+D003865,Major Depressive Disorder,3,1086769,vilazodone,IN,may_treat
+D003865,Major Depressive Disorder,3,1455099,vortioxetine,IN,may_treat
+D001523,Mental Disorders,0,70223,aldesleukin,IN,ci_with
+D001523,Mental Disorders,0,725,amphetamine,IN,ci_with
+D001523,Mental Disorders,0,17941,IN,ci_with
+D001523,Mental Disorders,0,1359,belladonna alkaloids,IN,ci_with
+D001523,Mental Disorders,0,89781,"belladonna extract, USP",IN,ci_with
+D001523,Mental Disorders,0,314517,belladonna leaf extract,IN,ci_with
+D001523,Mental Disorders,0,1422,benzphetamine,IN,ci_with
+D001523,Mental Disorders,0,42347,bupropion,IN,ci_with
+D001523,Mental Disorders,0,1841,butorphanol,IN,ci_with
+D001523,Mental Disorders,0,3007,cycloserine,IN,ci_with
+D001523,Mental Disorders,0,2591497,daridorexant,IN,ci_with
+D001523,Mental Disorders,0,62174,deserpidine,IN,ci_with
+D001523,Mental Disorders,0,22656,desogestrel,IN,ci_with
+D001523,Mental Disorders,0,352372,dexmethylphenidate,IN,ci_with
+D001523,Mental Disorders,0,3288,dextroamphetamine,IN,ci_with
+D001523,Mental Disorders,0,1598,dicumarol,IN,ci_with
+D001523,Mental Disorders,0,3389,diethylpropion,IN,ci_with
+D001523,Mental Disorders,0,3415,dihydroergocornine,IN,ci_with
+D001523,Mental Disorders,0,3416,dihydroergocristine,IN,ci_with
+D001523,Mental Disorders,0,3417,dihydroergocryptine,IN,ci_with
+D001523,Mental Disorders,0,3554,disulfiram,IN,ci_with
+D001523,Mental Disorders,0,10402,dronabinol,IN,ci_with
+D001523,Mental Disorders,0,11636,drospirenone,IN,ci_with
+D001523,Mental Disorders,0,1653781,eluxadoline,IN,ci_with
+D001523,Mental Disorders,0,4024,"ergoloid mesylates, USP",IN,ci_with
+D001523,Mental Disorders,0,14584,etonogestrel,IN,ci_with
+D001523,Mental Disorders,0,4328,fenfluramine,IN,ci_with
+D001523,Mental Disorders,0,325526,ginseng preparation,IN,ci_with
+D001523,Mental Disorders,0,4850,glucose,IN,ci_with
+D001523,Mental Disorders,0,6130,ketamine,IN,ci_with
+D001523,Mental Disorders,0,6373,levonorgestrel,IN,ci_with
+D001523,Mental Disorders,0,700810,lisdexamfetamine,IN,ci_with
+D001523,Mental Disorders,0,6664,mazindol,IN,ci_with
+D001523,Mental Disorders,0,6694,mefloquine,IN,ci_with
+D001523,Mental Disorders,0,6782,mestranol,IN,ci_with
+D001523,Mental Disorders,0,6816,methamphetamine,IN,ci_with
+D001523,Mental Disorders,0,6901,methylphenidate,IN,ci_with
+D001523,Mental Disorders,0,7243,naltrexone,IN,ci_with
+D001523,Mental Disorders,0,326374,norelgestromin,IN,ci_with
+D001523,Mental Disorders,0,31994,norgestimate,IN,ci_with
+D001523,Mental Disorders,0,7781,oxazepam,IN,ci_with
+D001523,Mental Disorders,0,2387302,oxybate,IN,ci_with
+D001523,Mental Disorders,0,7966,pemoline,IN,ci_with
+D001523,Mental Disorders,0,33272,phendimetrazine,IN,ci_with
+D001523,Mental Disorders,0,8133,phenmetrazine,IN,ci_with
+D001523,Mental Disorders,0,8150,phenprocoumon,IN,ci_with
+D001523,Mental Disorders,0,8152,phentermine,IN,ci_with
+D001523,Mental Disorders,0,8702,procarbazine,IN,ci_with
+D001523,Mental Disorders,0,8704,prochlorperazine,IN,ci_with
+D001523,Mental Disorders,0,9260,reserpine,IN,ci_with
+D001523,Mental Disorders,0,36514,sibutramine,IN,ci_with
+D001523,Mental Disorders,0,1547099,suvorexant,IN,ci_with
+D001523,Mental Disorders,0,10689,tramadol,IN,ci_with
+D001523,Mental Disorders,0,11289,warfarin,IN,ci_with
+D001523,Mental Disorders,0,68503,ziconotide,IN,ci_with
+D001523,Mental Disorders,0,91235,Digitalis preparation,IN,may_treat
+D001523,Mental Disorders,0,82819,acamprosate,IN,may_treat
+D001523,Mental Disorders,0,161203,aceprometazine,IN,may_treat
+D001523,Mental Disorders,0,16735,acetophenazine,IN,may_treat
+D001523,Mental Disorders,0,272,activated charcoal,IN,may_treat
+D001523,Mental Disorders,0,2557217,aducanumab,IN,may_treat
+D001523,Mental Disorders,0,596,alprazolam,IN,may_treat
+D001523,Mental Disorders,0,704,amitriptyline,IN,may_treat
+D001523,Mental Disorders,0,719,amobarbital,IN,may_treat
+D001523,Mental Disorders,0,722,amoxapine,IN,may_treat
+D001523,Mental Disorders,0,725,amphetamine,IN,may_treat
+D001523,Mental Disorders,0,17381,aprobarbital,IN,may_treat
+D001523,Mental Disorders,0,89013,aripiprazole,IN,may_treat
+D001523,Mental Disorders,0,1673265,aripiprazole lauroxil,IN,may_treat
+D001523,Mental Disorders,0,641465,armodafinil,IN,may_treat
+D001523,Mental Disorders,0,784649,asenapine,IN,may_treat
+D001523,Mental Disorders,0,38400,atomoxetine,IN,may_treat
+D001523,Mental Disorders,0,1291301,avanafil,IN,may_treat
+D001523,Mental Disorders,0,1292,baclofen,IN,may_treat
+D001523,Mental Disorders,0,1373,benperidol,IN,may_treat
+D001523,Mental Disorders,0,2690627,benzgalantamine,IN,may_treat
+D001523,Mental Disorders,0,2176312,bremelanotide,IN,may_treat
+D001523,Mental Disorders,0,2121777,brexanolone,IN,may_treat
+D001523,Mental Disorders,0,1658314,brexpiprazole,IN,may_treat
+D001523,Mental Disorders,0,1749,bromazepam,IN,may_treat
+D001523,Mental Disorders,0,19759,bromodiphenhydramine,IN,may_treat
+D001523,Mental Disorders,0,19777,bromperidol,IN,may_treat
+D001523,Mental Disorders,0,1819,buprenorphine,IN,may_treat
+D001523,Mental Disorders,0,42347,bupropion,IN,may_treat
+D001523,Mental Disorders,0,1827,buspirone,IN,may_treat
+D001523,Mental Disorders,0,477631,butabarbital,IN,may_treat
+D001523,Mental Disorders,0,19874,butobarbital,IN,may_treat
+D001523,Mental Disorders,0,2002,carbamazepine,IN,may_treat
+D001523,Mental Disorders,0,1667655,cariprazine,IN,may_treat
+D001523,Mental Disorders,0,2296,charcoal,IN,may_treat
+D001523,Mental Disorders,0,2356,chlordiazepoxide,IN,may_treat
+D001523,Mental Disorders,0,2372,chlormethiazole,IN,may_treat
+D001523,Mental Disorders,0,2373,chlormezanone,IN,may_treat
+D001523,Mental Disorders,0,2403,chlorpromazine,IN,may_treat
+D001523,Mental Disorders,0,2406,chlorprothixene,IN,may_treat
+D001523,Mental Disorders,0,2556,citalopram,IN,may_treat
+D001523,Mental Disorders,0,2597,clomipramine,IN,may_treat
+D001523,Mental Disorders,0,2598,clonazepam,IN,may_treat
+D001523,Mental Disorders,0,2599,clonidine,IN,may_treat
+D001523,Mental Disorders,0,2603,clopamide,IN,may_treat
+D001523,Mental Disorders,0,2353,clorazepate,IN,may_treat
+D001523,Mental Disorders,0,2622,clotiazepam,IN,may_treat
+D001523,Mental Disorders,0,2626,clozapine,IN,may_treat
+D001523,Mental Disorders,0,3013,cyproheptadine,IN,may_treat
+D001523,Mental Disorders,0,2591497,daridorexant,IN,may_treat
+D001523,Mental Disorders,0,62174,deserpidine,IN,may_treat
+D001523,Mental Disorders,0,3247,desipramine,IN,may_treat
+D001523,Mental Disorders,0,3251,desmopressin,IN,may_treat
+D001523,Mental Disorders,0,734064,desvenlafaxine,IN,may_treat
+D001523,Mental Disorders,0,352372,dexmethylphenidate,IN,may_treat
+D001523,Mental Disorders,0,3288,dextroamphetamine,IN,may_treat
+D001523,Mental Disorders,0,3322,diazepam,IN,may_treat
+D001523,Mental Disorders,0,3332,dibenzepin,IN,may_treat
+D001523,Mental Disorders,0,3403,digitoxin,IN,may_treat
+D001523,Mental Disorders,0,3407,digoxin,IN,may_treat
+D001523,Mental Disorders,0,203223,digoxin antibodies Fab fragments,IN,may_treat
+D001523,Mental Disorders,0,3498,diphenhydramine,IN,may_treat
+D001523,Mental Disorders,0,3554,disulfiram,IN,may_treat
+D001523,Mental Disorders,0,2687966,donanemab,IN,may_treat
+D001523,Mental Disorders,0,135447,donepezil,IN,may_treat
+D001523,Mental Disorders,0,3634,dothiepin,IN,may_treat
+D001523,Mental Disorders,0,3637,doxapram,IN,may_treat
+D001523,Mental Disorders,0,3638,doxepin,IN,may_treat
+D001523,Mental Disorders,0,3642,doxylamine,IN,may_treat
+D001523,Mental Disorders,0,3648,droperidol,IN,may_treat
+D001523,Mental Disorders,0,72625,duloxetine,IN,may_treat
+D001523,Mental Disorders,0,3755,edetic acid,IN,may_treat
+D001523,Mental Disorders,0,4024,"ergoloid mesylates, USP",IN,may_treat
+D001523,Mental Disorders,0,321988,escitalopram,IN,may_treat
+D001523,Mental Disorders,0,2119365,esketamine,IN,may_treat
+D001523,Mental Disorders,0,4077,estazolam,IN,may_treat
+D001523,Mental Disorders,0,461016,eszopiclone,IN,may_treat
+D001523,Mental Disorders,0,4118,ethchlorvynol,IN,may_treat
+D001523,Mental Disorders,0,24474,ethinamate,IN,may_treat
+D001523,Mental Disorders,0,4328,fenfluramine,IN,may_treat
+D001523,Mental Disorders,0,1665509,flibanserin,IN,may_treat
+D001523,Mental Disorders,0,4457,flumazenil,IN,may_treat
+D001523,Mental Disorders,0,4460,flunitrazepam,IN,may_treat
+D001523,Mental Disorders,0,4493,fluoxetine,IN,may_treat
+D001523,Mental Disorders,0,4495,flupenthixol,IN,may_treat
+D001523,Mental Disorders,0,4496,fluphenazine,IN,may_treat
+D001523,Mental Disorders,0,4501,flurazepam,IN,may_treat
+D001523,Mental Disorders,0,4507,fluspirilene,IN,may_treat
+D001523,Mental Disorders,0,42355,fluvoxamine,IN,may_treat
+D001523,Mental Disorders,0,25480,gabapentin,IN,may_treat
+D001523,Mental Disorders,0,4637,galantamine,IN,may_treat
+D001523,Mental Disorders,0,2672253,gepirone,IN,may_treat
+D001523,Mental Disorders,0,325526,ginseng preparation,IN,may_treat
+D001523,Mental Disorders,0,4903,glutethimide,IN,may_treat
+D001523,Mental Disorders,0,40114,guanfacine,IN,may_treat
+D001523,Mental Disorders,0,26412,halazepam,IN,may_treat
+D001523,Mental Disorders,0,5093,haloperidol,IN,may_treat
+D001523,Mental Disorders,0,2267703,huperzine A,IN,may_treat
+D001523,Mental Disorders,0,5553,hydroxyzine,IN,may_treat
+D001523,Mental Disorders,0,73178,iloperidone,IN,may_treat
+D001523,Mental Disorders,0,5691,imipramine,IN,may_treat
+D001523,Mental Disorders,0,5975,ipecac,IN,may_treat
+D001523,Mental Disorders,0,262150,iron carbonyl,IN,may_treat
+D001523,Mental Disorders,0,6011,isocarboxazid,IN,may_treat
+D001523,Mental Disorders,0,6026,isoflurane,IN,may_treat
+D001523,Mental Disorders,0,285228,kava preparation,IN,may_treat
+D001523,Mental Disorders,0,28439,lamotrigine,IN,may_treat
+D001523,Mental Disorders,0,2626143,lecanemab,IN,may_treat
+D001523,Mental Disorders,0,2272403,lemborexant,IN,may_treat
+D001523,Mental Disorders,0,237005,levomethadyl,IN,may_treat
+D001523,Mental Disorders,0,1433212,levomilnacipran,IN,may_treat
+D001523,Mental Disorders,0,700810,lisdexamfetamine,IN,may_treat
+D001523,Mental Disorders,0,6448,lithium,IN,may_treat
+D001523,Mental Disorders,0,746070,lithium aspartate,IN,may_treat
+D001523,Mental Disorders,0,42351,lithium carbonate,IN,may_treat
+D001523,Mental Disorders,0,52105,lithium citrate,IN,may_treat
+D001523,Mental Disorders,0,28863,lofexidine,IN,may_treat
+D001523,Mental Disorders,0,6470,lorazepam,IN,may_treat
+D001523,Mental Disorders,0,28894,lormetazepam,IN,may_treat
+D001523,Mental Disorders,0,6475,loxapine,IN,may_treat
+D001523,Mental Disorders,0,2275602,lumateperone,IN,may_treat
+D001523,Mental Disorders,0,1040028,lurasidone,IN,may_treat
+D001523,Mental Disorders,0,52356,magnesium citrate,IN,may_treat
+D001523,Mental Disorders,0,6646,maprotiline,IN,may_treat
+D001523,Mental Disorders,0,6673,mecamylamine,IN,may_treat
+D001523,Mental Disorders,0,6680,medazepam,IN,may_treat
+D001523,Mental Disorders,0,6711,melatonin,IN,may_treat
+D001523,Mental Disorders,0,6719,memantine,IN,may_treat
+D001523,Mental Disorders,0,6760,meprobamate,IN,may_treat
+D001523,Mental Disorders,0,6779,mesoridazine,IN,may_treat
+D001523,Mental Disorders,0,6813,methadone,IN,may_treat
+D001523,Mental Disorders,0,6816,methamphetamine,IN,may_treat
+D001523,Mental Disorders,0,6823,methaqualone,IN,may_treat
+D001523,Mental Disorders,0,6852,methotrimeprazine,IN,may_treat
+D001523,Mental Disorders,0,6901,methylphenidate,IN,may_treat
+D001523,Mental Disorders,0,6904,methyltestosterone,IN,may_treat
+D001523,Mental Disorders,0,6910,methyprylon,IN,may_treat
+D001523,Mental Disorders,0,6960,midazolam,IN,may_treat
+D001523,Mental Disorders,0,588250,milnacipran,IN,may_treat
+D001523,Mental Disorders,0,15996,mirtazapine,IN,may_treat
+D001523,Mental Disorders,0,30125,modafinil,IN,may_treat
+D001523,Mental Disorders,0,7019,molindone,IN,may_treat
+D001523,Mental Disorders,0,31479,nalmefene,IN,may_treat
+D001523,Mental Disorders,0,7242,naloxone,IN,may_treat
+D001523,Mental Disorders,0,7243,naltrexone,IN,may_treat
+D001523,Mental Disorders,0,31565,nefazodone,IN,may_treat
+D001523,Mental Disorders,0,7407,nicotine,IN,may_treat
+D001523,Mental Disorders,0,7440,nitrazepam,IN,may_treat
+D001523,Mental Disorders,0,7486,nitrous oxide,IN,may_treat
+D001523,Mental Disorders,0,3155,nordazepam,IN,may_treat
+D001523,Mental Disorders,0,7531,nortriptyline,IN,may_treat
+D001523,Mental Disorders,0,61381,olanzapine,IN,may_treat
+D001523,Mental Disorders,0,26225,ondansetron,IN,may_treat
+D001523,Mental Disorders,0,1370971,ospemifene,IN,may_treat
+D001523,Mental Disorders,0,7781,oxazepam,IN,may_treat
+D001523,Mental Disorders,0,2387302,oxybate,IN,may_treat
+D001523,Mental Disorders,0,679314,paliperidone,IN,may_treat
+D001523,Mental Disorders,0,7895,papaverine,IN,may_treat
+D001523,Mental Disorders,0,7909,paraldehyde,IN,may_treat
+D001523,Mental Disorders,0,32937,paroxetine,IN,may_treat
+D001523,Mental Disorders,0,7966,pemoline,IN,may_treat
+D001523,Mental Disorders,0,7974,penfluridol,IN,may_treat
+D001523,Mental Disorders,0,8042,perazine,IN,may_treat
+D001523,Mental Disorders,0,8047,pergolide,IN,may_treat
+D001523,Mental Disorders,0,8766,periciazine,IN,may_treat
+D001523,Mental Disorders,0,8076,perphenazine,IN,may_treat
+D001523,Mental Disorders,0,8123,phenelzine,IN,may_treat
+D001523,Mental Disorders,0,8156,phenylalanine,IN,may_treat
+D001523,Mental Disorders,0,8331,pimozide,IN,may_treat
+D001523,Mental Disorders,0,33739,pipamperone,IN,may_treat
+D001523,Mental Disorders,0,8338,piperacetazine,IN,may_treat
+D001523,Mental Disorders,0,8348,pipothiazine,IN,may_treat
+D001523,Mental Disorders,0,2197878,pitolisant,IN,may_treat
+D001523,Mental Disorders,0,34345,pralidoxime,IN,may_treat
+D001523,Mental Disorders,0,746741,pramipexole,IN,may_treat
+D001523,Mental Disorders,0,3143,prasterone,IN,may_treat
+D001523,Mental Disorders,0,8627,prazepam,IN,may_treat
+D001523,Mental Disorders,0,8701,procaine,IN,may_treat
+D001523,Mental Disorders,0,8704,prochlorperazine,IN,may_treat
+D001523,Mental Disorders,0,8742,promazine,IN,may_treat
+D001523,Mental Disorders,0,8770,propiomazine,IN,may_treat
+D001523,Mental Disorders,0,8782,propofol,IN,may_treat
+D001523,Mental Disorders,0,8787,propranolol,IN,may_treat
+D001523,Mental Disorders,0,8825,protamine sulfate (USP),IN,may_treat
+D001523,Mental Disorders,0,8826,protamines,IN,may_treat
+D001523,Mental Disorders,0,8886,protriptyline,IN,may_treat
+D001523,Mental Disorders,0,35185,quazepam,IN,may_treat
+D001523,Mental Disorders,0,51272,quetiapine,IN,may_treat
+D001523,Mental Disorders,0,9100,racemethionine,IN,may_treat
+D001523,Mental Disorders,0,596205,ramelteon,IN,may_treat
+D001523,Mental Disorders,0,60842,reboxetine,IN,may_treat
+D001523,Mental Disorders,0,9260,reserpine,IN,may_treat
+D001523,Mental Disorders,0,35636,risperidone,IN,may_treat
+D001523,Mental Disorders,0,183379,rivastigmine,IN,may_treat
+D001523,Mental Disorders,0,616739,rotigotine,IN,may_treat
+D001523,Mental Disorders,0,2559612,samidorphan,IN,may_treat
+D001523,Mental Disorders,0,9624,secobarbital,IN,may_treat
+D001523,Mental Disorders,0,9639,selegiline,IN,may_treat
+D001523,Mental Disorders,0,2562176,serdexmethylphenidate,IN,may_treat
+D001523,Mental Disorders,0,41996,sertindole,IN,may_treat
+D001523,Mental Disorders,0,36437,sertraline,IN,may_treat
+D001523,Mental Disorders,0,36676,sodium bicarbonate,IN,may_treat
+D001523,Mental Disorders,0,1547099,suvorexant,IN,may_treat
+D001523,Mental Disorders,0,10318,tacrine,IN,may_treat
+D001523,Mental Disorders,0,1490468,tasimelteon,IN,may_treat
+D001523,Mental Disorders,0,10355,temazepam,IN,may_treat
+D001523,Mental Disorders,0,10390,tetrabenazine,IN,may_treat
+D001523,Mental Disorders,0,37985,tetrazepam,IN,may_treat
+D001523,Mental Disorders,0,10437,theobromine,IN,may_treat
+D001523,Mental Disorders,0,10454,thiamine,IN,may_treat
+D001523,Mental Disorders,0,10464,thiamylal,IN,may_treat
+D001523,Mental Disorders,0,38077,thiobutabarbital,IN,may_treat
+D001523,Mental Disorders,0,10502,thioridazine,IN,may_treat
+D001523,Mental Disorders,0,10510,thiothixene,IN,may_treat
+D001523,Mental Disorders,0,31914,tiagabine,IN,may_treat
+D001523,Mental Disorders,0,38260,tibolone,IN,may_treat
+D001523,Mental Disorders,0,314875,"tocopheryl acid succinate,D-alpha",IN,may_treat
+D001523,Mental Disorders,0,38365,tofisopam,IN,may_treat
+D001523,Mental Disorders,0,38404,topiramate,IN,may_treat
+D001523,Mental Disorders,0,10734,tranylcypromine,IN,may_treat
+D001523,Mental Disorders,0,10737,trazodone,IN,may_treat
+D001523,Mental Disorders,0,10767,triazolam,IN,may_treat
+D001523,Mental Disorders,0,1314420,tricaprylin,IN,may_treat
+D001523,Mental Disorders,0,10800,trifluoperazine,IN,may_treat
+D001523,Mental Disorders,0,10804,trifluperidol,IN,may_treat
+D001523,Mental Disorders,0,10805,triflupromazine,IN,may_treat
+D001523,Mental Disorders,0,10834,trimipramine,IN,may_treat
+D001523,Mental Disorders,0,10898,tryptophan,IN,may_treat
+D001523,Mental Disorders,0,21406,ubidecarenone,IN,may_treat
+D001523,Mental Disorders,0,11017,uridine,IN,may_treat
+D001523,Mental Disorders,0,1665222,uridine triacetate,IN,may_treat
+D001523,Mental Disorders,0,253206,valerian root extract,IN,may_treat
+D001523,Mental Disorders,0,39786,venlafaxine,IN,may_treat
+D001523,Mental Disorders,0,1086769,vilazodone,IN,may_treat
+D001523,Mental Disorders,0,11256,vitamin E,IN,may_treat
+D001523,Mental Disorders,0,1455099,vortioxetine,IN,may_treat
+D001523,Mental Disorders,0,2694828,xanomeline,IN,may_treat
+D001523,Mental Disorders,0,220982,yohimbine,IN,may_treat
+D001523,Mental Disorders,0,74667,zaleplon,IN,may_treat
+D001523,Mental Disorders,0,115698,ziprasidone,IN,may_treat
+D001523,Mental Disorders,0,39993,zolpidem,IN,may_treat
+D001523,Mental Disorders,0,2669905,zuranolone,IN,may_treat
+D019964,Mood Disorders,1,62174,deserpidine,IN,ci_with
+D019964,Mood Disorders,1,9260,reserpine,IN,ci_with
+D019964,Mood Disorders,1,596,alprazolam,IN,may_treat
+D019964,Mood Disorders,1,704,amitriptyline,IN,may_treat
+D019964,Mood Disorders,1,722,amoxapine,IN,may_treat
+D019964,Mood Disorders,1,784649,asenapine,IN,may_treat
+D019964,Mood Disorders,1,2121777,brexanolone,IN,may_treat
+D019964,Mood Disorders,1,1658314,brexpiprazole,IN,may_treat
+D019964,Mood Disorders,1,42347,bupropion,IN,may_treat
+D019964,Mood Disorders,1,1827,buspirone,IN,may_treat
+D019964,Mood Disorders,1,2002,carbamazepine,IN,may_treat
+D019964,Mood Disorders,1,1667655,cariprazine,IN,may_treat
+D019964,Mood Disorders,1,2556,citalopram,IN,may_treat
+D019964,Mood Disorders,1,2597,clomipramine,IN,may_treat
+D019964,Mood Disorders,1,2598,clonazepam,IN,may_treat
+D019964,Mood Disorders,1,2626,clozapine,IN,may_treat
+D019964,Mood Disorders,1,3247,desipramine,IN,may_treat
+D019964,Mood Disorders,1,734064,desvenlafaxine,IN,may_treat
+D019964,Mood Disorders,1,3332,dibenzepin,IN,may_treat
+D019964,Mood Disorders,1,3634,dothiepin,IN,may_treat
+D019964,Mood Disorders,1,3638,doxepin,IN,may_treat
+D019964,Mood Disorders,1,72625,duloxetine,IN,may_treat
+D019964,Mood Disorders,1,321988,escitalopram,IN,may_treat
+D019964,Mood Disorders,1,2119365,esketamine,IN,may_treat
+D019964,Mood Disorders,1,4493,fluoxetine,IN,may_treat
+D019964,Mood Disorders,1,42355,fluvoxamine,IN,may_treat
+D019964,Mood Disorders,1,25480,gabapentin,IN,may_treat
+D019964,Mood Disorders,1,2672253,gepirone,IN,may_treat
+D019964,Mood Disorders,1,5691,imipramine,IN,may_treat
+D019964,Mood Disorders,1,6011,isocarboxazid,IN,may_treat
+D019964,Mood Disorders,1,6026,isoflurane,IN,may_treat
+D019964,Mood Disorders,1,285228,kava preparation,IN,may_treat
+D019964,Mood Disorders,1,28439,lamotrigine,IN,may_treat
+D019964,Mood Disorders,1,1433212,levomilnacipran,IN,may_treat
+D019964,Mood Disorders,1,6448,lithium,IN,may_treat
+D019964,Mood Disorders,1,746070,lithium aspartate,IN,may_treat
+D019964,Mood Disorders,1,42351,lithium carbonate,IN,may_treat
+D019964,Mood Disorders,1,52105,lithium citrate,IN,may_treat
+D019964,Mood Disorders,1,6470,lorazepam,IN,may_treat
+D019964,Mood Disorders,1,1040028,lurasidone,IN,may_treat
+D019964,Mood Disorders,1,6646,maprotiline,IN,may_treat
+D019964,Mood Disorders,1,6711,melatonin,IN,may_treat
+D019964,Mood Disorders,1,6852,methotrimeprazine,IN,may_treat
+D019964,Mood Disorders,1,6901,methylphenidate,IN,may_treat
+D019964,Mood Disorders,1,588250,milnacipran,IN,may_treat
+D019964,Mood Disorders,1,15996,mirtazapine,IN,may_treat
+D019964,Mood Disorders,1,31565,nefazodone,IN,may_treat
+D019964,Mood Disorders,1,7531,nortriptyline,IN,may_treat
+D019964,Mood Disorders,1,61381,olanzapine,IN,may_treat
+D019964,Mood Disorders,1,679314,paliperidone,IN,may_treat
+D019964,Mood Disorders,1,32937,paroxetine,IN,may_treat
+D019964,Mood Disorders,1,8123,phenelzine,IN,may_treat
+D019964,Mood Disorders,1,8156,phenylalanine,IN,may_treat
+D019964,Mood Disorders,1,746741,pramipexole,IN,may_treat
+D019964,Mood Disorders,1,8886,protriptyline,IN,may_treat
+D019964,Mood Disorders,1,51272,quetiapine,IN,may_treat
+D019964,Mood Disorders,1,35636,risperidone,IN,may_treat
+D019964,Mood Disorders,1,2559612,samidorphan,IN,may_treat
+D019964,Mood Disorders,1,9639,selegiline,IN,may_treat
+D019964,Mood Disorders,1,36437,sertraline,IN,may_treat
+D019964,Mood Disorders,1,10355,temazepam,IN,may_treat
+D019964,Mood Disorders,1,31914,tiagabine,IN,may_treat
+D019964,Mood Disorders,1,38404,topiramate,IN,may_treat
+D019964,Mood Disorders,1,10734,tranylcypromine,IN,may_treat
+D019964,Mood Disorders,1,10737,trazodone,IN,may_treat
+D019964,Mood Disorders,1,10834,trimipramine,IN,may_treat
+D019964,Mood Disorders,1,39786,venlafaxine,IN,may_treat
+D019964,Mood Disorders,1,1086769,vilazodone,IN,may_treat
+D019964,Mood Disorders,1,1455099,vortioxetine,IN,may_treat
+D019964,Mood Disorders,1,2669905,zuranolone,IN,may_treat
+D009290,Narcolepsy,5,2591497,daridorexant,IN,ci_with
+D009290,Narcolepsy,5,1547099,suvorexant,IN,ci_with
+D009290,Narcolepsy,5,725,amphetamine,IN,may_treat
+D009290,Narcolepsy,5,3288,dextroamphetamine,IN,may_treat
+D009290,Narcolepsy,5,6816,methamphetamine,IN,may_treat
+D009290,Narcolepsy,5,6901,methylphenidate,IN,may_treat
+D009290,Narcolepsy,5,30125,modafinil,IN,may_treat
+D009290,Narcolepsy,5,2387302,oxybate,IN,may_treat
+D009290,Narcolepsy,5,7966,pemoline,IN,may_treat
+D000079524,Narcotic-Related Disorders,2,1841,butorphanol,IN,ci_with
+D000079524,Narcotic-Related Disorders,2,7243,naltrexone,IN,ci_with
+D000079524,Narcotic-Related Disorders,2,10689,tramadol,IN,ci_with
+D000079524,Narcotic-Related Disorders,2,1819,buprenorphine,IN,may_treat
+D000079524,Narcotic-Related Disorders,2,237005,levomethadyl,IN,may_treat
+D000079524,Narcotic-Related Disorders,2,6813,methadone,IN,may_treat
+D000079524,Narcotic-Related Disorders,2,31479,nalmefene,IN,may_treat
+D000079524,Narcotic-Related Disorders,2,7242,naloxone,IN,may_treat
+D000079524,Narcotic-Related Disorders,2,7243,naltrexone,IN,may_treat
+D019965,Neurocognitive Disorders,1,2557217,aducanumab,IN,may_treat
+D019965,Neurocognitive Disorders,1,1292,baclofen,IN,may_treat
+D019965,Neurocognitive Disorders,1,1373,benperidol,IN,may_treat
+D019965,Neurocognitive Disorders,1,2690627,benzgalantamine,IN,may_treat
+D019965,Neurocognitive Disorders,1,2556,citalopram,IN,may_treat
+D019965,Neurocognitive Disorders,1,2687966,donanemab,IN,may_treat
+D019965,Neurocognitive Disorders,1,135447,donepezil,IN,may_treat
+D019965,Neurocognitive Disorders,1,4024,"ergoloid mesylates, USP",IN,may_treat
+D019965,Neurocognitive Disorders,1,4637,galantamine,IN,may_treat
+D019965,Neurocognitive Disorders,1,2267703,huperzine A,IN,may_treat
+D019965,Neurocognitive Disorders,1,2626143,lecanemab,IN,may_treat
+D019965,Neurocognitive Disorders,1,6719,memantine,IN,may_treat
+D019965,Neurocognitive Disorders,1,7909,paraldehyde,IN,may_treat
+D019965,Neurocognitive Disorders,1,8076,perphenazine,IN,may_treat
+D019965,Neurocognitive Disorders,1,8331,pimozide,IN,may_treat
+D019965,Neurocognitive Disorders,1,8704,prochlorperazine,IN,may_treat
+D019965,Neurocognitive Disorders,1,8782,propofol,IN,may_treat
+D019965,Neurocognitive Disorders,1,35636,risperidone,IN,may_treat
+D019965,Neurocognitive Disorders,1,183379,rivastigmine,IN,may_treat
+D019965,Neurocognitive Disorders,1,9639,selegiline,IN,may_treat
+D019965,Neurocognitive Disorders,1,10318,tacrine,IN,may_treat
+D019965,Neurocognitive Disorders,1,10390,tetrabenazine,IN,may_treat
+D019965,Neurocognitive Disorders,1,314875,"tocopheryl acid succinate,D-alpha",IN,may_treat
+D019965,Neurocognitive Disorders,1,1314420,tricaprylin,IN,may_treat
+D019965,Neurocognitive Disorders,1,21406,ubidecarenone,IN,may_treat
+D019965,Neurocognitive Disorders,1,11256,vitamin E,IN,may_treat
+D065886,Neurodevelopmental Disorders,1,1422,benzphetamine,IN,ci_with
+D065886,Neurodevelopmental Disorders,1,352372,dexmethylphenidate,IN,ci_with
+D065886,Neurodevelopmental Disorders,1,3389,diethylpropion,IN,ci_with
+D065886,Neurodevelopmental Disorders,1,6816,methamphetamine,IN,ci_with
+D065886,Neurodevelopmental Disorders,1,6901,methylphenidate,IN,ci_with
+D065886,Neurodevelopmental Disorders,1,2387302,oxybate,IN,ci_with
+D065886,Neurodevelopmental Disorders,1,7966,pemoline,IN,ci_with
+D065886,Neurodevelopmental Disorders,1,725,amphetamine,IN,may_treat
+D065886,Neurodevelopmental Disorders,1,38400,atomoxetine,IN,may_treat
+D065886,Neurodevelopmental Disorders,1,42347,bupropion,IN,may_treat
+D065886,Neurodevelopmental Disorders,1,1827,buspirone,IN,may_treat
+D065886,Neurodevelopmental Disorders,1,2403,chlorpromazine,IN,may_treat
+D065886,Neurodevelopmental Disorders,1,2598,clonazepam,IN,may_treat
+D065886,Neurodevelopmental Disorders,1,2599,clonidine,IN,may_treat
+D065886,Neurodevelopmental Disorders,1,3247,desipramine,IN,may_treat
+D065886,Neurodevelopmental Disorders,1,352372,dexmethylphenidate,IN,may_treat
+D065886,Neurodevelopmental Disorders,1,3288,dextroamphetamine,IN,may_treat
+D065886,Neurodevelopmental Disorders,1,4328,fenfluramine,IN,may_treat
+D065886,Neurodevelopmental Disorders,1,40114,guanfacine,IN,may_treat
+D065886,Neurodevelopmental Disorders,1,5093,haloperidol,IN,may_treat
+D065886,Neurodevelopmental Disorders,1,5691,imipramine,IN,may_treat
+D065886,Neurodevelopmental Disorders,1,700810,lisdexamfetamine,IN,may_treat
+D065886,Neurodevelopmental Disorders,1,6448,lithium,IN,may_treat
+D065886,Neurodevelopmental Disorders,1,746070,lithium aspartate,IN,may_treat
+D065886,Neurodevelopmental Disorders,1,42351,lithium carbonate,IN,may_treat
+D065886,Neurodevelopmental Disorders,1,52105,lithium citrate,IN,may_treat
+D065886,Neurodevelopmental Disorders,1,6673,mecamylamine,IN,may_treat
+D065886,Neurodevelopmental Disorders,1,6816,methamphetamine,IN,may_treat
+D065886,Neurodevelopmental Disorders,1,6901,methylphenidate,IN,may_treat
+D065886,Neurodevelopmental Disorders,1,30125,modafinil,IN,may_treat
+D065886,Neurodevelopmental Disorders,1,7531,nortriptyline,IN,may_treat
+D065886,Neurodevelopmental Disorders,1,7966,pemoline,IN,may_treat
+D065886,Neurodevelopmental Disorders,1,8047,pergolide,IN,may_treat
+D065886,Neurodevelopmental Disorders,1,8076,perphenazine,IN,may_treat
+D065886,Neurodevelopmental Disorders,1,8331,pimozide,IN,may_treat
+D065886,Neurodevelopmental Disorders,1,51272,quetiapine,IN,may_treat
+D065886,Neurodevelopmental Disorders,1,60842,reboxetine,IN,may_treat
+D065886,Neurodevelopmental Disorders,1,35636,risperidone,IN,may_treat
+D065886,Neurodevelopmental Disorders,1,9639,selegiline,IN,may_treat
+D065886,Neurodevelopmental Disorders,1,2562176,serdexmethylphenidate,IN,may_treat
+D065886,Neurodevelopmental Disorders,1,39786,venlafaxine,IN,may_treat
+D065886,Neurodevelopmental Disorders,1,115698,ziprasidone,IN,may_treat
+D009771,Obsessive-Compulsive Disorder,2,2556,citalopram,IN,may_treat
+D009771,Obsessive-Compulsive Disorder,2,2597,clomipramine,IN,may_treat
+D009771,Obsessive-Compulsive Disorder,2,4493,fluoxetine,IN,may_treat
+D009771,Obsessive-Compulsive Disorder,2,42355,fluvoxamine,IN,may_treat
+D009771,Obsessive-Compulsive Disorder,2,32937,paroxetine,IN,may_treat
+D009771,Obsessive-Compulsive Disorder,2,36437,sertraline,IN,may_treat
+D009771,Obsessive-Compulsive Disorder,2,39786,venlafaxine,IN,may_treat
+D009293,Opioid-Related Disorders,3,1841,butorphanol,IN,ci_with
+D009293,Opioid-Related Disorders,3,7243,naltrexone,IN,ci_with
+D009293,Opioid-Related Disorders,3,10689,tramadol,IN,ci_with
+D009293,Opioid-Related Disorders,3,1819,buprenorphine,IN,may_treat
+D009293,Opioid-Related Disorders,3,237005,levomethadyl,IN,may_treat
+D009293,Opioid-Related Disorders,3,6813,methadone,IN,may_treat
+D009293,Opioid-Related Disorders,3,31479,nalmefene,IN,may_treat
+D009293,Opioid-Related Disorders,3,7242,naloxone,IN,may_treat
+D009293,Opioid-Related Disorders,3,7243,naltrexone,IN,may_treat
+D016584,Panic Disorder,2,596,alprazolam,IN,may_treat
+D016584,Panic Disorder,2,2597,clomipramine,IN,may_treat
+D016584,Panic Disorder,2,2598,clonazepam,IN,may_treat
+D016584,Panic Disorder,2,3322,diazepam,IN,may_treat
+D016584,Panic Disorder,2,4493,fluoxetine,IN,may_treat
+D016584,Panic Disorder,2,42355,fluvoxamine,IN,may_treat
+D016584,Panic Disorder,2,5691,imipramine,IN,may_treat
+D016584,Panic Disorder,2,6646,maprotiline,IN,may_treat
+D016584,Panic Disorder,2,32937,paroxetine,IN,may_treat
+D016584,Panic Disorder,2,8787,propranolol,IN,may_treat
+D016584,Panic Disorder,2,60842,reboxetine,IN,may_treat
+D016584,Panic Disorder,2,36437,sertraline,IN,may_treat
+D016584,Panic Disorder,2,10355,temazepam,IN,may_treat
+D020447,Parasomnias,2,2002,carbamazepine,IN,may_treat
+D020447,Parasomnias,2,2598,clonazepam,IN,may_treat
+D020447,Parasomnias,2,262150,iron carbonyl,IN,may_treat
+D020447,Parasomnias,2,616739,rotigotine,IN,may_treat
+D010554,Personality Disorders,1,325526,ginseng preparation,IN,ci_with
+D010698,Phobic Disorders,2,596,alprazolam,IN,may_treat
+D010698,Phobic Disorders,2,25480,gabapentin,IN,may_treat
+D010698,Phobic Disorders,2,32937,paroxetine,IN,may_treat
+D063487,Prescription Drug Misuse,3,272,activated charcoal,IN,may_treat
+D063487,Prescription Drug Misuse,3,2296,charcoal,IN,may_treat
+D063487,Prescription Drug Misuse,3,203223,digoxin antibodies Fab fragments,IN,may_treat
+D063487,Prescription Drug Misuse,3,3755,edetic acid,IN,may_treat
+D063487,Prescription Drug Misuse,3,4457,flumazenil,IN,may_treat
+D063487,Prescription Drug Misuse,3,5975,ipecac,IN,may_treat
+D063487,Prescription Drug Misuse,3,52356,magnesium citrate,IN,may_treat
+D063487,Prescription Drug Misuse,3,31479,nalmefene,IN,may_treat
+D063487,Prescription Drug Misuse,3,7243,naltrexone,IN,may_treat
+D063487,Prescription Drug Misuse,3,34345,pralidoxime,IN,may_treat
+D063487,Prescription Drug Misuse,3,8825,protamine sulfate (USP),IN,may_treat
+D063487,Prescription Drug Misuse,3,8826,protamines,IN,may_treat
+D063487,Prescription Drug Misuse,3,9100,racemethionine,IN,may_treat
+D063487,Prescription Drug Misuse,3,36676,sodium bicarbonate,IN,may_treat
+D063487,Prescription Drug Misuse,3,11017,uridine,IN,may_treat
+D063487,Prescription Drug Misuse,3,1665222,uridine triacetate,IN,may_treat
+D011618,Psychotic Disorders,2,70223,aldesleukin,IN,ci_with
+D011618,Psychotic Disorders,2,3007,cycloserine,IN,ci_with
+D011618,Psychotic Disorders,2,3415,dihydroergocornine,IN,ci_with
+D011618,Psychotic Disorders,2,3416,dihydroergocristine,IN,ci_with
+D011618,Psychotic Disorders,2,3417,dihydroergocryptine,IN,ci_with
+D011618,Psychotic Disorders,2,3554,disulfiram,IN,ci_with
+D011618,Psychotic Disorders,2,4024,"ergoloid mesylates, USP",IN,ci_with
+D011618,Psychotic Disorders,2,6130,ketamine,IN,ci_with
+D011618,Psychotic Disorders,2,6694,mefloquine,IN,ci_with
+D011618,Psychotic Disorders,2,7781,oxazepam,IN,ci_with
+D011618,Psychotic Disorders,2,7966,pemoline,IN,ci_with
+D011618,Psychotic Disorders,2,68503,ziconotide,IN,ci_with
+D011618,Psychotic Disorders,2,16735,acetophenazine,IN,may_treat
+D011618,Psychotic Disorders,2,1373,benperidol,IN,may_treat
+D011618,Psychotic Disorders,2,19777,bromperidol,IN,may_treat
+D011618,Psychotic Disorders,2,2002,carbamazepine,IN,may_treat
+D011618,Psychotic Disorders,2,2403,chlorpromazine,IN,may_treat
+D011618,Psychotic Disorders,2,2406,chlorprothixene,IN,may_treat
+D011618,Psychotic Disorders,2,2626,clozapine,IN,may_treat
+D011618,Psychotic Disorders,2,3648,droperidol,IN,may_treat
+D011618,Psychotic Disorders,2,4496,fluphenazine,IN,may_treat
+D011618,Psychotic Disorders,2,5093,haloperidol,IN,may_treat
+D011618,Psychotic Disorders,2,6470,lorazepam,IN,may_treat
+D011618,Psychotic Disorders,2,6475,loxapine,IN,may_treat
+D011618,Psychotic Disorders,2,6779,mesoridazine,IN,may_treat
+D011618,Psychotic Disorders,2,6852,methotrimeprazine,IN,may_treat
+D011618,Psychotic Disorders,2,7019,molindone,IN,may_treat
+D011618,Psychotic Disorders,2,61381,olanzapine,IN,may_treat
+D011618,Psychotic Disorders,2,7974,penfluridol,IN,may_treat
+D011618,Psychotic Disorders,2,8042,perazine,IN,may_treat
+D011618,Psychotic Disorders,2,8766,periciazine,IN,may_treat
+D011618,Psychotic Disorders,2,8076,perphenazine,IN,may_treat
+D011618,Psychotic Disorders,2,8331,pimozide,IN,may_treat
+D011618,Psychotic Disorders,2,8704,prochlorperazine,IN,may_treat
+D011618,Psychotic Disorders,2,8742,promazine,IN,may_treat
+D011618,Psychotic Disorders,2,51272,quetiapine,IN,may_treat
+D011618,Psychotic Disorders,2,10502,thioridazine,IN,may_treat
+D011618,Psychotic Disorders,2,10510,thiothixene,IN,may_treat
+D011618,Psychotic Disorders,2,10800,trifluoperazine,IN,may_treat
+D011618,Psychotic Disorders,2,10804,trifluperidol,IN,may_treat
+D011618,Psychotic Disorders,2,10805,triflupromazine,IN,may_treat
+D012148,Restless Legs Syndrome,3,2002,carbamazepine,IN,may_treat
+D012148,Restless Legs Syndrome,3,2598,clonazepam,IN,may_treat
+D012148,Restless Legs Syndrome,3,262150,iron carbonyl,IN,may_treat
+D012148,Restless Legs Syndrome,3,616739,rotigotine,IN,may_treat
+D012559,Schizophrenia,2,10402,dronabinol,IN,ci_with
+D012559,Schizophrenia,2,4328,fenfluramine,IN,ci_with
+D012559,Schizophrenia,2,325526,ginseng preparation,IN,ci_with
+D012559,Schizophrenia,2,16735,acetophenazine,IN,may_treat
+D012559,Schizophrenia,2,89013,aripiprazole,IN,may_treat
+D012559,Schizophrenia,2,1673265,aripiprazole lauroxil,IN,may_treat
+D012559,Schizophrenia,2,784649,asenapine,IN,may_treat
+D012559,Schizophrenia,2,1373,benperidol,IN,may_treat
+D012559,Schizophrenia,2,1658314,brexpiprazole,IN,may_treat
+D012559,Schizophrenia,2,2002,carbamazepine,IN,may_treat
+D012559,Schizophrenia,2,1667655,cariprazine,IN,may_treat
+D012559,Schizophrenia,2,2403,chlorpromazine,IN,may_treat
+D012559,Schizophrenia,2,2406,chlorprothixene,IN,may_treat
+D012559,Schizophrenia,2,2598,clonazepam,IN,may_treat
+D012559,Schizophrenia,2,2626,clozapine,IN,may_treat
+D012559,Schizophrenia,2,3013,cyproheptadine,IN,may_treat
+D012559,Schizophrenia,2,62174,deserpidine,IN,may_treat
+D012559,Schizophrenia,2,4495,flupenthixol,IN,may_treat
+D012559,Schizophrenia,2,4496,fluphenazine,IN,may_treat
+D012559,Schizophrenia,2,4507,fluspirilene,IN,may_treat
+D012559,Schizophrenia,2,5093,haloperidol,IN,may_treat
+D012559,Schizophrenia,2,73178,iloperidone,IN,may_treat
+D012559,Schizophrenia,2,6475,loxapine,IN,may_treat
+D012559,Schizophrenia,2,2275602,lumateperone,IN,may_treat
+D012559,Schizophrenia,2,1040028,lurasidone,IN,may_treat
+D012559,Schizophrenia,2,6779,mesoridazine,IN,may_treat
+D012559,Schizophrenia,2,6852,methotrimeprazine,IN,may_treat
+D012559,Schizophrenia,2,7019,molindone,IN,may_treat
+D012559,Schizophrenia,2,61381,olanzapine,IN,may_treat
+D012559,Schizophrenia,2,679314,paliperidone,IN,may_treat
+D012559,Schizophrenia,2,8042,perazine,IN,may_treat
+D012559,Schizophrenia,2,8076,perphenazine,IN,may_treat
+D012559,Schizophrenia,2,33739,pipamperone,IN,may_treat
+D012559,Schizophrenia,2,8338,piperacetazine,IN,may_treat
+D012559,Schizophrenia,2,8348,pipothiazine,IN,may_treat
+D012559,Schizophrenia,2,8704,prochlorperazine,IN,may_treat
+D012559,Schizophrenia,2,8742,promazine,IN,may_treat
+D012559,Schizophrenia,2,51272,quetiapine,IN,may_treat
+D012559,Schizophrenia,2,9260,reserpine,IN,may_treat
+D012559,Schizophrenia,2,35636,risperidone,IN,may_treat
+D012559,Schizophrenia,2,2559612,samidorphan,IN,may_treat
+D012559,Schizophrenia,2,9639,selegiline,IN,may_treat
+D012559,Schizophrenia,2,41996,sertindole,IN,may_treat
+D012559,Schizophrenia,2,10502,thioridazine,IN,may_treat
+D012559,Schizophrenia,2,10510,thiothixene,IN,may_treat
+D012559,Schizophrenia,2,10800,trifluoperazine,IN,may_treat
+D012559,Schizophrenia,2,2694828,xanomeline,IN,may_treat
+D012559,Schizophrenia,2,115698,ziprasidone,IN,may_treat
+D019967,Schizophrenia Spectrum and Other Psychotic Disorders,1,70223,aldesleukin,IN,ci_with
+D019967,Schizophrenia Spectrum and Other Psychotic Disorders,1,3007,cycloserine,IN,ci_with
+D019967,Schizophrenia Spectrum and Other Psychotic Disorders,1,3415,dihydroergocornine,IN,ci_with
+D019967,Schizophrenia Spectrum and Other Psychotic Disorders,1,3416,dihydroergocristine,IN,ci_with
+D019967,Schizophrenia Spectrum and Other Psychotic Disorders,1,3417,dihydroergocryptine,IN,ci_with
+D019967,Schizophrenia Spectrum and Other Psychotic Disorders,1,3554,disulfiram,IN,ci_with
+D019967,Schizophrenia Spectrum and Other Psychotic Disorders,1,10402,dronabinol,IN,ci_with
+D019967,Schizophrenia Spectrum and Other Psychotic Disorders,1,4024,"ergoloid mesylates, USP",IN,ci_with
+D019967,Schizophrenia Spectrum and Other Psychotic Disorders,1,4328,fenfluramine,IN,ci_with
+D019967,Schizophrenia Spectrum and Other Psychotic Disorders,1,325526,ginseng preparation,IN,ci_with
+D019967,Schizophrenia Spectrum and Other Psychotic Disorders,1,6130,ketamine,IN,ci_with
+D019967,Schizophrenia Spectrum and Other Psychotic Disorders,1,6694,mefloquine,IN,ci_with
+D019967,Schizophrenia Spectrum and Other Psychotic Disorders,1,7781,oxazepam,IN,ci_with
+D019967,Schizophrenia Spectrum and Other Psychotic Disorders,1,7966,pemoline,IN,ci_with
+D019967,Schizophrenia Spectrum and Other Psychotic Disorders,1,68503,ziconotide,IN,ci_with
+D019967,Schizophrenia Spectrum and Other Psychotic Disorders,1,16735,acetophenazine,IN,may_treat
+D019967,Schizophrenia Spectrum and Other Psychotic Disorders,1,89013,aripiprazole,IN,may_treat
+D019967,Schizophrenia Spectrum and Other Psychotic Disorders,1,1673265,aripiprazole lauroxil,IN,may_treat
+D019967,Schizophrenia Spectrum and Other Psychotic Disorders,1,784649,asenapine,IN,may_treat
+D019967,Schizophrenia Spectrum and Other Psychotic Disorders,1,1373,benperidol,IN,may_treat
+D019967,Schizophrenia Spectrum and Other Psychotic Disorders,1,1658314,brexpiprazole,IN,may_treat
+D019967,Schizophrenia Spectrum and Other Psychotic Disorders,1,19777,bromperidol,IN,may_treat
+D019967,Schizophrenia Spectrum and Other Psychotic Disorders,1,2002,carbamazepine,IN,may_treat
+D019967,Schizophrenia Spectrum and Other Psychotic Disorders,1,1667655,cariprazine,IN,may_treat
+D019967,Schizophrenia Spectrum and Other Psychotic Disorders,1,2403,chlorpromazine,IN,may_treat
+D019967,Schizophrenia Spectrum and Other Psychotic Disorders,1,2406,chlorprothixene,IN,may_treat
+D019967,Schizophrenia Spectrum and Other Psychotic Disorders,1,2598,clonazepam,IN,may_treat
+D019967,Schizophrenia Spectrum and Other Psychotic Disorders,1,2626,clozapine,IN,may_treat
+D019967,Schizophrenia Spectrum and Other Psychotic Disorders,1,3013,cyproheptadine,IN,may_treat
+D019967,Schizophrenia Spectrum and Other Psychotic Disorders,1,62174,deserpidine,IN,may_treat
+D019967,Schizophrenia Spectrum and Other Psychotic Disorders,1,3648,droperidol,IN,may_treat
+D019967,Schizophrenia Spectrum and Other Psychotic Disorders,1,4495,flupenthixol,IN,may_treat
+D019967,Schizophrenia Spectrum and Other Psychotic Disorders,1,4496,fluphenazine,IN,may_treat
+D019967,Schizophrenia Spectrum and Other Psychotic Disorders,1,4507,fluspirilene,IN,may_treat
+D019967,Schizophrenia Spectrum and Other Psychotic Disorders,1,5093,haloperidol,IN,may_treat
+D019967,Schizophrenia Spectrum and Other Psychotic Disorders,1,73178,iloperidone,IN,may_treat
+D019967,Schizophrenia Spectrum and Other Psychotic Disorders,1,6470,lorazepam,IN,may_treat
+D019967,Schizophrenia Spectrum and Other Psychotic Disorders,1,6475,loxapine,IN,may_treat
+D019967,Schizophrenia Spectrum and Other Psychotic Disorders,1,2275602,lumateperone,IN,may_treat
+D019967,Schizophrenia Spectrum and Other Psychotic Disorders,1,1040028,lurasidone,IN,may_treat
+D019967,Schizophrenia Spectrum and Other Psychotic Disorders,1,6779,mesoridazine,IN,may_treat
+D019967,Schizophrenia Spectrum and Other Psychotic Disorders,1,6852,methotrimeprazine,IN,may_treat
+D019967,Schizophrenia Spectrum and Other Psychotic Disorders,1,7019,molindone,IN,may_treat
+D019967,Schizophrenia Spectrum and Other Psychotic Disorders,1,61381,olanzapine,IN,may_treat
+D019967,Schizophrenia Spectrum and Other Psychotic Disorders,1,679314,paliperidone,IN,may_treat
+D019967,Schizophrenia Spectrum and Other Psychotic Disorders,1,7974,penfluridol,IN,may_treat
+D019967,Schizophrenia Spectrum and Other Psychotic Disorders,1,8042,perazine,IN,may_treat
+D019967,Schizophrenia Spectrum and Other Psychotic Disorders,1,8766,periciazine,IN,may_treat
+D019967,Schizophrenia Spectrum and Other Psychotic Disorders,1,8076,perphenazine,IN,may_treat
+D019967,Schizophrenia Spectrum and Other Psychotic Disorders,1,8331,pimozide,IN,may_treat
+D019967,Schizophrenia Spectrum and Other Psychotic Disorders,1,33739,pipamperone,IN,may_treat
+D019967,Schizophrenia Spectrum and Other Psychotic Disorders,1,8338,piperacetazine,IN,may_treat
+D019967,Schizophrenia Spectrum and Other Psychotic Disorders,1,8348,pipothiazine,IN,may_treat
+D019967,Schizophrenia Spectrum and Other Psychotic Disorders,1,8704,prochlorperazine,IN,may_treat
+D019967,Schizophrenia Spectrum and Other Psychotic Disorders,1,8742,promazine,IN,may_treat
+D019967,Schizophrenia Spectrum and Other Psychotic Disorders,1,51272,quetiapine,IN,may_treat
+D019967,Schizophrenia Spectrum and Other Psychotic Disorders,1,9260,reserpine,IN,may_treat
+D019967,Schizophrenia Spectrum and Other Psychotic Disorders,1,35636,risperidone,IN,may_treat
+D019967,Schizophrenia Spectrum and Other Psychotic Disorders,1,2559612,samidorphan,IN,may_treat
+D019967,Schizophrenia Spectrum and Other Psychotic Disorders,1,9639,selegiline,IN,may_treat
+D019967,Schizophrenia Spectrum and Other Psychotic Disorders,1,41996,sertindole,IN,may_treat
+D019967,Schizophrenia Spectrum and Other Psychotic Disorders,1,10502,thioridazine,IN,may_treat
+D019967,Schizophrenia Spectrum and Other Psychotic Disorders,1,10510,thiothixene,IN,may_treat
+D019967,Schizophrenia Spectrum and Other Psychotic Disorders,1,10800,trifluoperazine,IN,may_treat
+D019967,Schizophrenia Spectrum and Other Psychotic Disorders,1,10804,trifluperidol,IN,may_treat
+D019967,Schizophrenia Spectrum and Other Psychotic Disorders,1,10805,triflupromazine,IN,may_treat
+D019967,Schizophrenia Spectrum and Other Psychotic Disorders,1,2694828,xanomeline,IN,may_treat
+D019967,Schizophrenia Spectrum and Other Psychotic Disorders,1,115698,ziprasidone,IN,may_treat
+D012563,"Schizophrenia, Paranoid",3,2406,chlorprothixene,IN,may_treat
+D016574,Seasonal Affective Disorder,3,6711,melatonin,IN,may_treat
+D020018,"Sexual Dysfunctions, Psychological",1,1291301,avanafil,IN,may_treat
+D020018,"Sexual Dysfunctions, Psychological",1,2176312,bremelanotide,IN,may_treat
+D020018,"Sexual Dysfunctions, Psychological",1,1665509,flibanserin,IN,may_treat
+D020018,"Sexual Dysfunctions, Psychological",1,325526,ginseng preparation,IN,may_treat
+D020018,"Sexual Dysfunctions, Psychological",1,6904,methyltestosterone,IN,may_treat
+D020018,"Sexual Dysfunctions, Psychological",1,1370971,ospemifene,IN,may_treat
+D020018,"Sexual Dysfunctions, Psychological",1,7895,papaverine,IN,may_treat
+D020018,"Sexual Dysfunctions, Psychological",1,3143,prasterone,IN,may_treat
+D020018,"Sexual Dysfunctions, Psychological",1,220982,yohimbine,IN,may_treat
+D019968,Sexual and Gender Disorders,2,3143,prasterone,IN,may_treat
+D012892,Sleep Deprivation,3,161203,aceprometazine,IN,may_treat
+D020178,"Sleep Disorders, Circadian Rhythm",3,6711,melatonin,IN,may_treat
+D020178,"Sleep Disorders, Circadian Rhythm",3,1490468,tasimelteon,IN,may_treat
+D020919,"Sleep Disorders, Intrinsic",3,2591497,daridorexant,IN,ci_with
+D020919,"Sleep Disorders, Intrinsic",3,6470,lorazepam,IN,ci_with
+D020919,"Sleep Disorders, Intrinsic",3,2288236,ozanimod,IN,ci_with
+D020919,"Sleep Disorders, Intrinsic",3,35185,quazepam,IN,ci_with
+D020919,"Sleep Disorders, Intrinsic",3,1547099,suvorexant,IN,ci_with
+D020919,"Sleep Disorders, Intrinsic",3,719,amobarbital,IN,may_treat
+D020919,"Sleep Disorders, Intrinsic",3,725,amphetamine,IN,may_treat
+D020919,"Sleep Disorders, Intrinsic",3,17381,aprobarbital,IN,may_treat
+D020919,"Sleep Disorders, Intrinsic",3,1749,bromazepam,IN,may_treat
+D020919,"Sleep Disorders, Intrinsic",3,19759,bromodiphenhydramine,IN,may_treat
+D020919,"Sleep Disorders, Intrinsic",3,477631,butabarbital,IN,may_treat
+D020919,"Sleep Disorders, Intrinsic",3,19874,butobarbital,IN,may_treat
+D020919,"Sleep Disorders, Intrinsic",3,2002,carbamazepine,IN,may_treat
+D020919,"Sleep Disorders, Intrinsic",3,2372,chlormethiazole,IN,may_treat
+D020919,"Sleep Disorders, Intrinsic",3,2598,clonazepam,IN,may_treat
+D020919,"Sleep Disorders, Intrinsic",3,2591497,daridorexant,IN,may_treat
+D020919,"Sleep Disorders, Intrinsic",3,3288,dextroamphetamine,IN,may_treat
+D020919,"Sleep Disorders, Intrinsic",3,3498,diphenhydramine,IN,may_treat
+D020919,"Sleep Disorders, Intrinsic",3,3642,doxylamine,IN,may_treat
+D020919,"Sleep Disorders, Intrinsic",3,4077,estazolam,IN,may_treat
+D020919,"Sleep Disorders, Intrinsic",3,461016,eszopiclone,IN,may_treat
+D020919,"Sleep Disorders, Intrinsic",3,4118,ethchlorvynol,IN,may_treat
+D020919,"Sleep Disorders, Intrinsic",3,24474,ethinamate,IN,may_treat
+D020919,"Sleep Disorders, Intrinsic",3,4460,flunitrazepam,IN,may_treat
+D020919,"Sleep Disorders, Intrinsic",3,4501,flurazepam,IN,may_treat
+D020919,"Sleep Disorders, Intrinsic",3,4903,glutethimide,IN,may_treat
+D020919,"Sleep Disorders, Intrinsic",3,262150,iron carbonyl,IN,may_treat
+D020919,"Sleep Disorders, Intrinsic",3,2272403,lemborexant,IN,may_treat
+D020919,"Sleep Disorders, Intrinsic",3,6470,lorazepam,IN,may_treat
+D020919,"Sleep Disorders, Intrinsic",3,28894,lormetazepam,IN,may_treat
+D020919,"Sleep Disorders, Intrinsic",3,6816,methamphetamine,IN,may_treat
+D020919,"Sleep Disorders, Intrinsic",3,6823,methaqualone,IN,may_treat
+D020919,"Sleep Disorders, Intrinsic",3,6901,methylphenidate,IN,may_treat
+D020919,"Sleep Disorders, Intrinsic",3,6910,methyprylon,IN,may_treat
+D020919,"Sleep Disorders, Intrinsic",3,30125,modafinil,IN,may_treat
+D020919,"Sleep Disorders, Intrinsic",3,7440,nitrazepam,IN,may_treat
+D020919,"Sleep Disorders, Intrinsic",3,2387302,oxybate,IN,may_treat
+D020919,"Sleep Disorders, Intrinsic",3,7966,pemoline,IN,may_treat
+D020919,"Sleep Disorders, Intrinsic",3,8770,propiomazine,IN,may_treat
+D020919,"Sleep Disorders, Intrinsic",3,35185,quazepam,IN,may_treat
+D020919,"Sleep Disorders, Intrinsic",3,596205,ramelteon,IN,may_treat
+D020919,"Sleep Disorders, Intrinsic",3,616739,rotigotine,IN,may_treat
+D020919,"Sleep Disorders, Intrinsic",3,9624,secobarbital,IN,may_treat
+D020919,"Sleep Disorders, Intrinsic",3,1547099,suvorexant,IN,may_treat
+D020919,"Sleep Disorders, Intrinsic",3,10355,temazepam,IN,may_treat
+D020919,"Sleep Disorders, Intrinsic",3,38077,thiobutabarbital,IN,may_treat
+D020919,"Sleep Disorders, Intrinsic",3,38260,tibolone,IN,may_treat
+D020919,"Sleep Disorders, Intrinsic",3,10737,trazodone,IN,may_treat
+D020919,"Sleep Disorders, Intrinsic",3,10767,triazolam,IN,may_treat
+D020919,"Sleep Disorders, Intrinsic",3,10898,tryptophan,IN,may_treat
+D020919,"Sleep Disorders, Intrinsic",3,253206,valerian root extract,IN,may_treat
+D020919,"Sleep Disorders, Intrinsic",3,1424884,vilanterol,IN,may_treat
+D020919,"Sleep Disorders, Intrinsic",3,74667,zaleplon,IN,may_treat
+D020919,"Sleep Disorders, Intrinsic",3,39993,zolpidem,IN,may_treat
+D007319,Sleep Initiation and Maintenance Disorders,4,719,amobarbital,IN,may_treat
+D007319,Sleep Initiation and Maintenance Disorders,4,17381,aprobarbital,IN,may_treat
+D007319,Sleep Initiation and Maintenance Disorders,4,1749,bromazepam,IN,may_treat
+D007319,Sleep Initiation and Maintenance Disorders,4,19759,bromodiphenhydramine,IN,may_treat
+D007319,Sleep Initiation and Maintenance Disorders,4,477631,butabarbital,IN,may_treat
+D007319,Sleep Initiation and Maintenance Disorders,4,19874,butobarbital,IN,may_treat
+D007319,Sleep Initiation and Maintenance Disorders,4,2372,chlormethiazole,IN,may_treat
+D007319,Sleep Initiation and Maintenance Disorders,4,2591497,daridorexant,IN,may_treat
+D007319,Sleep Initiation and Maintenance Disorders,4,3498,diphenhydramine,IN,may_treat
+D007319,Sleep Initiation and Maintenance Disorders,4,3642,doxylamine,IN,may_treat
+D007319,Sleep Initiation and Maintenance Disorders,4,4077,estazolam,IN,may_treat
+D007319,Sleep Initiation and Maintenance Disorders,4,461016,eszopiclone,IN,may_treat
+D007319,Sleep Initiation and Maintenance Disorders,4,4118,ethchlorvynol,IN,may_treat
+D007319,Sleep Initiation and Maintenance Disorders,4,24474,ethinamate,IN,may_treat
+D007319,Sleep Initiation and Maintenance Disorders,4,4460,flunitrazepam,IN,may_treat
+D007319,Sleep Initiation and Maintenance Disorders,4,4501,flurazepam,IN,may_treat
+D007319,Sleep Initiation and Maintenance Disorders,4,4903,glutethimide,IN,may_treat
+D007319,Sleep Initiation and Maintenance Disorders,4,2272403,lemborexant,IN,may_treat
+D007319,Sleep Initiation and Maintenance Disorders,4,6470,lorazepam,IN,may_treat
+D007319,Sleep Initiation and Maintenance Disorders,4,28894,lormetazepam,IN,may_treat
+D007319,Sleep Initiation and Maintenance Disorders,4,6823,methaqualone,IN,may_treat
+D007319,Sleep Initiation and Maintenance Disorders,4,6910,methyprylon,IN,may_treat
+D007319,Sleep Initiation and Maintenance Disorders,4,7440,nitrazepam,IN,may_treat
+D007319,Sleep Initiation and Maintenance Disorders,4,8770,propiomazine,IN,may_treat
+D007319,Sleep Initiation and Maintenance Disorders,4,35185,quazepam,IN,may_treat
+D007319,Sleep Initiation and Maintenance Disorders,4,596205,ramelteon,IN,may_treat
+D007319,Sleep Initiation and Maintenance Disorders,4,9624,secobarbital,IN,may_treat
+D007319,Sleep Initiation and Maintenance Disorders,4,1547099,suvorexant,IN,may_treat
+D007319,Sleep Initiation and Maintenance Disorders,4,10355,temazepam,IN,may_treat
+D007319,Sleep Initiation and Maintenance Disorders,4,38077,thiobutabarbital,IN,may_treat
+D007319,Sleep Initiation and Maintenance Disorders,4,38260,tibolone,IN,may_treat
+D007319,Sleep Initiation and Maintenance Disorders,4,10737,trazodone,IN,may_treat
+D007319,Sleep Initiation and Maintenance Disorders,4,10767,triazolam,IN,may_treat
+D007319,Sleep Initiation and Maintenance Disorders,4,10898,tryptophan,IN,may_treat
+D007319,Sleep Initiation and Maintenance Disorders,4,253206,valerian root extract,IN,may_treat
+D007319,Sleep Initiation and Maintenance Disorders,4,74667,zaleplon,IN,may_treat
+D007319,Sleep Initiation and Maintenance Disorders,4,39993,zolpidem,IN,may_treat
+D012893,Sleep Wake Disorders,1,2591497,daridorexant,IN,ci_with
+D012893,Sleep Wake Disorders,1,6470,lorazepam,IN,ci_with
+D012893,Sleep Wake Disorders,1,2288236,ozanimod,IN,ci_with
+D012893,Sleep Wake Disorders,1,35185,quazepam,IN,ci_with
+D012893,Sleep Wake Disorders,1,1547099,suvorexant,IN,ci_with
+D012893,Sleep Wake Disorders,1,161203,aceprometazine,IN,may_treat
+D012893,Sleep Wake Disorders,1,719,amobarbital,IN,may_treat
+D012893,Sleep Wake Disorders,1,725,amphetamine,IN,may_treat
+D012893,Sleep Wake Disorders,1,17381,aprobarbital,IN,may_treat
+D012893,Sleep Wake Disorders,1,641465,armodafinil,IN,may_treat
+D012893,Sleep Wake Disorders,1,1749,bromazepam,IN,may_treat
+D012893,Sleep Wake Disorders,1,19759,bromodiphenhydramine,IN,may_treat
+D012893,Sleep Wake Disorders,1,477631,butabarbital,IN,may_treat
+D012893,Sleep Wake Disorders,1,19874,butobarbital,IN,may_treat
+D012893,Sleep Wake Disorders,1,2002,carbamazepine,IN,may_treat
+D012893,Sleep Wake Disorders,1,2372,chlormethiazole,IN,may_treat
+D012893,Sleep Wake Disorders,1,2598,clonazepam,IN,may_treat
+D012893,Sleep Wake Disorders,1,2591497,daridorexant,IN,may_treat
+D012893,Sleep Wake Disorders,1,3288,dextroamphetamine,IN,may_treat
+D012893,Sleep Wake Disorders,1,3498,diphenhydramine,IN,may_treat
+D012893,Sleep Wake Disorders,1,3642,doxylamine,IN,may_treat
+D012893,Sleep Wake Disorders,1,4077,estazolam,IN,may_treat
+D012893,Sleep Wake Disorders,1,461016,eszopiclone,IN,may_treat
+D012893,Sleep Wake Disorders,1,4118,ethchlorvynol,IN,may_treat
+D012893,Sleep Wake Disorders,1,24474,ethinamate,IN,may_treat
+D012893,Sleep Wake Disorders,1,4460,flunitrazepam,IN,may_treat
+D012893,Sleep Wake Disorders,1,4501,flurazepam,IN,may_treat
+D012893,Sleep Wake Disorders,1,4903,glutethimide,IN,may_treat
+D012893,Sleep Wake Disorders,1,262150,iron carbonyl,IN,may_treat
+D012893,Sleep Wake Disorders,1,2272403,lemborexant,IN,may_treat
+D012893,Sleep Wake Disorders,1,6470,lorazepam,IN,may_treat
+D012893,Sleep Wake Disorders,1,28894,lormetazepam,IN,may_treat
+D012893,Sleep Wake Disorders,1,6711,melatonin,IN,may_treat
+D012893,Sleep Wake Disorders,1,6816,methamphetamine,IN,may_treat
+D012893,Sleep Wake Disorders,1,6823,methaqualone,IN,may_treat
+D012893,Sleep Wake Disorders,1,6901,methylphenidate,IN,may_treat
+D012893,Sleep Wake Disorders,1,6910,methyprylon,IN,may_treat
+D012893,Sleep Wake Disorders,1,30125,modafinil,IN,may_treat
+D012893,Sleep Wake Disorders,1,7440,nitrazepam,IN,may_treat
+D012893,Sleep Wake Disorders,1,2387302,oxybate,IN,may_treat
+D012893,Sleep Wake Disorders,1,7966,pemoline,IN,may_treat
+D012893,Sleep Wake Disorders,1,2197878,pitolisant,IN,may_treat
+D012893,Sleep Wake Disorders,1,8770,propiomazine,IN,may_treat
+D012893,Sleep Wake Disorders,1,35185,quazepam,IN,may_treat
+D012893,Sleep Wake Disorders,1,596205,ramelteon,IN,may_treat
+D012893,Sleep Wake Disorders,1,616739,rotigotine,IN,may_treat
+D012893,Sleep Wake Disorders,1,9624,secobarbital,IN,may_treat
+D012893,Sleep Wake Disorders,1,1547099,suvorexant,IN,may_treat
+D012893,Sleep Wake Disorders,1,1490468,tasimelteon,IN,may_treat
+D012893,Sleep Wake Disorders,1,10355,temazepam,IN,may_treat
+D012893,Sleep Wake Disorders,1,38077,thiobutabarbital,IN,may_treat
+D012893,Sleep Wake Disorders,1,38260,tibolone,IN,may_treat
+D012893,Sleep Wake Disorders,1,10737,trazodone,IN,may_treat
+D012893,Sleep Wake Disorders,1,10767,triazolam,IN,may_treat
+D012893,Sleep Wake Disorders,1,10898,tryptophan,IN,may_treat
+D012893,Sleep Wake Disorders,1,253206,valerian root extract,IN,may_treat
+D012893,Sleep Wake Disorders,1,1424884,vilanterol,IN,may_treat
+D012893,Sleep Wake Disorders,1,74667,zaleplon,IN,may_treat
+D012893,Sleep Wake Disorders,1,39993,zolpidem,IN,may_treat
+D013313,"Stress Disorders, Post-Traumatic",3,2002,carbamazepine,IN,may_treat
+D013313,"Stress Disorders, Post-Traumatic",3,6448,lithium,IN,may_treat
+D013313,"Stress Disorders, Post-Traumatic",3,746070,lithium aspartate,IN,may_treat
+D013313,"Stress Disorders, Post-Traumatic",3,42351,lithium carbonate,IN,may_treat
+D013313,"Stress Disorders, Post-Traumatic",3,52105,lithium citrate,IN,may_treat
+D013313,"Stress Disorders, Post-Traumatic",3,31565,nefazodone,IN,may_treat
+D013313,"Stress Disorders, Post-Traumatic",3,32937,paroxetine,IN,may_treat
+D013313,"Stress Disorders, Post-Traumatic",3,36437,sertraline,IN,may_treat
+D013313,"Stress Disorders, Post-Traumatic",3,10734,tranylcypromine,IN,may_treat
+D040921,"Stress Disorders, Traumatic",2,2002,carbamazepine,IN,may_treat
+D040921,"Stress Disorders, Traumatic",2,6448,lithium,IN,may_treat
+D040921,"Stress Disorders, Traumatic",2,746070,lithium aspartate,IN,may_treat
+D040921,"Stress Disorders, Traumatic",2,42351,lithium carbonate,IN,may_treat
+D040921,"Stress Disorders, Traumatic",2,52105,lithium citrate,IN,may_treat
+D040921,"Stress Disorders, Traumatic",2,31565,nefazodone,IN,may_treat
+D040921,"Stress Disorders, Traumatic",2,32937,paroxetine,IN,may_treat
+D040921,"Stress Disorders, Traumatic",2,36437,sertraline,IN,may_treat
+D040921,"Stress Disorders, Traumatic",2,10734,tranylcypromine,IN,may_treat
+D015819,"Substance Abuse, Intravenous",2,1422,benzphetamine,IN,ci_with
+D015819,"Substance Abuse, Intravenous",2,3288,dextroamphetamine,IN,ci_with
+D015819,"Substance Abuse, Intravenous",2,3389,diethylpropion,IN,ci_with
+D015819,"Substance Abuse, Intravenous",2,4328,fenfluramine,IN,ci_with
+D015819,"Substance Abuse, Intravenous",2,6664,mazindol,IN,ci_with
+D015819,"Substance Abuse, Intravenous",2,6816,methamphetamine,IN,ci_with
+D015819,"Substance Abuse, Intravenous",2,8133,phenmetrazine,IN,ci_with
+D013375,Substance Withdrawal Syndrome,2,42347,bupropion,IN,ci_with
+D013375,Substance Withdrawal Syndrome,2,4850,glucose,IN,ci_with
+D013375,Substance Withdrawal Syndrome,2,1749,bromazepam,IN,may_treat
+D013375,Substance Withdrawal Syndrome,2,2002,carbamazepine,IN,may_treat
+D013375,Substance Withdrawal Syndrome,2,2356,chlordiazepoxide,IN,may_treat
+D013375,Substance Withdrawal Syndrome,2,2372,chlormethiazole,IN,may_treat
+D013375,Substance Withdrawal Syndrome,2,2599,clonidine,IN,may_treat
+D013375,Substance Withdrawal Syndrome,2,2353,clorazepate,IN,may_treat
+D013375,Substance Withdrawal Syndrome,2,3322,diazepam,IN,may_treat
+D013375,Substance Withdrawal Syndrome,2,5093,haloperidol,IN,may_treat
+D013375,Substance Withdrawal Syndrome,2,5553,hydroxyzine,IN,may_treat
+D013375,Substance Withdrawal Syndrome,2,28863,lofexidine,IN,may_treat
+D013375,Substance Withdrawal Syndrome,2,6470,lorazepam,IN,may_treat
+D013375,Substance Withdrawal Syndrome,2,7486,nitrous oxide,IN,may_treat
+D013375,Substance Withdrawal Syndrome,2,7781,oxazepam,IN,may_treat
+D013375,Substance Withdrawal Syndrome,2,8076,perphenazine,IN,may_treat
+D013375,Substance Withdrawal Syndrome,2,8627,prazepam,IN,may_treat
+D013375,Substance Withdrawal Syndrome,2,8701,procaine,IN,may_treat
+D013375,Substance Withdrawal Syndrome,2,38365,tofisopam,IN,may_treat
+D019966,Substance-Related Disorders,1,725,amphetamine,IN,ci_with
+D019966,Substance-Related Disorders,1,17941,anisindione,IN,ci_with
+D019966,Substance-Related Disorders,1,1359,belladonna alkaloids,IN,ci_with
+D019966,Substance-Related Disorders,1,89781,"belladonna extract, USP",IN,ci_with
+D019966,Substance-Related Disorders,1,314517,belladonna leaf extract,IN,ci_with
+D019966,Substance-Related Disorders,1,1422,benzphetamine,IN,ci_with
+D019966,Substance-Related Disorders,1,42347,bupropion,IN,ci_with
+D019966,Substance-Related Disorders,1,1841,butorphanol,IN,ci_with
+D019966,Substance-Related Disorders,1,3007,cycloserine,IN,ci_with
+D019966,Substance-Related Disorders,1,22656,desogestrel,IN,ci_with
+D019966,Substance-Related Disorders,1,3288,dextroamphetamine,IN,ci_with
+D019966,Substance-Related Disorders,1,1598,dicumarol,IN,ci_with
+D019966,Substance-Related Disorders,1,3389,diethylpropion,IN,ci_with
+D019966,Substance-Related Disorders,1,11636,drospirenone,IN,ci_with
+D019966,Substance-Related Disorders,1,1653781,eluxadoline,IN,ci_with
+D019966,Substance-Related Disorders,1,14584,etonogestrel,IN,ci_with
+D019966,Substance-Related Disorders,1,4328,fenfluramine,IN,ci_with
+D019966,Substance-Related Disorders,1,4850,glucose,IN,ci_with
+D019966,Substance-Related Disorders,1,6373,levonorgestrel,IN,ci_with
+D019966,Substance-Related Disorders,1,700810,lisdexamfetamine,IN,ci_with
+D019966,Substance-Related Disorders,1,6664,mazindol,IN,ci_with
+D019966,Substance-Related Disorders,1,6782,mestranol,IN,ci_with
+D019966,Substance-Related Disorders,1,6816,methamphetamine,IN,ci_with
+D019966,Substance-Related Disorders,1,6851,methotrexate,IN,ci_with
+D019966,Substance-Related Disorders,1,7243,naltrexone,IN,ci_with
+D019966,Substance-Related Disorders,1,326374,norelgestromin,IN,ci_with
+D019966,Substance-Related Disorders,1,31994,norgestimate,IN,ci_with
+D019966,Substance-Related Disorders,1,33272,phendimetrazine,IN,ci_with
+D019966,Substance-Related Disorders,1,8133,phenmetrazine,IN,ci_with
+D019966,Substance-Related Disorders,1,8150,phenprocoumon,IN,ci_with
+D019966,Substance-Related Disorders,1,8152,phentermine,IN,ci_with
+D019966,Substance-Related Disorders,1,8702,procarbazine,IN,ci_with
+D019966,Substance-Related Disorders,1,8704,prochlorperazine,IN,ci_with
+D019966,Substance-Related Disorders,1,10689,tramadol,IN,ci_with
+D019966,Substance-Related Disorders,1,11289,warfarin,IN,ci_with
+D019966,Substance-Related Disorders,1,82819,acamprosate,IN,may_treat
+D019966,Substance-Related Disorders,1,272,activated charcoal,IN,may_treat
+D019966,Substance-Related Disorders,1,1749,bromazepam,IN,may_treat
+D019966,Substance-Related Disorders,1,1819,buprenorphine,IN,may_treat
+D019966,Substance-Related Disorders,1,42347,bupropion,IN,may_treat
+D019966,Substance-Related Disorders,1,2002,carbamazepine,IN,may_treat
+D019966,Substance-Related Disorders,1,2296,charcoal,IN,may_treat
+D019966,Substance-Related Disorders,1,2356,chlordiazepoxide,IN,may_treat
+D019966,Substance-Related Disorders,1,2372,chlormethiazole,IN,may_treat
+D019966,Substance-Related Disorders,1,2556,citalopram,IN,may_treat
+D019966,Substance-Related Disorders,1,2599,clonidine,IN,may_treat
+D019966,Substance-Related Disorders,1,2353,clorazepate,IN,may_treat
+D019966,Substance-Related Disorders,1,3247,desipramine,IN,may_treat
+D019966,Substance-Related Disorders,1,3322,diazepam,IN,may_treat
+D019966,Substance-Related Disorders,1,203223,digoxin antibodies Fab fragments,IN,may_treat
+D019966,Substance-Related Disorders,1,3554,disulfiram,IN,may_treat
+D019966,Substance-Related Disorders,1,3637,doxapram,IN,may_treat
+D019966,Substance-Related Disorders,1,3755,edetic acid,IN,may_treat
+D019966,Substance-Related Disorders,1,4457,flumazenil,IN,may_treat
+D019966,Substance-Related Disorders,1,5093,haloperidol,IN,may_treat
+D019966,Substance-Related Disorders,1,5514,hydroxocobalamin,IN,may_treat
+D019966,Substance-Related Disorders,1,5553,hydroxyzine,IN,may_treat
+D019966,Substance-Related Disorders,1,5975,ipecac,IN,may_treat
+D019966,Substance-Related Disorders,1,237005,levomethadyl,IN,may_treat
+D019966,Substance-Related Disorders,1,700810,lisdexamfetamine,IN,may_treat
+D019966,Substance-Related Disorders,1,28863,lofexidine,IN,may_treat
+D019966,Substance-Related Disorders,1,6470,lorazepam,IN,may_treat
+D019966,Substance-Related Disorders,1,52356,magnesium citrate,IN,may_treat
+D019966,Substance-Related Disorders,1,6646,maprotiline,IN,may_treat
+D019966,Substance-Related Disorders,1,29421,mecobalamin,IN,may_treat
+D019966,Substance-Related Disorders,1,6779,mesoridazine,IN,may_treat
+D019966,Substance-Related Disorders,1,6813,methadone,IN,may_treat
+D019966,Substance-Related Disorders,1,31479,nalmefene,IN,may_treat
+D019966,Substance-Related Disorders,1,7242,naloxone,IN,may_treat
+D019966,Substance-Related Disorders,1,7243,naltrexone,IN,may_treat
+D019966,Substance-Related Disorders,1,7407,nicotine,IN,may_treat
+D019966,Substance-Related Disorders,1,7486,nitrous oxide,IN,may_treat
+D019966,Substance-Related Disorders,1,26225,ondansetron,IN,may_treat
+D019966,Substance-Related Disorders,1,7781,oxazepam,IN,may_treat
+D019966,Substance-Related Disorders,1,8076,perphenazine,IN,may_treat
+D019966,Substance-Related Disorders,1,34345,pralidoxime,IN,may_treat
+D019966,Substance-Related Disorders,1,8627,prazepam,IN,may_treat
+D019966,Substance-Related Disorders,1,8701,procaine,IN,may_treat
+D019966,Substance-Related Disorders,1,8825,protamine sulfate (USP),IN,may_treat
+D019966,Substance-Related Disorders,1,8826,protamines,IN,may_treat
+D019966,Substance-Related Disorders,1,9100,racemethionine,IN,may_treat
+D019966,Substance-Related Disorders,1,36676,sodium bicarbonate,IN,may_treat
+D019966,Substance-Related Disorders,1,10454,thiamine,IN,may_treat
+D019966,Substance-Related Disorders,1,38365,tofisopam,IN,may_treat
+D019966,Substance-Related Disorders,1,11017,uridine,IN,may_treat
+D019966,Substance-Related Disorders,1,1665222,uridine triacetate,IN,may_treat
+D019966,Substance-Related Disorders,1,11248,vitamin B12,IN,may_treat
+D013981,Tic Disorders,2,1422,benzphetamine,IN,ci_with
+D013981,Tic Disorders,2,352372,dexmethylphenidate,IN,ci_with
+D013981,Tic Disorders,2,3389,diethylpropion,IN,ci_with
+D013981,Tic Disorders,2,6816,methamphetamine,IN,ci_with
+D013981,Tic Disorders,2,6901,methylphenidate,IN,ci_with
+D013981,Tic Disorders,2,7966,pemoline,IN,ci_with
+D013981,Tic Disorders,2,2598,clonazepam,IN,may_treat
+D013981,Tic Disorders,2,2599,clonidine,IN,may_treat
+D013981,Tic Disorders,2,5093,haloperidol,IN,may_treat
+D013981,Tic Disorders,2,6673,mecamylamine,IN,may_treat
+D013981,Tic Disorders,2,8047,pergolide,IN,may_treat
+D013981,Tic Disorders,2,8076,perphenazine,IN,may_treat
+D013981,Tic Disorders,2,8331,pimozide,IN,may_treat
+D013981,Tic Disorders,2,35636,risperidone,IN,may_treat
+D013981,Tic Disorders,2,115698,ziprasidone,IN,may_treat
+D014029,Tobacco Use Disorder,2,22656,desogestrel,IN,ci_with
+D014029,Tobacco Use Disorder,2,11636,drospirenone,IN,ci_with
+D014029,Tobacco Use Disorder,2,14584,etonogestrel,IN,ci_with
+D014029,Tobacco Use Disorder,2,6373,levonorgestrel,IN,ci_with
+D014029,Tobacco Use Disorder,2,6782,mestranol,IN,ci_with
+D014029,Tobacco Use Disorder,2,326374,norelgestromin,IN,ci_with
+D014029,Tobacco Use Disorder,2,31994,norgestimate,IN,ci_with
+D014029,Tobacco Use Disorder,2,42347,bupropion,IN,may_treat
+D014029,Tobacco Use Disorder,2,2556,citalopram,IN,may_treat
+D014029,Tobacco Use Disorder,2,7407,nicotine,IN,may_treat
+D005879,Tourette Syndrome,3,1422,benzphetamine,IN,ci_with
+D005879,Tourette Syndrome,3,352372,dexmethylphenidate,IN,ci_with
+D005879,Tourette Syndrome,3,3389,diethylpropion,IN,ci_with
+D005879,Tourette Syndrome,3,6816,methamphetamine,IN,ci_with
+D005879,Tourette Syndrome,3,6901,methylphenidate,IN,ci_with
+D005879,Tourette Syndrome,3,7966,pemoline,IN,ci_with
+D005879,Tourette Syndrome,3,2599,clonidine,IN,may_treat
+D005879,Tourette Syndrome,3,5093,haloperidol,IN,may_treat
+D005879,Tourette Syndrome,3,6673,mecamylamine,IN,may_treat
+D005879,Tourette Syndrome,3,8047,pergolide,IN,may_treat
+D005879,Tourette Syndrome,3,8076,perphenazine,IN,may_treat
+D005879,Tourette Syndrome,3,8331,pimozide,IN,may_treat
+D005879,Tourette Syndrome,3,35636,risperidone,IN,may_treat
+D005879,Tourette Syndrome,3,115698,ziprasidone,IN,may_treat
+D000068099,Trauma and Stressor Related Disorders,1,2002,carbamazepine,IN,may_treat
+D000068099,Trauma and Stressor Related Disorders,1,6448,lithium,IN,may_treat
+D000068099,Trauma and Stressor Related Disorders,1,746070,lithium aspartate,IN,may_treat
+D000068099,Trauma and Stressor Related Disorders,1,42351,lithium carbonate,IN,may_treat
+D000068099,Trauma and Stressor Related Disorders,1,52105,lithium citrate,IN,may_treat
+D000068099,Trauma and Stressor Related Disorders,1,31565,nefazodone,IN,may_treat
+D000068099,Trauma and Stressor Related Disorders,1,32937,paroxetine,IN,may_treat
+D000068099,Trauma and Stressor Related Disorders,1,36437,sertraline,IN,may_treat
+D000068099,Trauma and Stressor Related Disorders,1,10734,tranylcypromine,IN,may_treat
+D014899,Wernicke Encephalopathy,3,10454,thiamine,IN,may_treat

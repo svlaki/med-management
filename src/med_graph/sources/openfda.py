@@ -19,7 +19,8 @@ from med_graph.sources.lucene import escape_phrase
 OPENFDA_BASE_URL = "https://api.fda.gov/drug"
 OPENFDA_MAX_LIMIT = 1000
 
-# MedDRA terms that describe medication-use problems, not adverse effects
+# MedDRA terms that describe medication-use problems, not adverse effects.
+# Exact matches for terms that no substring pattern below would catch.
 ADMINISTRATIVE_TERMS = frozenset(
     {
         "DRUG INEFFECTIVE",
@@ -30,8 +31,55 @@ ADMINISTRATIVE_TERMS = frozenset(
         "PRODUCT DOSE OMISSION",
         "PRODUCT DOSE OMISSION ISSUE",
         "THERAPY NON-RESPONDER",
+        "DRUG INTERACTION",
+        "POTENTIATING DRUG INTERACTION",
+        "ACCIDENTAL DEATH",
+        "INTENTIONAL DRUG MISUSE",
     }
 )
+
+# Substring patterns (matched case-insensitively) that catch whole *families* of
+# non-clinical MedDRA terms — product/device complaints, dosing & administration
+# errors, over/underdose, and efficacy/response artifacts — so unseen variants
+# are dropped too. Kept deliberately specific: e.g. "product " (with the trailing
+# space) and "therapeutic response" never appear in a genuine reaction term,
+# whereas a bare "quality" would wrongly drop "poor quality sleep".
+ADMINISTRATIVE_PATTERNS = (
+    "product ",
+    "pharmaceutical product",
+    "device",
+    "wrong technique",
+    "administration error",
+    "schedule of",
+    "dose omission",
+    "dose administered",
+    "administered at inappropriate",
+    "contraindicated product",
+    "therapeutic response",
+    "therapeutic product effect",
+    "overdose",
+    "underdose",
+    "misuse",
+    "off label",
+    "off-label",
+    "unapproved indication",
+    "medication error",
+)
+
+# Over-fetch margin so pattern-filtered terms can't shrink a drug's list below
+# top_n; comfortably exceeds the count of administrative terms any drug reports.
+ADMINISTRATIVE_OVERFETCH = 60
+
+
+def is_administrative(term: str) -> bool:
+    """Whether a MedDRA reaction term is a medication-use, product, or efficacy
+    artifact rather than a clinical adverse effect."""
+    if not isinstance(term, str):
+        return False
+    if term.upper() in ADMINISTRATIVE_TERMS:
+        return True
+    lowered = term.lower()
+    return any(pattern in lowered for pattern in ADMINISTRATIVE_PATTERNS)
 
 
 class OpenFdaFaersSource(HttpSource):
@@ -100,9 +148,9 @@ class OpenFdaFaersSource(HttpSource):
             ),
             "count": "patient.reaction.reactionmeddrapt.exact",
             # Over-fetch so administrative terms filtered below can't shrink the
-            # result under top_n: at most len(ADMINISTRATIVE_TERMS) can be dropped.
+            # result under top_n.
             "limit": str(
-                min(self._top_n + len(ADMINISTRATIVE_TERMS), OPENFDA_MAX_LIMIT)
+                min(self._top_n + ADMINISTRATIVE_OVERFETCH, OPENFDA_MAX_LIMIT)
             ),
         }
         if self._api_key:
@@ -120,5 +168,5 @@ class OpenFdaFaersSource(HttpSource):
             raise SourceFetchError(
                 f"unexpected openfda response shape: {error}"
             ) from error
-        filtered = [(term, count) for term, count in rows if term not in ADMINISTRATIVE_TERMS]
+        filtered = [(term, count) for term, count in rows if not is_administrative(term)]
         return filtered[: self._top_n]

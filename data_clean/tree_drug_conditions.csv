@@ -1,0 +1,1253 @@
+class_id,rxcui,generic_name,rela,condition_name
+D001008,91235,Digitalis preparation,may_treat,Anxiety Disorders
+D019973,82819,acamprosate,may_treat,Alcohol-Related Disorders
+D000437,82819,acamprosate,may_treat,Alcoholism
+D019966,82819,acamprosate,may_treat,Substance-Related Disorders
+D020920,161203,aceprometazine,may_treat,Dyssomnias
+D012892,161203,aceprometazine,may_treat,Sleep Deprivation
+D012893,161203,aceprometazine,may_treat,Sleep Wake Disorders
+D003244,162,acetanilide,may_treat,Consciousness Disorders
+D003244,16735,acetophenazine,ci_with,Consciousness Disorders
+D011618,16735,acetophenazine,may_treat,Psychotic Disorders
+D012559,16735,acetophenazine,may_treat,Schizophrenia
+D019967,16735,acetophenazine,may_treat,Schizophrenia Spectrum and Other Psychotic Disorders
+D000076064,272,activated charcoal,may_treat,Drug Misuse
+D062787,272,activated charcoal,may_treat,Drug Overdose
+D063487,272,activated charcoal,may_treat,Prescription Drug Misuse
+D019966,272,activated charcoal,may_treat,Substance-Related Disorders
+D000544,2557217,aducanumab,may_treat,Alzheimer Disease
+D003704,2557217,aducanumab,may_treat,Dementia
+D019965,2557217,aducanumab,may_treat,Neurocognitive Disorders
+D003244,70223,aldesleukin,ci_with,Consciousness Disorders
+D011618,70223,aldesleukin,ci_with,Psychotic Disorders
+D019967,70223,aldesleukin,ci_with,Schizophrenia Spectrum and Other Psychotic Disorders
+D000544,237099,alpha tocopherol,may_prevent,Alzheimer Disease
+D003704,237099,alpha tocopherol,may_prevent,Dementia
+D019965,237099,alpha tocopherol,may_prevent,Neurocognitive Disorders
+D000379,596,alprazolam,may_treat,Agoraphobia
+D001008,596,alprazolam,may_treat,Anxiety Disorders
+D003866,596,alprazolam,may_treat,Depressive Disorder
+D019964,596,alprazolam,may_treat,Mood Disorders
+D016584,596,alprazolam,may_treat,Panic Disorder
+D010698,596,alprazolam,may_treat,Phobic Disorders
+D007172,598,alprostadil,may_treat,Erectile Dysfunction
+D003244,703,amiodarone,ci_with,Consciousness Disorders
+D003866,704,amitriptyline,may_treat,Depressive Disorder
+D019964,704,amitriptyline,may_treat,Mood Disorders
+D001008,719,amobarbital,may_treat,Anxiety Disorders
+D020920,719,amobarbital,may_treat,Dyssomnias
+D020919,719,amobarbital,may_treat,"Sleep Disorders, Intrinsic"
+D007319,719,amobarbital,may_treat,Sleep Initiation and Maintenance Disorders
+D012893,719,amobarbital,may_treat,Sleep Wake Disorders
+D003866,722,amoxapine,may_treat,Depressive Disorder
+D019964,722,amoxapine,may_treat,Mood Disorders
+D019966,725,amphetamine,ci_with,Substance-Related Disorders
+D001289,725,amphetamine,may_treat,Attention Deficit Disorder with Hyperactivity
+D019958,725,amphetamine,may_treat,Attention Deficit and Disruptive Behavior Disorders
+D006970,725,amphetamine,may_treat,Disorders of Excessive Somnolence
+D020920,725,amphetamine,may_treat,Dyssomnias
+D009290,725,amphetamine,may_treat,Narcolepsy
+D065886,725,amphetamine,may_treat,Neurodevelopmental Disorders
+D020919,725,amphetamine,may_treat,"Sleep Disorders, Intrinsic"
+D012893,725,amphetamine,may_treat,Sleep Wake Disorders
+D019973,17941,anisindione,ci_with,Alcohol-Related Disorders
+D000437,17941,anisindione,ci_with,Alcoholism
+D019966,17941,anisindione,ci_with,Substance-Related Disorders
+D020920,17381,aprobarbital,may_treat,Dyssomnias
+D020919,17381,aprobarbital,may_treat,"Sleep Disorders, Intrinsic"
+D007319,17381,aprobarbital,may_treat,Sleep Initiation and Maintenance Disorders
+D012893,17381,aprobarbital,may_treat,Sleep Wake Disorders
+D012559,89013,aripiprazole,may_treat,Schizophrenia
+D019967,89013,aripiprazole,may_treat,Schizophrenia Spectrum and Other Psychotic Disorders
+D012559,1673265,aripiprazole lauroxil,may_treat,Schizophrenia
+D019967,1673265,aripiprazole lauroxil,may_treat,Schizophrenia Spectrum and Other Psychotic Disorders
+D012893,641465,armodafinil,may_treat,Sleep Wake Disorders
+D001714,784649,asenapine,may_treat,Bipolar Disorder
+D000068105,784649,asenapine,may_treat,Bipolar and Related Disorders
+D019964,784649,asenapine,may_treat,Mood Disorders
+D012559,784649,asenapine,may_treat,Schizophrenia
+D019967,784649,asenapine,may_treat,Schizophrenia Spectrum and Other Psychotic Disorders
+D001289,38400,atomoxetine,may_treat,Attention Deficit Disorder with Hyperactivity
+D019958,38400,atomoxetine,may_treat,Attention Deficit and Disruptive Behavior Disorders
+D065886,38400,atomoxetine,may_treat,Neurodevelopmental Disorders
+D007172,1291301,avanafil,may_treat,Erectile Dysfunction
+D020018,1291301,avanafil,may_treat,"Sexual Dysfunctions, Psychological"
+D003072,1292,baclofen,may_treat,Cognition Disorders
+D003704,1292,baclofen,may_treat,Dementia
+D006816,1292,baclofen,may_treat,Huntington Disease
+D019965,1292,baclofen,may_treat,Neurocognitive Disorders
+D019973,1359,belladonna alkaloids,ci_with,Alcohol-Related Disorders
+D000437,1359,belladonna alkaloids,ci_with,Alcoholism
+D019966,1359,belladonna alkaloids,ci_with,Substance-Related Disorders
+D019973,89781,"belladonna extract, USP",ci_with,Alcohol-Related Disorders
+D000437,89781,"belladonna extract, USP",ci_with,Alcoholism
+D019966,89781,"belladonna extract, USP",ci_with,Substance-Related Disorders
+D019973,314517,belladonna leaf extract,ci_with,Alcohol-Related Disorders
+D000437,314517,belladonna leaf extract,ci_with,Alcoholism
+D019966,314517,belladonna leaf extract,ci_with,Substance-Related Disorders
+D001008,1373,benperidol,may_treat,Anxiety Disorders
+D003704,1373,benperidol,may_treat,Dementia
+D019965,1373,benperidol,may_treat,Neurocognitive Disorders
+D011618,1373,benperidol,may_treat,Psychotic Disorders
+D012559,1373,benperidol,may_treat,Schizophrenia
+D019967,1373,benperidol,may_treat,Schizophrenia Spectrum and Other Psychotic Disorders
+D003704,2690627,benzgalantamine,may_treat,Dementia
+D019965,2690627,benzgalantamine,may_treat,Neurocognitive Disorders
+D001289,1422,benzphetamine,ci_with,Attention Deficit Disorder with Hyperactivity
+D019958,1422,benzphetamine,ci_with,Attention Deficit and Disruptive Behavior Disorders
+D065886,1422,benzphetamine,ci_with,Neurodevelopmental Disorders
+D015819,1422,benzphetamine,ci_with,"Substance Abuse, Intravenous"
+D019966,1422,benzphetamine,ci_with,Substance-Related Disorders
+D013981,1422,benzphetamine,ci_with,Tic Disorders
+D005879,1422,benzphetamine,ci_with,Tourette Syndrome
+D020018,2176312,bremelanotide,may_treat,"Sexual Dysfunctions, Psychological"
+D019052,2121777,brexanolone,may_treat,"Depression, Postpartum"
+D003866,2121777,brexanolone,may_treat,Depressive Disorder
+D019964,2121777,brexanolone,may_treat,Mood Disorders
+D003866,1658314,brexpiprazole,may_treat,Depressive Disorder
+D003865,1658314,brexpiprazole,may_treat,Major Depressive Disorder
+D019964,1658314,brexpiprazole,may_treat,Mood Disorders
+D012559,1658314,brexpiprazole,may_treat,Schizophrenia
+D019967,1658314,brexpiprazole,may_treat,Schizophrenia Spectrum and Other Psychotic Disorders
+D001008,1749,bromazepam,may_treat,Anxiety Disorders
+D020920,1749,bromazepam,may_treat,Dyssomnias
+D020919,1749,bromazepam,may_treat,"Sleep Disorders, Intrinsic"
+D007319,1749,bromazepam,may_treat,Sleep Initiation and Maintenance Disorders
+D012893,1749,bromazepam,may_treat,Sleep Wake Disorders
+D013375,1749,bromazepam,may_treat,Substance Withdrawal Syndrome
+D019966,1749,bromazepam,may_treat,Substance-Related Disorders
+D001008,19759,bromodiphenhydramine,may_treat,Anxiety Disorders
+D020920,19759,bromodiphenhydramine,may_treat,Dyssomnias
+D020919,19759,bromodiphenhydramine,may_treat,"Sleep Disorders, Intrinsic"
+D007319,19759,bromodiphenhydramine,may_treat,Sleep Initiation and Maintenance Disorders
+D012893,19759,bromodiphenhydramine,may_treat,Sleep Wake Disorders
+D011618,19777,bromperidol,may_treat,Psychotic Disorders
+D019967,19777,bromperidol,may_treat,Schizophrenia Spectrum and Other Psychotic Disorders
+D006556,1819,buprenorphine,may_treat,Heroin Dependence
+D000079524,1819,buprenorphine,may_treat,Narcotic-Related Disorders
+D009293,1819,buprenorphine,may_treat,Opioid-Related Disorders
+D019966,1819,buprenorphine,may_treat,Substance-Related Disorders
+D013375,42347,bupropion,ci_with,Substance Withdrawal Syndrome
+D019966,42347,bupropion,ci_with,Substance-Related Disorders
+D001289,42347,bupropion,may_treat,Attention Deficit Disorder with Hyperactivity
+D019958,42347,bupropion,may_treat,Attention Deficit and Disruptive Behavior Disorders
+D003866,42347,bupropion,may_treat,Depressive Disorder
+D019964,42347,bupropion,may_treat,Mood Disorders
+D065886,42347,bupropion,may_treat,Neurodevelopmental Disorders
+D019966,42347,bupropion,may_treat,Substance-Related Disorders
+D014029,42347,bupropion,may_treat,Tobacco Use Disorder
+D001008,1827,buspirone,may_treat,Anxiety Disorders
+D003866,1827,buspirone,may_treat,Depressive Disorder
+D008607,1827,buspirone,may_treat,Intellectual Disability
+D019964,1827,buspirone,may_treat,Mood Disorders
+D065886,1827,buspirone,may_treat,Neurodevelopmental Disorders
+D020920,477631,butabarbital,may_treat,Dyssomnias
+D020919,477631,butabarbital,may_treat,"Sleep Disorders, Intrinsic"
+D007319,477631,butabarbital,may_treat,Sleep Initiation and Maintenance Disorders
+D012893,477631,butabarbital,may_treat,Sleep Wake Disorders
+D020920,19874,butobarbital,may_treat,Dyssomnias
+D020919,19874,butobarbital,may_treat,"Sleep Disorders, Intrinsic"
+D007319,19874,butobarbital,may_treat,Sleep Initiation and Maintenance Disorders
+D012893,19874,butobarbital,may_treat,Sleep Wake Disorders
+D000079524,1841,butorphanol,ci_with,Narcotic-Related Disorders
+D009293,1841,butorphanol,ci_with,Opioid-Related Disorders
+D019966,1841,butorphanol,ci_with,Substance-Related Disorders
+D001714,2002,carbamazepine,may_treat,Bipolar Disorder
+D000068105,2002,carbamazepine,may_treat,Bipolar and Related Disorders
+D020920,2002,carbamazepine,may_treat,Dyssomnias
+D019964,2002,carbamazepine,may_treat,Mood Disorders
+D020447,2002,carbamazepine,may_treat,Parasomnias
+D011618,2002,carbamazepine,may_treat,Psychotic Disorders
+D012148,2002,carbamazepine,may_treat,Restless Legs Syndrome
+D012559,2002,carbamazepine,may_treat,Schizophrenia
+D019967,2002,carbamazepine,may_treat,Schizophrenia Spectrum and Other Psychotic Disorders
+D020919,2002,carbamazepine,may_treat,"Sleep Disorders, Intrinsic"
+D012893,2002,carbamazepine,may_treat,Sleep Wake Disorders
+D013313,2002,carbamazepine,may_treat,"Stress Disorders, Post-Traumatic"
+D040921,2002,carbamazepine,may_treat,"Stress Disorders, Traumatic"
+D013375,2002,carbamazepine,may_treat,Substance Withdrawal Syndrome
+D019966,2002,carbamazepine,may_treat,Substance-Related Disorders
+D000068099,2002,carbamazepine,may_treat,Trauma and Stressor Related Disorders
+D001714,1667655,cariprazine,may_treat,Bipolar Disorder
+D000068105,1667655,cariprazine,may_treat,Bipolar and Related Disorders
+D019964,1667655,cariprazine,may_treat,Mood Disorders
+D012559,1667655,cariprazine,may_treat,Schizophrenia
+D019967,1667655,cariprazine,may_treat,Schizophrenia Spectrum and Other Psychotic Disorders
+D000076064,2296,charcoal,may_treat,Drug Misuse
+D062787,2296,charcoal,may_treat,Drug Overdose
+D063487,2296,charcoal,may_treat,Prescription Drug Misuse
+D019966,2296,charcoal,may_treat,Substance-Related Disorders
+D000430,2356,chlordiazepoxide,may_treat,Alcohol Withdrawal Delirium
+D019973,2356,chlordiazepoxide,may_treat,Alcohol-Related Disorders
+D001008,2356,chlordiazepoxide,may_treat,Anxiety Disorders
+D013375,2356,chlordiazepoxide,may_treat,Substance Withdrawal Syndrome
+D019966,2356,chlordiazepoxide,may_treat,Substance-Related Disorders
+D020920,2372,chlormethiazole,may_treat,Dyssomnias
+D020919,2372,chlormethiazole,may_treat,"Sleep Disorders, Intrinsic"
+D007319,2372,chlormethiazole,may_treat,Sleep Initiation and Maintenance Disorders
+D012893,2372,chlormethiazole,may_treat,Sleep Wake Disorders
+D013375,2372,chlormethiazole,may_treat,Substance Withdrawal Syndrome
+D019966,2372,chlormethiazole,may_treat,Substance-Related Disorders
+D001008,2373,chlormezanone,may_treat,Anxiety Disorders
+D003244,2403,chlorpromazine,ci_with,Consciousness Disorders
+D001008,2403,chlorpromazine,may_treat,Anxiety Disorders
+D019958,2403,chlorpromazine,may_treat,Attention Deficit and Disruptive Behavior Disorders
+D002653,2403,chlorpromazine,may_treat,Child Behavior Disorders
+D065886,2403,chlorpromazine,may_treat,Neurodevelopmental Disorders
+D011618,2403,chlorpromazine,may_treat,Psychotic Disorders
+D012559,2403,chlorpromazine,may_treat,Schizophrenia
+D019967,2403,chlorpromazine,may_treat,Schizophrenia Spectrum and Other Psychotic Disorders
+D003244,2406,chlorprothixene,ci_with,Consciousness Disorders
+D011618,2406,chlorprothixene,may_treat,Psychotic Disorders
+D012559,2406,chlorprothixene,may_treat,Schizophrenia
+D019967,2406,chlorprothixene,may_treat,Schizophrenia Spectrum and Other Psychotic Disorders
+D012563,2406,chlorprothixene,may_treat,"Schizophrenia, Paranoid"
+D019973,2556,citalopram,may_treat,Alcohol-Related Disorders
+D000437,2556,citalopram,may_treat,Alcoholism
+D001008,2556,citalopram,may_treat,Anxiety Disorders
+D003704,2556,citalopram,may_treat,Dementia
+D003866,2556,citalopram,may_treat,Depressive Disorder
+D019964,2556,citalopram,may_treat,Mood Disorders
+D019965,2556,citalopram,may_treat,Neurocognitive Disorders
+D009771,2556,citalopram,may_treat,Obsessive-Compulsive Disorder
+D019966,2556,citalopram,may_treat,Substance-Related Disorders
+D014029,2556,citalopram,may_treat,Tobacco Use Disorder
+D001008,2597,clomipramine,may_treat,Anxiety Disorders
+D003866,2597,clomipramine,may_treat,Depressive Disorder
+D019964,2597,clomipramine,may_treat,Mood Disorders
+D009771,2597,clomipramine,may_treat,Obsessive-Compulsive Disorder
+D016584,2597,clomipramine,may_treat,Panic Disorder
+D001008,2598,clonazepam,may_treat,Anxiety Disorders
+D001714,2598,clonazepam,may_treat,Bipolar Disorder
+D000068105,2598,clonazepam,may_treat,Bipolar and Related Disorders
+D003147,2598,clonazepam,may_treat,Communication Disorders
+D020920,2598,clonazepam,may_treat,Dyssomnias
+D019964,2598,clonazepam,may_treat,Mood Disorders
+D065886,2598,clonazepam,may_treat,Neurodevelopmental Disorders
+D016584,2598,clonazepam,may_treat,Panic Disorder
+D020447,2598,clonazepam,may_treat,Parasomnias
+D012148,2598,clonazepam,may_treat,Restless Legs Syndrome
+D012559,2598,clonazepam,may_treat,Schizophrenia
+D019967,2598,clonazepam,may_treat,Schizophrenia Spectrum and Other Psychotic Disorders
+D020919,2598,clonazepam,may_treat,"Sleep Disorders, Intrinsic"
+D012893,2598,clonazepam,may_treat,Sleep Wake Disorders
+D013981,2598,clonazepam,may_treat,Tic Disorders
+D019973,2599,clonidine,may_treat,Alcohol-Related Disorders
+D001289,2599,clonidine,may_treat,Attention Deficit Disorder with Hyperactivity
+D019958,2599,clonidine,may_treat,Attention Deficit and Disruptive Behavior Disorders
+D065886,2599,clonidine,may_treat,Neurodevelopmental Disorders
+D013375,2599,clonidine,may_treat,Substance Withdrawal Syndrome
+D019966,2599,clonidine,may_treat,Substance-Related Disorders
+D013981,2599,clonidine,may_treat,Tic Disorders
+D005879,2599,clonidine,may_treat,Tourette Syndrome
+D001008,2603,clopamide,may_treat,Anxiety Disorders
+D000430,2353,clorazepate,may_treat,Alcohol Withdrawal Delirium
+D019973,2353,clorazepate,may_treat,Alcohol-Related Disorders
+D001008,2353,clorazepate,may_treat,Anxiety Disorders
+D013375,2353,clorazepate,may_treat,Substance Withdrawal Syndrome
+D019966,2353,clorazepate,may_treat,Substance-Related Disorders
+D001008,2622,clotiazepam,may_treat,Anxiety Disorders
+D003244,2626,clozapine,ci_with,Consciousness Disorders
+D001714,2626,clozapine,may_treat,Bipolar Disorder
+D000068105,2626,clozapine,may_treat,Bipolar and Related Disorders
+D019964,2626,clozapine,may_treat,Mood Disorders
+D011618,2626,clozapine,may_treat,Psychotic Disorders
+D012559,2626,clozapine,may_treat,Schizophrenia
+D019967,2626,clozapine,may_treat,Schizophrenia Spectrum and Other Psychotic Disorders
+D008607,2732215,copper histidinate,may_treat,Intellectual Disability
+D019973,3007,cycloserine,ci_with,Alcohol-Related Disorders
+D000437,3007,cycloserine,ci_with,Alcoholism
+D011618,3007,cycloserine,ci_with,Psychotic Disorders
+D019967,3007,cycloserine,ci_with,Schizophrenia Spectrum and Other Psychotic Disorders
+D019966,3007,cycloserine,ci_with,Substance-Related Disorders
+D012559,3013,cyproheptadine,may_treat,Schizophrenia
+D019967,3013,cyproheptadine,may_treat,Schizophrenia Spectrum and Other Psychotic Disorders
+D006970,2591497,daridorexant,ci_with,Disorders of Excessive Somnolence
+D020920,2591497,daridorexant,ci_with,Dyssomnias
+D009290,2591497,daridorexant,ci_with,Narcolepsy
+D020919,2591497,daridorexant,ci_with,"Sleep Disorders, Intrinsic"
+D012893,2591497,daridorexant,ci_with,Sleep Wake Disorders
+D020920,2591497,daridorexant,may_treat,Dyssomnias
+D020919,2591497,daridorexant,may_treat,"Sleep Disorders, Intrinsic"
+D007319,2591497,daridorexant,may_treat,Sleep Initiation and Maintenance Disorders
+D012893,2591497,daridorexant,may_treat,Sleep Wake Disorders
+D003866,62174,deserpidine,ci_with,Depressive Disorder
+D019964,62174,deserpidine,ci_with,Mood Disorders
+D012559,62174,deserpidine,may_treat,Schizophrenia
+D019967,62174,deserpidine,may_treat,Schizophrenia Spectrum and Other Psychotic Disorders
+D001289,3247,desipramine,may_treat,Attention Deficit Disorder with Hyperactivity
+D019958,3247,desipramine,may_treat,Attention Deficit and Disruptive Behavior Disorders
+D003866,3247,desipramine,may_treat,Depressive Disorder
+D019964,3247,desipramine,may_treat,Mood Disorders
+D065886,3247,desipramine,may_treat,Neurodevelopmental Disorders
+D019966,3247,desipramine,may_treat,Substance-Related Disorders
+D019960,3251,desmopressin,may_treat,Elimination Disorders
+D004775,3251,desmopressin,may_treat,Enuresis
+D019966,22656,desogestrel,ci_with,Substance-Related Disorders
+D014029,22656,desogestrel,ci_with,Tobacco Use Disorder
+D003866,734064,desvenlafaxine,may_treat,Depressive Disorder
+D003865,734064,desvenlafaxine,may_treat,Major Depressive Disorder
+D019964,734064,desvenlafaxine,may_treat,Mood Disorders
+D001008,352372,dexmethylphenidate,ci_with,Anxiety Disorders
+D065886,352372,dexmethylphenidate,ci_with,Neurodevelopmental Disorders
+D013981,352372,dexmethylphenidate,ci_with,Tic Disorders
+D005879,352372,dexmethylphenidate,ci_with,Tourette Syndrome
+D001289,352372,dexmethylphenidate,may_treat,Attention Deficit Disorder with Hyperactivity
+D019958,352372,dexmethylphenidate,may_treat,Attention Deficit and Disruptive Behavior Disorders
+D065886,352372,dexmethylphenidate,may_treat,Neurodevelopmental Disorders
+D015819,3288,dextroamphetamine,ci_with,"Substance Abuse, Intravenous"
+D019966,3288,dextroamphetamine,ci_with,Substance-Related Disorders
+D001289,3288,dextroamphetamine,may_treat,Attention Deficit Disorder with Hyperactivity
+D019958,3288,dextroamphetamine,may_treat,Attention Deficit and Disruptive Behavior Disorders
+D006970,3288,dextroamphetamine,may_treat,Disorders of Excessive Somnolence
+D020920,3288,dextroamphetamine,may_treat,Dyssomnias
+D009290,3288,dextroamphetamine,may_treat,Narcolepsy
+D065886,3288,dextroamphetamine,may_treat,Neurodevelopmental Disorders
+D020919,3288,dextroamphetamine,may_treat,"Sleep Disorders, Intrinsic"
+D012893,3288,dextroamphetamine,may_treat,Sleep Wake Disorders
+D000430,3322,diazepam,may_treat,Alcohol Withdrawal Delirium
+D019973,3322,diazepam,may_treat,Alcohol-Related Disorders
+D001008,3322,diazepam,may_treat,Anxiety Disorders
+D016584,3322,diazepam,may_treat,Panic Disorder
+D013375,3322,diazepam,may_treat,Substance Withdrawal Syndrome
+D019966,3322,diazepam,may_treat,Substance-Related Disorders
+D003866,3332,dibenzepin,may_treat,Depressive Disorder
+D019964,3332,dibenzepin,may_treat,Mood Disorders
+D019973,1598,dicumarol,ci_with,Alcohol-Related Disorders
+D000437,1598,dicumarol,ci_with,Alcoholism
+D019966,1598,dicumarol,ci_with,Substance-Related Disorders
+D065886,3389,diethylpropion,ci_with,Neurodevelopmental Disorders
+D015819,3389,diethylpropion,ci_with,"Substance Abuse, Intravenous"
+D019966,3389,diethylpropion,ci_with,Substance-Related Disorders
+D013981,3389,diethylpropion,ci_with,Tic Disorders
+D005879,3389,diethylpropion,ci_with,Tourette Syndrome
+D001008,3403,digitoxin,may_treat,Anxiety Disorders
+D001008,3407,digoxin,may_treat,Anxiety Disorders
+D000076064,203223,digoxin antibodies Fab fragments,may_prevent,Drug Misuse
+D062787,203223,digoxin antibodies Fab fragments,may_prevent,Drug Overdose
+D063487,203223,digoxin antibodies Fab fragments,may_prevent,Prescription Drug Misuse
+D019966,203223,digoxin antibodies Fab fragments,may_prevent,Substance-Related Disorders
+D000076064,203223,digoxin antibodies Fab fragments,may_treat,Drug Misuse
+D062787,203223,digoxin antibodies Fab fragments,may_treat,Drug Overdose
+D063487,203223,digoxin antibodies Fab fragments,may_treat,Prescription Drug Misuse
+D019966,203223,digoxin antibodies Fab fragments,may_treat,Substance-Related Disorders
+D011618,3415,dihydroergocornine,ci_with,Psychotic Disorders
+D019967,3415,dihydroergocornine,ci_with,Schizophrenia Spectrum and Other Psychotic Disorders
+D011618,3416,dihydroergocristine,ci_with,Psychotic Disorders
+D019967,3416,dihydroergocristine,ci_with,Schizophrenia Spectrum and Other Psychotic Disorders
+D011618,3417,dihydroergocryptine,ci_with,Psychotic Disorders
+D019967,3417,dihydroergocryptine,ci_with,Schizophrenia Spectrum and Other Psychotic Disorders
+D001008,3498,diphenhydramine,may_treat,Anxiety Disorders
+D020920,3498,diphenhydramine,may_treat,Dyssomnias
+D020919,3498,diphenhydramine,may_treat,"Sleep Disorders, Intrinsic"
+D007319,3498,diphenhydramine,may_treat,Sleep Initiation and Maintenance Disorders
+D012893,3498,diphenhydramine,may_treat,Sleep Wake Disorders
+D011618,3554,disulfiram,ci_with,Psychotic Disorders
+D019967,3554,disulfiram,ci_with,Schizophrenia Spectrum and Other Psychotic Disorders
+D019973,3554,disulfiram,may_prevent,Alcohol-Related Disorders
+D000437,3554,disulfiram,may_prevent,Alcoholism
+D019966,3554,disulfiram,may_prevent,Substance-Related Disorders
+D019973,3554,disulfiram,may_treat,Alcohol-Related Disorders
+D000437,3554,disulfiram,may_treat,Alcoholism
+D019966,3554,disulfiram,may_treat,Substance-Related Disorders
+D000544,2687966,donanemab,may_treat,Alzheimer Disease
+D003704,2687966,donanemab,may_treat,Dementia
+D019965,2687966,donanemab,may_treat,Neurocognitive Disorders
+D000544,135447,donepezil,may_treat,Alzheimer Disease
+D003704,135447,donepezil,may_treat,Dementia
+D019965,135447,donepezil,may_treat,Neurocognitive Disorders
+D003866,3634,dothiepin,may_treat,Depressive Disorder
+D019964,3634,dothiepin,may_treat,Mood Disorders
+D019966,3637,doxapram,may_treat,Substance-Related Disorders
+D001008,3638,doxepin,may_treat,Anxiety Disorders
+D003866,3638,doxepin,may_treat,Depressive Disorder
+D019964,3638,doxepin,may_treat,Mood Disorders
+D020920,3642,doxylamine,may_treat,Dyssomnias
+D020919,3642,doxylamine,may_treat,"Sleep Disorders, Intrinsic"
+D007319,3642,doxylamine,may_treat,Sleep Initiation and Maintenance Disorders
+D012893,3642,doxylamine,may_treat,Sleep Wake Disorders
+D012559,10402,dronabinol,ci_with,Schizophrenia
+D019967,10402,dronabinol,ci_with,Schizophrenia Spectrum and Other Psychotic Disorders
+D011618,3648,droperidol,may_treat,Psychotic Disorders
+D019967,3648,droperidol,may_treat,Schizophrenia Spectrum and Other Psychotic Disorders
+D019966,11636,drospirenone,ci_with,Substance-Related Disorders
+D014029,11636,drospirenone,ci_with,Tobacco Use Disorder
+D001008,72625,duloxetine,may_treat,Anxiety Disorders
+D003866,72625,duloxetine,may_treat,Depressive Disorder
+D003865,72625,duloxetine,may_treat,Major Depressive Disorder
+D019964,72625,duloxetine,may_treat,Mood Disorders
+D000076064,3755,edetic acid,may_treat,Drug Misuse
+D062787,3755,edetic acid,may_treat,Drug Overdose
+D063487,3755,edetic acid,may_treat,Prescription Drug Misuse
+D019966,3755,edetic acid,may_treat,Substance-Related Disorders
+D008607,2612527,elivaldogene autotemcel,may_treat,Intellectual Disability
+D019973,1653781,eluxadoline,ci_with,Alcohol-Related Disorders
+D000437,1653781,eluxadoline,ci_with,Alcoholism
+D019966,1653781,eluxadoline,ci_with,Substance-Related Disorders
+D011618,4024,"ergoloid mesylates, USP",ci_with,Psychotic Disorders
+D019967,4024,"ergoloid mesylates, USP",ci_with,Schizophrenia Spectrum and Other Psychotic Disorders
+D003072,4024,"ergoloid mesylates, USP",may_treat,Cognition Disorders
+D060825,4024,"ergoloid mesylates, USP",may_treat,Cognitive Dysfunction
+D019965,4024,"ergoloid mesylates, USP",may_treat,Neurocognitive Disorders
+D003866,321988,escitalopram,may_treat,Depressive Disorder
+D003865,321988,escitalopram,may_treat,Major Depressive Disorder
+D019964,321988,escitalopram,may_treat,Mood Disorders
+D003866,2119365,esketamine,may_treat,Depressive Disorder
+D061218,2119365,esketamine,may_treat,"Depressive Disorder, Treatment-Resistant"
+D019964,2119365,esketamine,may_treat,Mood Disorders
+D020920,4077,estazolam,may_treat,Dyssomnias
+D020919,4077,estazolam,may_treat,"Sleep Disorders, Intrinsic"
+D007319,4077,estazolam,may_treat,Sleep Initiation and Maintenance Disorders
+D012893,4077,estazolam,may_treat,Sleep Wake Disorders
+D020920,461016,eszopiclone,may_treat,Dyssomnias
+D020919,461016,eszopiclone,may_treat,"Sleep Disorders, Intrinsic"
+D007319,461016,eszopiclone,may_treat,Sleep Initiation and Maintenance Disorders
+D012893,461016,eszopiclone,may_treat,Sleep Wake Disorders
+D020920,4118,ethchlorvynol,may_treat,Dyssomnias
+D020919,4118,ethchlorvynol,may_treat,"Sleep Disorders, Intrinsic"
+D007319,4118,ethchlorvynol,may_treat,Sleep Initiation and Maintenance Disorders
+D012893,4118,ethchlorvynol,may_treat,Sleep Wake Disorders
+D020920,24474,ethinamate,may_treat,Dyssomnias
+D020919,24474,ethinamate,may_treat,"Sleep Disorders, Intrinsic"
+D007319,24474,ethinamate,may_treat,Sleep Initiation and Maintenance Disorders
+D012893,24474,ethinamate,may_treat,Sleep Wake Disorders
+D019966,14584,etonogestrel,ci_with,Substance-Related Disorders
+D014029,14584,etonogestrel,ci_with,Tobacco Use Disorder
+D012559,4328,fenfluramine,ci_with,Schizophrenia
+D019967,4328,fenfluramine,ci_with,Schizophrenia Spectrum and Other Psychotic Disorders
+D015819,4328,fenfluramine,ci_with,"Substance Abuse, Intravenous"
+D019966,4328,fenfluramine,ci_with,Substance-Related Disorders
+D000067877,4328,fenfluramine,may_treat,Autism Spectrum Disorder
+D001321,4328,fenfluramine,may_treat,Autistic Disorder
+D002659,4328,fenfluramine,may_treat,"Child Development Disorders, Pervasive"
+D065886,4328,fenfluramine,may_treat,Neurodevelopmental Disorders
+D020018,1665509,flibanserin,may_treat,"Sexual Dysfunctions, Psychological"
+D000076064,4457,flumazenil,may_treat,Drug Misuse
+D062787,4457,flumazenil,may_treat,Drug Overdose
+D063487,4457,flumazenil,may_treat,Prescription Drug Misuse
+D019966,4457,flumazenil,may_treat,Substance-Related Disorders
+D020920,4460,flunitrazepam,may_treat,Dyssomnias
+D020919,4460,flunitrazepam,may_treat,"Sleep Disorders, Intrinsic"
+D007319,4460,flunitrazepam,may_treat,Sleep Initiation and Maintenance Disorders
+D012893,4460,flunitrazepam,may_treat,Sleep Wake Disorders
+D001008,4493,fluoxetine,may_treat,Anxiety Disorders
+D003866,4493,fluoxetine,may_treat,Depressive Disorder
+D003865,4493,fluoxetine,may_treat,Major Depressive Disorder
+D019964,4493,fluoxetine,may_treat,Mood Disorders
+D009771,4493,fluoxetine,may_treat,Obsessive-Compulsive Disorder
+D016584,4493,fluoxetine,may_treat,Panic Disorder
+D012559,4495,flupenthixol,may_treat,Schizophrenia
+D019967,4495,flupenthixol,may_treat,Schizophrenia Spectrum and Other Psychotic Disorders
+D003244,4496,fluphenazine,ci_with,Consciousness Disorders
+D011618,4496,fluphenazine,may_treat,Psychotic Disorders
+D012559,4496,fluphenazine,may_treat,Schizophrenia
+D019967,4496,fluphenazine,may_treat,Schizophrenia Spectrum and Other Psychotic Disorders
+D020920,4501,flurazepam,may_treat,Dyssomnias
+D020919,4501,flurazepam,may_treat,"Sleep Disorders, Intrinsic"
+D007319,4501,flurazepam,may_treat,Sleep Initiation and Maintenance Disorders
+D012893,4501,flurazepam,may_treat,Sleep Wake Disorders
+D012559,4507,fluspirilene,may_treat,Schizophrenia
+D019967,4507,fluspirilene,may_treat,Schizophrenia Spectrum and Other Psychotic Disorders
+D001008,42355,fluvoxamine,may_treat,Anxiety Disorders
+D003866,42355,fluvoxamine,may_treat,Depressive Disorder
+D019964,42355,fluvoxamine,may_treat,Mood Disorders
+D009771,42355,fluvoxamine,may_treat,Obsessive-Compulsive Disorder
+D016584,42355,fluvoxamine,may_treat,Panic Disorder
+D003244,4603,furosemide,ci_with,Consciousness Disorders
+D001008,25480,gabapentin,may_treat,Anxiety Disorders
+D001714,25480,gabapentin,may_treat,Bipolar Disorder
+D000068105,25480,gabapentin,may_treat,Bipolar and Related Disorders
+D019964,25480,gabapentin,may_treat,Mood Disorders
+D010698,25480,gabapentin,may_treat,Phobic Disorders
+D000544,4637,galantamine,may_treat,Alzheimer Disease
+D003704,4637,galantamine,may_treat,Dementia
+D019965,4637,galantamine,may_treat,Neurocognitive Disorders
+D003866,2672253,gepirone,may_treat,Depressive Disorder
+D003865,2672253,gepirone,may_treat,Major Depressive Disorder
+D019964,2672253,gepirone,may_treat,Mood Disorders
+D006677,325526,ginseng preparation,ci_with,Histrionic Personality Disorder
+D007046,325526,ginseng preparation,ci_with,Hysteria
+D010554,325526,ginseng preparation,ci_with,Personality Disorders
+D012559,325526,ginseng preparation,ci_with,Schizophrenia
+D019967,325526,ginseng preparation,ci_with,Schizophrenia Spectrum and Other Psychotic Disorders
+D007172,325526,ginseng preparation,may_treat,Erectile Dysfunction
+D020018,325526,ginseng preparation,may_treat,"Sexual Dysfunctions, Psychological"
+D000430,4850,glucose,ci_with,Alcohol Withdrawal Delirium
+D019973,4850,glucose,ci_with,Alcohol-Related Disorders
+D013375,4850,glucose,ci_with,Substance Withdrawal Syndrome
+D019966,4850,glucose,ci_with,Substance-Related Disorders
+D020920,4903,glutethimide,may_treat,Dyssomnias
+D020919,4903,glutethimide,may_treat,"Sleep Disorders, Intrinsic"
+D007319,4903,glutethimide,may_treat,Sleep Initiation and Maintenance Disorders
+D012893,4903,glutethimide,may_treat,Sleep Wake Disorders
+D001289,40114,guanfacine,may_treat,Attention Deficit Disorder with Hyperactivity
+D019958,40114,guanfacine,may_treat,Attention Deficit and Disruptive Behavior Disorders
+D065886,40114,guanfacine,may_treat,Neurodevelopmental Disorders
+D001008,26412,halazepam,may_treat,Anxiety Disorders
+D003244,50749,halofantrine,ci_with,Consciousness Disorders
+D003244,5093,haloperidol,ci_with,Consciousness Disorders
+D002653,5093,haloperidol,may_treat,Child Behavior Disorders
+D065886,5093,haloperidol,may_treat,Neurodevelopmental Disorders
+D011618,5093,haloperidol,may_treat,Psychotic Disorders
+D012559,5093,haloperidol,may_treat,Schizophrenia
+D019967,5093,haloperidol,may_treat,Schizophrenia Spectrum and Other Psychotic Disorders
+D013375,5093,haloperidol,may_treat,Substance Withdrawal Syndrome
+D019966,5093,haloperidol,may_treat,Substance-Related Disorders
+D013981,5093,haloperidol,may_treat,Tic Disorders
+D005879,5093,haloperidol,may_treat,Tourette Syndrome
+D000544,2267703,huperzine A,may_treat,Alzheimer Disease
+D003704,2267703,huperzine A,may_treat,Dementia
+D019965,2267703,huperzine A,may_treat,Neurocognitive Disorders
+D019973,5514,hydroxocobalamin,may_treat,Alcohol-Related Disorders
+D019966,5514,hydroxocobalamin,may_treat,Substance-Related Disorders
+D001008,5553,hydroxyzine,may_treat,Anxiety Disorders
+D013375,5553,hydroxyzine,may_treat,Substance Withdrawal Syndrome
+D019966,5553,hydroxyzine,may_treat,Substance-Related Disorders
+D008607,644101,idursulfase,may_treat,Intellectual Disability
+D012559,73178,iloperidone,may_treat,Schizophrenia
+D019967,73178,iloperidone,may_treat,Schizophrenia Spectrum and Other Psychotic Disorders
+D001008,5691,imipramine,may_treat,Anxiety Disorders
+D001289,5691,imipramine,may_treat,Attention Deficit Disorder with Hyperactivity
+D019958,5691,imipramine,may_treat,Attention Deficit and Disruptive Behavior Disorders
+D003866,5691,imipramine,may_treat,Depressive Disorder
+D019960,5691,imipramine,may_treat,Elimination Disorders
+D004775,5691,imipramine,may_treat,Enuresis
+D019964,5691,imipramine,may_treat,Mood Disorders
+D065886,5691,imipramine,may_treat,Neurodevelopmental Disorders
+D016584,5691,imipramine,may_treat,Panic Disorder
+D003244,5975,ipecac,ci_with,Consciousness Disorders
+D000076064,5975,ipecac,may_treat,Drug Misuse
+D062787,5975,ipecac,may_treat,Drug Overdose
+D063487,5975,ipecac,may_treat,Prescription Drug Misuse
+D019966,5975,ipecac,may_treat,Substance-Related Disorders
+D020920,262150,iron carbonyl,may_treat,Dyssomnias
+D020447,262150,iron carbonyl,may_treat,Parasomnias
+D012148,262150,iron carbonyl,may_treat,Restless Legs Syndrome
+D020919,262150,iron carbonyl,may_treat,"Sleep Disorders, Intrinsic"
+D012893,262150,iron carbonyl,may_treat,Sleep Wake Disorders
+D003866,6011,isocarboxazid,may_treat,Depressive Disorder
+D019964,6011,isocarboxazid,may_treat,Mood Disorders
+D003866,6026,isoflurane,may_treat,Depressive Disorder
+D019964,6026,isoflurane,may_treat,Mood Disorders
+D001008,285228,kava preparation,may_treat,Anxiety Disorders
+D003866,285228,kava preparation,may_treat,Depressive Disorder
+D019964,285228,kava preparation,may_treat,Mood Disorders
+D011618,6130,ketamine,ci_with,Psychotic Disorders
+D019967,6130,ketamine,ci_with,Schizophrenia Spectrum and Other Psychotic Disorders
+D001714,28439,lamotrigine,may_treat,Bipolar Disorder
+D000068105,28439,lamotrigine,may_treat,Bipolar and Related Disorders
+D019964,28439,lamotrigine,may_treat,Mood Disorders
+D003072,2626143,lecanemab,may_prevent,Cognition Disorders
+D060825,2626143,lecanemab,may_prevent,Cognitive Dysfunction
+D003704,2626143,lecanemab,may_prevent,Dementia
+D019965,2626143,lecanemab,may_prevent,Neurocognitive Disorders
+D000544,2626143,lecanemab,may_treat,Alzheimer Disease
+D003704,2626143,lecanemab,may_treat,Dementia
+D019965,2626143,lecanemab,may_treat,Neurocognitive Disorders
+D020920,2272403,lemborexant,may_treat,Dyssomnias
+D020919,2272403,lemborexant,may_treat,"Sleep Disorders, Intrinsic"
+D007319,2272403,lemborexant,may_treat,Sleep Initiation and Maintenance Disorders
+D012893,2272403,lemborexant,may_treat,Sleep Wake Disorders
+D008607,1731031,lesinurad,ci_with,Intellectual Disability
+D000079524,237005,levomethadyl,may_treat,Narcotic-Related Disorders
+D009293,237005,levomethadyl,may_treat,Opioid-Related Disorders
+D019966,237005,levomethadyl,may_treat,Substance-Related Disorders
+D003866,1433212,levomilnacipran,may_treat,Depressive Disorder
+D003865,1433212,levomilnacipran,may_treat,Major Depressive Disorder
+D019964,1433212,levomilnacipran,may_treat,Mood Disorders
+D019966,6373,levonorgestrel,ci_with,Substance-Related Disorders
+D014029,6373,levonorgestrel,ci_with,Tobacco Use Disorder
+D019966,700810,lisdexamfetamine,ci_with,Substance-Related Disorders
+D019973,700810,lisdexamfetamine,may_treat,Alcohol-Related Disorders
+D001289,700810,lisdexamfetamine,may_treat,Attention Deficit Disorder with Hyperactivity
+D019958,700810,lisdexamfetamine,may_treat,Attention Deficit and Disruptive Behavior Disorders
+D063425,700810,lisdexamfetamine,may_treat,Binge Drinking
+D065886,700810,lisdexamfetamine,may_treat,Neurodevelopmental Disorders
+D019966,700810,lisdexamfetamine,may_treat,Substance-Related Disorders
+D019958,6448,lithium,may_treat,Attention Deficit and Disruptive Behavior Disorders
+D001714,6448,lithium,may_treat,Bipolar Disorder
+D000068105,6448,lithium,may_treat,Bipolar and Related Disorders
+D019955,6448,lithium,may_treat,Conduct Disorder
+D003866,6448,lithium,may_treat,Depressive Disorder
+D019964,6448,lithium,may_treat,Mood Disorders
+D065886,6448,lithium,may_treat,Neurodevelopmental Disorders
+D013313,6448,lithium,may_treat,"Stress Disorders, Post-Traumatic"
+D040921,6448,lithium,may_treat,"Stress Disorders, Traumatic"
+D000068099,6448,lithium,may_treat,Trauma and Stressor Related Disorders
+D019958,746070,lithium aspartate,may_treat,Attention Deficit and Disruptive Behavior Disorders
+D001714,746070,lithium aspartate,may_treat,Bipolar Disorder
+D000068105,746070,lithium aspartate,may_treat,Bipolar and Related Disorders
+D019955,746070,lithium aspartate,may_treat,Conduct Disorder
+D003866,746070,lithium aspartate,may_treat,Depressive Disorder
+D019964,746070,lithium aspartate,may_treat,Mood Disorders
+D065886,746070,lithium aspartate,may_treat,Neurodevelopmental Disorders
+D013313,746070,lithium aspartate,may_treat,"Stress Disorders, Post-Traumatic"
+D040921,746070,lithium aspartate,may_treat,"Stress Disorders, Traumatic"
+D000068099,746070,lithium aspartate,may_treat,Trauma and Stressor Related Disorders
+D019958,42351,lithium carbonate,may_treat,Attention Deficit and Disruptive Behavior Disorders
+D001714,42351,lithium carbonate,may_treat,Bipolar Disorder
+D000068105,42351,lithium carbonate,may_treat,Bipolar and Related Disorders
+D019955,42351,lithium carbonate,may_treat,Conduct Disorder
+D003866,42351,lithium carbonate,may_treat,Depressive Disorder
+D019964,42351,lithium carbonate,may_treat,Mood Disorders
+D065886,42351,lithium carbonate,may_treat,Neurodevelopmental Disorders
+D013313,42351,lithium carbonate,may_treat,"Stress Disorders, Post-Traumatic"
+D040921,42351,lithium carbonate,may_treat,"Stress Disorders, Traumatic"
+D000068099,42351,lithium carbonate,may_treat,Trauma and Stressor Related Disorders
+D019958,52105,lithium citrate,may_treat,Attention Deficit and Disruptive Behavior Disorders
+D001714,52105,lithium citrate,may_treat,Bipolar Disorder
+D000068105,52105,lithium citrate,may_treat,Bipolar and Related Disorders
+D019955,52105,lithium citrate,may_treat,Conduct Disorder
+D003866,52105,lithium citrate,may_treat,Depressive Disorder
+D019964,52105,lithium citrate,may_treat,Mood Disorders
+D065886,52105,lithium citrate,may_treat,Neurodevelopmental Disorders
+D013313,52105,lithium citrate,may_treat,"Stress Disorders, Post-Traumatic"
+D040921,52105,lithium citrate,may_treat,"Stress Disorders, Traumatic"
+D000068099,52105,lithium citrate,may_treat,Trauma and Stressor Related Disorders
+D013375,28863,lofexidine,may_treat,Substance Withdrawal Syndrome
+D019966,28863,lofexidine,may_treat,Substance-Related Disorders
+D008607,2569562,lonapegsomatropin,ci_with,Intellectual Disability
+D020920,6470,lorazepam,ci_with,Dyssomnias
+D020919,6470,lorazepam,ci_with,"Sleep Disorders, Intrinsic"
+D012893,6470,lorazepam,ci_with,Sleep Wake Disorders
+D001008,6470,lorazepam,may_treat,Anxiety Disorders
+D003866,6470,lorazepam,may_treat,Depressive Disorder
+D020920,6470,lorazepam,may_treat,Dyssomnias
+D019964,6470,lorazepam,may_treat,Mood Disorders
+D011618,6470,lorazepam,may_treat,Psychotic Disorders
+D019967,6470,lorazepam,may_treat,Schizophrenia Spectrum and Other Psychotic Disorders
+D020919,6470,lorazepam,may_treat,"Sleep Disorders, Intrinsic"
+D007319,6470,lorazepam,may_treat,Sleep Initiation and Maintenance Disorders
+D012893,6470,lorazepam,may_treat,Sleep Wake Disorders
+D013375,6470,lorazepam,may_treat,Substance Withdrawal Syndrome
+D019966,6470,lorazepam,may_treat,Substance-Related Disorders
+D020920,28894,lormetazepam,may_treat,Dyssomnias
+D020919,28894,lormetazepam,may_treat,"Sleep Disorders, Intrinsic"
+D007319,28894,lormetazepam,may_treat,Sleep Initiation and Maintenance Disorders
+D012893,28894,lormetazepam,may_treat,Sleep Wake Disorders
+D003244,6475,loxapine,ci_with,Consciousness Disorders
+D011618,6475,loxapine,may_treat,Psychotic Disorders
+D012559,6475,loxapine,may_treat,Schizophrenia
+D019967,6475,loxapine,may_treat,Schizophrenia Spectrum and Other Psychotic Disorders
+D012559,2275602,lumateperone,may_treat,Schizophrenia
+D019967,2275602,lumateperone,may_treat,Schizophrenia Spectrum and Other Psychotic Disorders
+D001714,1040028,lurasidone,may_treat,Bipolar Disorder
+D000068105,1040028,lurasidone,may_treat,Bipolar and Related Disorders
+D003866,1040028,lurasidone,may_treat,Depressive Disorder
+D003865,1040028,lurasidone,may_treat,Major Depressive Disorder
+D019964,1040028,lurasidone,may_treat,Mood Disorders
+D012559,1040028,lurasidone,may_treat,Schizophrenia
+D019967,1040028,lurasidone,may_treat,Schizophrenia Spectrum and Other Psychotic Disorders
+D000076064,52356,magnesium citrate,may_treat,Drug Misuse
+D062787,52356,magnesium citrate,may_treat,Drug Overdose
+D063487,52356,magnesium citrate,may_treat,Prescription Drug Misuse
+D019966,52356,magnesium citrate,may_treat,Substance-Related Disorders
+D001008,6646,maprotiline,may_treat,Anxiety Disorders
+D001714,6646,maprotiline,may_treat,Bipolar Disorder
+D000068105,6646,maprotiline,may_treat,Bipolar and Related Disorders
+D019970,6646,maprotiline,may_treat,Cocaine-Related Disorders
+D003866,6646,maprotiline,may_treat,Depressive Disorder
+D019263,6646,maprotiline,may_treat,Dysthymic Disorder
+D019960,6646,maprotiline,may_treat,Elimination Disorders
+D004775,6646,maprotiline,may_treat,Enuresis
+D019964,6646,maprotiline,may_treat,Mood Disorders
+D016584,6646,maprotiline,may_treat,Panic Disorder
+D019966,6646,maprotiline,may_treat,Substance-Related Disorders
+D015819,6664,mazindol,ci_with,"Substance Abuse, Intravenous"
+D019966,6664,mazindol,ci_with,Substance-Related Disorders
+D065886,6673,mecamylamine,may_treat,Neurodevelopmental Disorders
+D013981,6673,mecamylamine,may_treat,Tic Disorders
+D005879,6673,mecamylamine,may_treat,Tourette Syndrome
+D019973,29421,mecobalamin,may_treat,Alcohol-Related Disorders
+D019966,29421,mecobalamin,may_treat,Substance-Related Disorders
+D001008,6680,medazepam,may_treat,Anxiety Disorders
+D001008,6694,mefloquine,ci_with,Anxiety Disorders
+D011618,6694,mefloquine,ci_with,Psychotic Disorders
+D019967,6694,mefloquine,ci_with,Schizophrenia Spectrum and Other Psychotic Disorders
+D020920,6711,melatonin,may_prevent,Dyssomnias
+D020179,6711,melatonin,may_prevent,Jet Lag Syndrome
+D020178,6711,melatonin,may_prevent,"Sleep Disorders, Circadian Rhythm"
+D012893,6711,melatonin,may_prevent,Sleep Wake Disorders
+D003866,6711,melatonin,may_treat,Depressive Disorder
+D020920,6711,melatonin,may_treat,Dyssomnias
+D020179,6711,melatonin,may_treat,Jet Lag Syndrome
+D019964,6711,melatonin,may_treat,Mood Disorders
+D016574,6711,melatonin,may_treat,Seasonal Affective Disorder
+D020178,6711,melatonin,may_treat,"Sleep Disorders, Circadian Rhythm"
+D012893,6711,melatonin,may_treat,Sleep Wake Disorders
+D000544,6719,memantine,may_treat,Alzheimer Disease
+D003704,6719,memantine,may_treat,Dementia
+D019965,6719,memantine,may_treat,Neurocognitive Disorders
+D001008,6760,meprobamate,may_treat,Anxiety Disorders
+D003244,6779,mesoridazine,ci_with,Consciousness Disorders
+D019973,6779,mesoridazine,may_treat,Alcohol-Related Disorders
+D000437,6779,mesoridazine,may_treat,Alcoholism
+D011618,6779,mesoridazine,may_treat,Psychotic Disorders
+D012559,6779,mesoridazine,may_treat,Schizophrenia
+D019967,6779,mesoridazine,may_treat,Schizophrenia Spectrum and Other Psychotic Disorders
+D019966,6779,mesoridazine,may_treat,Substance-Related Disorders
+D019966,6782,mestranol,ci_with,Substance-Related Disorders
+D014029,6782,mestranol,ci_with,Tobacco Use Disorder
+D000079524,6813,methadone,may_treat,Narcotic-Related Disorders
+D009293,6813,methadone,may_treat,Opioid-Related Disorders
+D019966,6813,methadone,may_treat,Substance-Related Disorders
+D065886,6816,methamphetamine,ci_with,Neurodevelopmental Disorders
+D015819,6816,methamphetamine,ci_with,"Substance Abuse, Intravenous"
+D019966,6816,methamphetamine,ci_with,Substance-Related Disorders
+D013981,6816,methamphetamine,ci_with,Tic Disorders
+D005879,6816,methamphetamine,ci_with,Tourette Syndrome
+D001289,6816,methamphetamine,may_treat,Attention Deficit Disorder with Hyperactivity
+D019958,6816,methamphetamine,may_treat,Attention Deficit and Disruptive Behavior Disorders
+D006970,6816,methamphetamine,may_treat,Disorders of Excessive Somnolence
+D020920,6816,methamphetamine,may_treat,Dyssomnias
+D009290,6816,methamphetamine,may_treat,Narcolepsy
+D065886,6816,methamphetamine,may_treat,Neurodevelopmental Disorders
+D020919,6816,methamphetamine,may_treat,"Sleep Disorders, Intrinsic"
+D012893,6816,methamphetamine,may_treat,Sleep Wake Disorders
+D020920,6823,methaqualone,may_treat,Dyssomnias
+D020919,6823,methaqualone,may_treat,"Sleep Disorders, Intrinsic"
+D007319,6823,methaqualone,may_treat,Sleep Initiation and Maintenance Disorders
+D012893,6823,methaqualone,may_treat,Sleep Wake Disorders
+D003244,29648,methdilazine,ci_with,Consciousness Disorders
+D019973,6851,methotrexate,ci_with,Alcohol-Related Disorders
+D019966,6851,methotrexate,ci_with,Substance-Related Disorders
+D003244,6852,methotrimeprazine,ci_with,Consciousness Disorders
+D001008,6852,methotrimeprazine,may_treat,Anxiety Disorders
+D001714,6852,methotrimeprazine,may_treat,Bipolar Disorder
+D000068105,6852,methotrimeprazine,may_treat,Bipolar and Related Disorders
+D019964,6852,methotrimeprazine,may_treat,Mood Disorders
+D011618,6852,methotrimeprazine,may_treat,Psychotic Disorders
+D012559,6852,methotrimeprazine,may_treat,Schizophrenia
+D019967,6852,methotrimeprazine,may_treat,Schizophrenia Spectrum and Other Psychotic Disorders
+D001008,6901,methylphenidate,ci_with,Anxiety Disorders
+D065886,6901,methylphenidate,ci_with,Neurodevelopmental Disorders
+D013981,6901,methylphenidate,ci_with,Tic Disorders
+D005879,6901,methylphenidate,ci_with,Tourette Syndrome
+D001289,6901,methylphenidate,may_treat,Attention Deficit Disorder with Hyperactivity
+D019958,6901,methylphenidate,may_treat,Attention Deficit and Disruptive Behavior Disorders
+D003866,6901,methylphenidate,may_treat,Depressive Disorder
+D006970,6901,methylphenidate,may_treat,Disorders of Excessive Somnolence
+D020920,6901,methylphenidate,may_treat,Dyssomnias
+D019964,6901,methylphenidate,may_treat,Mood Disorders
+D009290,6901,methylphenidate,may_treat,Narcolepsy
+D065886,6901,methylphenidate,may_treat,Neurodevelopmental Disorders
+D020919,6901,methylphenidate,may_treat,"Sleep Disorders, Intrinsic"
+D012893,6901,methylphenidate,may_treat,Sleep Wake Disorders
+D007172,6904,methyltestosterone,may_treat,Erectile Dysfunction
+D020018,6904,methyltestosterone,may_treat,"Sexual Dysfunctions, Psychological"
+D020920,6910,methyprylon,may_treat,Dyssomnias
+D020919,6910,methyprylon,may_treat,"Sleep Disorders, Intrinsic"
+D007319,6910,methyprylon,may_treat,Sleep Initiation and Maintenance Disorders
+D012893,6910,methyprylon,may_treat,Sleep Wake Disorders
+D003244,6916,metolazone,ci_with,Consciousness Disorders
+D001008,6960,midazolam,may_treat,Anxiety Disorders
+D003866,588250,milnacipran,may_treat,Depressive Disorder
+D003865,588250,milnacipran,may_treat,Major Depressive Disorder
+D019964,588250,milnacipran,may_treat,Mood Disorders
+D003866,15996,mirtazapine,may_treat,Depressive Disorder
+D019964,15996,mirtazapine,may_treat,Mood Disorders
+D001289,30125,modafinil,may_treat,Attention Deficit Disorder with Hyperactivity
+D019958,30125,modafinil,may_treat,Attention Deficit and Disruptive Behavior Disorders
+D006970,30125,modafinil,may_treat,Disorders of Excessive Somnolence
+D020920,30125,modafinil,may_treat,Dyssomnias
+D009290,30125,modafinil,may_treat,Narcolepsy
+D065886,30125,modafinil,may_treat,Neurodevelopmental Disorders
+D020919,30125,modafinil,may_treat,"Sleep Disorders, Intrinsic"
+D012893,30125,modafinil,may_treat,Sleep Wake Disorders
+D003244,7019,molindone,ci_with,Consciousness Disorders
+D011618,7019,molindone,may_treat,Psychotic Disorders
+D012559,7019,molindone,may_treat,Schizophrenia
+D019967,7019,molindone,may_treat,Schizophrenia Spectrum and Other Psychotic Disorders
+D000076064,31479,nalmefene,may_treat,Drug Misuse
+D062787,31479,nalmefene,may_treat,Drug Overdose
+D000079524,31479,nalmefene,may_treat,Narcotic-Related Disorders
+D009293,31479,nalmefene,may_treat,Opioid-Related Disorders
+D063487,31479,nalmefene,may_treat,Prescription Drug Misuse
+D019966,31479,nalmefene,may_treat,Substance-Related Disorders
+D000079524,7242,naloxone,may_treat,Narcotic-Related Disorders
+D009293,7242,naloxone,may_treat,Opioid-Related Disorders
+D019966,7242,naloxone,may_treat,Substance-Related Disorders
+D000079524,7243,naltrexone,ci_with,Narcotic-Related Disorders
+D009293,7243,naltrexone,ci_with,Opioid-Related Disorders
+D019966,7243,naltrexone,ci_with,Substance-Related Disorders
+D019973,7243,naltrexone,may_treat,Alcohol-Related Disorders
+D000437,7243,naltrexone,may_treat,Alcoholism
+D000076064,7243,naltrexone,may_treat,Drug Misuse
+D062787,7243,naltrexone,may_treat,Drug Overdose
+D000079524,7243,naltrexone,may_treat,Narcotic-Related Disorders
+D009293,7243,naltrexone,may_treat,Opioid-Related Disorders
+D063487,7243,naltrexone,may_treat,Prescription Drug Misuse
+D019966,7243,naltrexone,may_treat,Substance-Related Disorders
+D003866,31565,nefazodone,may_treat,Depressive Disorder
+D019964,31565,nefazodone,may_treat,Mood Disorders
+D013313,31565,nefazodone,may_treat,"Stress Disorders, Post-Traumatic"
+D040921,31565,nefazodone,may_treat,"Stress Disorders, Traumatic"
+D000068099,31565,nefazodone,may_treat,Trauma and Stressor Related Disorders
+D013375,7407,nicotine,may_prevent,Substance Withdrawal Syndrome
+D019966,7407,nicotine,may_prevent,Substance-Related Disorders
+D019966,7407,nicotine,may_treat,Substance-Related Disorders
+D014029,7407,nicotine,may_treat,Tobacco Use Disorder
+D020920,7440,nitrazepam,may_treat,Dyssomnias
+D020919,7440,nitrazepam,may_treat,"Sleep Disorders, Intrinsic"
+D007319,7440,nitrazepam,may_treat,Sleep Initiation and Maintenance Disorders
+D012893,7440,nitrazepam,may_treat,Sleep Wake Disorders
+D000430,7486,nitrous oxide,may_treat,Alcohol Withdrawal Delirium
+D019973,7486,nitrous oxide,may_treat,Alcohol-Related Disorders
+D013375,7486,nitrous oxide,may_treat,Substance Withdrawal Syndrome
+D019966,7486,nitrous oxide,may_treat,Substance-Related Disorders
+D001008,3155,nordazepam,may_treat,Anxiety Disorders
+D019966,326374,norelgestromin,ci_with,Substance-Related Disorders
+D014029,326374,norelgestromin,ci_with,Tobacco Use Disorder
+D019966,31994,norgestimate,ci_with,Substance-Related Disorders
+D014029,31994,norgestimate,ci_with,Tobacco Use Disorder
+D001008,7531,nortriptyline,may_treat,Anxiety Disorders
+D001289,7531,nortriptyline,may_treat,Attention Deficit Disorder with Hyperactivity
+D019958,7531,nortriptyline,may_treat,Attention Deficit and Disruptive Behavior Disorders
+D003866,7531,nortriptyline,may_treat,Depressive Disorder
+D019960,7531,nortriptyline,may_treat,Elimination Disorders
+D004775,7531,nortriptyline,may_treat,Enuresis
+D019964,7531,nortriptyline,may_treat,Mood Disorders
+D065886,7531,nortriptyline,may_treat,Neurodevelopmental Disorders
+D001714,61381,olanzapine,may_treat,Bipolar Disorder
+D000068105,61381,olanzapine,may_treat,Bipolar and Related Disorders
+D019964,61381,olanzapine,may_treat,Mood Disorders
+D011618,61381,olanzapine,may_treat,Psychotic Disorders
+D012559,61381,olanzapine,may_treat,Schizophrenia
+D019967,61381,olanzapine,may_treat,Schizophrenia Spectrum and Other Psychotic Disorders
+D019973,26225,ondansetron,may_treat,Alcohol-Related Disorders
+D000437,26225,ondansetron,may_treat,Alcoholism
+D019966,26225,ondansetron,may_treat,Substance-Related Disorders
+D004414,1370971,ospemifene,may_treat,Dyspareunia
+D020018,1370971,ospemifene,may_treat,"Sexual Dysfunctions, Psychological"
+D011618,7781,oxazepam,ci_with,Psychotic Disorders
+D019967,7781,oxazepam,ci_with,Schizophrenia Spectrum and Other Psychotic Disorders
+D000430,7781,oxazepam,may_treat,Alcohol Withdrawal Delirium
+D019973,7781,oxazepam,may_treat,Alcohol-Related Disorders
+D001008,7781,oxazepam,may_treat,Anxiety Disorders
+D013375,7781,oxazepam,may_treat,Substance Withdrawal Syndrome
+D019966,7781,oxazepam,may_treat,Substance-Related Disorders
+D002658,2387302,oxybate,ci_with,Developmental Disabilities
+D065886,2387302,oxybate,ci_with,Neurodevelopmental Disorders
+D002385,2387302,oxybate,may_treat,Cataplexy
+D006970,2387302,oxybate,may_treat,Disorders of Excessive Somnolence
+D020920,2387302,oxybate,may_treat,Dyssomnias
+D009290,2387302,oxybate,may_treat,Narcolepsy
+D020919,2387302,oxybate,may_treat,"Sleep Disorders, Intrinsic"
+D012893,2387302,oxybate,may_treat,Sleep Wake Disorders
+D020920,2288236,ozanimod,ci_with,Dyssomnias
+D020919,2288236,ozanimod,ci_with,"Sleep Disorders, Intrinsic"
+D012893,2288236,ozanimod,ci_with,Sleep Wake Disorders
+D001714,679314,paliperidone,may_treat,Bipolar Disorder
+D000068105,679314,paliperidone,may_treat,Bipolar and Related Disorders
+D003866,679314,paliperidone,may_treat,Depressive Disorder
+D019964,679314,paliperidone,may_treat,Mood Disorders
+D012559,679314,paliperidone,may_treat,Schizophrenia
+D019967,679314,paliperidone,may_treat,Schizophrenia Spectrum and Other Psychotic Disorders
+D007172,7895,papaverine,may_treat,Erectile Dysfunction
+D020018,7895,papaverine,may_treat,"Sexual Dysfunctions, Psychological"
+D003693,7909,paraldehyde,may_treat,Delirium
+D019965,7909,paraldehyde,may_treat,Neurocognitive Disorders
+D001008,32937,paroxetine,may_treat,Anxiety Disorders
+D003866,32937,paroxetine,may_treat,Depressive Disorder
+D001068,32937,paroxetine,may_treat,Feeding and Eating Disorders
+D019964,32937,paroxetine,may_treat,Mood Disorders
+D009771,32937,paroxetine,may_treat,Obsessive-Compulsive Disorder
+D016584,32937,paroxetine,may_treat,Panic Disorder
+D010698,32937,paroxetine,may_treat,Phobic Disorders
+D013313,32937,paroxetine,may_treat,"Stress Disorders, Post-Traumatic"
+D040921,32937,paroxetine,may_treat,"Stress Disorders, Traumatic"
+D000068099,32937,paroxetine,may_treat,Trauma and Stressor Related Disorders
+D065886,7966,pemoline,ci_with,Neurodevelopmental Disorders
+D011618,7966,pemoline,ci_with,Psychotic Disorders
+D019967,7966,pemoline,ci_with,Schizophrenia Spectrum and Other Psychotic Disorders
+D013981,7966,pemoline,ci_with,Tic Disorders
+D005879,7966,pemoline,ci_with,Tourette Syndrome
+D001289,7966,pemoline,may_treat,Attention Deficit Disorder with Hyperactivity
+D019958,7966,pemoline,may_treat,Attention Deficit and Disruptive Behavior Disorders
+D006970,7966,pemoline,may_treat,Disorders of Excessive Somnolence
+D020920,7966,pemoline,may_treat,Dyssomnias
+D009290,7966,pemoline,may_treat,Narcolepsy
+D065886,7966,pemoline,may_treat,Neurodevelopmental Disorders
+D020919,7966,pemoline,may_treat,"Sleep Disorders, Intrinsic"
+D012893,7966,pemoline,may_treat,Sleep Wake Disorders
+D011618,7974,penfluridol,may_treat,Psychotic Disorders
+D019967,7974,penfluridol,may_treat,Schizophrenia Spectrum and Other Psychotic Disorders
+D007172,8013,pentoxifylline,may_treat,Erectile Dysfunction
+D011618,8042,perazine,may_treat,Psychotic Disorders
+D012559,8042,perazine,may_treat,Schizophrenia
+D019967,8042,perazine,may_treat,Schizophrenia Spectrum and Other Psychotic Disorders
+D065886,8047,pergolide,may_treat,Neurodevelopmental Disorders
+D013981,8047,pergolide,may_treat,Tic Disorders
+D005879,8047,pergolide,may_treat,Tourette Syndrome
+D011618,8766,periciazine,may_treat,Psychotic Disorders
+D019967,8766,periciazine,may_treat,Schizophrenia Spectrum and Other Psychotic Disorders
+D003244,8076,perphenazine,ci_with,Consciousness Disorders
+D003072,8076,perphenazine,may_treat,Cognition Disorders
+D003704,8076,perphenazine,may_treat,Dementia
+D006816,8076,perphenazine,may_treat,Huntington Disease
+D019965,8076,perphenazine,may_treat,Neurocognitive Disorders
+D065886,8076,perphenazine,may_treat,Neurodevelopmental Disorders
+D011618,8076,perphenazine,may_treat,Psychotic Disorders
+D012559,8076,perphenazine,may_treat,Schizophrenia
+D019967,8076,perphenazine,may_treat,Schizophrenia Spectrum and Other Psychotic Disorders
+D013375,8076,perphenazine,may_treat,Substance Withdrawal Syndrome
+D019966,8076,perphenazine,may_treat,Substance-Related Disorders
+D013981,8076,perphenazine,may_treat,Tic Disorders
+D005879,8076,perphenazine,may_treat,Tourette Syndrome
+D019966,33272,phendimetrazine,ci_with,Substance-Related Disorders
+D003866,8123,phenelzine,may_treat,Depressive Disorder
+D019964,8123,phenelzine,may_treat,Mood Disorders
+D015819,8133,phenmetrazine,ci_with,"Substance Abuse, Intravenous"
+D019966,8133,phenmetrazine,ci_with,Substance-Related Disorders
+D019973,8150,phenprocoumon,ci_with,Alcohol-Related Disorders
+D000437,8150,phenprocoumon,ci_with,Alcoholism
+D019966,8150,phenprocoumon,ci_with,Substance-Related Disorders
+D019966,8152,phentermine,ci_with,Substance-Related Disorders
+D003866,8156,phenylalanine,may_treat,Depressive Disorder
+D019964,8156,phenylalanine,may_treat,Mood Disorders
+D003244,8331,pimozide,ci_with,Consciousness Disorders
+D003072,8331,pimozide,may_treat,Cognition Disorders
+D003704,8331,pimozide,may_treat,Dementia
+D006816,8331,pimozide,may_treat,Huntington Disease
+D019965,8331,pimozide,may_treat,Neurocognitive Disorders
+D065886,8331,pimozide,may_treat,Neurodevelopmental Disorders
+D011618,8331,pimozide,may_treat,Psychotic Disorders
+D019967,8331,pimozide,may_treat,Schizophrenia Spectrum and Other Psychotic Disorders
+D013981,8331,pimozide,may_treat,Tic Disorders
+D005879,8331,pimozide,may_treat,Tourette Syndrome
+D012559,33739,pipamperone,may_treat,Schizophrenia
+D019967,33739,pipamperone,may_treat,Schizophrenia Spectrum and Other Psychotic Disorders
+D012559,8338,piperacetazine,may_treat,Schizophrenia
+D019967,8338,piperacetazine,may_treat,Schizophrenia Spectrum and Other Psychotic Disorders
+D012559,8348,pipothiazine,may_treat,Schizophrenia
+D019967,8348,pipothiazine,may_treat,Schizophrenia Spectrum and Other Psychotic Disorders
+D012893,2197878,pitolisant,may_treat,Sleep Wake Disorders
+D000076064,34345,pralidoxime,may_treat,Drug Misuse
+D062787,34345,pralidoxime,may_treat,Drug Overdose
+D063487,34345,pralidoxime,may_treat,Prescription Drug Misuse
+D019966,34345,pralidoxime,may_treat,Substance-Related Disorders
+D003866,746741,pramipexole,may_treat,Depressive Disorder
+D019964,746741,pramipexole,may_treat,Mood Disorders
+D004414,3143,prasterone,may_treat,Dyspareunia
+D020018,3143,prasterone,may_treat,"Sexual Dysfunctions, Psychological"
+D019968,3143,prasterone,may_treat,Sexual and Gender Disorders
+D000430,8627,prazepam,may_treat,Alcohol Withdrawal Delirium
+D019973,8627,prazepam,may_treat,Alcohol-Related Disorders
+D001008,8627,prazepam,may_treat,Anxiety Disorders
+D013375,8627,prazepam,may_treat,Substance Withdrawal Syndrome
+D019966,8627,prazepam,may_treat,Substance-Related Disorders
+D013375,8701,procaine,may_treat,Substance Withdrawal Syndrome
+D019966,8701,procaine,may_treat,Substance-Related Disorders
+D019973,8702,procarbazine,ci_with,Alcohol-Related Disorders
+D000435,8702,procarbazine,ci_with,Alcoholic Intoxication
+D019966,8702,procarbazine,ci_with,Substance-Related Disorders
+D019973,8704,prochlorperazine,ci_with,Alcohol-Related Disorders
+D000437,8704,prochlorperazine,ci_with,Alcoholism
+D003244,8704,prochlorperazine,ci_with,Consciousness Disorders
+D019966,8704,prochlorperazine,ci_with,Substance-Related Disorders
+D001008,8704,prochlorperazine,may_treat,Anxiety Disorders
+D003704,8704,prochlorperazine,may_treat,Dementia
+D019965,8704,prochlorperazine,may_treat,Neurocognitive Disorders
+D011618,8704,prochlorperazine,may_treat,Psychotic Disorders
+D012559,8704,prochlorperazine,may_treat,Schizophrenia
+D019967,8704,prochlorperazine,may_treat,Schizophrenia Spectrum and Other Psychotic Disorders
+D003244,8742,promazine,ci_with,Consciousness Disorders
+D011618,8742,promazine,may_treat,Psychotic Disorders
+D012559,8742,promazine,may_treat,Schizophrenia
+D019967,8742,promazine,may_treat,Schizophrenia Spectrum and Other Psychotic Disorders
+D003244,8745,promethazine,ci_with,Consciousness Disorders
+D001008,8770,propiomazine,may_treat,Anxiety Disorders
+D020920,8770,propiomazine,may_treat,Dyssomnias
+D020919,8770,propiomazine,may_treat,"Sleep Disorders, Intrinsic"
+D007319,8770,propiomazine,may_treat,Sleep Initiation and Maintenance Disorders
+D012893,8770,propiomazine,may_treat,Sleep Wake Disorders
+D003693,8782,propofol,may_treat,Delirium
+D019965,8782,propofol,may_treat,Neurocognitive Disorders
+D001008,8787,propranolol,may_treat,Anxiety Disorders
+D016584,8787,propranolol,may_treat,Panic Disorder
+D000076064,8825,protamine sulfate (USP),may_treat,Drug Misuse
+D062787,8825,protamine sulfate (USP),may_treat,Drug Overdose
+D063487,8825,protamine sulfate (USP),may_treat,Prescription Drug Misuse
+D019966,8825,protamine sulfate (USP),may_treat,Substance-Related Disorders
+D000076064,8826,protamines,may_treat,Drug Misuse
+D062787,8826,protamines,may_treat,Drug Overdose
+D063487,8826,protamines,may_treat,Prescription Drug Misuse
+D019966,8826,protamines,may_treat,Substance-Related Disorders
+D003866,8886,protriptyline,may_treat,Depressive Disorder
+D019964,8886,protriptyline,may_treat,Mood Disorders
+D020920,35185,quazepam,ci_with,Dyssomnias
+D020919,35185,quazepam,ci_with,"Sleep Disorders, Intrinsic"
+D012893,35185,quazepam,ci_with,Sleep Wake Disorders
+D020920,35185,quazepam,may_treat,Dyssomnias
+D020919,35185,quazepam,may_treat,"Sleep Disorders, Intrinsic"
+D007319,35185,quazepam,may_treat,Sleep Initiation and Maintenance Disorders
+D012893,35185,quazepam,may_treat,Sleep Wake Disorders
+D003244,51272,quetiapine,ci_with,Consciousness Disorders
+D000067877,51272,quetiapine,may_treat,Autism Spectrum Disorder
+D001321,51272,quetiapine,may_treat,Autistic Disorder
+D001714,51272,quetiapine,may_treat,Bipolar Disorder
+D000068105,51272,quetiapine,may_treat,Bipolar and Related Disorders
+D002659,51272,quetiapine,may_treat,"Child Development Disorders, Pervasive"
+D003866,51272,quetiapine,may_treat,Depressive Disorder
+D003865,51272,quetiapine,may_treat,Major Depressive Disorder
+D019964,51272,quetiapine,may_treat,Mood Disorders
+D065886,51272,quetiapine,may_treat,Neurodevelopmental Disorders
+D011618,51272,quetiapine,may_treat,Psychotic Disorders
+D012559,51272,quetiapine,may_treat,Schizophrenia
+D019967,51272,quetiapine,may_treat,Schizophrenia Spectrum and Other Psychotic Disorders
+D000076064,9100,racemethionine,may_treat,Drug Misuse
+D062787,9100,racemethionine,may_treat,Drug Overdose
+D063487,9100,racemethionine,may_treat,Prescription Drug Misuse
+D019966,9100,racemethionine,may_treat,Substance-Related Disorders
+D020920,596205,ramelteon,may_treat,Dyssomnias
+D020919,596205,ramelteon,may_treat,"Sleep Disorders, Intrinsic"
+D007319,596205,ramelteon,may_treat,Sleep Initiation and Maintenance Disorders
+D012893,596205,ramelteon,may_treat,Sleep Wake Disorders
+D001008,60842,reboxetine,may_treat,Anxiety Disorders
+D001289,60842,reboxetine,may_treat,Attention Deficit Disorder with Hyperactivity
+D019958,60842,reboxetine,may_treat,Attention Deficit and Disruptive Behavior Disorders
+D065886,60842,reboxetine,may_treat,Neurodevelopmental Disorders
+D016584,60842,reboxetine,may_treat,Panic Disorder
+D003866,9260,reserpine,ci_with,Depressive Disorder
+D019964,9260,reserpine,ci_with,Mood Disorders
+D012559,9260,reserpine,may_treat,Schizophrenia
+D019967,9260,reserpine,may_treat,Schizophrenia Spectrum and Other Psychotic Disorders
+D000067877,35636,risperidone,may_treat,Autism Spectrum Disorder
+D001321,35636,risperidone,may_treat,Autistic Disorder
+D001714,35636,risperidone,may_treat,Bipolar Disorder
+D000068105,35636,risperidone,may_treat,Bipolar and Related Disorders
+D002659,35636,risperidone,may_treat,"Child Development Disorders, Pervasive"
+D003704,35636,risperidone,may_treat,Dementia
+D019964,35636,risperidone,may_treat,Mood Disorders
+D019965,35636,risperidone,may_treat,Neurocognitive Disorders
+D065886,35636,risperidone,may_treat,Neurodevelopmental Disorders
+D012559,35636,risperidone,may_treat,Schizophrenia
+D019967,35636,risperidone,may_treat,Schizophrenia Spectrum and Other Psychotic Disorders
+D013981,35636,risperidone,may_treat,Tic Disorders
+D005879,35636,risperidone,may_treat,Tourette Syndrome
+D000544,183379,rivastigmine,may_treat,Alzheimer Disease
+D003704,183379,rivastigmine,may_treat,Dementia
+D019965,183379,rivastigmine,may_treat,Neurocognitive Disorders
+D020920,616739,rotigotine,may_treat,Dyssomnias
+D020447,616739,rotigotine,may_treat,Parasomnias
+D012148,616739,rotigotine,may_treat,Restless Legs Syndrome
+D020919,616739,rotigotine,may_treat,"Sleep Disorders, Intrinsic"
+D012893,616739,rotigotine,may_treat,Sleep Wake Disorders
+D001714,2559612,samidorphan,may_treat,Bipolar Disorder
+D000068105,2559612,samidorphan,may_treat,Bipolar and Related Disorders
+D019964,2559612,samidorphan,may_treat,Mood Disorders
+D012559,2559612,samidorphan,may_treat,Schizophrenia
+D019967,2559612,samidorphan,may_treat,Schizophrenia Spectrum and Other Psychotic Disorders
+D020920,9624,secobarbital,may_treat,Dyssomnias
+D020919,9624,secobarbital,may_treat,"Sleep Disorders, Intrinsic"
+D007319,9624,secobarbital,may_treat,Sleep Initiation and Maintenance Disorders
+D012893,9624,secobarbital,may_treat,Sleep Wake Disorders
+D000544,9639,selegiline,may_treat,Alzheimer Disease
+D001289,9639,selegiline,may_treat,Attention Deficit Disorder with Hyperactivity
+D019958,9639,selegiline,may_treat,Attention Deficit and Disruptive Behavior Disorders
+D003704,9639,selegiline,may_treat,Dementia
+D003866,9639,selegiline,may_treat,Depressive Disorder
+D019964,9639,selegiline,may_treat,Mood Disorders
+D019965,9639,selegiline,may_treat,Neurocognitive Disorders
+D065886,9639,selegiline,may_treat,Neurodevelopmental Disorders
+D012559,9639,selegiline,may_treat,Schizophrenia
+D019967,9639,selegiline,may_treat,Schizophrenia Spectrum and Other Psychotic Disorders
+D001289,2562176,serdexmethylphenidate,may_treat,Attention Deficit Disorder with Hyperactivity
+D019958,2562176,serdexmethylphenidate,may_treat,Attention Deficit and Disruptive Behavior Disorders
+D065886,2562176,serdexmethylphenidate,may_treat,Neurodevelopmental Disorders
+D012559,41996,sertindole,may_treat,Schizophrenia
+D019967,41996,sertindole,may_treat,Schizophrenia Spectrum and Other Psychotic Disorders
+D001008,36437,sertraline,may_treat,Anxiety Disorders
+D003866,36437,sertraline,may_treat,Depressive Disorder
+D001068,36437,sertraline,may_treat,Feeding and Eating Disorders
+D019964,36437,sertraline,may_treat,Mood Disorders
+D009771,36437,sertraline,may_treat,Obsessive-Compulsive Disorder
+D016584,36437,sertraline,may_treat,Panic Disorder
+D013313,36437,sertraline,may_treat,"Stress Disorders, Post-Traumatic"
+D040921,36437,sertraline,may_treat,"Stress Disorders, Traumatic"
+D000068099,36437,sertraline,may_treat,Trauma and Stressor Related Disorders
+D000856,36514,sibutramine,ci_with,Anorexia Nervosa
+D052018,36514,sibutramine,ci_with,Bulimia Nervosa
+D001068,36514,sibutramine,ci_with,Feeding and Eating Disorders
+D007172,136411,sildenafil,may_treat,Erectile Dysfunction
+D000076064,36676,sodium bicarbonate,may_treat,Drug Misuse
+D062787,36676,sodium bicarbonate,may_treat,Drug Overdose
+D063487,36676,sodium bicarbonate,may_treat,Prescription Drug Misuse
+D019966,36676,sodium bicarbonate,may_treat,Substance-Related Disorders
+D008607,56570,somatrem,may_treat,Intellectual Disability
+D008607,2644503,somatrogon,ci_with,Intellectual Disability
+D008607,61148,somatropin,ci_with,Intellectual Disability
+D008607,61148,somatropin,may_treat,Intellectual Disability
+D006970,1547099,suvorexant,ci_with,Disorders of Excessive Somnolence
+D020920,1547099,suvorexant,ci_with,Dyssomnias
+D009290,1547099,suvorexant,ci_with,Narcolepsy
+D020919,1547099,suvorexant,ci_with,"Sleep Disorders, Intrinsic"
+D012893,1547099,suvorexant,ci_with,Sleep Wake Disorders
+D020920,1547099,suvorexant,may_treat,Dyssomnias
+D020919,1547099,suvorexant,may_treat,"Sleep Disorders, Intrinsic"
+D007319,1547099,suvorexant,may_treat,Sleep Initiation and Maintenance Disorders
+D012893,1547099,suvorexant,may_treat,Sleep Wake Disorders
+D000544,10318,tacrine,may_treat,Alzheimer Disease
+D003704,10318,tacrine,may_treat,Dementia
+D019965,10318,tacrine,may_treat,Neurocognitive Disorders
+D007172,358263,tadalafil,may_treat,Erectile Dysfunction
+D020920,1490468,tasimelteon,may_treat,Dyssomnias
+D020178,1490468,tasimelteon,may_treat,"Sleep Disorders, Circadian Rhythm"
+D012893,1490468,tasimelteon,may_treat,Sleep Wake Disorders
+D001008,10355,temazepam,may_treat,Anxiety Disorders
+D003866,10355,temazepam,may_treat,Depressive Disorder
+D020920,10355,temazepam,may_treat,Dyssomnias
+D019964,10355,temazepam,may_treat,Mood Disorders
+D016584,10355,temazepam,may_treat,Panic Disorder
+D020919,10355,temazepam,may_treat,"Sleep Disorders, Intrinsic"
+D007319,10355,temazepam,may_treat,Sleep Initiation and Maintenance Disorders
+D012893,10355,temazepam,may_treat,Sleep Wake Disorders
+D003072,10390,tetrabenazine,may_treat,Cognition Disorders
+D003704,10390,tetrabenazine,may_treat,Dementia
+D006816,10390,tetrabenazine,may_treat,Huntington Disease
+D019965,10390,tetrabenazine,may_treat,Neurocognitive Disorders
+D001008,37985,tetrazepam,may_treat,Anxiety Disorders
+D001008,10437,theobromine,may_treat,Anxiety Disorders
+D019973,10454,thiamine,may_treat,Alcohol-Related Disorders
+D019966,10454,thiamine,may_treat,Substance-Related Disorders
+D014899,10454,thiamine,may_treat,Wernicke Encephalopathy
+D001008,10464,thiamylal,may_treat,Anxiety Disorders
+D020920,38077,thiobutabarbital,may_treat,Dyssomnias
+D020919,38077,thiobutabarbital,may_treat,"Sleep Disorders, Intrinsic"
+D007319,38077,thiobutabarbital,may_treat,Sleep Initiation and Maintenance Disorders
+D012893,38077,thiobutabarbital,may_treat,Sleep Wake Disorders
+D003244,10502,thioridazine,ci_with,Consciousness Disorders
+D011618,10502,thioridazine,may_treat,Psychotic Disorders
+D012559,10502,thioridazine,may_treat,Schizophrenia
+D019967,10502,thioridazine,may_treat,Schizophrenia Spectrum and Other Psychotic Disorders
+D003244,10510,thiothixene,ci_with,Consciousness Disorders
+D011618,10510,thiothixene,may_treat,Psychotic Disorders
+D012559,10510,thiothixene,may_treat,Schizophrenia
+D019967,10510,thiothixene,may_treat,Schizophrenia Spectrum and Other Psychotic Disorders
+D001714,31914,tiagabine,may_treat,Bipolar Disorder
+D000068105,31914,tiagabine,may_treat,Bipolar and Related Disorders
+D019964,31914,tiagabine,may_treat,Mood Disorders
+D020920,38260,tibolone,may_treat,Dyssomnias
+D020919,38260,tibolone,may_treat,"Sleep Disorders, Intrinsic"
+D007319,38260,tibolone,may_treat,Sleep Initiation and Maintenance Disorders
+D012893,38260,tibolone,may_treat,Sleep Wake Disorders
+D008607,2740012,tividenofusp alfa,may_treat,Intellectual Disability
+D000544,314875,"tocopheryl acid succinate,D-alpha",may_prevent,Alzheimer Disease
+D003704,314875,"tocopheryl acid succinate,D-alpha",may_prevent,Dementia
+D019965,314875,"tocopheryl acid succinate,D-alpha",may_prevent,Neurocognitive Disorders
+D000544,314875,"tocopheryl acid succinate,D-alpha",may_treat,Alzheimer Disease
+D003704,314875,"tocopheryl acid succinate,D-alpha",may_treat,Dementia
+D019965,314875,"tocopheryl acid succinate,D-alpha",may_treat,Neurocognitive Disorders
+D001008,38365,tofisopam,may_treat,Anxiety Disorders
+D013375,38365,tofisopam,may_treat,Substance Withdrawal Syndrome
+D019966,38365,tofisopam,may_treat,Substance-Related Disorders
+D001714,38404,topiramate,may_treat,Bipolar Disorder
+D000068105,38404,topiramate,may_treat,Bipolar and Related Disorders
+D019964,38404,topiramate,may_treat,Mood Disorders
+D000079524,10689,tramadol,ci_with,Narcotic-Related Disorders
+D009293,10689,tramadol,ci_with,Opioid-Related Disorders
+D019966,10689,tramadol,ci_with,Substance-Related Disorders
+D003866,10734,tranylcypromine,may_treat,Depressive Disorder
+D019964,10734,tranylcypromine,may_treat,Mood Disorders
+D013313,10734,tranylcypromine,may_treat,"Stress Disorders, Post-Traumatic"
+D040921,10734,tranylcypromine,may_treat,"Stress Disorders, Traumatic"
+D000068099,10734,tranylcypromine,may_treat,Trauma and Stressor Related Disorders
+D003866,10737,trazodone,may_treat,Depressive Disorder
+D020920,10737,trazodone,may_treat,Dyssomnias
+D019964,10737,trazodone,may_treat,Mood Disorders
+D020919,10737,trazodone,may_treat,"Sleep Disorders, Intrinsic"
+D007319,10737,trazodone,may_treat,Sleep Initiation and Maintenance Disorders
+D012893,10737,trazodone,may_treat,Sleep Wake Disorders
+D020920,10767,triazolam,may_treat,Dyssomnias
+D020919,10767,triazolam,may_treat,"Sleep Disorders, Intrinsic"
+D007319,10767,triazolam,may_treat,Sleep Initiation and Maintenance Disorders
+D012893,10767,triazolam,may_treat,Sleep Wake Disorders
+D000544,1314420,tricaprylin,may_treat,Alzheimer Disease
+D003704,1314420,tricaprylin,may_treat,Dementia
+D019965,1314420,tricaprylin,may_treat,Neurocognitive Disorders
+D003244,10800,trifluoperazine,ci_with,Consciousness Disorders
+D001008,10800,trifluoperazine,may_treat,Anxiety Disorders
+D011618,10800,trifluoperazine,may_treat,Psychotic Disorders
+D012559,10800,trifluoperazine,may_treat,Schizophrenia
+D019967,10800,trifluoperazine,may_treat,Schizophrenia Spectrum and Other Psychotic Disorders
+D011618,10804,trifluperidol,may_treat,Psychotic Disorders
+D019967,10804,trifluperidol,may_treat,Schizophrenia Spectrum and Other Psychotic Disorders
+D011618,10805,triflupromazine,may_treat,Psychotic Disorders
+D019967,10805,triflupromazine,may_treat,Schizophrenia Spectrum and Other Psychotic Disorders
+D003244,10825,trimeprazine,ci_with,Consciousness Disorders
+D003866,10834,trimipramine,may_treat,Depressive Disorder
+D019964,10834,trimipramine,may_treat,Mood Disorders
+D008607,2632852,trofinetide,may_treat,Intellectual Disability
+D020920,10898,tryptophan,may_treat,Dyssomnias
+D020919,10898,tryptophan,may_treat,"Sleep Disorders, Intrinsic"
+D007319,10898,tryptophan,may_treat,Sleep Initiation and Maintenance Disorders
+D012893,10898,tryptophan,may_treat,Sleep Wake Disorders
+D003072,21406,ubidecarenone,may_treat,Cognition Disorders
+D003704,21406,ubidecarenone,may_treat,Dementia
+D006816,21406,ubidecarenone,may_treat,Huntington Disease
+D019965,21406,ubidecarenone,may_treat,Neurocognitive Disorders
+D000076064,11017,uridine,may_treat,Drug Misuse
+D062787,11017,uridine,may_treat,Drug Overdose
+D063487,11017,uridine,may_treat,Prescription Drug Misuse
+D019966,11017,uridine,may_treat,Substance-Related Disorders
+D000076064,1665222,uridine triacetate,may_treat,Drug Misuse
+D062787,1665222,uridine triacetate,may_treat,Drug Overdose
+D063487,1665222,uridine triacetate,may_treat,Prescription Drug Misuse
+D019966,1665222,uridine triacetate,may_treat,Substance-Related Disorders
+D020920,253206,valerian root extract,may_treat,Dyssomnias
+D020919,253206,valerian root extract,may_treat,"Sleep Disorders, Intrinsic"
+D007319,253206,valerian root extract,may_treat,Sleep Initiation and Maintenance Disorders
+D012893,253206,valerian root extract,may_treat,Sleep Wake Disorders
+D007172,306674,vardenafil,may_treat,Erectile Dysfunction
+D001008,39786,venlafaxine,may_treat,Anxiety Disorders
+D001289,39786,venlafaxine,may_treat,Attention Deficit Disorder with Hyperactivity
+D019958,39786,venlafaxine,may_treat,Attention Deficit and Disruptive Behavior Disorders
+D000067877,39786,venlafaxine,may_treat,Autism Spectrum Disorder
+D001321,39786,venlafaxine,may_treat,Autistic Disorder
+D002659,39786,venlafaxine,may_treat,"Child Development Disorders, Pervasive"
+D003866,39786,venlafaxine,may_treat,Depressive Disorder
+D019964,39786,venlafaxine,may_treat,Mood Disorders
+D065886,39786,venlafaxine,may_treat,Neurodevelopmental Disorders
+D009771,39786,venlafaxine,may_treat,Obsessive-Compulsive Disorder
+D020920,1424884,vilanterol,may_treat,Dyssomnias
+D020919,1424884,vilanterol,may_treat,"Sleep Disorders, Intrinsic"
+D012893,1424884,vilanterol,may_treat,Sleep Wake Disorders
+D003866,1086769,vilazodone,may_treat,Depressive Disorder
+D003865,1086769,vilazodone,may_treat,Major Depressive Disorder
+D019964,1086769,vilazodone,may_treat,Mood Disorders
+D019973,11248,vitamin B12,may_treat,Alcohol-Related Disorders
+D019966,11248,vitamin B12,may_treat,Substance-Related Disorders
+D000544,11256,vitamin E,may_prevent,Alzheimer Disease
+D003704,11256,vitamin E,may_prevent,Dementia
+D019965,11256,vitamin E,may_prevent,Neurocognitive Disorders
+D000544,11256,vitamin E,may_treat,Alzheimer Disease
+D003704,11256,vitamin E,may_treat,Dementia
+D019965,11256,vitamin E,may_treat,Neurocognitive Disorders
+D003866,1455099,vortioxetine,may_treat,Depressive Disorder
+D003865,1455099,vortioxetine,may_treat,Major Depressive Disorder
+D019964,1455099,vortioxetine,may_treat,Mood Disorders
+D019973,11289,warfarin,ci_with,Alcohol-Related Disorders
+D000437,11289,warfarin,ci_with,Alcoholism
+D019966,11289,warfarin,ci_with,Substance-Related Disorders
+D012559,2694828,xanomeline,may_treat,Schizophrenia
+D019967,2694828,xanomeline,may_treat,Schizophrenia Spectrum and Other Psychotic Disorders
+D007172,220982,yohimbine,may_treat,Erectile Dysfunction
+D020018,220982,yohimbine,may_treat,"Sexual Dysfunctions, Psychological"
+D020920,74667,zaleplon,may_treat,Dyssomnias
+D020919,74667,zaleplon,may_treat,"Sleep Disorders, Intrinsic"
+D007319,74667,zaleplon,may_treat,Sleep Initiation and Maintenance Disorders
+D012893,74667,zaleplon,may_treat,Sleep Wake Disorders
+D011618,68503,ziconotide,ci_with,Psychotic Disorders
+D019967,68503,ziconotide,ci_with,Schizophrenia Spectrum and Other Psychotic Disorders
+D065886,115698,ziprasidone,may_treat,Neurodevelopmental Disorders
+D012559,115698,ziprasidone,may_treat,Schizophrenia
+D019967,115698,ziprasidone,may_treat,Schizophrenia Spectrum and Other Psychotic Disorders
+D013981,115698,ziprasidone,may_treat,Tic Disorders
+D005879,115698,ziprasidone,may_treat,Tourette Syndrome
+D020920,39993,zolpidem,may_treat,Dyssomnias
+D020919,39993,zolpidem,may_treat,"Sleep Disorders, Intrinsic"
+D007319,39993,zolpidem,may_treat,Sleep Initiation and Maintenance Disorders
+D012893,39993,zolpidem,may_treat,Sleep Wake Disorders
+D019052,2669905,zuranolone,may_treat,"Depression, Postpartum"
+D003866,2669905,zuranolone,may_treat,Depressive Disorder
+D019964,2669905,zuranolone,may_treat,Mood Disorders

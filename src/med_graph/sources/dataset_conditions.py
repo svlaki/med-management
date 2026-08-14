@@ -32,6 +32,16 @@ _ALIASES: dict[str, tuple[str, str, str | None]] = {
         "Seasonal Affective Disorder",
         None,
     ),
+    "treatment-resistant depression": (
+        "depression-treatment-resistant",
+        "Treatment-Resistant Depression",
+        None,
+    ),
+    "premenstrual dysphoric disorder": (
+        "pmdd",
+        "Premenstrual Dysphoric Disorder",
+        "F32.81",
+    ),
     "bipolar disorder": ("bipolar", "Bipolar Disorder", "F31"),
     # --- Anxiety & related ---
     "anxiety disorders": ("anxiety", "Anxiety Disorders", "F41"),
@@ -124,6 +134,9 @@ _ALIASES: dict[str, tuple[str, str, str | None]] = {
         "Feeding and Eating Disorders",
         "F50",
     ),
+    "binge eating disorder": ("binge-eating-disorder", "Binge Eating Disorder", "F50.81"),
+    "bulimia nervosa": ("bulimia-nervosa", "Bulimia Nervosa", "F50.2"),
+    "tourette's disorder": ("tourette", "Tourette Syndrome", "F95.2"),
 }
 
 

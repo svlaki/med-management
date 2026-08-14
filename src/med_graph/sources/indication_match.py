@@ -28,7 +28,23 @@ DISORDER_VOCAB: dict[str, list[str]] = {
         "attention-deficit hyperactivity disorder",
         "attention deficit disorder",
     ],
-    "Insomnia": ["insomnia"],
+    "Premenstrual Dysphoric Disorder": [
+        "premenstrual dysphoric disorder",
+        "pmdd",
+    ],
+    "Binge Eating Disorder": ["binge eating disorder", "binge-eating disorder"],
+    "Bulimia Nervosa": ["bulimia nervosa", "bulimia"],
+    "Tourette's Disorder": [
+        "tourette's disorder",
+        "tourette syndrome",
+        "tic disorder",
+    ],
+    "Treatment-Resistant Depression": [
+        "treatment-resistant depression",
+        
+        "treatment resistant depression",
+    ],
+    "Insomnia": ["insomnia", "difficulty falling asleep", "sleep onset"],
 }
 
 # If any of these appears just before a matched phrase, treat it as a non-approval

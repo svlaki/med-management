@@ -8,6 +8,8 @@ from med_graph.sources.rxclass_pharmacology import (
     BYRXCUI_URL,
     RxClassPharmacologySource,
     atc_to_class,
+    neurotransmitter_effects,
+    neurotransmitters_from_moa,
     parse_neurotransmitters,
 )
 
@@ -61,6 +63,90 @@ class TestParseNeurotransmitters:
     def test_dedupes_and_is_deterministically_ordered(self):
         pe = ["Decreased Serotonin Activity", "Decreased Serotonin Activity"]
         assert parse_neurotransmitters(pe) == [("Serotonin", "-")]
+
+    def test_activity_alteration_is_unclear_direction(self):
+        assert parse_neurotransmitters(["Serotonin Activity Alteration"]) == [
+            ("Serotonin", "~")
+        ]
+
+    def test_resolves_a_transmitter_named_by_its_adjective(self):
+        # 'norepinephrine' never appears — only the adrenergic system does.
+        assert parse_neurotransmitters(["Increased Adrenergic Activity"]) == [
+            ("Norepinephrine", "+")
+        ]
+
+    def test_epinephrine_alias_does_not_fire_inside_norepinephrine(self):
+        assert parse_neurotransmitters(["Increased Norepinephrine Activity"]) == [
+            ("Norepinephrine", "+")
+        ]
+
+
+class TestNeurotransmittersFromMoa:
+    def test_uptake_inhibitor_increases(self):
+        assert neurotransmitters_from_moa(["Serotonin Uptake Inhibitors"]) == [
+            ("Serotonin", "+")
+        ]
+
+    def test_antagonist_decreases(self):
+        assert neurotransmitters_from_moa(["Dopamine Antagonists"]) == [("Dopamine", "-")]
+
+    def test_agonist_increases(self):
+        assert neurotransmitters_from_moa(["Serotonin Receptor Agonists"]) == [
+            ("Serotonin", "+")
+        ]
+
+    def test_maoi_raises_all_three_monoamines(self):
+        assert neurotransmitters_from_moa(["Monoamine Oxidase Inhibitors"]) == [
+            ("Serotonin", "+"),
+            ("Dopamine", "+"),
+            ("Norepinephrine", "+"),
+        ]
+
+    def test_alpha2_agonist_reduces_norepinephrine(self):
+        # clonidine/guanfacine: an agonist that LOWERS norepinephrine release.
+        assert neurotransmitters_from_moa(["Adrenergic alpha2-Agonists"]) == [
+            ("Norepinephrine", "-")
+        ]
+
+    def test_cholinesterase_inhibitor_raises_acetylcholine(self):
+        assert neurotransmitters_from_moa(["Acetylcholinesterase Inhibitors"]) == [
+            ("Acetylcholine", "+")
+        ]
+
+    def test_ignores_directionless_mechanisms(self):
+        assert neurotransmitters_from_moa(["Cytochrome P450 Substrates"]) == []
+
+    def test_orexin_antagonist_reduces_orexin(self):
+        # daridorexant/lemborexant/suvorexant — blocking orexin promotes sleep
+        assert neurotransmitters_from_moa(["Orexin Receptor Antagonists"]) == [
+            ("Orexin", "-")
+        ]
+
+    def test_opioid_system_is_tracked(self):
+        assert neurotransmitters_from_moa(["Opioid Antagonists"]) == [("Opioid", "-")]
+
+    def test_nmda_antagonist_maps_to_glutamate(self):
+        # esketamine — NMDA is a glutamate receptor
+        assert neurotransmitters_from_moa(["Noncompetitive NMDA Receptor Antagonists"]) == [
+            ("Glutamate", "-")
+        ]
+
+
+class TestNeurotransmitterEffects:
+    def test_moa_fills_what_pe_lacks(self):
+        # amoxapine-like: no serotonin PE, but MoA names both transmitters.
+        effects = neurotransmitter_effects(
+            pe_names=[],
+            moa_names=["Serotonin Uptake Inhibitors", "Norepinephrine Uptake Inhibitors"],
+        )
+        assert effects == [("Serotonin", "+"), ("Norepinephrine", "+")]
+
+    def test_pe_wins_on_conflict(self):
+        effects = neurotransmitter_effects(
+            pe_names=["Decreased Dopamine Activity"],
+            moa_names=["Dopamine Agonists"],  # MoA would say +
+        )
+        assert effects == [("Dopamine", "-")]
 
 
 def payload(atc=(), moa=(), pe=(), disease=()):

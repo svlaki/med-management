@@ -19,7 +19,7 @@ from dotenv import load_dotenv
 
 from med_graph.sources.base import SourceFetchError
 from med_graph.sources.indication_match import approved_disorders
-from med_graph.sources.openfda import ADMINISTRATIVE_TERMS
+from med_graph.sources.openfda import is_administrative
 from med_graph.sources.openfda_label import label_mentions
 from med_graph.sources.rxclass_pharmacology import RxClassPharmacologySource
 
@@ -32,6 +32,51 @@ def normalize_spelling(text: str) -> str:
 EMPTY_PHARMACOLOGY = {
     "atc_codes": [], "drug_class": "Other", "mechanisms": [],
     "neurotransmitters": [], "may_treat": [],
+}
+
+# --- Manual curation of the ATC-derived drug_class (see README provenance) ---
+# ATC codes classify a drug by its *primary* indication, so several drugs whose
+# psychiatric use is secondary land in "Other". These two hand-maintained tables
+# correct only the human-readable drug_class label; no evidence field is touched.
+
+# Non-psychiatric entries that slipped into the label set — dropped entirely.
+DROP_DRUGS = {
+    "Digitalis preparation",
+    "digoxin",
+    "digitoxin",
+    "clopamide",          # thiazide-like diuretic
+    "phenylalanine",      # amino acid
+    "theobromine",        # xanthine
+    "tibolone",           # synthetic steroid
+    "isoflurane",         # inhaled general anesthetic
+}
+
+# Clinically-insignificant transmitter attributions that RxClass/MED-RT lists but
+# that are not a meaningful part of the drug's action. Removed so the neurotransmitter
+# column doesn't mislead symptom-targeting. Bupropion is the canonical case: MED-RT
+# tags it a "Serotonin Uptake Inhibitor," but it is an NDRI whose serotonergic activity
+# is clinically negligible — the distinction that makes it useful for low-energy
+# depression. generic_name -> set of transmitters to drop.
+NEUROTRANSMITTER_REMOVALS = {
+    "bupropion": {"Serotonin"},
+}
+
+# generic_name -> corrected therapeutic class (ATC mis-buckets these by primary use).
+DRUG_CLASS_OVERRIDES = {
+    "gabapentin": "Anticonvulsant",
+    "clonidine": "Alpha-2 agonist",
+    "guanfacine": "Alpha-2 agonist",
+    "diphenhydramine": "Antihistamine",
+    "doxylamine": "Antihistamine",
+    "bromodiphenhydramine": "Antihistamine",
+    "cyproheptadine": "Antihistamine",
+    "propranolol": "Beta-blocker",
+    "pramipexole": "Dopamine agonist",
+    "selegiline": "MAOI",
+    "piperacetazine": "Antipsychotic",
+    "tetrazepam": "Anxiolytic",
+    "thiamylal": "Sedative-Hypnotic",
+    "thiobutabarbital": "Sedative-Hypnotic",
 }
 
 
@@ -75,7 +120,7 @@ def split_side_effects(reactions, adverse_text):
     normalized_label = normalize_spelling(adverse_text)
     confirmed, faers_only = [], []
     for term, _count in reactions:
-        if not isinstance(term, str) or term.upper() in ADMINISTRATIVE_TERMS:
+        if not isinstance(term, str) or is_administrative(term):
             continue
         folded = normalize_spelling(term)
         effect = SimpleNamespace(meddra_term=folded, name=folded)
@@ -96,8 +141,13 @@ def main() -> None:
     missing_pharm = []
     with RxClassPharmacologySource() as pharm:
         for i, drug in labels.iterrows():
+            if drug.generic_name in DROP_DRUGS:
+                continue
             rxcui = str(drug.rxcui)
             pharma = fetch_pharmacology(pharm, rxcui)
+            drug_class = DRUG_CLASS_OVERRIDES.get(drug.generic_name, pharma["drug_class"])
+            drop_nt = NEUROTRANSMITTER_REMOVALS.get(drug.generic_name, set())
+            neurotransmitters = [(nt, d) for nt, d in pharma["neurotransmitters"] if nt not in drop_nt]
 
             indications = drug.indications_and_usage if isinstance(drug.indications_and_usage, str) else ""
             adverse = drug.adverse_reactions if isinstance(drug.adverse_reactions, str) else ""
@@ -105,15 +155,15 @@ def main() -> None:
             may_treat = [d for d in pharma["may_treat"] if d.lower() in psych_names]
             confirmed, faers_only = split_side_effects(faers.get(rxcui, []), adverse)
 
-            if pharma["drug_class"] == "Other" and not pharma["neurotransmitters"]:
+            if drug_class == "Other" and not pharma["neurotransmitters"]:
                 missing_pharm.append(drug.generic_name)
 
             rows.append({
                 "rxcui": rxcui,
                 "generic_name": drug.generic_name,
-                "drug_class": pharma["drug_class"],
+                "drug_class": drug_class,
                 "atc_codes": "; ".join(pharma["atc_codes"]),
-                "neurotransmitters": "; ".join(f"{nt}({d})" for nt, d in pharma["neurotransmitters"]),
+                "neurotransmitters": "; ".join(f"{nt}({d})" for nt, d in neurotransmitters),
                 "mechanism": "; ".join(pharma["mechanisms"]),
                 "fda_approved": bool(approved),
                 "approved_for": "; ".join(approved),

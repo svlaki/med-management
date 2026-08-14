@@ -1,0 +1,2048 @@
+class_id,rxcui,generic_name,rela,condition_name
+D000686,91235,Digitalis preparation,ci_with,Amyloidosis
+D002312,91235,Digitalis preparation,ci_with,"Cardiomyopathy, Hypertrophic"
+D004342,91235,Digitalis preparation,ci_with,Drug Hypersensitivity
+D006327,91235,Digitalis preparation,ci_with,Heart Block
+D010494,91235,Digitalis preparation,ci_with,"Pericarditis, Constrictive"
+D017180,91235,Digitalis preparation,ci_with,"Tachycardia, Ventricular"
+D014693,91235,Digitalis preparation,ci_with,Ventricular Fibrillation
+D006333,91235,Digitalis preparation,may_prevent,Heart Failure
+D001008,91235,Digitalis preparation,may_treat,Anxiety Disorders
+D001281,91235,Digitalis preparation,may_treat,Atrial Fibrillation
+D001282,91235,Digitalis preparation,may_treat,Atrial Flutter
+D002303,91235,Digitalis preparation,may_treat,"Cardiac Output, Low"
+D006333,91235,Digitalis preparation,may_treat,Heart Failure
+D012770,91235,Digitalis preparation,may_treat,"Shock, Cardiogenic"
+D013617,91235,Digitalis preparation,may_treat,"Tachycardia, Supraventricular"
+D004342,82819,acamprosate,ci_with,Drug Hypersensitivity
+D007674,82819,acamprosate,ci_with,Kidney Diseases
+D000437,82819,acamprosate,may_treat,Alcoholism
+D012892,161203,aceprometazine,may_treat,Sleep Deprivation
+D006261,162,acetanilide,may_treat,Headache
+D013575,162,acetanilide,may_treat,Syncope
+D001778,16735,acetophenazine,ci_with,Blood Coagulation Disorders
+D001855,16735,acetophenazine,ci_with,Bone Marrow Diseases
+D001925,16735,acetophenazine,ci_with,"Brain Damage, Chronic"
+D003128,16735,acetophenazine,ci_with,Coma
+D004342,16735,acetophenazine,ci_with,Drug Hypersensitivity
+D011618,16735,acetophenazine,may_treat,Psychotic Disorders
+D012559,16735,acetophenazine,may_treat,Schizophrenia
+D011041,272,activated charcoal,ci_with,Poisoning
+D064420,272,activated charcoal,may_prevent,Drug-Related Side Effects and Adverse Reactions
+D005414,272,activated charcoal,may_prevent,Flatulence
+D003967,272,activated charcoal,may_treat,Diarrhea
+D062787,272,activated charcoal,may_treat,Drug Overdose
+D005414,272,activated charcoal,may_treat,Flatulence
+D011041,272,activated charcoal,may_treat,Poisoning
+D014115,272,activated charcoal,may_treat,Toxemia
+D014511,272,activated charcoal,may_treat,Uremia
+D000544,2557217,aducanumab,may_treat,Alzheimer Disease
+D000787,70223,aldesleukin,ci_with,Angina Pectoris
+D001145,70223,aldesleukin,ci_with,"Arrhythmias, Cardiac"
+D002305,70223,aldesleukin,ci_with,Cardiac Tamponade
+D002637,70223,aldesleukin,ci_with,Chest Pain
+D003128,70223,aldesleukin,ci_with,Coma
+D004342,70223,aldesleukin,ci_with,Drug Hypersensitivity
+D005767,70223,aldesleukin,ci_with,Gastrointestinal Diseases
+D006471,70223,aldesleukin,ci_with,Gastrointestinal Hemorrhage
+D006086,70223,aldesleukin,ci_with,Graft vs Host Disease
+D007416,70223,aldesleukin,ci_with,Intestinal Perforation
+D007511,70223,aldesleukin,ci_with,Ischemia
+D007676,70223,aldesleukin,ci_with,"Kidney Failure, Chronic"
+D009203,70223,aldesleukin,ci_with,Myocardial Infarction
+D011618,70223,aldesleukin,ci_with,Psychotic Disorders
+D012140,70223,aldesleukin,ci_with,Respiratory Tract Diseases
+D012640,70223,aldesleukin,ci_with,Seizures
+D017180,70223,aldesleukin,ci_with,"Tachycardia, Ventricular"
+D002292,70223,aldesleukin,may_treat,"Carcinoma, Renal Cell"
+D015179,70223,aldesleukin,may_treat,Colorectal Neoplasms
+D015658,70223,aldesleukin,may_treat,HIV Infections
+D008228,70223,aldesleukin,may_treat,"Lymphoma, Non-Hodgkin"
+D008545,70223,aldesleukin,may_treat,Melanoma
+D009101,70223,aldesleukin,may_treat,Multiple Myeloma
+D004342,237099,alpha tocopherol,ci_with,Drug Hypersensitivity
+D000544,237099,alpha tocopherol,may_prevent,Alzheimer Disease
+D000743,237099,alpha tocopherol,may_prevent,"Anemia, Hemolytic"
+D001997,237099,alpha tocopherol,may_prevent,Bronchopulmonary Dysplasia
+D004409,237099,alpha tocopherol,may_prevent,"Dyskinesia, Drug-Induced"
+D014811,237099,alpha tocopherol,may_prevent,Vitamin E Deficiency
+D000544,237099,alpha tocopherol,may_treat,Alzheimer Disease
+D000743,237099,alpha tocopherol,may_treat,"Anemia, Hemolytic"
+D004409,237099,alpha tocopherol,may_treat,"Dyskinesia, Drug-Induced"
+D014811,237099,alpha tocopherol,may_treat,Vitamin E Deficiency
+D004342,596,alprazolam,ci_with,Drug Hypersensitivity
+D015812,596,alprazolam,ci_with,"Glaucoma, Angle-Closure"
+D000379,596,alprazolam,may_treat,Agoraphobia
+D003866,596,alprazolam,may_treat,Depressive Disorder
+D016584,596,alprazolam,may_treat,Panic Disorder
+D000755,598,alprostadil,ci_with,"Anemia, Sickle Cell"
+D000013,598,alprostadil,ci_with,Congenital Abnormalities
+D004342,598,alprostadil,ci_with,Drug Hypersensitivity
+D006819,598,alprostadil,ci_with,Hyaline Membrane Disease
+D007938,598,alprostadil,ci_with,Leukemia
+D009101,598,alprostadil,ci_with,Multiple Myeloma
+D010409,598,alprostadil,ci_with,Penile Diseases
+D010411,598,alprostadil,ci_with,Penile Induration
+D010547,598,alprostadil,ci_with,Persistent Fetal Circulation Syndrome
+D011247,598,alprostadil,ci_with,Pregnancy
+D001015,598,alprostadil,may_treat,Aortic Arch Syndromes
+D001017,598,alprostadil,may_treat,Aortic Coarctation
+D004374,598,alprostadil,may_treat,"Ductus Arteriosus, Patent"
+D006976,598,alprostadil,may_treat,"Hypertension, Pulmonary"
+D018636,598,alprostadil,may_treat,Hypoplastic Left Heart Syndrome
+D018783,598,alprostadil,may_treat,"Impotence, Vasculogenic"
+D011666,598,alprostadil,may_treat,Pulmonary Valve Stenosis
+D013771,598,alprostadil,may_treat,Tetralogy of Fallot
+D018785,598,alprostadil,may_treat,Tricuspid Atresia
+D054537,703,amiodarone,ci_with,Atrioventricular Block
+D001919,703,amiodarone,ci_with,Bradycardia
+D004342,703,amiodarone,ci_with,Drug Hypersensitivity
+D007774,703,amiodarone,ci_with,Lactation
+D011269,703,amiodarone,ci_with,"Pregnancy, Abdominal"
+D012770,703,amiodarone,ci_with,"Shock, Cardiogenic"
+D012804,703,amiodarone,ci_with,Sick Sinus Syndrome
+D013575,703,amiodarone,ci_with,Syncope
+D013617,703,amiodarone,may_treat,"Tachycardia, Supraventricular"
+D014693,703,amiodarone,may_treat,Ventricular Fibrillation
+D004342,704,amitriptyline,ci_with,Drug Hypersensitivity
+D009203,704,amitriptyline,ci_with,Myocardial Infarction
+D003866,704,amitriptyline,may_treat,Depressive Disorder
+D010146,704,amitriptyline,may_treat,Pain
+D000402,719,amobarbital,ci_with,Airway Obstruction
+D004342,719,amobarbital,ci_with,Drug Hypersensitivity
+D004417,719,amobarbital,ci_with,Dyspnea
+D008107,719,amobarbital,ci_with,Liver Diseases
+D017093,719,amobarbital,ci_with,Liver Failure
+D011164,719,amobarbital,ci_with,Porphyrias
+D001008,719,amobarbital,may_treat,Anxiety Disorders
+D012640,719,amobarbital,may_treat,Seizures
+D007319,719,amobarbital,may_treat,Sleep Initiation and Maintenance Disorders
+D013226,719,amobarbital,may_treat,Status Epilepticus
+D004342,722,amoxapine,ci_with,Drug Hypersensitivity
+D009203,722,amoxapine,ci_with,Myocardial Infarction
+D003866,722,amoxapine,may_treat,Depressive Disorder
+D011602,722,amoxapine,may_treat,Psychophysiologic Disorders
+D001161,725,amphetamine,ci_with,Arteriosclerosis
+D004342,725,amphetamine,ci_with,Drug Hypersensitivity
+D005901,725,amphetamine,ci_with,Glaucoma
+D006973,725,amphetamine,ci_with,Hypertension
+D006980,725,amphetamine,ci_with,Hyperthyroidism
+D015819,725,amphetamine,ci_with,"Substance Abuse, Intravenous"
+D019966,725,amphetamine,ci_with,Substance-Related Disorders
+D001289,725,amphetamine,may_treat,Attention Deficit Disorder with Hyperactivity
+D009290,725,amphetamine,may_treat,Narcolepsy
+D000033,17941,anisindione,ci_with,"Abortion, Threatened"
+D000437,17941,anisindione,ci_with,Alcoholism
+D000783,17941,anisindione,ci_with,Aneurysm
+D001206,17941,anisindione,ci_with,Ascorbic Acid Deficiency
+D002277,17941,anisindione,ci_with,Carcinoma
+D002543,17941,anisindione,ci_with,Cerebral Hemorrhage
+D004238,17941,anisindione,ci_with,Diverticulitis
+D004342,17941,anisindione,ci_with,Drug Hypersensitivity
+D004461,17941,anisindione,ci_with,Eclampsia
+D004614,17941,anisindione,ci_with,Emaciation
+D004697,17941,anisindione,ci_with,"Endocarditis, Bacterial"
+D006471,17941,anisindione,ci_with,Gastrointestinal Hemorrhage
+D006467,17941,anisindione,ci_with,Hemophilia A
+D002836,17941,anisindione,ci_with,Hemophilia B
+D006974,17941,anisindione,ci_with,"Hypertension, Malignant"
+D007938,17941,anisindione,ci_with,Leukemia
+D008107,17941,anisindione,ci_with,Liver Diseases
+D010490,17941,anisindione,ci_with,Pericardial Effusion
+D010493,17941,anisindione,ci_with,Pericarditis
+D019106,17941,anisindione,ci_with,Postoperative Hemorrhage
+D011225,17941,anisindione,ci_with,Pre-Eclampsia
+D011247,17941,anisindione,ci_with,Pregnancy
+D011469,17941,anisindione,ci_with,Prostatic Diseases
+D011502,17941,anisindione,ci_with,Protein-Energy Malnutrition
+D011696,17941,anisindione,ci_with,"Purpura, Thrombocytopenic"
+D014813,17941,anisindione,ci_with,Vitamin K Deficiency
+D011655,17941,anisindione,may_prevent,Pulmonary Embolism
+D013923,17941,anisindione,may_prevent,Thromboembolism
+D020246,17941,anisindione,may_prevent,Venous Thrombosis
+D001281,17941,anisindione,may_treat,Atrial Fibrillation
+D054059,17941,anisindione,may_treat,Coronary Occlusion
+D004617,17941,anisindione,may_treat,Embolism
+D009203,17941,anisindione,may_treat,Myocardial Infarction
+D011655,17941,anisindione,may_treat,Pulmonary Embolism
+D013923,17941,anisindione,may_treat,Thromboembolism
+D020246,17941,anisindione,may_treat,Venous Thrombosis
+D001996,17381,aprobarbital,ci_with,Bronchopneumonia
+D004342,17381,aprobarbital,ci_with,Drug Hypersensitivity
+D011164,17381,aprobarbital,ci_with,Porphyrias
+D012131,17381,aprobarbital,ci_with,Respiratory Insufficiency
+D007319,17381,aprobarbital,may_treat,Sleep Initiation and Maintenance Disorders
+D004342,89013,aripiprazole,ci_with,Drug Hypersensitivity
+D012559,89013,aripiprazole,may_treat,Schizophrenia
+D004342,1673265,aripiprazole lauroxil,ci_with,Drug Hypersensitivity
+D012559,1673265,aripiprazole lauroxil,may_treat,Schizophrenia
+D004342,641465,armodafinil,ci_with,Drug Hypersensitivity
+D012893,641465,armodafinil,may_treat,Sleep Wake Disorders
+D004342,784649,asenapine,ci_with,Drug Hypersensitivity
+D048550,784649,asenapine,ci_with,Hepatic Insufficiency
+D001714,784649,asenapine,may_treat,Bipolar Disorder
+D012559,784649,asenapine,may_treat,Schizophrenia
+D004342,38400,atomoxetine,ci_with,Drug Hypersensitivity
+D015812,38400,atomoxetine,ci_with,"Glaucoma, Angle-Closure"
+D006967,38400,atomoxetine,ci_with,Hypersensitivity
+D010673,38400,atomoxetine,ci_with,Pheochromocytoma
+D001289,38400,atomoxetine,may_treat,Attention Deficit Disorder with Hyperactivity
+D004342,1291301,avanafil,ci_with,Drug Hypersensitivity
+D007172,1291301,avanafil,may_treat,Erectile Dysfunction
+D004342,1292,baclofen,ci_with,Drug Hypersensitivity
+D002547,1292,baclofen,may_treat,Cerebral Palsy
+D006606,1292,baclofen,may_treat,Hiccup
+D006816,1292,baclofen,may_treat,Huntington Disease
+D010148,1292,baclofen,may_treat,Intractable Pain
+D009103,1292,baclofen,may_treat,Multiple Sclerosis
+D009128,1292,baclofen,may_treat,Muscle Spasticity
+D009188,1292,baclofen,may_treat,"Myelitis, Transverse"
+D013119,1292,baclofen,may_treat,Spinal Cord Injuries
+D020760,1292,baclofen,may_treat,Spinal Cord Ischemia
+D013120,1292,baclofen,may_treat,Spinal Cord Neoplasms
+D013169,1292,baclofen,may_treat,Spondylolysis
+D014277,1292,baclofen,may_treat,Trigeminal Neuralgia
+D001750,1292,baclofen,may_treat,"Urinary Bladder, Neurogenic"
+D000437,1359,belladonna alkaloids,ci_with,Alcoholism
+D001249,1359,belladonna alkaloids,ci_with,Asthma
+D005901,1359,belladonna alkaloids,ci_with,Glaucoma
+D007674,1359,belladonna alkaloids,ci_with,Kidney Diseases
+D008107,1359,belladonna alkaloids,ci_with,Liver Diseases
+D012640,1359,belladonna alkaloids,ci_with,Seizures
+D005767,1359,belladonna alkaloids,may_treat,Gastrointestinal Diseases
+D006261,1359,belladonna alkaloids,may_treat,Headache
+D008593,1359,belladonna alkaloids,may_treat,Menopause
+D013035,1359,belladonna alkaloids,may_treat,Spasm
+D000437,89781,"belladonna extract, USP",ci_with,Alcoholism
+D001249,89781,"belladonna extract, USP",ci_with,Asthma
+D005901,89781,"belladonna extract, USP",ci_with,Glaucoma
+D007674,89781,"belladonna extract, USP",ci_with,Kidney Diseases
+D008107,89781,"belladonna extract, USP",ci_with,Liver Diseases
+D012640,89781,"belladonna extract, USP",ci_with,Seizures
+D005767,89781,"belladonna extract, USP",may_treat,Gastrointestinal Diseases
+D006261,89781,"belladonna extract, USP",may_treat,Headache
+D008593,89781,"belladonna extract, USP",may_treat,Menopause
+D013035,89781,"belladonna extract, USP",may_treat,Spasm
+D000437,314517,belladonna leaf extract,ci_with,Alcoholism
+D001249,314517,belladonna leaf extract,ci_with,Asthma
+D005901,314517,belladonna leaf extract,ci_with,Glaucoma
+D007674,314517,belladonna leaf extract,ci_with,Kidney Diseases
+D008107,314517,belladonna leaf extract,ci_with,Liver Diseases
+D012640,314517,belladonna leaf extract,ci_with,Seizures
+D005767,314517,belladonna leaf extract,may_treat,Gastrointestinal Diseases
+D006261,314517,belladonna leaf extract,may_treat,Headache
+D008593,314517,belladonna leaf extract,may_treat,Menopause
+D013035,314517,belladonna leaf extract,may_treat,Spasm
+D001008,1373,benperidol,may_treat,Anxiety Disorders
+D003704,1373,benperidol,may_treat,Dementia
+D003863,1373,benperidol,may_treat,Depression
+D011618,1373,benperidol,may_treat,Psychotic Disorders
+D012559,1373,benperidol,may_treat,Schizophrenia
+D003704,2690627,benzgalantamine,may_treat,Dementia
+D001161,1422,benzphetamine,ci_with,Arteriosclerosis
+D001289,1422,benzphetamine,ci_with,Attention Deficit Disorder with Hyperactivity
+D002648,1422,benzphetamine,ci_with,Child
+D004342,1422,benzphetamine,ci_with,Drug Hypersensitivity
+D005901,1422,benzphetamine,ci_with,Glaucoma
+D006973,1422,benzphetamine,ci_with,Hypertension
+D006980,1422,benzphetamine,ci_with,Hyperthyroidism
+D011247,1422,benzphetamine,ci_with,Pregnancy
+D015819,1422,benzphetamine,ci_with,"Substance Abuse, Intravenous"
+D005879,1422,benzphetamine,ci_with,Tourette Syndrome
+D009765,1422,benzphetamine,may_treat,Obesity
+D002318,2176312,bremelanotide,ci_with,Cardiovascular Diseases
+D006973,2176312,bremelanotide,ci_with,Hypertension
+D020018,2176312,bremelanotide,may_treat,"Sexual Dysfunctions, Psychological"
+D019052,2121777,brexanolone,may_treat,"Depression, Postpartum"
+D004342,1658314,brexpiprazole,ci_with,Drug Hypersensitivity
+D003865,1658314,brexpiprazole,may_treat,Major Depressive Disorder
+D012559,1658314,brexpiprazole,may_treat,Schizophrenia
+D001008,1749,bromazepam,may_treat,Anxiety Disorders
+D007319,1749,bromazepam,may_treat,Sleep Initiation and Maintenance Disorders
+D013375,1749,bromazepam,may_treat,Substance Withdrawal Syndrome
+D004342,19759,bromodiphenhydramine,ci_with,Drug Hypersensitivity
+D007231,19759,bromodiphenhydramine,ci_with,"Infant, Newborn"
+D007234,19759,bromodiphenhydramine,ci_with,"Infant, Premature"
+D001008,19759,bromodiphenhydramine,may_treat,Anxiety Disorders
+D003371,19759,bromodiphenhydramine,may_treat,Cough
+D009041,19759,bromodiphenhydramine,may_treat,Motion Sickness
+D009325,19759,bromodiphenhydramine,may_treat,Nausea
+D010300,19759,bromodiphenhydramine,may_treat,Parkinson Disease
+D012221,19759,bromodiphenhydramine,may_treat,"Rhinitis, Allergic, Perennial"
+D007319,19759,bromodiphenhydramine,may_treat,Sleep Initiation and Maintenance Disorders
+D014581,19759,bromodiphenhydramine,may_treat,Urticaria
+D014717,19759,bromodiphenhydramine,may_treat,Vertigo
+D014839,19759,bromodiphenhydramine,may_treat,Vomiting
+D011618,19777,bromperidol,may_treat,Psychotic Disorders
+D019967,19777,bromperidol,may_treat,Schizophrenia Spectrum and Other Psychotic Disorders
+D004342,1819,buprenorphine,ci_with,Drug Hypersensitivity
+D006556,1819,buprenorphine,may_treat,Heroin Dependence
+D010146,1819,buprenorphine,may_treat,Pain
+D000855,42347,bupropion,ci_with,Anorexia
+D002032,42347,bupropion,ci_with,Bulimia
+D004342,42347,bupropion,ci_with,Drug Hypersensitivity
+D012640,42347,bupropion,ci_with,Seizures
+D013375,42347,bupropion,ci_with,Substance Withdrawal Syndrome
+D001289,42347,bupropion,may_treat,Attention Deficit Disorder with Hyperactivity
+D003866,42347,bupropion,may_treat,Depressive Disorder
+D014029,42347,bupropion,may_treat,Tobacco Use Disorder
+D004342,1827,buspirone,ci_with,Drug Hypersensitivity
+D001008,1827,buspirone,may_treat,Anxiety Disorders
+D003866,1827,buspirone,may_treat,Depressive Disorder
+D008607,1827,buspirone,may_treat,Intellectual Disability
+D004342,477631,butabarbital,ci_with,Drug Hypersensitivity
+D011164,477631,butabarbital,ci_with,Porphyrias
+D011247,477631,butabarbital,ci_with,Pregnancy
+D007319,477631,butabarbital,may_treat,Sleep Initiation and Maintenance Disorders
+D007319,19874,butobarbital,may_treat,Sleep Initiation and Maintenance Disorders
+D001249,1841,butorphanol,ci_with,Asthma
+D004342,1841,butorphanol,ci_with,Drug Hypersensitivity
+D007415,1841,butorphanol,ci_with,Intestinal Obstruction
+D009293,1841,butorphanol,ci_with,Opioid-Related Disorders
+D012131,1841,butorphanol,ci_with,Respiratory Insufficiency
+D010146,1841,butorphanol,may_treat,Pain
+D001855,2002,carbamazepine,ci_with,Bone Marrow Diseases
+D004342,2002,carbamazepine,ci_with,Drug Hypersensitivity
+D011247,2002,carbamazepine,ci_with,Pregnancy
+D001714,2002,carbamazepine,may_treat,Bipolar Disorder
+D017029,2002,carbamazepine,may_treat,"Epilepsy, Complex Partial"
+D004830,2002,carbamazepine,may_treat,"Epilepsy, Tonic-Clonic"
+D011618,2002,carbamazepine,may_treat,Psychotic Disorders
+D012148,2002,carbamazepine,may_treat,Restless Legs Syndrome
+D012559,2002,carbamazepine,may_treat,Schizophrenia
+D013313,2002,carbamazepine,may_treat,"Stress Disorders, Post-Traumatic"
+D013375,2002,carbamazepine,may_treat,Substance Withdrawal Syndrome
+D014277,2002,carbamazepine,may_treat,Trigeminal Neuralgia
+D004342,1667655,cariprazine,ci_with,Drug Hypersensitivity
+D001714,1667655,cariprazine,may_treat,Bipolar Disorder
+D012559,1667655,cariprazine,may_treat,Schizophrenia
+D011041,2296,charcoal,ci_with,Poisoning
+D064420,2296,charcoal,may_prevent,Drug-Related Side Effects and Adverse Reactions
+D005414,2296,charcoal,may_prevent,Flatulence
+D003967,2296,charcoal,may_treat,Diarrhea
+D062787,2296,charcoal,may_treat,Drug Overdose
+D005414,2296,charcoal,may_treat,Flatulence
+D011041,2296,charcoal,may_treat,Poisoning
+D014115,2296,charcoal,may_treat,Toxemia
+D014511,2296,charcoal,may_treat,Uremia
+D004342,2356,chlordiazepoxide,ci_with,Drug Hypersensitivity
+D015812,2356,chlordiazepoxide,ci_with,"Glaucoma, Angle-Closure"
+D009203,2356,chlordiazepoxide,ci_with,Myocardial Infarction
+D011247,2356,chlordiazepoxide,ci_with,Pregnancy
+D000430,2356,chlordiazepoxide,may_treat,Alcohol Withdrawal Delirium
+D001008,2356,chlordiazepoxide,may_treat,Anxiety Disorders
+D010300,2372,chlormethiazole,may_treat,Parkinson Disease
+D011595,2372,chlormethiazole,may_treat,Psychomotor Agitation
+D007319,2372,chlormethiazole,may_treat,Sleep Initiation and Maintenance Disorders
+D013375,2372,chlormethiazole,may_treat,Substance Withdrawal Syndrome
+D004342,2373,chlormezanone,ci_with,Drug Hypersensitivity
+D001008,2373,chlormezanone,may_treat,Anxiety Disorders
+D009128,2373,chlormezanone,may_treat,Muscle Spasticity
+D003128,2403,chlorpromazine,ci_with,Coma
+D004342,2403,chlorpromazine,ci_with,Drug Hypersensitivity
+D001008,2403,chlorpromazine,may_treat,Anxiety Disorders
+D019958,2403,chlorpromazine,may_treat,Attention Deficit and Disruptive Behavior Disorders
+D002653,2403,chlorpromazine,may_treat,Child Behavior Disorders
+D006606,2403,chlorpromazine,may_treat,Hiccup
+D009325,2403,chlorpromazine,may_treat,Nausea
+D017118,2403,chlorpromazine,may_treat,"Porphyria, Acute Intermittent"
+D011618,2403,chlorpromazine,may_treat,Psychotic Disorders
+D012559,2403,chlorpromazine,may_treat,Schizophrenia
+D013742,2403,chlorpromazine,may_treat,Tetanus
+D014839,2403,chlorpromazine,may_treat,Vomiting
+D003128,2406,chlorprothixene,ci_with,Coma
+D004342,2406,chlorprothixene,ci_with,Drug Hypersensitivity
+D011618,2406,chlorprothixene,may_treat,Psychotic Disorders
+D012563,2406,chlorprothixene,may_treat,"Schizophrenia, Paranoid"
+D004342,2556,citalopram,ci_with,Drug Hypersensitivity
+D000437,2556,citalopram,may_treat,Alcoholism
+D003704,2556,citalopram,may_treat,Dementia
+D003866,2556,citalopram,may_treat,Depressive Disorder
+D003929,2556,citalopram,may_treat,Diabetic Neuropathies
+D009771,2556,citalopram,may_treat,Obsessive-Compulsive Disorder
+D014029,2556,citalopram,may_treat,Tobacco Use Disorder
+D004342,2597,clomipramine,ci_with,Drug Hypersensitivity
+D009203,2597,clomipramine,ci_with,Myocardial Infarction
+D003866,2597,clomipramine,may_treat,Depressive Disorder
+D009771,2597,clomipramine,may_treat,Obsessive-Compulsive Disorder
+D010146,2597,clomipramine,may_treat,Pain
+D016584,2597,clomipramine,may_treat,Panic Disorder
+D004342,2598,clonazepam,ci_with,Drug Hypersensitivity
+D015812,2598,clonazepam,ci_with,"Glaucoma, Angle-Closure"
+D008107,2598,clonazepam,ci_with,Liver Diseases
+D011247,2598,clonazepam,ci_with,Pregnancy
+D001714,2598,clonazepam,may_treat,Bipolar Disorder
+D004401,2598,clonazepam,may_treat,Dysarthria
+D004831,2598,clonazepam,may_treat,"Epilepsies, Myoclonic"
+D004832,2598,clonazepam,may_treat,"Epilepsy, Absence"
+D065768,2598,clonazepam,may_treat,Lennox Gastaut Syndrome
+D009437,2598,clonazepam,may_treat,Neuralgia
+D016584,2598,clonazepam,may_treat,Panic Disorder
+D012148,2598,clonazepam,may_treat,Restless Legs Syndrome
+D012559,2598,clonazepam,may_treat,Schizophrenia
+D012640,2598,clonazepam,may_treat,Seizures
+D013981,2598,clonazepam,may_treat,Tic Disorders
+D004342,2599,clonidine,ci_with,Drug Hypersensitivity
+D006474,2599,clonidine,ci_with,Hemorrhagic Disorders
+D007239,2599,clonidine,ci_with,Infections
+D020268,2599,clonidine,may_treat,"Alcohol-Induced Disorders, Nervous System"
+D001289,2599,clonidine,may_treat,Attention Deficit Disorder with Hyperactivity
+D003967,2599,clonidine,may_treat,Diarrhea
+D004412,2599,clonidine,may_treat,Dysmenorrhea
+D005901,2599,clonidine,may_treat,Glaucoma
+D019584,2599,clonidine,may_treat,Hot Flashes
+D006973,2599,clonidine,may_treat,Hypertension
+D010148,2599,clonidine,may_treat,Intractable Pain
+D009128,2599,clonidine,may_treat,Muscle Spasticity
+D009293,2599,clonidine,may_treat,Opioid-Related Disorders
+D012798,2599,clonidine,may_treat,Sialorrhea
+D013375,2599,clonidine,may_treat,Substance Withdrawal Syndrome
+D005879,2599,clonidine,may_treat,Tourette Syndrome
+D001008,2603,clopamide,may_treat,Anxiety Disorders
+D004342,2353,clorazepate,ci_with,Drug Hypersensitivity
+D015812,2353,clorazepate,ci_with,"Glaucoma, Angle-Closure"
+D000430,2353,clorazepate,may_treat,Alcohol Withdrawal Delirium
+D001008,2353,clorazepate,may_treat,Anxiety Disorders
+D004828,2353,clorazepate,may_treat,"Epilepsies, Partial"
+D001008,2622,clotiazepam,may_treat,Anxiety Disorders
+D003128,2626,clozapine,ci_with,Coma
+D004342,2626,clozapine,ci_with,Drug Hypersensitivity
+D004827,2626,clozapine,ci_with,Epilepsy
+D009196,2626,clozapine,ci_with,Myeloproliferative Disorders
+D009503,2626,clozapine,ci_with,Neutropenia
+D001714,2626,clozapine,may_treat,Bipolar Disorder
+D011618,2626,clozapine,may_treat,Psychotic Disorders
+D012559,2626,clozapine,may_treat,Schizophrenia
+D007706,2732215,copper histidinate,may_treat,Menkes Kinky Hair Syndrome
+D000437,3007,cycloserine,ci_with,Alcoholism
+D001007,3007,cycloserine,ci_with,Anxiety
+D003863,3007,cycloserine,ci_with,Depression
+D004342,3007,cycloserine,ci_with,Drug Hypersensitivity
+D004827,3007,cycloserine,ci_with,Epilepsy
+D011618,3007,cycloserine,ci_with,Psychotic Disorders
+D014570,3007,cycloserine,ci_with,Urologic Diseases
+D004927,3007,cycloserine,may_treat,Escherichia coli Infections
+D005776,3007,cycloserine,may_treat,Gaucher Disease
+D014376,3007,cycloserine,may_treat,Tuberculosis
+D014552,3007,cycloserine,may_treat,Urinary Tract Infections
+D004342,3013,cyproheptadine,ci_with,Drug Hypersensitivity
+D016330,3013,cyproheptadine,ci_with,Frail Elderly
+D017219,3013,cyproheptadine,ci_with,Gastric Outlet Obstruction
+D015812,3013,cyproheptadine,ci_with,"Glaucoma, Angle-Closure"
+D007231,3013,cyproheptadine,ci_with,"Infant, Newborn"
+D007774,3013,cyproheptadine,ci_with,Lactation
+D010437,3013,cyproheptadine,ci_with,Peptic Ulcer
+D011470,3013,cyproheptadine,ci_with,Prostatic Hyperplasia
+D013224,3013,cyproheptadine,ci_with,Status Asthmaticus
+D001748,3013,cyproheptadine,ci_with,Urinary Bladder Neck Obstruction
+D001764,3013,cyproheptadine,may_treat,Blepharospasm
+D003027,3013,cyproheptadine,may_treat,Cluster Headache
+D020820,3013,cyproheptadine,may_treat,Dyskinesias
+D009347,3013,cyproheptadine,may_treat,Nelson Syndrome
+D020336,3013,cyproheptadine,may_treat,"Paraparesis, Spastic"
+D011537,3013,cyproheptadine,may_treat,Pruritus
+D012221,3013,cyproheptadine,may_treat,"Rhinitis, Allergic, Perennial"
+D012559,3013,cyproheptadine,may_treat,Schizophrenia
+D014581,3013,cyproheptadine,may_treat,Urticaria
+D009290,2591497,daridorexant,ci_with,Narcolepsy
+D007319,2591497,daridorexant,may_treat,Sleep Initiation and Maintenance Disorders
+D003093,62174,deserpidine,ci_with,"Colitis, Ulcerative"
+D003866,62174,deserpidine,ci_with,Depressive Disorder
+D004342,62174,deserpidine,ci_with,Drug Hypersensitivity
+D007022,62174,deserpidine,ci_with,Hypotension
+D010437,62174,deserpidine,ci_with,Peptic Ulcer
+D020820,62174,deserpidine,may_treat,Dyskinesias
+D006973,62174,deserpidine,may_treat,Hypertension
+D012559,62174,deserpidine,may_treat,Schizophrenia
+D004342,3247,desipramine,ci_with,Drug Hypersensitivity
+D009203,3247,desipramine,ci_with,Myocardial Infarction
+D001289,3247,desipramine,may_treat,Attention Deficit Disorder with Hyperactivity
+D003866,3247,desipramine,may_treat,Depressive Disorder
+D010146,3247,desipramine,may_treat,Pain
+D019966,3247,desipramine,may_treat,Substance-Related Disorders
+D004342,3251,desmopressin,ci_with,Drug Hypersensitivity
+D007010,3251,desmopressin,ci_with,Hyponatremia
+D007674,3251,desmopressin,ci_with,Kidney Diseases
+D014842,3251,desmopressin,ci_with,von Willebrand Diseases
+D020790,3251,desmopressin,may_treat,"Diabetes Insipidus, Neurogenic"
+D004775,3251,desmopressin,may_treat,Enuresis
+D006470,3251,desmopressin,may_treat,Hemorrhage
+D013921,3251,desmopressin,may_treat,Thrombocytopenia
+D014842,3251,desmopressin,may_treat,von Willebrand Diseases
+D018248,22656,desogestrel,ci_with,"Adenoma, Liver Cell"
+D000368,22656,desogestrel,ci_with,Aged
+D001943,22656,desogestrel,ci_with,Breast Neoplasms
+D002561,22656,desogestrel,ci_with,Cerebrovascular Disorders
+D003327,22656,desogestrel,ci_with,Coronary Disease
+D003920,22656,desogestrel,ci_with,Diabetes Mellitus
+D004342,22656,desogestrel,ci_with,Drug Hypersensitivity
+D016889,22656,desogestrel,ci_with,Endometrial Neoplasms
+D020773,22656,desogestrel,ci_with,Headache Disorders
+D006349,22656,desogestrel,ci_with,Heart Valve Diseases
+D006973,22656,desogestrel,ci_with,Hypertension
+D007565,22656,desogestrel,ci_with,Jaundice
+D008107,22656,desogestrel,ci_with,Liver Diseases
+D008113,22656,desogestrel,ci_with,Liver Neoplasms
+D011247,22656,desogestrel,ci_with,Pregnancy
+D013923,22656,desogestrel,ci_with,Thromboembolism
+D013924,22656,desogestrel,ci_with,Thrombophlebitis
+D014029,22656,desogestrel,ci_with,Tobacco Use Disorder
+D014592,22656,desogestrel,ci_with,Uterine Hemorrhage
+D011247,22656,desogestrel,may_prevent,Pregnancy
+D000152,22656,desogestrel,may_treat,Acne Vulgaris
+D004715,22656,desogestrel,may_treat,Endometriosis
+D008599,22656,desogestrel,may_treat,Menstruation Disturbances
+D004342,734064,desvenlafaxine,ci_with,Drug Hypersensitivity
+D003865,734064,desvenlafaxine,may_treat,Major Depressive Disorder
+D001008,352372,dexmethylphenidate,ci_with,Anxiety Disorders
+D004342,352372,dexmethylphenidate,ci_with,Drug Hypersensitivity
+D005901,352372,dexmethylphenidate,ci_with,Glaucoma
+D011595,352372,dexmethylphenidate,ci_with,Psychomotor Agitation
+D020323,352372,dexmethylphenidate,ci_with,Tics
+D005879,352372,dexmethylphenidate,ci_with,Tourette Syndrome
+D001289,352372,dexmethylphenidate,may_treat,Attention Deficit Disorder with Hyperactivity
+D001161,3288,dextroamphetamine,ci_with,Arteriosclerosis
+D002318,3288,dextroamphetamine,ci_with,Cardiovascular Diseases
+D004342,3288,dextroamphetamine,ci_with,Drug Hypersensitivity
+D005901,3288,dextroamphetamine,ci_with,Glaucoma
+D006973,3288,dextroamphetamine,ci_with,Hypertension
+D006980,3288,dextroamphetamine,ci_with,Hyperthyroidism
+D015819,3288,dextroamphetamine,ci_with,"Substance Abuse, Intravenous"
+D001289,3288,dextroamphetamine,may_treat,Attention Deficit Disorder with Hyperactivity
+D009290,3288,dextroamphetamine,may_treat,Narcolepsy
+D004342,3322,diazepam,ci_with,Drug Hypersensitivity
+D015812,3322,diazepam,ci_with,"Glaucoma, Angle-Closure"
+D005902,3322,diazepam,ci_with,"Glaucoma, Open-Angle"
+D007234,3322,diazepam,ci_with,"Infant, Premature"
+D011247,3322,diazepam,ci_with,Pregnancy
+D000430,3322,diazepam,may_treat,Alcohol Withdrawal Delirium
+D009128,3322,diazepam,may_treat,Muscle Spasticity
+D016584,3322,diazepam,may_treat,Panic Disorder
+D013226,3322,diazepam,may_treat,Status Epilepticus
+D003866,3332,dibenzepin,may_treat,Depressive Disorder
+D000033,1598,dicumarol,ci_with,"Abortion, Threatened"
+D000437,1598,dicumarol,ci_with,Alcoholism
+D000783,1598,dicumarol,ci_with,Aneurysm
+D001206,1598,dicumarol,ci_with,Ascorbic Acid Deficiency
+D002277,1598,dicumarol,ci_with,Carcinoma
+D002543,1598,dicumarol,ci_with,Cerebral Hemorrhage
+D004238,1598,dicumarol,ci_with,Diverticulitis
+D004342,1598,dicumarol,ci_with,Drug Hypersensitivity
+D004461,1598,dicumarol,ci_with,Eclampsia
+D004614,1598,dicumarol,ci_with,Emaciation
+D004697,1598,dicumarol,ci_with,"Endocarditis, Bacterial"
+D006471,1598,dicumarol,ci_with,Gastrointestinal Hemorrhage
+D006467,1598,dicumarol,ci_with,Hemophilia A
+D002836,1598,dicumarol,ci_with,Hemophilia B
+D006974,1598,dicumarol,ci_with,"Hypertension, Malignant"
+D007938,1598,dicumarol,ci_with,Leukemia
+D008107,1598,dicumarol,ci_with,Liver Diseases
+D010490,1598,dicumarol,ci_with,Pericardial Effusion
+D010493,1598,dicumarol,ci_with,Pericarditis
+D019106,1598,dicumarol,ci_with,Postoperative Hemorrhage
+D011225,1598,dicumarol,ci_with,Pre-Eclampsia
+D011247,1598,dicumarol,ci_with,Pregnancy
+D011469,1598,dicumarol,ci_with,Prostatic Diseases
+D011502,1598,dicumarol,ci_with,Protein-Energy Malnutrition
+D011696,1598,dicumarol,ci_with,"Purpura, Thrombocytopenic"
+D014813,1598,dicumarol,ci_with,Vitamin K Deficiency
+D011655,1598,dicumarol,may_prevent,Pulmonary Embolism
+D013923,1598,dicumarol,may_prevent,Thromboembolism
+D020246,1598,dicumarol,may_prevent,Venous Thrombosis
+D011655,1598,dicumarol,may_treat,Pulmonary Embolism
+D013923,1598,dicumarol,may_treat,Thromboembolism
+D020246,1598,dicumarol,may_treat,Venous Thrombosis
+D001161,3389,diethylpropion,ci_with,Arteriosclerosis
+D002648,3389,diethylpropion,ci_with,Child
+D004342,3389,diethylpropion,ci_with,Drug Hypersensitivity
+D005901,3389,diethylpropion,ci_with,Glaucoma
+D006973,3389,diethylpropion,ci_with,Hypertension
+D006980,3389,diethylpropion,ci_with,Hyperthyroidism
+D011247,3389,diethylpropion,ci_with,Pregnancy
+D015819,3389,diethylpropion,ci_with,"Substance Abuse, Intravenous"
+D005879,3389,diethylpropion,ci_with,Tourette Syndrome
+D009765,3389,diethylpropion,may_treat,Obesity
+D000686,3403,digitoxin,ci_with,Amyloidosis
+D002312,3403,digitoxin,ci_with,"Cardiomyopathy, Hypertrophic"
+D004342,3403,digitoxin,ci_with,Drug Hypersensitivity
+D006327,3403,digitoxin,ci_with,Heart Block
+D010494,3403,digitoxin,ci_with,"Pericarditis, Constrictive"
+D017180,3403,digitoxin,ci_with,"Tachycardia, Ventricular"
+D014693,3403,digitoxin,ci_with,Ventricular Fibrillation
+D006333,3403,digitoxin,may_prevent,Heart Failure
+D001008,3403,digitoxin,may_treat,Anxiety Disorders
+D001281,3403,digitoxin,may_treat,Atrial Fibrillation
+D001282,3403,digitoxin,may_treat,Atrial Flutter
+D002303,3403,digitoxin,may_treat,"Cardiac Output, Low"
+D006333,3403,digitoxin,may_treat,Heart Failure
+D012770,3403,digitoxin,may_treat,"Shock, Cardiogenic"
+D013617,3403,digitoxin,may_treat,"Tachycardia, Supraventricular"
+D000686,3407,digoxin,ci_with,Amyloidosis
+D001281,3407,digoxin,ci_with,Atrial Fibrillation
+D002312,3407,digoxin,ci_with,"Cardiomyopathy, Hypertrophic"
+D004342,3407,digoxin,ci_with,Drug Hypersensitivity
+D006327,3407,digoxin,ci_with,Heart Block
+D010494,3407,digoxin,ci_with,"Pericarditis, Constrictive"
+D017180,3407,digoxin,ci_with,"Tachycardia, Ventricular"
+D014693,3407,digoxin,ci_with,Ventricular Fibrillation
+D014927,3407,digoxin,ci_with,Wolff-Parkinson-White Syndrome
+D006333,3407,digoxin,may_prevent,Heart Failure
+D001008,3407,digoxin,may_treat,Anxiety Disorders
+D001281,3407,digoxin,may_treat,Atrial Fibrillation
+D001282,3407,digoxin,may_treat,Atrial Flutter
+D002303,3407,digoxin,may_treat,"Cardiac Output, Low"
+D006333,3407,digoxin,may_treat,Heart Failure
+D012770,3407,digoxin,may_treat,"Shock, Cardiogenic"
+D013617,3407,digoxin,may_treat,"Tachycardia, Supraventricular"
+D004342,203223,digoxin antibodies Fab fragments,ci_with,Drug Hypersensitivity
+D000014,203223,digoxin antibodies Fab fragments,may_prevent,"Abnormalities, Drug-Induced"
+D062787,203223,digoxin antibodies Fab fragments,may_prevent,Drug Overdose
+D064420,203223,digoxin antibodies Fab fragments,may_prevent,Drug-Related Side Effects and Adverse Reactions
+D062787,203223,digoxin antibodies Fab fragments,may_treat,Drug Overdose
+D064420,203223,digoxin antibodies Fab fragments,may_treat,Drug-Related Side Effects and Adverse Reactions
+D000033,3415,dihydroergocornine,ci_with,"Abortion, Threatened"
+D004342,3415,dihydroergocornine,ci_with,Drug Hypersensitivity
+D011247,3415,dihydroergocornine,ci_with,Pregnancy
+D011618,3415,dihydroergocornine,ci_with,Psychotic Disorders
+D006473,3415,dihydroergocornine,may_prevent,Postpartum Hemorrhage
+D006473,3415,dihydroergocornine,may_treat,Postpartum Hemorrhage
+D000033,3416,dihydroergocristine,ci_with,"Abortion, Threatened"
+D004342,3416,dihydroergocristine,ci_with,Drug Hypersensitivity
+D011247,3416,dihydroergocristine,ci_with,Pregnancy
+D011618,3416,dihydroergocristine,ci_with,Psychotic Disorders
+D006473,3416,dihydroergocristine,may_prevent,Postpartum Hemorrhage
+D006473,3416,dihydroergocristine,may_treat,Postpartum Hemorrhage
+D000033,3417,dihydroergocryptine,ci_with,"Abortion, Threatened"
+D004342,3417,dihydroergocryptine,ci_with,Drug Hypersensitivity
+D011247,3417,dihydroergocryptine,ci_with,Pregnancy
+D011618,3417,dihydroergocryptine,ci_with,Psychotic Disorders
+D008881,3417,dihydroergocryptine,may_prevent,Migraine Disorders
+D006473,3417,dihydroergocryptine,may_prevent,Postpartum Hemorrhage
+D007022,3417,dihydroergocryptine,may_treat,Hypotension
+D010300,3417,dihydroergocryptine,may_treat,Parkinson Disease
+D006473,3417,dihydroergocryptine,may_treat,Postpartum Hemorrhage
+D004342,3498,diphenhydramine,ci_with,Drug Hypersensitivity
+D007231,3498,diphenhydramine,ci_with,"Infant, Newborn"
+D007234,3498,diphenhydramine,ci_with,"Infant, Premature"
+D007774,3498,diphenhydramine,ci_with,Lactation
+D013224,3498,diphenhydramine,ci_with,Status Asthmaticus
+D001008,3498,diphenhydramine,may_treat,Anxiety Disorders
+D009041,3498,diphenhydramine,may_treat,Motion Sickness
+D009325,3498,diphenhydramine,may_treat,Nausea
+D012221,3498,diphenhydramine,may_treat,"Rhinitis, Allergic, Perennial"
+D007319,3498,diphenhydramine,may_treat,Sleep Initiation and Maintenance Disorders
+D012912,3498,diphenhydramine,may_treat,Sneezing
+D014581,3498,diphenhydramine,may_treat,Urticaria
+D003324,3554,disulfiram,ci_with,Coronary Artery Disease
+D054059,3554,disulfiram,ci_with,Coronary Occlusion
+D004342,3554,disulfiram,ci_with,Drug Hypersensitivity
+D009203,3554,disulfiram,ci_with,Myocardial Infarction
+D011618,3554,disulfiram,ci_with,Psychotic Disorders
+D000437,3554,disulfiram,may_prevent,Alcoholism
+D000437,3554,disulfiram,may_treat,Alcoholism
+D000544,2687966,donanemab,may_treat,Alzheimer Disease
+D019965,2687966,donanemab,may_treat,Neurocognitive Disorders
+D004342,135447,donepezil,ci_with,Drug Hypersensitivity
+D006967,135447,donepezil,ci_with,Hypersensitivity
+D000544,135447,donepezil,may_treat,Alzheimer Disease
+D003866,3634,dothiepin,may_treat,Depressive Disorder
+D000402,3637,doxapram,ci_with,Airway Obstruction
+D001929,3637,doxapram,ci_with,Brain Edema
+D020208,3637,doxapram,ci_with,"Brain Injury, Chronic"
+D001986,3637,doxapram,ci_with,Bronchial Spasm
+D018376,3637,doxapram,ci_with,Cardiovascular Abnormalities
+D003324,3637,doxapram,ci_with,Coronary Artery Disease
+D004342,3637,doxapram,ci_with,Drug Hypersensitivity
+D004417,3637,doxapram,ci_with,Dyspnea
+D004827,3637,doxapram,ci_with,Epilepsy
+D005409,3637,doxapram,ci_with,Flail Chest
+D006333,3637,doxapram,ci_with,Heart Failure
+D006973,3637,doxapram,ci_with,Hypertension
+D006980,3637,doxapram,ci_with,Hyperthyroidism
+D009468,3637,doxapram,ci_with,Neuromuscular Diseases
+D010291,3637,doxapram,ci_with,Paresis
+D010673,3637,doxapram,ci_with,Pheochromocytoma
+D011030,3637,doxapram,ci_with,Pneumothorax
+D011655,3637,doxapram,ci_with,Pulmonary Embolism
+D011658,3637,doxapram,ci_with,Pulmonary Fibrosis
+D013224,3637,doxapram,ci_with,Status Asthmaticus
+D020521,3637,doxapram,ci_with,Stroke
+D012131,3637,doxapram,may_prevent,Respiratory Insufficiency
+D006935,3637,doxapram,may_treat,Hypercapnia
+D012130,3637,doxapram,may_treat,Respiratory Hypersensitivity
+D019966,3637,doxapram,may_treat,Substance-Related Disorders
+D004342,3638,doxepin,ci_with,Drug Hypersensitivity
+D015812,3638,doxepin,ci_with,"Glaucoma, Angle-Closure"
+D009203,3638,doxepin,ci_with,Myocardial Infarction
+D016055,3638,doxepin,ci_with,Urinary Retention
+D001008,3638,doxepin,may_treat,Anxiety Disorders
+D003866,3638,doxepin,may_treat,Depressive Disorder
+D003876,3638,doxepin,may_treat,"Dermatitis, Atopic"
+D010146,3638,doxepin,may_treat,Pain
+D011537,3638,doxepin,may_treat,Pruritus
+D004342,3642,doxylamine,ci_with,Drug Hypersensitivity
+D006261,3642,doxylamine,may_treat,Headache
+D012221,3642,doxylamine,may_treat,"Rhinitis, Allergic, Perennial"
+D007319,3642,doxylamine,may_treat,Sleep Initiation and Maintenance Disorders
+D004342,10402,dronabinol,ci_with,Drug Hypersensitivity
+D012559,10402,dronabinol,ci_with,Schizophrenia
+D000855,10402,dronabinol,may_treat,Anorexia
+D009325,10402,dronabinol,may_treat,Nausea
+D014839,10402,dronabinol,may_treat,Vomiting
+D004342,3648,droperidol,ci_with,Drug Hypersensitivity
+D008133,3648,droperidol,ci_with,Long QT Syndrome
+D009325,3648,droperidol,may_prevent,Nausea
+D010146,3648,droperidol,may_prevent,Pain
+D014839,3648,droperidol,may_prevent,Vomiting
+D010146,3648,droperidol,may_treat,Pain
+D011618,3648,droperidol,may_treat,Psychotic Disorders
+D000309,11636,drospirenone,ci_with,Adrenal Insufficiency
+D000368,11636,drospirenone,ci_with,Aged
+D001281,11636,drospirenone,ci_with,Atrial Fibrillation
+D001943,11636,drospirenone,ci_with,Breast Neoplasms
+D002561,11636,drospirenone,ci_with,Cerebrovascular Disorders
+D003327,11636,drospirenone,ci_with,Coronary Disease
+D003925,11636,drospirenone,ci_with,Diabetic Angiopathies
+D004342,11636,drospirenone,ci_with,Drug Hypersensitivity
+D004697,11636,drospirenone,ci_with,"Endocarditis, Bacterial"
+D016889,11636,drospirenone,ci_with,Endometrial Neoplasms
+D006261,11636,drospirenone,ci_with,Headache
+D020773,11636,drospirenone,ci_with,Headache Disorders
+D006349,11636,drospirenone,ci_with,Heart Valve Diseases
+D006973,11636,drospirenone,ci_with,Hypertension
+D007565,11636,drospirenone,ci_with,Jaundice
+D007674,11636,drospirenone,ci_with,Kidney Diseases
+D008107,11636,drospirenone,ci_with,Liver Diseases
+D008113,11636,drospirenone,ci_with,Liver Neoplasms
+D008881,11636,drospirenone,ci_with,Migraine Disorders
+D009376,11636,drospirenone,ci_with,"Neoplasms, Hormone-Dependent"
+D011247,11636,drospirenone,ci_with,Pregnancy
+D011655,11636,drospirenone,ci_with,Pulmonary Embolism
+D013923,11636,drospirenone,ci_with,Thromboembolism
+D013924,11636,drospirenone,ci_with,Thrombophlebitis
+D014029,11636,drospirenone,ci_with,Tobacco Use Disorder
+D014592,11636,drospirenone,ci_with,Uterine Hemorrhage
+D020246,11636,drospirenone,ci_with,Venous Thrombosis
+D011247,11636,drospirenone,may_prevent,Pregnancy
+D001008,72625,duloxetine,may_treat,Anxiety Disorders
+D003929,72625,duloxetine,may_treat,Diabetic Neuropathies
+D003865,72625,duloxetine,may_treat,Major Depressive Disorder
+D059352,72625,duloxetine,may_treat,Musculoskeletal Pain
+D001002,3755,edetic acid,ci_with,Anuria
+D007674,3755,edetic acid,ci_with,Kidney Diseases
+D007774,3755,edetic acid,ci_with,Lactation
+D011247,3755,edetic acid,ci_with,Pregnancy
+D051437,3755,edetic acid,ci_with,Renal Insufficiency
+D007855,3755,edetic acid,may_prevent,Lead Poisoning
+D062787,3755,edetic acid,may_treat,Drug Overdose
+D064420,3755,edetic acid,may_treat,Drug-Related Side Effects and Adverse Reactions
+D006934,3755,edetic acid,may_treat,Hypercalcemia
+D020149,3755,edetic acid,may_treat,Manganese Poisoning
+D017180,3755,edetic acid,may_treat,"Tachycardia, Ventricular"
+D014693,3755,edetic acid,may_treat,Ventricular Fibrillation
+D009461,2612527,elivaldogene autotemcel,may_prevent,Neurologic Manifestations
+D000326,2612527,elivaldogene autotemcel,may_treat,Adrenoleukodystrophy
+D000437,1653781,eluxadoline,ci_with,Alcoholism
+D002779,1653781,eluxadoline,ci_with,Cholestasis
+D003248,1653781,eluxadoline,ci_with,Constipation
+D007415,1653781,eluxadoline,ci_with,Intestinal Obstruction
+D008107,1653781,eluxadoline,ci_with,Liver Diseases
+D010182,1653781,eluxadoline,ci_with,Pancreatic Diseases
+D010195,1653781,eluxadoline,ci_with,Pancreatitis
+D046628,1653781,eluxadoline,ci_with,Sphincter of Oddi Dysfunction
+D043183,1653781,eluxadoline,may_treat,Irritable Bowel Syndrome
+D004342,4024,"ergoloid mesylates, USP",ci_with,Drug Hypersensitivity
+D011618,4024,"ergoloid mesylates, USP",ci_with,Psychotic Disorders
+D060825,4024,"ergoloid mesylates, USP",may_treat,Cognitive Dysfunction
+D004342,321988,escitalopram,ci_with,Drug Hypersensitivity
+D003865,321988,escitalopram,may_treat,Major Depressive Disorder
+D000783,2119365,esketamine,ci_with,Aneurysm
+D001165,2119365,esketamine,ci_with,Arteriovenous Malformations
+D002543,2119365,esketamine,ci_with,Cerebral Hemorrhage
+D004342,2119365,esketamine,ci_with,Drug Hypersensitivity
+D061218,2119365,esketamine,may_treat,"Depressive Disorder, Treatment-Resistant"
+D004342,4077,estazolam,ci_with,Drug Hypersensitivity
+D011247,4077,estazolam,ci_with,Pregnancy
+D007319,4077,estazolam,may_treat,Sleep Initiation and Maintenance Disorders
+D004342,461016,eszopiclone,ci_with,Drug Hypersensitivity
+D007319,461016,eszopiclone,may_treat,Sleep Initiation and Maintenance Disorders
+D004342,4118,ethchlorvynol,ci_with,Drug Hypersensitivity
+D011164,4118,ethchlorvynol,ci_with,Porphyrias
+D007319,4118,ethchlorvynol,may_treat,Sleep Initiation and Maintenance Disorders
+D004342,24474,ethinamate,ci_with,Drug Hypersensitivity
+D011164,24474,ethinamate,ci_with,Porphyrias
+D007319,24474,ethinamate,may_treat,Sleep Initiation and Maintenance Disorders
+D000368,14584,etonogestrel,ci_with,Aged
+D001943,14584,etonogestrel,ci_with,Breast Neoplasms
+D002561,14584,etonogestrel,ci_with,Cerebrovascular Disorders
+D003327,14584,etonogestrel,ci_with,Coronary Disease
+D004342,14584,etonogestrel,ci_with,Drug Hypersensitivity
+D016889,14584,etonogestrel,ci_with,Endometrial Neoplasms
+D020773,14584,etonogestrel,ci_with,Headache Disorders
+D006973,14584,etonogestrel,ci_with,Hypertension
+D007565,14584,etonogestrel,ci_with,Jaundice
+D007674,14584,etonogestrel,ci_with,Kidney Diseases
+D008113,14584,etonogestrel,ci_with,Liver Neoplasms
+D009376,14584,etonogestrel,ci_with,"Neoplasms, Hormone-Dependent"
+D011247,14584,etonogestrel,ci_with,Pregnancy
+D013923,14584,etonogestrel,ci_with,Thromboembolism
+D013924,14584,etonogestrel,ci_with,Thrombophlebitis
+D014029,14584,etonogestrel,ci_with,Tobacco Use Disorder
+D011247,14584,etonogestrel,may_prevent,Pregnancy
+D004342,4328,fenfluramine,ci_with,Drug Hypersensitivity
+D005901,4328,fenfluramine,ci_with,Glaucoma
+D012559,4328,fenfluramine,ci_with,Schizophrenia
+D015819,4328,fenfluramine,ci_with,"Substance Abuse, Intravenous"
+D001321,4328,fenfluramine,may_treat,Autistic Disorder
+D002032,4328,fenfluramine,may_treat,Bulimia
+D009765,4328,fenfluramine,may_treat,Obesity
+D000428,1665509,flibanserin,ci_with,Alcohol Drinking
+D008107,1665509,flibanserin,ci_with,Liver Diseases
+D020018,1665509,flibanserin,may_treat,"Sexual Dysfunctions, Psychological"
+D004342,4457,flumazenil,ci_with,Drug Hypersensitivity
+D064420,4457,flumazenil,may_prevent,Drug-Related Side Effects and Adverse Reactions
+D062787,4457,flumazenil,may_treat,Drug Overdose
+D064420,4457,flumazenil,may_treat,Drug-Related Side Effects and Adverse Reactions
+D007319,4460,flunitrazepam,may_treat,Sleep Initiation and Maintenance Disorders
+D004342,4493,fluoxetine,ci_with,Drug Hypersensitivity
+D002032,4493,fluoxetine,may_treat,Bulimia
+D003865,4493,fluoxetine,may_treat,Major Depressive Disorder
+D009771,4493,fluoxetine,may_treat,Obsessive-Compulsive Disorder
+D016584,4493,fluoxetine,may_treat,Panic Disorder
+D003863,4495,flupenthixol,may_treat,Depression
+D012559,4495,flupenthixol,may_treat,Schizophrenia
+D001778,4496,fluphenazine,ci_with,Blood Coagulation Disorders
+D001925,4496,fluphenazine,ci_with,"Brain Damage, Chronic"
+D002543,4496,fluphenazine,ci_with,Cerebral Hemorrhage
+D003128,4496,fluphenazine,ci_with,Coma
+D004342,4496,fluphenazine,ci_with,Drug Hypersensitivity
+D008107,4496,fluphenazine,ci_with,Liver Diseases
+D011618,4496,fluphenazine,may_treat,Psychotic Disorders
+D012559,4496,fluphenazine,may_treat,Schizophrenia
+D004342,4501,flurazepam,ci_with,Drug Hypersensitivity
+D015812,4501,flurazepam,ci_with,"Glaucoma, Angle-Closure"
+D011247,4501,flurazepam,ci_with,Pregnancy
+D007319,4501,flurazepam,may_treat,Sleep Initiation and Maintenance Disorders
+D012559,4507,fluspirilene,may_treat,Schizophrenia
+D004342,42355,fluvoxamine,ci_with,Drug Hypersensitivity
+D003866,42355,fluvoxamine,may_treat,Depressive Disorder
+D009771,42355,fluvoxamine,may_treat,Obsessive-Compulsive Disorder
+D016584,42355,fluvoxamine,may_treat,Panic Disorder
+D001002,4603,furosemide,ci_with,Anuria
+D003128,4603,furosemide,ci_with,Coma
+D003681,4603,furosemide,ci_with,Dehydration
+D004342,4603,furosemide,ci_with,Drug Hypersensitivity
+D058186,4603,furosemide,may_treat,Acute Kidney Injury
+D001201,4603,furosemide,may_treat,Ascites
+D004487,4603,furosemide,may_treat,Edema
+D006333,4603,furosemide,may_treat,Heart Failure
+D006973,4603,furosemide,may_treat,Hypertension
+D007676,4603,furosemide,may_treat,"Kidney Failure, Chronic"
+D008103,4603,furosemide,may_treat,Liver Cirrhosis
+D009404,4603,furosemide,may_treat,Nephrotic Syndrome
+D011654,4603,furosemide,may_treat,Pulmonary Edema
+D004342,25480,gabapentin,ci_with,Drug Hypersensitivity
+D001714,25480,gabapentin,may_treat,Bipolar Disorder
+D004828,25480,gabapentin,may_treat,"Epilepsies, Partial"
+D051474,25480,gabapentin,may_treat,"Neuralgia, Postherpetic"
+D010698,25480,gabapentin,may_treat,Phobic Disorders
+D006967,4637,galantamine,ci_with,Hypersensitivity
+D017093,4637,galantamine,ci_with,Liver Failure
+D051437,4637,galantamine,ci_with,Renal Insufficiency
+D000544,4637,galantamine,may_treat,Alzheimer Disease
+D003865,2672253,gepirone,may_treat,Major Depressive Disorder
+D001778,325526,ginseng preparation,ci_with,Blood Coagulation Disorders
+D004342,325526,ginseng preparation,ci_with,Drug Hypersensitivity
+D006474,325526,ginseng preparation,ci_with,Hemorrhagic Disorders
+D007046,325526,ginseng preparation,ci_with,Hysteria
+D012559,325526,ginseng preparation,ci_with,Schizophrenia
+D007172,325526,ginseng preparation,may_treat,Erectile Dysfunction
+D005221,325526,ginseng preparation,may_treat,Fatigue
+D000430,4850,glucose,ci_with,Alcohol Withdrawal Delirium
+D003681,4850,glucose,ci_with,Dehydration
+D004342,4850,glucose,ci_with,Drug Hypersensitivity
+D005512,4850,glucose,ci_with,Food Hypersensitivity
+D006943,4850,glucose,ci_with,Hyperglycemia
+D020300,4850,glucose,ci_with,Intracranial Hemorrhages
+D007003,4850,glucose,may_treat,Hypoglycemia
+D011183,4850,glucose,may_treat,Postoperative Complications
+D004342,4903,glutethimide,ci_with,Drug Hypersensitivity
+D007319,4903,glutethimide,may_treat,Sleep Initiation and Maintenance Disorders
+D004342,40114,guanfacine,ci_with,Drug Hypersensitivity
+D006967,40114,guanfacine,ci_with,Hypersensitivity
+D001289,40114,guanfacine,may_treat,Attention Deficit Disorder with Hyperactivity
+D006973,40114,guanfacine,may_treat,Hypertension
+D004342,26412,halazepam,ci_with,Drug Hypersensitivity
+D001008,26412,halazepam,may_treat,Anxiety Disorders
+D004342,50749,halofantrine,ci_with,Drug Hypersensitivity
+D013575,50749,halofantrine,ci_with,Syncope
+D018754,50749,halofantrine,ci_with,Ventricular Dysfunction
+D014693,50749,halofantrine,ci_with,Ventricular Fibrillation
+D016778,50749,halofantrine,may_treat,"Malaria, Falciparum"
+D016780,50749,halofantrine,may_treat,"Malaria, Vivax"
+D001855,5093,haloperidol,ci_with,Bone Marrow Diseases
+D003128,5093,haloperidol,ci_with,Coma
+D003327,5093,haloperidol,ci_with,Coronary Disease
+D004342,5093,haloperidol,ci_with,Drug Hypersensitivity
+D008107,5093,haloperidol,ci_with,Liver Diseases
+D010300,5093,haloperidol,ci_with,Parkinson Disease
+D002653,5093,haloperidol,may_treat,Child Behavior Disorders
+D011618,5093,haloperidol,may_treat,Psychotic Disorders
+D012559,5093,haloperidol,may_treat,Schizophrenia
+D013375,5093,haloperidol,may_treat,Substance Withdrawal Syndrome
+D005879,5093,haloperidol,may_treat,Tourette Syndrome
+D014839,5093,haloperidol,may_treat,Vomiting
+D000544,2267703,huperzine A,may_treat,Alzheimer Disease
+D004342,5514,hydroxocobalamin,ci_with,Drug Hypersensitivity
+D014806,5514,hydroxocobalamin,may_prevent,Vitamin B 12 Deficiency
+D020269,5514,hydroxocobalamin,may_treat,Alcoholic Neuropathy
+D000752,5514,hydroxocobalamin,may_treat,"Anemia, Pernicious"
+D003929,5514,hydroxocobalamin,may_treat,Diabetic Neuropathies
+D009103,5514,hydroxocobalamin,may_treat,Multiple Sclerosis
+D004342,5553,hydroxyzine,ci_with,Drug Hypersensitivity
+D011261,5553,hydroxyzine,ci_with,"Pregnancy Trimester, First"
+D001008,5553,hydroxyzine,may_treat,Anxiety Disorders
+D009325,5553,hydroxyzine,may_treat,Nausea
+D011537,5553,hydroxyzine,may_treat,Pruritus
+D013375,5553,hydroxyzine,may_treat,Substance Withdrawal Syndrome
+D014839,5553,hydroxyzine,may_treat,Vomiting
+D016532,644101,idursulfase,may_treat,Mucopolysaccharidosis II
+D004342,73178,iloperidone,ci_with,Drug Hypersensitivity
+D012559,73178,iloperidone,may_treat,Schizophrenia
+D004342,5691,imipramine,ci_with,Drug Hypersensitivity
+D009203,5691,imipramine,ci_with,Myocardial Infarction
+D011247,5691,imipramine,ci_with,Pregnancy
+D001289,5691,imipramine,may_treat,Attention Deficit Disorder with Hyperactivity
+D003866,5691,imipramine,may_treat,Depressive Disorder
+D004775,5691,imipramine,may_treat,Enuresis
+D010146,5691,imipramine,may_treat,Pain
+D016584,5691,imipramine,may_treat,Panic Disorder
+D004342,5975,ipecac,ci_with,Drug Hypersensitivity
+D012640,5975,ipecac,ci_with,Seizures
+D014474,5975,ipecac,ci_with,Unconsciousness
+D003371,5975,ipecac,may_treat,Cough
+D062787,5975,ipecac,may_treat,Drug Overdose
+D009325,5975,ipecac,may_treat,Nausea
+D011041,5975,ipecac,may_treat,Poisoning
+D014839,5975,ipecac,may_treat,Vomiting
+D000743,262150,iron carbonyl,ci_with,"Anemia, Hemolytic"
+D000749,262150,iron carbonyl,ci_with,"Anemia, Megaloblastic"
+D004342,262150,iron carbonyl,ci_with,Drug Hypersensitivity
+D006432,262150,iron carbonyl,ci_with,Hemochromatosis
+D006486,262150,iron carbonyl,ci_with,Hemosiderosis
+D018798,262150,iron carbonyl,may_prevent,"Anemia, Iron-Deficiency"
+D018798,262150,iron carbonyl,may_treat,"Anemia, Iron-Deficiency"
+D011250,262150,iron carbonyl,may_treat,"Pregnancy Complications, Hematologic"
+D012148,262150,iron carbonyl,may_treat,Restless Legs Syndrome
+D002561,6011,isocarboxazid,ci_with,Cerebrovascular Disorders
+D004342,6011,isocarboxazid,ci_with,Drug Hypersensitivity
+D006973,6011,isocarboxazid,ci_with,Hypertension
+D007674,6011,isocarboxazid,ci_with,Kidney Diseases
+D008107,6011,isocarboxazid,ci_with,Liver Diseases
+D010673,6011,isocarboxazid,ci_with,Pheochromocytoma
+D003866,6011,isocarboxazid,may_treat,Depressive Disorder
+D004342,6026,isoflurane,ci_with,Drug Hypersensitivity
+D008305,6026,isoflurane,ci_with,Malignant Hyperthermia
+D003866,6026,isoflurane,may_treat,Depressive Disorder
+D013224,6026,isoflurane,may_treat,Status Asthmaticus
+D004342,285228,kava preparation,ci_with,Drug Hypersensitivity
+D008107,285228,kava preparation,ci_with,Liver Diseases
+D001008,285228,kava preparation,may_treat,Anxiety Disorders
+D003866,285228,kava preparation,may_treat,Depressive Disorder
+D000783,6130,ketamine,ci_with,Aneurysm
+D000787,6130,ketamine,ci_with,Angina Pectoris
+D004342,6130,ketamine,ci_with,Drug Hypersensitivity
+D006333,6130,ketamine,ci_with,Heart Failure
+D006973,6130,ketamine,ci_with,Hypertension
+D019586,6130,ketamine,ci_with,Intracranial Hypertension
+D008107,6130,ketamine,ci_with,Liver Diseases
+D011618,6130,ketamine,ci_with,Psychotic Disorders
+D051437,6130,ketamine,ci_with,Renal Insufficiency
+D013971,6130,ketamine,ci_with,Thyrotoxicosis
+D010146,6130,ketamine,may_prevent,Pain
+D002056,6130,ketamine,may_treat,Burns
+D010146,6130,ketamine,may_treat,Pain
+D004342,28439,lamotrigine,ci_with,Drug Hypersensitivity
+D001714,28439,lamotrigine,may_treat,Bipolar Disorder
+D004828,28439,lamotrigine,may_treat,"Epilepsies, Partial"
+D065768,28439,lamotrigine,may_treat,Lennox Gastaut Syndrome
+D012640,28439,lamotrigine,may_treat,Seizures
+D060825,2626143,lecanemab,may_prevent,Cognitive Dysfunction
+D003704,2626143,lecanemab,may_prevent,Dementia
+D000544,2626143,lecanemab,may_treat,Alzheimer Disease
+D007319,2272403,lemborexant,may_treat,Sleep Initiation and Maintenance Disorders
+D007674,1731031,lesinurad,ci_with,Kidney Diseases
+D007926,1731031,lesinurad,ci_with,Lesch-Nyhan Syndrome
+D051437,1731031,lesinurad,ci_with,Renal Insufficiency
+D033461,1731031,lesinurad,may_treat,Hyperuricemia
+D001919,237005,levomethadyl,ci_with,Bradycardia
+D004342,237005,levomethadyl,ci_with,Drug Hypersensitivity
+D007008,237005,levomethadyl,ci_with,Hypokalemia
+D008275,237005,levomethadyl,ci_with,Magnesium Deficiency
+D010146,237005,levomethadyl,may_prevent,Pain
+D009293,237005,levomethadyl,may_treat,Opioid-Related Disorders
+D004342,1433212,levomilnacipran,ci_with,Drug Hypersensitivity
+D003865,1433212,levomilnacipran,may_treat,Major Depressive Disorder
+D018248,6373,levonorgestrel,ci_with,"Adenoma, Liver Cell"
+D001943,6373,levonorgestrel,ci_with,Breast Neoplasms
+D002561,6373,levonorgestrel,ci_with,Cerebrovascular Disorders
+D003327,6373,levonorgestrel,ci_with,Coronary Disease
+D003920,6373,levonorgestrel,ci_with,Diabetes Mellitus
+D004342,6373,levonorgestrel,ci_with,Drug Hypersensitivity
+D016889,6373,levonorgestrel,ci_with,Endometrial Neoplasms
+D020773,6373,levonorgestrel,ci_with,Headache Disorders
+D006349,6373,levonorgestrel,ci_with,Heart Valve Diseases
+D006973,6373,levonorgestrel,ci_with,Hypertension
+D007565,6373,levonorgestrel,ci_with,Jaundice
+D007674,6373,levonorgestrel,ci_with,Kidney Diseases
+D008107,6373,levonorgestrel,ci_with,Liver Diseases
+D008113,6373,levonorgestrel,ci_with,Liver Neoplasms
+D011247,6373,levonorgestrel,ci_with,Pregnancy
+D013923,6373,levonorgestrel,ci_with,Thromboembolism
+D013924,6373,levonorgestrel,ci_with,Thrombophlebitis
+D014029,6373,levonorgestrel,ci_with,Tobacco Use Disorder
+D014592,6373,levonorgestrel,ci_with,Uterine Hemorrhage
+D011247,6373,levonorgestrel,may_prevent,Pregnancy
+D001161,700810,lisdexamfetamine,ci_with,Arteriosclerosis
+D002318,700810,lisdexamfetamine,ci_with,Cardiovascular Diseases
+D004342,700810,lisdexamfetamine,ci_with,Drug Hypersensitivity
+D005901,700810,lisdexamfetamine,ci_with,Glaucoma
+D006972,700810,lisdexamfetamine,ci_with,Hypertelorism
+D019966,700810,lisdexamfetamine,ci_with,Substance-Related Disorders
+D001289,700810,lisdexamfetamine,may_treat,Attention Deficit Disorder with Hyperactivity
+D063425,700810,lisdexamfetamine,may_treat,Binge Drinking
+D003327,6448,lithium,ci_with,Coronary Disease
+D003681,6448,lithium,ci_with,Dehydration
+D004342,6448,lithium,ci_with,Drug Hypersensitivity
+D007010,6448,lithium,ci_with,Hyponatremia
+D007674,6448,lithium,ci_with,Kidney Diseases
+D011247,6448,lithium,ci_with,Pregnancy
+D001714,6448,lithium,may_treat,Bipolar Disorder
+D019955,6448,lithium,may_treat,Conduct Disorder
+D003866,6448,lithium,may_treat,Depressive Disorder
+D013313,6448,lithium,may_treat,"Stress Disorders, Post-Traumatic"
+D003327,746070,lithium aspartate,ci_with,Coronary Disease
+D003681,746070,lithium aspartate,ci_with,Dehydration
+D004342,746070,lithium aspartate,ci_with,Drug Hypersensitivity
+D007010,746070,lithium aspartate,ci_with,Hyponatremia
+D007674,746070,lithium aspartate,ci_with,Kidney Diseases
+D011247,746070,lithium aspartate,ci_with,Pregnancy
+D001714,746070,lithium aspartate,may_treat,Bipolar Disorder
+D019955,746070,lithium aspartate,may_treat,Conduct Disorder
+D003866,746070,lithium aspartate,may_treat,Depressive Disorder
+D013313,746070,lithium aspartate,may_treat,"Stress Disorders, Post-Traumatic"
+D003327,42351,lithium carbonate,ci_with,Coronary Disease
+D003681,42351,lithium carbonate,ci_with,Dehydration
+D004342,42351,lithium carbonate,ci_with,Drug Hypersensitivity
+D007010,42351,lithium carbonate,ci_with,Hyponatremia
+D007674,42351,lithium carbonate,ci_with,Kidney Diseases
+D011247,42351,lithium carbonate,ci_with,Pregnancy
+D001714,42351,lithium carbonate,may_treat,Bipolar Disorder
+D019955,42351,lithium carbonate,may_treat,Conduct Disorder
+D003866,42351,lithium carbonate,may_treat,Depressive Disorder
+D013313,42351,lithium carbonate,may_treat,"Stress Disorders, Post-Traumatic"
+D003327,52105,lithium citrate,ci_with,Coronary Disease
+D003681,52105,lithium citrate,ci_with,Dehydration
+D004342,52105,lithium citrate,ci_with,Drug Hypersensitivity
+D007010,52105,lithium citrate,ci_with,Hyponatremia
+D007674,52105,lithium citrate,ci_with,Kidney Diseases
+D011247,52105,lithium citrate,ci_with,Pregnancy
+D001714,52105,lithium citrate,may_treat,Bipolar Disorder
+D019955,52105,lithium citrate,may_treat,Conduct Disorder
+D003866,52105,lithium citrate,may_treat,Depressive Disorder
+D013313,52105,lithium citrate,may_treat,"Stress Disorders, Post-Traumatic"
+D013375,28863,lofexidine,may_treat,Substance Withdrawal Syndrome
+D016638,2569562,lonapegsomatropin,ci_with,Critical Illness
+D003930,2569562,lonapegsomatropin,ci_with,Diabetic Retinopathy
+D011218,2569562,lonapegsomatropin,ci_with,Prader-Willi Syndrome
+D025962,2569562,lonapegsomatropin,may_treat,Septo-Optic Dysplasia
+D004342,6470,lorazepam,ci_with,Drug Hypersensitivity
+D015812,6470,lorazepam,ci_with,"Glaucoma, Angle-Closure"
+D011247,6470,lorazepam,ci_with,Pregnancy
+D012131,6470,lorazepam,ci_with,Respiratory Insufficiency
+D012891,6470,lorazepam,ci_with,Sleep Apnea Syndromes
+D001008,6470,lorazepam,may_treat,Anxiety Disorders
+D002389,6470,lorazepam,may_treat,Catatonia
+D003866,6470,lorazepam,may_treat,Depressive Disorder
+D004828,6470,lorazepam,may_treat,"Epilepsies, Partial"
+D011618,6470,lorazepam,may_treat,Psychotic Disorders
+D007319,6470,lorazepam,may_treat,Sleep Initiation and Maintenance Disorders
+D013226,6470,lorazepam,may_treat,Status Epilepticus
+D013375,6470,lorazepam,may_treat,Substance Withdrawal Syndrome
+D014839,6470,lorazepam,may_treat,Vomiting
+D007319,28894,lormetazepam,may_treat,Sleep Initiation and Maintenance Disorders
+D003128,6475,loxapine,ci_with,Coma
+D004342,6475,loxapine,ci_with,Drug Hypersensitivity
+D011618,6475,loxapine,may_treat,Psychotic Disorders
+D012559,6475,loxapine,may_treat,Schizophrenia
+D004342,2275602,lumateperone,ci_with,Drug Hypersensitivity
+D012559,2275602,lumateperone,may_treat,Schizophrenia
+D004342,1040028,lurasidone,ci_with,Drug Hypersensitivity
+D001714,1040028,lurasidone,may_treat,Bipolar Disorder
+D003865,1040028,lurasidone,may_treat,Major Depressive Disorder
+D012559,1040028,lurasidone,may_treat,Schizophrenia
+D015746,52356,magnesium citrate,ci_with,Abdominal Pain
+D001064,52356,magnesium citrate,ci_with,Appendicitis
+D003093,52356,magnesium citrate,ci_with,"Colitis, Ulcerative"
+D003920,52356,magnesium citrate,ci_with,Diabetes Mellitus
+D004238,52356,magnesium citrate,ci_with,Diverticulitis
+D004342,52356,magnesium citrate,ci_with,Drug Hypersensitivity
+D005244,52356,magnesium citrate,ci_with,Fecal Impaction
+D006327,52356,magnesium citrate,ci_with,Heart Block
+D006505,52356,magnesium citrate,ci_with,Hepatitis
+D007416,52356,magnesium citrate,ci_with,Intestinal Perforation
+D051437,52356,magnesium citrate,ci_with,Renal Insufficiency
+D008275,52356,magnesium citrate,may_prevent,Magnesium Deficiency
+D003248,52356,magnesium citrate,may_treat,Constipation
+D062787,52356,magnesium citrate,may_treat,Drug Overdose
+D008275,52356,magnesium citrate,may_treat,Magnesium Deficiency
+D004342,6646,maprotiline,ci_with,Drug Hypersensitivity
+D004827,6646,maprotiline,ci_with,Epilepsy
+D009203,6646,maprotiline,ci_with,Myocardial Infarction
+D001714,6646,maprotiline,may_treat,Bipolar Disorder
+D002032,6646,maprotiline,may_treat,Bulimia
+D019970,6646,maprotiline,may_treat,Cocaine-Related Disorders
+D004381,6646,maprotiline,may_treat,Duodenal Ulcer
+D019263,6646,maprotiline,may_treat,Dysthymic Disorder
+D004775,6646,maprotiline,may_treat,Enuresis
+D010146,6646,maprotiline,may_treat,Pain
+D016584,6646,maprotiline,may_treat,Panic Disorder
+D004342,6664,mazindol,ci_with,Drug Hypersensitivity
+D011595,6664,mazindol,ci_with,Psychomotor Agitation
+D015819,6664,mazindol,ci_with,"Substance Abuse, Intravenous"
+D020388,6664,mazindol,may_treat,"Muscular Dystrophy, Duchenne"
+D009765,6664,mazindol,may_treat,Obesity
+D003327,6673,mecamylamine,ci_with,Coronary Disease
+D004342,6673,mecamylamine,ci_with,Drug Hypersensitivity
+D005901,6673,mecamylamine,ci_with,Glaucoma
+D009203,6673,mecamylamine,ci_with,Myocardial Infarction
+D011707,6673,mecamylamine,ci_with,Pyloric Stenosis
+D014511,6673,mecamylamine,ci_with,Uremia
+D006974,6673,mecamylamine,may_treat,"Hypertension, Malignant"
+D005879,6673,mecamylamine,may_treat,Tourette Syndrome
+D004342,29421,mecobalamin,ci_with,Drug Hypersensitivity
+D014806,29421,mecobalamin,may_prevent,Vitamin B 12 Deficiency
+D020269,29421,mecobalamin,may_treat,Alcoholic Neuropathy
+D000752,29421,mecobalamin,may_treat,"Anemia, Pernicious"
+D003929,29421,mecobalamin,may_treat,Diabetic Neuropathies
+D009103,29421,mecobalamin,may_treat,Multiple Sclerosis
+D012640,6680,medazepam,may_prevent,Seizures
+D001008,6680,medazepam,may_treat,Anxiety Disorders
+D001008,6694,mefloquine,ci_with,Anxiety Disorders
+D003863,6694,mefloquine,ci_with,Depression
+D004342,6694,mefloquine,ci_with,Drug Hypersensitivity
+D004827,6694,mefloquine,ci_with,Epilepsy
+D011618,6694,mefloquine,ci_with,Psychotic Disorders
+D016778,6694,mefloquine,may_prevent,"Malaria, Falciparum"
+D016780,6694,mefloquine,may_prevent,"Malaria, Vivax"
+D016778,6694,mefloquine,may_treat,"Malaria, Falciparum"
+D016780,6694,mefloquine,may_treat,"Malaria, Vivax"
+D020179,6711,melatonin,may_prevent,Jet Lag Syndrome
+D020179,6711,melatonin,may_treat,Jet Lag Syndrome
+D016574,6711,melatonin,may_treat,Seasonal Affective Disorder
+D004342,6719,memantine,ci_with,Drug Hypersensitivity
+D000544,6719,memantine,may_treat,Alzheimer Disease
+D004342,6760,meprobamate,ci_with,Drug Hypersensitivity
+D015812,6760,meprobamate,ci_with,"Glaucoma, Angle-Closure"
+D010148,6760,meprobamate,ci_with,Intractable Pain
+D011164,6760,meprobamate,ci_with,Porphyrias
+D011247,6760,meprobamate,ci_with,Pregnancy
+D001008,6760,meprobamate,may_treat,Anxiety Disorders
+D006261,6760,meprobamate,may_treat,Headache
+D009127,6760,meprobamate,may_treat,Muscle Rigidity
+D009128,6760,meprobamate,may_treat,Muscle Spasticity
+D013035,6760,meprobamate,may_treat,Spasm
+D003128,6779,mesoridazine,ci_with,Coma
+D004342,6779,mesoridazine,ci_with,Drug Hypersensitivity
+D000437,6779,mesoridazine,may_treat,Alcoholism
+D011618,6779,mesoridazine,may_treat,Psychotic Disorders
+D012559,6779,mesoridazine,may_treat,Schizophrenia
+D000368,6782,mestranol,ci_with,Aged
+D001943,6782,mestranol,ci_with,Breast Neoplasms
+D002561,6782,mestranol,ci_with,Cerebrovascular Disorders
+D003327,6782,mestranol,ci_with,Coronary Disease
+D003920,6782,mestranol,ci_with,Diabetes Mellitus
+D004342,6782,mestranol,ci_with,Drug Hypersensitivity
+D016889,6782,mestranol,ci_with,Endometrial Neoplasms
+D020773,6782,mestranol,ci_with,Headache Disorders
+D006349,6782,mestranol,ci_with,Heart Valve Diseases
+D006973,6782,mestranol,ci_with,Hypertension
+D007565,6782,mestranol,ci_with,Jaundice
+D008113,6782,mestranol,ci_with,Liver Neoplasms
+D009376,6782,mestranol,ci_with,"Neoplasms, Hormone-Dependent"
+D011247,6782,mestranol,ci_with,Pregnancy
+D013923,6782,mestranol,ci_with,Thromboembolism
+D013924,6782,mestranol,ci_with,Thrombophlebitis
+D014029,6782,mestranol,ci_with,Tobacco Use Disorder
+D010051,6782,mestranol,may_prevent,Ovarian Neoplasms
+D011247,6782,mestranol,may_prevent,Pregnancy
+D001249,6813,methadone,ci_with,Asthma
+D004342,6813,methadone,ci_with,Drug Hypersensitivity
+D006935,6813,methadone,ci_with,Hypercapnia
+D007418,6813,methadone,ci_with,Intestinal Pseudo-Obstruction
+D011247,6813,methadone,ci_with,Pregnancy
+D012131,6813,methadone,ci_with,Respiratory Insufficiency
+D010148,6813,methadone,may_treat,Intractable Pain
+D009293,6813,methadone,may_treat,Opioid-Related Disorders
+D001161,6816,methamphetamine,ci_with,Arteriosclerosis
+D001289,6816,methamphetamine,ci_with,Attention Deficit Disorder with Hyperactivity
+D002318,6816,methamphetamine,ci_with,Cardiovascular Diseases
+D004342,6816,methamphetamine,ci_with,Drug Hypersensitivity
+D005901,6816,methamphetamine,ci_with,Glaucoma
+D006973,6816,methamphetamine,ci_with,Hypertension
+D006980,6816,methamphetamine,ci_with,Hyperthyroidism
+D015819,6816,methamphetamine,ci_with,"Substance Abuse, Intravenous"
+D005879,6816,methamphetamine,ci_with,Tourette Syndrome
+D001289,6816,methamphetamine,may_treat,Attention Deficit Disorder with Hyperactivity
+D009290,6816,methamphetamine,may_treat,Narcolepsy
+D009765,6816,methamphetamine,may_treat,Obesity
+D007319,6823,methaqualone,may_treat,Sleep Initiation and Maintenance Disorders
+D001855,29648,methdilazine,ci_with,Bone Marrow Diseases
+D003128,29648,methdilazine,ci_with,Coma
+D004342,29648,methdilazine,ci_with,Drug Hypersensitivity
+D007231,29648,methdilazine,ci_with,"Infant, Newborn"
+D007565,29648,methdilazine,ci_with,Jaundice
+D007774,29648,methdilazine,ci_with,Lactation
+D017449,29648,methdilazine,may_treat,"Dermatitis, Allergic Contact"
+D003876,29648,methdilazine,may_treat,"Dermatitis, Atopic"
+D004485,29648,methdilazine,may_treat,Eczema
+D017515,29648,methdilazine,may_treat,Pityriasis Rosea
+D011537,29648,methdilazine,may_treat,Pruritus
+D012221,29648,methdilazine,may_treat,"Rhinitis, Allergic, Perennial"
+D014581,29648,methdilazine,may_treat,Urticaria
+D001778,6851,methotrexate,ci_with,Blood Coagulation Disorders
+D001942,6851,methotrexate,ci_with,Breast Feeding
+D004342,6851,methotrexate,ci_with,Drug Hypersensitivity
+D015658,6851,methotrexate,ci_with,HIV Infections
+D008108,6851,methotrexate,ci_with,"Liver Diseases, Alcoholic"
+D009503,6851,methotrexate,ci_with,Neutropenia
+D011247,6851,methotrexate,ci_with,Pregnancy
+D051437,6851,methotrexate,ci_with,Renal Insufficiency
+D013921,6851,methotrexate,ci_with,Thrombocytopenia
+D001171,6851,methotrexate,may_treat,"Arthritis, Juvenile"
+D001172,6851,methotrexate,may_treat,"Arthritis, Rheumatoid"
+D001943,6851,methotrexate,may_treat,Breast Neoplasms
+D002822,6851,methotrexate,may_treat,Choriocarcinoma
+D003424,6851,methotrexate,may_treat,Crohn Disease
+D004938,6851,methotrexate,may_treat,Esophageal Neoplasms
+D006828,6851,methotrexate,may_treat,Hydatidiform Mole
+D007938,6851,methotrexate,may_treat,Leukemia
+D008175,6851,methotrexate,may_treat,Lung Neoplasms
+D009182,6851,methotrexate,may_treat,Mycosis Fungoides
+D012516,6851,methotrexate,may_treat,Osteosarcoma
+D011565,6851,methotrexate,may_treat,Psoriasis
+D013274,6851,methotrexate,may_treat,Stomach Neoplasms
+D013736,6851,methotrexate,may_treat,Testicular Neoplasms
+D003128,6852,methotrimeprazine,ci_with,Coma
+D003327,6852,methotrimeprazine,ci_with,Coronary Disease
+D004342,6852,methotrimeprazine,ci_with,Drug Hypersensitivity
+D008107,6852,methotrimeprazine,ci_with,Liver Diseases
+D012640,6852,methotrimeprazine,ci_with,Seizures
+D001008,6852,methotrimeprazine,may_treat,Anxiety Disorders
+D001714,6852,methotrimeprazine,may_treat,Bipolar Disorder
+D010146,6852,methotrimeprazine,may_treat,Pain
+D011618,6852,methotrimeprazine,may_treat,Psychotic Disorders
+D012559,6852,methotrimeprazine,may_treat,Schizophrenia
+D001008,6901,methylphenidate,ci_with,Anxiety Disorders
+D004342,6901,methylphenidate,ci_with,Drug Hypersensitivity
+D005901,6901,methylphenidate,ci_with,Glaucoma
+D011595,6901,methylphenidate,ci_with,Psychomotor Agitation
+D020323,6901,methylphenidate,ci_with,Tics
+D005879,6901,methylphenidate,ci_with,Tourette Syndrome
+D001289,6901,methylphenidate,may_treat,Attention Deficit Disorder with Hyperactivity
+D003866,6901,methylphenidate,may_treat,Depressive Disorder
+D009290,6901,methylphenidate,may_treat,Narcolepsy
+D018567,6904,methyltestosterone,ci_with,"Breast Neoplasms, Male"
+D004342,6904,methyltestosterone,ci_with,Drug Hypersensitivity
+D011247,6904,methyltestosterone,ci_with,Pregnancy
+D011471,6904,methyltestosterone,ci_with,Prostatic Neoplasms
+D001943,6904,methyltestosterone,may_treat,Breast Neoplasms
+D007172,6904,methyltestosterone,may_treat,Erectile Dysfunction
+D007006,6904,methyltestosterone,may_treat,Hypogonadism
+D011628,6904,methyltestosterone,may_treat,"Puberty, Delayed"
+D004342,6910,methyprylon,ci_with,Drug Hypersensitivity
+D007319,6910,methyprylon,may_treat,Sleep Initiation and Maintenance Disorders
+D001002,6916,metolazone,ci_with,Anuria
+D003128,6916,metolazone,ci_with,Coma
+D004342,6916,metolazone,ci_with,Drug Hypersensitivity
+D011247,6916,metolazone,ci_with,Pregnancy
+D051437,6916,metolazone,ci_with,Renal Insufficiency
+D004487,6916,metolazone,may_treat,Edema
+D006333,6916,metolazone,may_treat,Heart Failure
+D006973,6916,metolazone,may_treat,Hypertension
+D009404,6916,metolazone,may_treat,Nephrotic Syndrome
+D004342,6960,midazolam,ci_with,Drug Hypersensitivity
+D015812,6960,midazolam,ci_with,"Glaucoma, Angle-Closure"
+D007234,6960,midazolam,ci_with,"Infant, Premature"
+D011247,6960,midazolam,ci_with,Pregnancy
+D001008,6960,midazolam,may_treat,Anxiety Disorders
+D011595,6960,midazolam,may_treat,Psychomotor Agitation
+D013226,6960,midazolam,may_treat,Status Epilepticus
+D003865,588250,milnacipran,may_treat,Major Depressive Disorder
+D004342,15996,mirtazapine,ci_with,Drug Hypersensitivity
+D003866,15996,mirtazapine,may_treat,Depressive Disorder
+D006967,30125,modafinil,ci_with,Hypersensitivity
+D001289,30125,modafinil,may_treat,Attention Deficit Disorder with Hyperactivity
+D005221,30125,modafinil,may_treat,Fatigue
+D009290,30125,modafinil,may_treat,Narcolepsy
+D020181,30125,modafinil,may_treat,"Sleep Apnea, Obstructive"
+D003128,7019,molindone,ci_with,Coma
+D004342,7019,molindone,ci_with,Drug Hypersensitivity
+D011618,7019,molindone,may_treat,Psychotic Disorders
+D012559,7019,molindone,may_treat,Schizophrenia
+D004342,31479,nalmefene,ci_with,Drug Hypersensitivity
+D062787,31479,nalmefene,may_treat,Drug Overdose
+D009293,31479,nalmefene,may_treat,Opioid-Related Disorders
+D012120,31479,nalmefene,may_treat,Respiration Disorders
+D004342,7242,naloxone,ci_with,Drug Hypersensitivity
+D009293,7242,naloxone,may_treat,Opioid-Related Disorders
+D012120,7242,naloxone,may_treat,Respiration Disorders
+D012772,7242,naloxone,may_treat,"Shock, Septic"
+D004342,7243,naltrexone,ci_with,Drug Hypersensitivity
+D006505,7243,naltrexone,ci_with,Hepatitis
+D017093,7243,naltrexone,ci_with,Liver Failure
+D009293,7243,naltrexone,ci_with,Opioid-Related Disorders
+D000437,7243,naltrexone,may_treat,Alcoholism
+D062787,7243,naltrexone,may_treat,Drug Overdose
+D009293,7243,naltrexone,may_treat,Opioid-Related Disorders
+D004342,31565,nefazodone,ci_with,Drug Hypersensitivity
+D008107,31565,nefazodone,ci_with,Liver Diseases
+D003866,31565,nefazodone,may_treat,Depressive Disorder
+D013313,31565,nefazodone,may_treat,"Stress Disorders, Post-Traumatic"
+D000787,7407,nicotine,ci_with,Angina Pectoris
+D001145,7407,nicotine,ci_with,"Arrhythmias, Cardiac"
+D004342,7407,nicotine,ci_with,Drug Hypersensitivity
+D009203,7407,nicotine,ci_with,Myocardial Infarction
+D011247,7407,nicotine,ci_with,Pregnancy
+D013705,7407,nicotine,ci_with,Temporomandibular Joint Disorders
+D013375,7407,nicotine,may_prevent,Substance Withdrawal Syndrome
+D003093,7407,nicotine,may_treat,"Colitis, Ulcerative"
+D014029,7407,nicotine,may_treat,Tobacco Use Disorder
+D012640,7440,nitrazepam,may_treat,Seizures
+D007319,7440,nitrazepam,may_treat,Sleep Initiation and Maintenance Disorders
+D004342,7486,nitrous oxide,ci_with,Drug Hypersensitivity
+D000430,7486,nitrous oxide,may_treat,Alcohol Withdrawal Delirium
+D007238,7486,nitrous oxide,may_treat,Infarction
+D012128,7486,nitrous oxide,may_treat,Respiratory Distress Syndrome
+D001008,3155,nordazepam,may_treat,Anxiety Disorders
+D001943,326374,norelgestromin,ci_with,Breast Neoplasms
+D002561,326374,norelgestromin,ci_with,Cerebrovascular Disorders
+D003327,326374,norelgestromin,ci_with,Coronary Disease
+D003920,326374,norelgestromin,ci_with,Diabetes Mellitus
+D004342,326374,norelgestromin,ci_with,Drug Hypersensitivity
+D020773,326374,norelgestromin,ci_with,Headache Disorders
+D006349,326374,norelgestromin,ci_with,Heart Valve Diseases
+D006973,326374,norelgestromin,ci_with,Hypertension
+D008107,326374,norelgestromin,ci_with,Liver Diseases
+D008113,326374,norelgestromin,ci_with,Liver Neoplasms
+D009376,326374,norelgestromin,ci_with,"Neoplasms, Hormone-Dependent"
+D011247,326374,norelgestromin,ci_with,Pregnancy
+D011655,326374,norelgestromin,ci_with,Pulmonary Embolism
+D013923,326374,norelgestromin,ci_with,Thromboembolism
+D019851,326374,norelgestromin,ci_with,Thrombophilia
+D013924,326374,norelgestromin,ci_with,Thrombophlebitis
+D014029,326374,norelgestromin,ci_with,Tobacco Use Disorder
+D014592,326374,norelgestromin,ci_with,Uterine Hemorrhage
+D020246,326374,norelgestromin,ci_with,Venous Thrombosis
+D011247,326374,norelgestromin,may_prevent,Pregnancy
+D000568,326374,norelgestromin,may_treat,Amenorrhea
+D014592,326374,norelgestromin,may_treat,Uterine Hemorrhage
+D001943,31994,norgestimate,ci_with,Breast Neoplasms
+D002561,31994,norgestimate,ci_with,Cerebrovascular Disorders
+D003327,31994,norgestimate,ci_with,Coronary Disease
+D003920,31994,norgestimate,ci_with,Diabetes Mellitus
+D004342,31994,norgestimate,ci_with,Drug Hypersensitivity
+D020773,31994,norgestimate,ci_with,Headache Disorders
+D006349,31994,norgestimate,ci_with,Heart Valve Diseases
+D006973,31994,norgestimate,ci_with,Hypertension
+D008107,31994,norgestimate,ci_with,Liver Diseases
+D008113,31994,norgestimate,ci_with,Liver Neoplasms
+D009376,31994,norgestimate,ci_with,"Neoplasms, Hormone-Dependent"
+D011247,31994,norgestimate,ci_with,Pregnancy
+D011655,31994,norgestimate,ci_with,Pulmonary Embolism
+D013923,31994,norgestimate,ci_with,Thromboembolism
+D019851,31994,norgestimate,ci_with,Thrombophilia
+D013924,31994,norgestimate,ci_with,Thrombophlebitis
+D014029,31994,norgestimate,ci_with,Tobacco Use Disorder
+D014592,31994,norgestimate,ci_with,Uterine Hemorrhage
+D020246,31994,norgestimate,ci_with,Venous Thrombosis
+D011247,31994,norgestimate,may_prevent,Pregnancy
+D000568,31994,norgestimate,may_treat,Amenorrhea
+D007247,31994,norgestimate,may_treat,"Infertility, Female"
+D014592,31994,norgestimate,may_treat,Uterine Hemorrhage
+D004342,7531,nortriptyline,ci_with,Drug Hypersensitivity
+D009203,7531,nortriptyline,ci_with,Myocardial Infarction
+D011247,7531,nortriptyline,ci_with,Pregnancy
+D001008,7531,nortriptyline,may_treat,Anxiety Disorders
+D001289,7531,nortriptyline,may_treat,Attention Deficit Disorder with Hyperactivity
+D003866,7531,nortriptyline,may_treat,Depressive Disorder
+D004775,7531,nortriptyline,may_treat,Enuresis
+D010146,7531,nortriptyline,may_treat,Pain
+D004342,61381,olanzapine,ci_with,Drug Hypersensitivity
+D001714,61381,olanzapine,may_treat,Bipolar Disorder
+D011618,61381,olanzapine,may_treat,Psychotic Disorders
+D012559,61381,olanzapine,may_treat,Schizophrenia
+D004342,26225,ondansetron,ci_with,Drug Hypersensitivity
+D020250,26225,ondansetron,may_prevent,Postoperative Nausea and Vomiting
+D000437,26225,ondansetron,may_treat,Alcoholism
+D004342,1370971,ospemifene,ci_with,Drug Hypersensitivity
+D005831,1370971,ospemifene,ci_with,"Genital Diseases, Female"
+D009203,1370971,ospemifene,ci_with,Myocardial Infarction
+D009376,1370971,ospemifene,ci_with,"Neoplasms, Hormone-Dependent"
+D011247,1370971,ospemifene,ci_with,Pregnancy
+D011655,1370971,ospemifene,ci_with,Pulmonary Embolism
+D020521,1370971,ospemifene,ci_with,Stroke
+D020246,1370971,ospemifene,ci_with,Venous Thrombosis
+D001284,1370971,ospemifene,may_treat,Atrophy
+D004414,1370971,ospemifene,may_treat,Dyspareunia
+D008593,1370971,ospemifene,may_treat,Menopause
+D004342,7781,oxazepam,ci_with,Drug Hypersensitivity
+D015812,7781,oxazepam,ci_with,"Glaucoma, Angle-Closure"
+D011247,7781,oxazepam,ci_with,Pregnancy
+D011618,7781,oxazepam,ci_with,Psychotic Disorders
+D000430,7781,oxazepam,may_treat,Alcohol Withdrawal Delirium
+D001008,7781,oxazepam,may_treat,Anxiety Disorders
+D004828,7781,oxazepam,may_treat,"Epilepsies, Partial"
+D000592,2387302,oxybate,ci_with,"Amino Acid Metabolism, Inborn Errors"
+D002658,2387302,oxybate,ci_with,Developmental Disabilities
+D002385,2387302,oxybate,may_treat,Cataplexy
+D000789,2288236,ozanimod,ci_with,"Angina, Unstable"
+D054537,2288236,ozanimod,ci_with,Atrioventricular Block
+D006333,2288236,ozanimod,ci_with,Heart Failure
+D002546,2288236,ozanimod,ci_with,"Ischemic Attack, Transient"
+D009203,2288236,ozanimod,ci_with,Myocardial Infarction
+D012804,2288236,ozanimod,ci_with,Sick Sinus Syndrome
+D012848,2288236,ozanimod,ci_with,Sinoatrial Block
+D012891,2288236,ozanimod,ci_with,Sleep Apnea Syndromes
+D020521,2288236,ozanimod,ci_with,Stroke
+D020529,2288236,ozanimod,may_treat,"Multiple Sclerosis, Relapsing-Remitting"
+D004342,679314,paliperidone,ci_with,Drug Hypersensitivity
+D001714,679314,paliperidone,may_treat,Bipolar Disorder
+D003866,679314,paliperidone,may_treat,Depressive Disorder
+D012559,679314,paliperidone,may_treat,Schizophrenia
+D006327,7895,papaverine,ci_with,Heart Block
+D000787,7895,papaverine,may_treat,Angina Pectoris
+D001145,7895,papaverine,may_treat,"Arrhythmias, Cardiac"
+D001157,7895,papaverine,may_treat,Arterial Occlusive Diseases
+D002545,7895,papaverine,may_treat,Brain Ischemia
+D003085,7895,papaverine,may_treat,Colic
+D007172,7895,papaverine,may_treat,Erectile Dysfunction
+D011655,7895,papaverine,may_treat,Pulmonary Embolism
+D011928,7895,papaverine,may_treat,Raynaud Disease
+D013923,7895,papaverine,may_treat,Thromboembolism
+D000402,7909,paraldehyde,ci_with,Airway Obstruction
+D004342,7909,paraldehyde,ci_with,Drug Hypersensitivity
+D005759,7909,paraldehyde,ci_with,Gastroenteritis
+D017093,7909,paraldehyde,ci_with,Liver Failure
+D003693,7909,paraldehyde,may_treat,Delirium
+D012640,7909,paraldehyde,may_treat,Seizures
+D004342,32937,paroxetine,ci_with,Drug Hypersensitivity
+D003866,32937,paroxetine,may_treat,Depressive Disorder
+D001068,32937,paroxetine,may_treat,Feeding and Eating Disorders
+D009771,32937,paroxetine,may_treat,Obsessive-Compulsive Disorder
+D016584,32937,paroxetine,may_treat,Panic Disorder
+D010698,32937,paroxetine,may_treat,Phobic Disorders
+D013313,32937,paroxetine,may_treat,"Stress Disorders, Post-Traumatic"
+D002648,7966,pemoline,ci_with,Child
+D006967,7966,pemoline,ci_with,Hypersensitivity
+D008107,7966,pemoline,ci_with,Liver Diseases
+D011618,7966,pemoline,ci_with,Psychotic Disorders
+D005879,7966,pemoline,ci_with,Tourette Syndrome
+D001289,7966,pemoline,may_treat,Attention Deficit Disorder with Hyperactivity
+D009290,7966,pemoline,may_treat,Narcolepsy
+D011618,7974,penfluridol,may_treat,Psychotic Disorders
+D019967,7974,penfluridol,may_treat,Schizophrenia Spectrum and Other Psychotic Disorders
+D002543,8013,pentoxifylline,ci_with,Cerebral Hemorrhage
+D006967,8013,pentoxifylline,ci_with,Hypersensitivity
+D012166,8013,pentoxifylline,ci_with,Retinal Hemorrhage
+D002545,8013,pentoxifylline,may_treat,Brain Ischemia
+D003925,8013,pentoxifylline,may_treat,Diabetic Angiopathies
+D003929,8013,pentoxifylline,may_treat,Diabetic Neuropathies
+D005734,8013,pentoxifylline,may_treat,Gangrene
+D018783,8013,pentoxifylline,may_treat,"Impotence, Vasculogenic"
+D007383,8013,pentoxifylline,may_treat,Intermittent Claudication
+D016779,8013,pentoxifylline,may_treat,"Malaria, Cerebral"
+D020521,8013,pentoxifylline,may_treat,Stroke
+D013927,8013,pentoxifylline,may_treat,Thrombosis
+D014657,8013,pentoxifylline,may_treat,Vasculitis
+D011618,8042,perazine,may_treat,Psychotic Disorders
+D012559,8042,perazine,may_treat,Schizophrenia
+D004342,8047,pergolide,ci_with,Drug Hypersensitivity
+D010300,8047,pergolide,may_treat,Parkinson Disease
+D005879,8047,pergolide,may_treat,Tourette Syndrome
+D004342,8766,periciazine,ci_with,Drug Hypersensitivity
+D000374,8766,periciazine,may_treat,Aggression
+D011618,8766,periciazine,may_treat,Psychotic Disorders
+D001778,8076,perphenazine,ci_with,Blood Coagulation Disorders
+D001855,8076,perphenazine,ci_with,Bone Marrow Diseases
+D001925,8076,perphenazine,ci_with,"Brain Damage, Chronic"
+D003128,8076,perphenazine,ci_with,Coma
+D004342,8076,perphenazine,ci_with,Drug Hypersensitivity
+D010265,8076,perphenazine,ci_with,Paraproteinemias
+D006816,8076,perphenazine,may_treat,Huntington Disease
+D009325,8076,perphenazine,may_treat,Nausea
+D011618,8076,perphenazine,may_treat,Psychotic Disorders
+D012202,8076,perphenazine,may_treat,Reye Syndrome
+D012559,8076,perphenazine,may_treat,Schizophrenia
+D013375,8076,perphenazine,may_treat,Substance Withdrawal Syndrome
+D014103,8076,perphenazine,may_treat,Torticollis
+D005879,8076,perphenazine,may_treat,Tourette Syndrome
+D014839,8076,perphenazine,may_treat,Vomiting
+D001161,33272,phendimetrazine,ci_with,Arteriosclerosis
+D002318,33272,phendimetrazine,ci_with,Cardiovascular Diseases
+D004342,33272,phendimetrazine,ci_with,Drug Hypersensitivity
+D005901,33272,phendimetrazine,ci_with,Glaucoma
+D006973,33272,phendimetrazine,ci_with,Hypertension
+D006980,33272,phendimetrazine,ci_with,Hyperthyroidism
+D011595,33272,phendimetrazine,ci_with,Psychomotor Agitation
+D019966,33272,phendimetrazine,ci_with,Substance-Related Disorders
+D009765,33272,phendimetrazine,may_treat,Obesity
+D002561,8123,phenelzine,ci_with,Cerebrovascular Disorders
+D004342,8123,phenelzine,ci_with,Drug Hypersensitivity
+D006333,8123,phenelzine,ci_with,Heart Failure
+D006973,8123,phenelzine,ci_with,Hypertension
+D007674,8123,phenelzine,ci_with,Kidney Diseases
+D008107,8123,phenelzine,ci_with,Liver Diseases
+D010673,8123,phenelzine,ci_with,Pheochromocytoma
+D003866,8123,phenelzine,may_treat,Depressive Disorder
+D001161,8133,phenmetrazine,ci_with,Arteriosclerosis
+D004342,8133,phenmetrazine,ci_with,Drug Hypersensitivity
+D005901,8133,phenmetrazine,ci_with,Glaucoma
+D006973,8133,phenmetrazine,ci_with,Hypertension
+D006980,8133,phenmetrazine,ci_with,Hyperthyroidism
+D011247,8133,phenmetrazine,ci_with,Pregnancy
+D015819,8133,phenmetrazine,ci_with,"Substance Abuse, Intravenous"
+D009765,8133,phenmetrazine,may_treat,Obesity
+D000033,8150,phenprocoumon,ci_with,"Abortion, Threatened"
+D000437,8150,phenprocoumon,ci_with,Alcoholism
+D000783,8150,phenprocoumon,ci_with,Aneurysm
+D001206,8150,phenprocoumon,ci_with,Ascorbic Acid Deficiency
+D002277,8150,phenprocoumon,ci_with,Carcinoma
+D002543,8150,phenprocoumon,ci_with,Cerebral Hemorrhage
+D004238,8150,phenprocoumon,ci_with,Diverticulitis
+D004342,8150,phenprocoumon,ci_with,Drug Hypersensitivity
+D004461,8150,phenprocoumon,ci_with,Eclampsia
+D004614,8150,phenprocoumon,ci_with,Emaciation
+D004697,8150,phenprocoumon,ci_with,"Endocarditis, Bacterial"
+D006471,8150,phenprocoumon,ci_with,Gastrointestinal Hemorrhage
+D006467,8150,phenprocoumon,ci_with,Hemophilia A
+D002836,8150,phenprocoumon,ci_with,Hemophilia B
+D006974,8150,phenprocoumon,ci_with,"Hypertension, Malignant"
+D007938,8150,phenprocoumon,ci_with,Leukemia
+D008107,8150,phenprocoumon,ci_with,Liver Diseases
+D010490,8150,phenprocoumon,ci_with,Pericardial Effusion
+D010493,8150,phenprocoumon,ci_with,Pericarditis
+D019106,8150,phenprocoumon,ci_with,Postoperative Hemorrhage
+D011225,8150,phenprocoumon,ci_with,Pre-Eclampsia
+D011247,8150,phenprocoumon,ci_with,Pregnancy
+D011469,8150,phenprocoumon,ci_with,Prostatic Diseases
+D011502,8150,phenprocoumon,ci_with,Protein-Energy Malnutrition
+D011696,8150,phenprocoumon,ci_with,"Purpura, Thrombocytopenic"
+D014813,8150,phenprocoumon,ci_with,Vitamin K Deficiency
+D011655,8150,phenprocoumon,may_prevent,Pulmonary Embolism
+D013923,8150,phenprocoumon,may_prevent,Thromboembolism
+D020246,8150,phenprocoumon,may_prevent,Venous Thrombosis
+D011655,8150,phenprocoumon,may_treat,Pulmonary Embolism
+D013923,8150,phenprocoumon,may_treat,Thromboembolism
+D020246,8150,phenprocoumon,may_treat,Venous Thrombosis
+D001161,8152,phentermine,ci_with,Arteriosclerosis
+D001942,8152,phentermine,ci_with,Breast Feeding
+D002318,8152,phentermine,ci_with,Cardiovascular Diseases
+D002648,8152,phentermine,ci_with,Child
+D004342,8152,phentermine,ci_with,Drug Hypersensitivity
+D005901,8152,phentermine,ci_with,Glaucoma
+D006973,8152,phentermine,ci_with,Hypertension
+D006980,8152,phentermine,ci_with,Hyperthyroidism
+D011247,8152,phentermine,ci_with,Pregnancy
+D011595,8152,phentermine,ci_with,Psychomotor Agitation
+D015819,8152,phentermine,ci_with,"Substance Abuse, Intravenous"
+D019966,8152,phentermine,ci_with,Substance-Related Disorders
+D009765,8152,phentermine,may_treat,Obesity
+D003866,8156,phenylalanine,may_treat,Depressive Disorder
+D005512,8156,phenylalanine,may_treat,Food Hypersensitivity
+D006261,8156,phenylalanine,may_treat,Headache
+D006973,8156,phenylalanine,may_treat,Hypertension
+D001145,8331,pimozide,ci_with,"Arrhythmias, Cardiac"
+D003128,8331,pimozide,ci_with,Coma
+D004342,8331,pimozide,ci_with,Drug Hypersensitivity
+D007008,8331,pimozide,ci_with,Hypokalemia
+D008133,8331,pimozide,ci_with,Long QT Syndrome
+D020323,8331,pimozide,ci_with,Tics
+D006816,8331,pimozide,may_treat,Huntington Disease
+D011618,8331,pimozide,may_treat,Psychotic Disorders
+D005879,8331,pimozide,may_treat,Tourette Syndrome
+D012559,33739,pipamperone,may_treat,Schizophrenia
+D012559,8338,piperacetazine,may_treat,Schizophrenia
+D012559,8348,pipothiazine,may_treat,Schizophrenia
+D017093,2197878,pitolisant,ci_with,Liver Failure
+D012893,2197878,pitolisant,may_treat,Sleep Wake Disorders
+D004342,34345,pralidoxime,ci_with,Drug Hypersensitivity
+D011041,34345,pralidoxime,ci_with,Poisoning
+D064420,34345,pralidoxime,may_prevent,Drug-Related Side Effects and Adverse Reactions
+D062787,34345,pralidoxime,may_treat,Drug Overdose
+D064420,34345,pralidoxime,may_treat,Drug-Related Side Effects and Adverse Reactions
+D011041,34345,pralidoxime,may_treat,Poisoning
+D004342,746741,pramipexole,ci_with,Drug Hypersensitivity
+D003866,746741,pramipexole,may_treat,Depressive Disorder
+D010300,746741,pramipexole,may_treat,Parkinson Disease
+D004342,3143,prasterone,ci_with,Drug Hypersensitivity
+D007774,3143,prasterone,ci_with,Lactation
+D011247,3143,prasterone,ci_with,Pregnancy
+D000309,3143,prasterone,may_treat,Adrenal Insufficiency
+D004414,3143,prasterone,may_treat,Dyspareunia
+D008177,3143,prasterone,may_treat,Lupus Vulgaris
+D019968,3143,prasterone,may_treat,Sexual and Gender Disorders
+D004342,8627,prazepam,ci_with,Drug Hypersensitivity
+D015812,8627,prazepam,ci_with,"Glaucoma, Angle-Closure"
+D011247,8627,prazepam,ci_with,Pregnancy
+D000430,8627,prazepam,may_treat,Alcohol Withdrawal Delirium
+D001008,8627,prazepam,may_treat,Anxiety Disorders
+D004381,8627,prazepam,may_treat,Duodenal Ulcer
+D004828,8627,prazepam,may_treat,"Epilepsies, Partial"
+D009128,8627,prazepam,may_treat,Muscle Spasticity
+D004342,8701,procaine,ci_with,Drug Hypersensitivity
+D010146,8701,procaine,may_prevent,Pain
+D010146,8701,procaine,may_treat,Pain
+D013375,8701,procaine,may_treat,Substance Withdrawal Syndrome
+D000435,8702,procarbazine,ci_with,Alcoholic Intoxication
+D000740,8702,procarbazine,ci_with,Anemia
+D004342,8702,procarbazine,ci_with,Drug Hypersensitivity
+D007970,8702,procarbazine,ci_with,Leukopenia
+D009503,8702,procarbazine,ci_with,Neutropenia
+D011247,8702,procarbazine,ci_with,Pregnancy
+D013921,8702,procarbazine,ci_with,Thrombocytopenia
+D001932,8702,procarbazine,may_treat,Brain Neoplasms
+D006689,8702,procarbazine,may_treat,Hodgkin Disease
+D008175,8702,procarbazine,may_treat,Lung Neoplasms
+D008228,8702,procarbazine,may_treat,"Lymphoma, Non-Hodgkin"
+D008545,8702,procarbazine,may_treat,Melanoma
+D009101,8702,procarbazine,may_treat,Multiple Myeloma
+D000437,8704,prochlorperazine,ci_with,Alcoholism
+D002675,8704,prochlorperazine,ci_with,"Child, Preschool"
+D003128,8704,prochlorperazine,ci_with,Coma
+D004342,8704,prochlorperazine,ci_with,Drug Hypersensitivity
+D007231,8704,prochlorperazine,ci_with,"Infant, Newborn"
+D007234,8704,prochlorperazine,ci_with,"Infant, Premature"
+D009325,8704,prochlorperazine,may_prevent,Nausea
+D014839,8704,prochlorperazine,may_prevent,Vomiting
+D001008,8704,prochlorperazine,may_treat,Anxiety Disorders
+D003704,8704,prochlorperazine,may_treat,Dementia
+D009325,8704,prochlorperazine,may_treat,Nausea
+D011618,8704,prochlorperazine,may_treat,Psychotic Disorders
+D012559,8704,prochlorperazine,may_treat,Schizophrenia
+D014839,8704,prochlorperazine,may_treat,Vomiting
+D001855,8742,promazine,ci_with,Bone Marrow Diseases
+D003128,8742,promazine,ci_with,Coma
+D004342,8742,promazine,ci_with,Drug Hypersensitivity
+D009325,8742,promazine,may_treat,Nausea
+D011618,8742,promazine,may_treat,Psychotic Disorders
+D012559,8742,promazine,may_treat,Schizophrenia
+D014839,8742,promazine,may_treat,Vomiting
+D003128,8745,promethazine,ci_with,Coma
+D004342,8745,promethazine,ci_with,Drug Hypersensitivity
+D000707,8745,promethazine,may_treat,Anaphylaxis
+D003233,8745,promethazine,may_treat,"Conjunctivitis, Allergic"
+D009041,8745,promethazine,may_treat,Motion Sickness
+D009325,8745,promethazine,may_treat,Nausea
+D010146,8745,promethazine,may_treat,Pain
+D011183,8745,promethazine,may_treat,Postoperative Complications
+D012221,8745,promethazine,may_treat,"Rhinitis, Allergic, Perennial"
+D014581,8745,promethazine,may_treat,Urticaria
+D014839,8745,promethazine,may_treat,Vomiting
+D001855,8770,propiomazine,ci_with,Bone Marrow Diseases
+D004342,8770,propiomazine,ci_with,Drug Hypersensitivity
+D010673,8770,propiomazine,ci_with,Pheochromocytoma
+D012640,8770,propiomazine,ci_with,Seizures
+D001008,8770,propiomazine,may_treat,Anxiety Disorders
+D007319,8770,propiomazine,may_treat,Sleep Initiation and Maintenance Disorders
+D004342,8782,propofol,ci_with,Drug Hypersensitivity
+D007774,8782,propofol,ci_with,Lactation
+D011247,8782,propofol,ci_with,Pregnancy
+D011269,8782,propofol,ci_with,"Pregnancy, Abdominal"
+D010146,8782,propofol,may_prevent,Pain
+D020250,8782,propofol,may_prevent,Postoperative Nausea and Vomiting
+D003693,8782,propofol,may_treat,Delirium
+D010146,8782,propofol,may_treat,Pain
+D011595,8782,propofol,may_treat,Psychomotor Agitation
+D013226,8782,propofol,may_treat,Status Epilepticus
+D001249,8787,propranolol,ci_with,Asthma
+D054537,8787,propranolol,ci_with,Atrioventricular Block
+D001919,8787,propranolol,ci_with,Bradycardia
+D016535,8787,propranolol,ci_with,Bronchial Hyperreactivity
+D004342,8787,propranolol,ci_with,Drug Hypersensitivity
+D006333,8787,propranolol,ci_with,Heart Failure
+D007022,8787,propranolol,ci_with,Hypotension
+D011247,8787,propranolol,ci_with,Pregnancy
+D011654,8787,propranolol,ci_with,Pulmonary Edema
+D011928,8787,propranolol,ci_with,Raynaud Disease
+D012770,8787,propranolol,ci_with,"Shock, Cardiogenic"
+D012804,8787,propranolol,ci_with,Sick Sinus Syndrome
+D008881,8787,propranolol,may_prevent,Migraine Disorders
+D000787,8787,propranolol,may_treat,Angina Pectoris
+D004932,8787,propranolol,may_treat,Esophageal and Gastric Varices
+D020329,8787,propranolol,may_treat,Essential Tremor
+D006333,8787,propranolol,may_treat,Heart Failure
+D006973,8787,propranolol,may_treat,Hypertension
+D009203,8787,propranolol,may_treat,Myocardial Infarction
+D016584,8787,propranolol,may_treat,Panic Disorder
+D010673,8787,propranolol,may_treat,Pheochromocytoma
+D013617,8787,propranolol,may_treat,"Tachycardia, Supraventricular"
+D017180,8787,propranolol,may_treat,"Tachycardia, Ventricular"
+D014693,8787,propranolol,may_treat,Ventricular Fibrillation
+D004342,8825,protamine sulfate (USP),ci_with,Drug Hypersensitivity
+D062787,8825,protamine sulfate (USP),may_treat,Drug Overdose
+D006470,8825,protamine sulfate (USP),may_treat,Hemorrhage
+D011183,8825,protamine sulfate (USP),may_treat,Postoperative Complications
+D004342,8826,protamines,ci_with,Drug Hypersensitivity
+D062787,8826,protamines,may_treat,Drug Overdose
+D004342,8886,protriptyline,ci_with,Drug Hypersensitivity
+D009203,8886,protriptyline,ci_with,Myocardial Infarction
+D003866,8886,protriptyline,may_treat,Depressive Disorder
+D004342,35185,quazepam,ci_with,Drug Hypersensitivity
+D015812,35185,quazepam,ci_with,"Glaucoma, Angle-Closure"
+D011247,35185,quazepam,ci_with,Pregnancy
+D012131,35185,quazepam,ci_with,Respiratory Insufficiency
+D012891,35185,quazepam,ci_with,Sleep Apnea Syndromes
+D007319,35185,quazepam,may_treat,Sleep Initiation and Maintenance Disorders
+D001778,51272,quetiapine,ci_with,Blood Coagulation Disorders
+D003128,51272,quetiapine,ci_with,Coma
+D004342,51272,quetiapine,ci_with,Drug Hypersensitivity
+D008107,51272,quetiapine,ci_with,Liver Diseases
+D001321,51272,quetiapine,may_treat,Autistic Disorder
+D001714,51272,quetiapine,may_treat,Bipolar Disorder
+D003865,51272,quetiapine,may_treat,Major Depressive Disorder
+D011618,51272,quetiapine,may_treat,Psychotic Disorders
+D012559,51272,quetiapine,may_treat,Schizophrenia
+D004342,9100,racemethionine,ci_with,Drug Hypersensitivity
+D003963,9100,racemethionine,may_treat,Diaper Rash
+D062787,9100,racemethionine,may_treat,Drug Overdose
+D064420,9100,racemethionine,may_treat,Drug-Related Side Effects and Adverse Reactions
+D000799,596205,ramelteon,ci_with,Angioedema
+D007319,596205,ramelteon,may_treat,Sleep Initiation and Maintenance Disorders
+D001289,60842,reboxetine,may_treat,Attention Deficit Disorder with Hyperactivity
+D003863,60842,reboxetine,may_treat,Depression
+D016584,60842,reboxetine,may_treat,Panic Disorder
+D003093,9260,reserpine,ci_with,"Colitis, Ulcerative"
+D003866,9260,reserpine,ci_with,Depressive Disorder
+D004342,9260,reserpine,ci_with,Drug Hypersensitivity
+D007022,9260,reserpine,ci_with,Hypotension
+D010437,9260,reserpine,ci_with,Peptic Ulcer
+D020820,9260,reserpine,may_treat,Dyskinesias
+D006973,9260,reserpine,may_treat,Hypertension
+D012559,9260,reserpine,may_treat,Schizophrenia
+D004342,35636,risperidone,ci_with,Drug Hypersensitivity
+D001321,35636,risperidone,may_treat,Autistic Disorder
+D001714,35636,risperidone,may_treat,Bipolar Disorder
+D003704,35636,risperidone,may_treat,Dementia
+D012559,35636,risperidone,may_treat,Schizophrenia
+D005879,35636,risperidone,may_treat,Tourette Syndrome
+D004342,183379,rivastigmine,ci_with,Drug Hypersensitivity
+D006967,183379,rivastigmine,ci_with,Hypersensitivity
+D000544,183379,rivastigmine,may_treat,Alzheimer Disease
+D004342,616739,rotigotine,ci_with,Drug Hypersensitivity
+D010300,616739,rotigotine,may_treat,Parkinson Disease
+D012148,616739,rotigotine,may_treat,Restless Legs Syndrome
+D001714,2559612,samidorphan,may_treat,Bipolar Disorder
+D000087122,2559612,samidorphan,may_treat,Mania
+D012559,2559612,samidorphan,may_treat,Schizophrenia
+D000402,9624,secobarbital,ci_with,Airway Obstruction
+D004342,9624,secobarbital,ci_with,Drug Hypersensitivity
+D017093,9624,secobarbital,ci_with,Liver Failure
+D011164,9624,secobarbital,ci_with,Porphyrias
+D011247,9624,secobarbital,ci_with,Pregnancy
+D007319,9624,secobarbital,may_treat,Sleep Initiation and Maintenance Disorders
+D004342,9639,selegiline,ci_with,Drug Hypersensitivity
+D000544,9639,selegiline,may_treat,Alzheimer Disease
+D001289,9639,selegiline,may_treat,Attention Deficit Disorder with Hyperactivity
+D003866,9639,selegiline,may_treat,Depressive Disorder
+D010300,9639,selegiline,may_treat,Parkinson Disease
+D012559,9639,selegiline,may_treat,Schizophrenia
+D001289,2562176,serdexmethylphenidate,may_treat,Attention Deficit Disorder with Hyperactivity
+D012559,41996,sertindole,may_treat,Schizophrenia
+D004342,36437,sertraline,ci_with,Drug Hypersensitivity
+D003866,36437,sertraline,may_treat,Depressive Disorder
+D001068,36437,sertraline,may_treat,Feeding and Eating Disorders
+D009771,36437,sertraline,may_treat,Obsessive-Compulsive Disorder
+D016584,36437,sertraline,may_treat,Panic Disorder
+D013313,36437,sertraline,may_treat,"Stress Disorders, Post-Traumatic"
+D000856,36514,sibutramine,ci_with,Anorexia Nervosa
+D001145,36514,sibutramine,ci_with,"Arrhythmias, Cardiac"
+D052018,36514,sibutramine,ci_with,Bulimia Nervosa
+D004342,36514,sibutramine,ci_with,Drug Hypersensitivity
+D006333,36514,sibutramine,ci_with,Heart Failure
+D006973,36514,sibutramine,ci_with,Hypertension
+D020521,36514,sibutramine,ci_with,Stroke
+D009765,36514,sibutramine,may_treat,Obesity
+D004342,136411,sildenafil,ci_with,Drug Hypersensitivity
+D006976,136411,sildenafil,may_treat,"Hypertension, Pulmonary"
+D018783,136411,sildenafil,may_treat,"Impotence, Vasculogenic"
+D000471,36676,sodium bicarbonate,ci_with,Alkalosis
+D004342,36676,sodium bicarbonate,ci_with,Drug Hypersensitivity
+D004487,36676,sodium bicarbonate,ci_with,Edema
+D006955,36676,sodium bicarbonate,ci_with,Hypernatremia
+D006996,36676,sodium bicarbonate,ci_with,Hypocalcemia
+D011654,36676,sodium bicarbonate,ci_with,Pulmonary Edema
+D064420,36676,sodium bicarbonate,may_prevent,Drug-Related Side Effects and Adverse Reactions
+D000141,36676,sodium bicarbonate,may_treat,"Acidosis, Renal Tubular"
+D062787,36676,sodium bicarbonate,may_treat,Drug Overdose
+D004415,36676,sodium bicarbonate,may_treat,Dyspepsia
+D005764,36676,sodium bicarbonate,may_treat,Gastroesophageal Reflux
+D006323,36676,sodium bicarbonate,may_treat,Heart Arrest
+D006356,36676,sodium bicarbonate,may_treat,Heartburn
+D006947,36676,sodium bicarbonate,may_treat,Hyperkalemia
+D001932,56570,somatrem,ci_with,Brain Neoplasms
+D004342,56570,somatrem,ci_with,Drug Hypersensitivity
+D020300,56570,somatrem,ci_with,Intracranial Hemorrhages
+D002100,56570,somatrem,may_treat,Cachexia
+D004392,56570,somatrem,may_treat,Dwarfism
+D006333,56570,somatrem,may_treat,Heart Failure
+D011218,56570,somatrem,may_treat,Prader-Willi Syndrome
+D016638,2644503,somatrogon,ci_with,Critical Illness
+D003930,2644503,somatrogon,ci_with,Diabetic Retinopathy
+D009369,2644503,somatrogon,ci_with,Neoplasms
+D011218,2644503,somatrogon,ci_with,Prader-Willi Syndrome
+D006130,2644503,somatrogon,may_prevent,Growth Disorders
+D006130,2644503,somatrogon,may_treat,Growth Disorders
+D001932,61148,somatropin,ci_with,Brain Neoplasms
+D016638,61148,somatropin,ci_with,Critical Illness
+D003930,61148,somatropin,ci_with,Diabetic Retinopathy
+D004342,61148,somatropin,ci_with,Drug Hypersensitivity
+D020300,61148,somatropin,ci_with,Intracranial Hemorrhages
+D011218,61148,somatropin,ci_with,Prader-Willi Syndrome
+D002100,61148,somatropin,may_treat,Cachexia
+D004392,61148,somatropin,may_treat,Dwarfism
+D006333,61148,somatropin,may_treat,Heart Failure
+D009634,61148,somatropin,may_treat,Noonan Syndrome
+D011218,61148,somatropin,may_treat,Prader-Willi Syndrome
+D014424,61148,somatropin,may_treat,Turner Syndrome
+D009290,1547099,suvorexant,ci_with,Narcolepsy
+D007319,1547099,suvorexant,may_treat,Sleep Initiation and Maintenance Disorders
+D064420,10318,tacrine,ci_with,Drug-Related Side Effects and Adverse Reactions
+D006967,10318,tacrine,ci_with,Hypersensitivity
+D000544,10318,tacrine,may_treat,Alzheimer Disease
+D004342,358263,tadalafil,ci_with,Drug Hypersensitivity
+D006976,358263,tadalafil,may_treat,"Hypertension, Pulmonary"
+D018783,358263,tadalafil,may_treat,"Impotence, Vasculogenic"
+D020178,1490468,tasimelteon,may_treat,"Sleep Disorders, Circadian Rhythm"
+D004342,10355,temazepam,ci_with,Drug Hypersensitivity
+D015812,10355,temazepam,ci_with,"Glaucoma, Angle-Closure"
+D011247,10355,temazepam,ci_with,Pregnancy
+D003866,10355,temazepam,may_treat,Depressive Disorder
+D016584,10355,temazepam,may_treat,Panic Disorder
+D007319,10355,temazepam,may_treat,Sleep Initiation and Maintenance Disorders
+D008107,10390,tetrabenazine,ci_with,Liver Diseases
+D059020,10390,tetrabenazine,ci_with,Suicidal Ideation
+D006816,10390,tetrabenazine,may_treat,Huntington Disease
+D006948,10390,tetrabenazine,may_treat,Hyperkinesis
+D001008,37985,tetrazepam,may_treat,Anxiety Disorders
+D013035,37985,tetrazepam,may_treat,Spasm
+D001008,10437,theobromine,may_treat,Anxiety Disorders
+D004342,10454,thiamine,ci_with,Drug Hypersensitivity
+D020269,10454,thiamine,may_treat,Alcoholic Neuropathy
+D001602,10454,thiamine,may_treat,Beriberi
+D010383,10454,thiamine,may_treat,Pellagra
+D013832,10454,thiamine,may_treat,Thiamine Deficiency
+D014899,10454,thiamine,may_treat,Wernicke Encephalopathy
+D004342,10464,thiamylal,ci_with,Drug Hypersensitivity
+D012640,10464,thiamylal,may_prevent,Seizures
+D001008,10464,thiamylal,may_treat,Anxiety Disorders
+D004342,38077,thiobutabarbital,ci_with,Drug Hypersensitivity
+D007319,38077,thiobutabarbital,may_treat,Sleep Initiation and Maintenance Disorders
+D001778,10502,thioridazine,ci_with,Blood Coagulation Disorders
+D001855,10502,thioridazine,ci_with,Bone Marrow Diseases
+D003128,10502,thioridazine,ci_with,Coma
+D004342,10502,thioridazine,ci_with,Drug Hypersensitivity
+D006973,10502,thioridazine,ci_with,Hypertension
+D007022,10502,thioridazine,ci_with,Hypotension
+D011618,10502,thioridazine,may_treat,Psychotic Disorders
+D012559,10502,thioridazine,may_treat,Schizophrenia
+D001778,10510,thiothixene,ci_with,Blood Coagulation Disorders
+D003128,10510,thiothixene,ci_with,Coma
+D004342,10510,thiothixene,ci_with,Drug Hypersensitivity
+D011618,10510,thiothixene,may_treat,Psychotic Disorders
+D012559,10510,thiothixene,may_treat,Schizophrenia
+D004342,31914,tiagabine,ci_with,Drug Hypersensitivity
+D001714,31914,tiagabine,may_treat,Bipolar Disorder
+D004828,31914,tiagabine,may_treat,"Epilepsies, Partial"
+D015663,38260,tibolone,may_prevent,"Osteoporosis, Postmenopausal"
+D001007,38260,tibolone,may_treat,Anxiety
+D019584,38260,tibolone,may_treat,Hot Flashes
+D007319,38260,tibolone,may_treat,Sleep Initiation and Maintenance Disorders
+D016532,2740012,tividenofusp alfa,may_treat,Mucopolysaccharidosis II
+D004342,314875,"tocopheryl acid succinate,D-alpha",ci_with,Drug Hypersensitivity
+D000544,314875,"tocopheryl acid succinate,D-alpha",may_prevent,Alzheimer Disease
+D000743,314875,"tocopheryl acid succinate,D-alpha",may_prevent,"Anemia, Hemolytic"
+D001997,314875,"tocopheryl acid succinate,D-alpha",may_prevent,Bronchopulmonary Dysplasia
+D004409,314875,"tocopheryl acid succinate,D-alpha",may_prevent,"Dyskinesia, Drug-Induced"
+D014811,314875,"tocopheryl acid succinate,D-alpha",may_prevent,Vitamin E Deficiency
+D000544,314875,"tocopheryl acid succinate,D-alpha",may_treat,Alzheimer Disease
+D000743,314875,"tocopheryl acid succinate,D-alpha",may_treat,"Anemia, Hemolytic"
+D004409,314875,"tocopheryl acid succinate,D-alpha",may_treat,"Dyskinesia, Drug-Induced"
+D014811,314875,"tocopheryl acid succinate,D-alpha",may_treat,Vitamin E Deficiency
+D001008,38365,tofisopam,may_treat,Anxiety Disorders
+D013375,38365,tofisopam,may_treat,Substance Withdrawal Syndrome
+D004342,38404,topiramate,ci_with,Drug Hypersensitivity
+D008881,38404,topiramate,may_prevent,Migraine Disorders
+D001714,38404,topiramate,may_treat,Bipolar Disorder
+D004828,38404,topiramate,may_treat,"Epilepsies, Partial"
+D004830,38404,topiramate,may_treat,"Epilepsy, Tonic-Clonic"
+D065768,38404,topiramate,may_treat,Lennox Gastaut Syndrome
+D010146,38404,topiramate,may_treat,Pain
+D013036,38404,topiramate,may_treat,"Spasms, Infantile"
+D004342,10689,tramadol,ci_with,Drug Hypersensitivity
+D009293,10689,tramadol,ci_with,Opioid-Related Disorders
+D010146,10689,tramadol,may_treat,Pain
+D002318,10734,tranylcypromine,ci_with,Cardiovascular Diseases
+D002561,10734,tranylcypromine,ci_with,Cerebrovascular Disorders
+D004342,10734,tranylcypromine,ci_with,Drug Hypersensitivity
+D006973,10734,tranylcypromine,ci_with,Hypertension
+D007674,10734,tranylcypromine,ci_with,Kidney Diseases
+D008107,10734,tranylcypromine,ci_with,Liver Diseases
+D010673,10734,tranylcypromine,ci_with,Pheochromocytoma
+D003866,10734,tranylcypromine,may_treat,Depressive Disorder
+D013313,10734,tranylcypromine,may_treat,"Stress Disorders, Post-Traumatic"
+D004342,10737,trazodone,ci_with,Drug Hypersensitivity
+D003866,10737,trazodone,may_treat,Depressive Disorder
+D007319,10737,trazodone,may_treat,Sleep Initiation and Maintenance Disorders
+D004342,10767,triazolam,ci_with,Drug Hypersensitivity
+D011247,10767,triazolam,ci_with,Pregnancy
+D007319,10767,triazolam,may_treat,Sleep Initiation and Maintenance Disorders
+D000544,1314420,tricaprylin,may_treat,Alzheimer Disease
+D001778,10800,trifluoperazine,ci_with,Blood Coagulation Disorders
+D001855,10800,trifluoperazine,ci_with,Bone Marrow Diseases
+D003128,10800,trifluoperazine,ci_with,Coma
+D004342,10800,trifluoperazine,ci_with,Drug Hypersensitivity
+D008107,10800,trifluoperazine,ci_with,Liver Diseases
+D001008,10800,trifluoperazine,may_treat,Anxiety Disorders
+D011618,10800,trifluoperazine,may_treat,Psychotic Disorders
+D012559,10800,trifluoperazine,may_treat,Schizophrenia
+D011618,10804,trifluperidol,may_treat,Psychotic Disorders
+D019967,10804,trifluperidol,may_treat,Schizophrenia Spectrum and Other Psychotic Disorders
+D004342,10805,triflupromazine,ci_with,Drug Hypersensitivity
+D012202,10805,triflupromazine,ci_with,Reye Syndrome
+D006606,10805,triflupromazine,may_treat,Hiccup
+D009325,10805,triflupromazine,may_treat,Nausea
+D010146,10805,triflupromazine,may_treat,Pain
+D011618,10805,triflupromazine,may_treat,Psychotic Disorders
+D014839,10805,triflupromazine,may_treat,Vomiting
+D001855,10825,trimeprazine,ci_with,Bone Marrow Diseases
+D003128,10825,trimeprazine,ci_with,Coma
+D004342,10825,trimeprazine,ci_with,Drug Hypersensitivity
+D007223,10825,trimeprazine,ci_with,Infant
+D007774,10825,trimeprazine,ci_with,Lactation
+D017449,10825,trimeprazine,may_treat,"Dermatitis, Allergic Contact"
+D003876,10825,trimeprazine,may_treat,"Dermatitis, Atopic"
+D012221,10825,trimeprazine,may_treat,"Rhinitis, Allergic, Perennial"
+D014581,10825,trimeprazine,may_treat,Urticaria
+D004342,10834,trimipramine,ci_with,Drug Hypersensitivity
+D009203,10834,trimipramine,ci_with,Myocardial Infarction
+D003866,10834,trimipramine,may_treat,Depressive Disorder
+D015518,2632852,trofinetide,may_treat,Rett Syndrome
+D003863,10898,tryptophan,may_treat,Depression
+D010146,10898,tryptophan,may_treat,Pain
+D007319,10898,tryptophan,may_treat,Sleep Initiation and Maintenance Disorders
+D004342,21406,ubidecarenone,ci_with,Drug Hypersensitivity
+D064420,21406,ubidecarenone,may_prevent,Drug-Related Side Effects and Adverse Reactions
+D000787,21406,ubidecarenone,may_treat,Angina Pectoris
+D015673,21406,ubidecarenone,may_treat,"Fatigue Syndrome, Chronic"
+D006333,21406,ubidecarenone,may_treat,Heart Failure
+D006816,21406,ubidecarenone,may_treat,Huntington Disease
+D006949,21406,ubidecarenone,may_treat,Hyperlipidemias
+D006973,21406,ubidecarenone,may_treat,Hypertension
+D062787,11017,uridine,may_treat,Drug Overdose
+D062787,1665222,uridine triacetate,may_treat,Drug Overdose
+D007319,253206,valerian root extract,may_treat,Sleep Initiation and Maintenance Disorders
+D018783,306674,vardenafil,may_treat,"Impotence, Vasculogenic"
+D004342,39786,venlafaxine,ci_with,Drug Hypersensitivity
+D001008,39786,venlafaxine,may_treat,Anxiety Disorders
+D001289,39786,venlafaxine,may_treat,Attention Deficit Disorder with Hyperactivity
+D001321,39786,venlafaxine,may_treat,Autistic Disorder
+D003866,39786,venlafaxine,may_treat,Depressive Disorder
+D015673,39786,venlafaxine,may_treat,"Fatigue Syndrome, Chronic"
+D009771,39786,venlafaxine,may_treat,Obsessive-Compulsive Disorder
+D010146,39786,venlafaxine,may_treat,Pain
+D000208,1424884,vilanterol,ci_with,Acute Disease
+D004342,1424884,vilanterol,ci_with,Drug Hypersensitivity
+D016269,1424884,vilanterol,ci_with,Milk Hypersensitivity
+D013224,1424884,vilanterol,ci_with,Status Asthmaticus
+D020181,1424884,vilanterol,may_treat,"Sleep Apnea, Obstructive"
+D003865,1086769,vilazodone,may_treat,Major Depressive Disorder
+D004342,11248,vitamin B12,ci_with,Drug Hypersensitivity
+D014806,11248,vitamin B12,may_prevent,Vitamin B 12 Deficiency
+D020269,11248,vitamin B12,may_treat,Alcoholic Neuropathy
+D000752,11248,vitamin B12,may_treat,"Anemia, Pernicious"
+D003929,11248,vitamin B12,may_treat,Diabetic Neuropathies
+D009103,11248,vitamin B12,may_treat,Multiple Sclerosis
+D004342,11256,vitamin E,ci_with,Drug Hypersensitivity
+D000544,11256,vitamin E,may_prevent,Alzheimer Disease
+D000743,11256,vitamin E,may_prevent,"Anemia, Hemolytic"
+D001997,11256,vitamin E,may_prevent,Bronchopulmonary Dysplasia
+D004409,11256,vitamin E,may_prevent,"Dyskinesia, Drug-Induced"
+D014811,11256,vitamin E,may_prevent,Vitamin E Deficiency
+D000544,11256,vitamin E,may_treat,Alzheimer Disease
+D000743,11256,vitamin E,may_treat,"Anemia, Hemolytic"
+D004409,11256,vitamin E,may_treat,"Dyskinesia, Drug-Induced"
+D014811,11256,vitamin E,may_treat,Vitamin E Deficiency
+D004342,1455099,vortioxetine,ci_with,Drug Hypersensitivity
+D003865,1455099,vortioxetine,may_treat,Major Depressive Disorder
+D000033,11289,warfarin,ci_with,"Abortion, Threatened"
+D000437,11289,warfarin,ci_with,Alcoholism
+D000783,11289,warfarin,ci_with,Aneurysm
+D001206,11289,warfarin,ci_with,Ascorbic Acid Deficiency
+D002277,11289,warfarin,ci_with,Carcinoma
+D002543,11289,warfarin,ci_with,Cerebral Hemorrhage
+D004238,11289,warfarin,ci_with,Diverticulitis
+D004342,11289,warfarin,ci_with,Drug Hypersensitivity
+D004461,11289,warfarin,ci_with,Eclampsia
+D004614,11289,warfarin,ci_with,Emaciation
+D004697,11289,warfarin,ci_with,"Endocarditis, Bacterial"
+D006471,11289,warfarin,ci_with,Gastrointestinal Hemorrhage
+D006467,11289,warfarin,ci_with,Hemophilia A
+D002836,11289,warfarin,ci_with,Hemophilia B
+D006470,11289,warfarin,ci_with,Hemorrhage
+D006974,11289,warfarin,ci_with,"Hypertension, Malignant"
+D007938,11289,warfarin,ci_with,Leukemia
+D008107,11289,warfarin,ci_with,Liver Diseases
+D010490,11289,warfarin,ci_with,Pericardial Effusion
+D010493,11289,warfarin,ci_with,Pericarditis
+D019106,11289,warfarin,ci_with,Postoperative Hemorrhage
+D011225,11289,warfarin,ci_with,Pre-Eclampsia
+D011247,11289,warfarin,ci_with,Pregnancy
+D011469,11289,warfarin,ci_with,Prostatic Diseases
+D011502,11289,warfarin,ci_with,Protein-Energy Malnutrition
+D011696,11289,warfarin,ci_with,"Purpura, Thrombocytopenic"
+D014813,11289,warfarin,ci_with,Vitamin K Deficiency
+D001281,11289,warfarin,may_prevent,Atrial Fibrillation
+D003328,11289,warfarin,may_prevent,Coronary Thrombosis
+D002546,11289,warfarin,may_prevent,"Ischemic Attack, Transient"
+D009203,11289,warfarin,may_prevent,Myocardial Infarction
+D011183,11289,warfarin,may_prevent,Postoperative Complications
+D011655,11289,warfarin,may_prevent,Pulmonary Embolism
+D020521,11289,warfarin,may_prevent,Stroke
+D013923,11289,warfarin,may_prevent,Thromboembolism
+D020246,11289,warfarin,may_prevent,Venous Thrombosis
+D001281,11289,warfarin,may_treat,Atrial Fibrillation
+D011183,11289,warfarin,may_treat,Postoperative Complications
+D011655,11289,warfarin,may_treat,Pulmonary Embolism
+D020521,11289,warfarin,may_treat,Stroke
+D013923,11289,warfarin,may_treat,Thromboembolism
+D013924,11289,warfarin,may_treat,Thrombophlebitis
+D012559,2694828,xanomeline,may_treat,Schizophrenia
+D004342,220982,yohimbine,ci_with,Drug Hypersensitivity
+D007674,220982,yohimbine,ci_with,Kidney Diseases
+D007172,220982,yohimbine,may_treat,Erectile Dysfunction
+D015877,220982,yohimbine,may_treat,Miosis
+D004342,74667,zaleplon,ci_with,Drug Hypersensitivity
+D007319,74667,zaleplon,may_treat,Sleep Initiation and Maintenance Disorders
+D004342,68503,ziconotide,ci_with,Drug Hypersensitivity
+D011618,68503,ziconotide,ci_with,Psychotic Disorders
+D059350,68503,ziconotide,may_treat,Chronic Pain
+D001145,115698,ziprasidone,ci_with,"Arrhythmias, Cardiac"
+D004342,115698,ziprasidone,ci_with,Drug Hypersensitivity
+D006333,115698,ziprasidone,ci_with,Heart Failure
+D009203,115698,ziprasidone,ci_with,Myocardial Infarction
+D012559,115698,ziprasidone,may_treat,Schizophrenia
+D005879,115698,ziprasidone,may_treat,Tourette Syndrome
+D004342,39993,zolpidem,ci_with,Drug Hypersensitivity
+D007319,39993,zolpidem,may_treat,Sleep Initiation and Maintenance Disorders
+D019052,2669905,zuranolone,may_treat,"Depression, Postpartum"

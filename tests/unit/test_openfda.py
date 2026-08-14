@@ -8,7 +8,11 @@ from httpx import Response
 
 from med_graph.models import EdgeSource, Medication
 from med_graph.sources.base import SourceFetchError
-from med_graph.sources.openfda import OPENFDA_BASE_URL, OpenFdaFaersSource
+from med_graph.sources.openfda import (
+    OPENFDA_BASE_URL,
+    OpenFdaFaersSource,
+    is_administrative,
+)
 
 FIXTURES = Path(__file__).parent.parent / "fixtures"
 
@@ -59,6 +63,41 @@ def test_meddra_term_preserved_and_name_humanized():
     ideation = next(e for e in batch.side_effects if e.id == "suicidal-ideation")
     assert ideation.meddra_term == "SUICIDAL IDEATION"
     assert ideation.name == "Suicidal ideation"
+
+
+class TestIsAdministrative:
+    def test_flags_product_and_procedural_terms(self):
+        for term in [
+            "PRODUCT QUALITY ISSUE",
+            "WRONG TECHNIQUE IN DRUG USAGE PROCESS",
+            "DEVICE MALFUNCTION",
+            "DRUG ADMINISTRATION ERROR",
+            "INAPPROPRIATE SCHEDULE OF DRUG ADMINISTRATION",
+            "THERAPEUTIC RESPONSE DECREASED",
+            "OFF LABEL USE",
+        ]:
+            assert is_administrative(term), term
+
+    def test_flags_excluded_exposure_terms(self):
+        for term in [
+            "INTENTIONAL OVERDOSE",
+            "UNDERDOSE",
+            "DRUG INTERACTION",
+            "INTENTIONAL DRUG MISUSE",
+            "ACCIDENTAL DEATH",
+        ]:
+            assert is_administrative(term), term
+
+    def test_keeps_genuine_symptoms_with_tricky_substrings(self):
+        # 'productive' and 'poor quality sleep' must survive the 'product '/quality nets
+        for term in [
+            "POOR QUALITY SLEEP",
+            "PRODUCTIVE COUGH",
+            "NAUSEA",
+            "SUICIDAL IDEATION",
+            "WEIGHT INCREASED",
+        ]:
+            assert not is_administrative(term), term
 
 
 @respx.mock

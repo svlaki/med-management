@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef } from "react";
 import ForceGraph3D from "react-force-graph-3d";
 import type { ForceGraphMethods } from "react-force-graph-3d";
 import type { GraphEdge, GraphNode, GraphPayload } from "../types";
-import { DRUG_CLASS_COLORS, EDGE_COLORS, NODE_COLORS, NODE_VAL } from "../theme";
+import {EDGE_COLORS, NODE_COLORS, NODE_VAL } from "../theme";
 
 interface Props {
   graph: GraphPayload;
@@ -135,7 +135,7 @@ export function GraphView({
           const gn = node as GraphNode;
           if (gn.id === selectedId) return "#ffffff";
           if (gn.type === "medication" && gn.drug_class) {
-            return DRUG_CLASS_COLORS[gn.drug_class] ?? NODE_COLORS.medication;
+            return NODE_COLORS.medication;
           }
           return NODE_COLORS[gn.type];
         }}
