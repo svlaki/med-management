@@ -1,6 +1,5 @@
 import argparse
 import sys
-from pathlib import Path
 
 from dotenv import load_dotenv
 
@@ -16,7 +15,6 @@ from med_graph.queries.medications import (
 )
 from med_graph.sources.base import SourceFetchError
 from med_graph.sources.conditions import CONDITION_REGISTRY
-from med_graph.sources.dataset_csv import build_dataset_batches
 from med_graph.sources.openfda import OpenFdaFaersSource
 from med_graph.sources.openfda_indication import OpenFdaIndicationSource
 from med_graph.sources.openfda_label import OpenFdaLabelSource
@@ -29,10 +27,6 @@ class UnknownConditionError(Exception):
 
 class MedicationNotFoundError(Exception):
     """Raised when a medication name cannot be resolved to an rxcui."""
-
-
-class DatasetLoadError(Exception):
-    """Raised when the dataset CSV or its FAERS counts file is missing."""
 
 
 def _init_schema() -> None:
@@ -74,30 +68,6 @@ def _ingest(condition_id: str) -> None:
         med_counts = load_batch(client, spec.condition, batch)
         effect_counts = load_batch(client, spec.condition, effects)
     totals = {key: med_counts[key] + effect_counts[key] for key in med_counts}
-    for record_type, count in totals.items():
-        print(f"{record_type}: {count}")
-
-
-def _load_dataset(csv_path: str, reset: bool) -> None:
-    csv_file = Path(csv_path)
-    faers_file = csv_file.parent / "raw" / "raw_faers_reactions.csv"
-    if not csv_file.exists():
-        raise DatasetLoadError(f"Dataset CSV not found: {csv_file}")
-    if not faers_file.exists():
-        raise DatasetLoadError(f"FAERS counts file not found: {faers_file}")
-
-    batches = build_dataset_batches(csv_file, faers_file)
-    with GraphClient.from_env() as client:
-        client.apply_schema()
-        if reset:
-            client.execute("MATCH (n) DETACH DELETE n")
-            print("Cleared existing graph.")
-        totals = {"medications": 0, "side_effects": 0, "treats": 0, "causes": 0}
-        for condition, batch in batches:
-            counts = load_batch(client, condition, batch)
-            for key, value in counts.items():
-                totals[key] += value
-    print(f"Loaded {len(batches)} condition(s) from {csv_file.name}.")
     for record_type, count in totals.items():
         print(f"{record_type}: {count}")
 
@@ -189,21 +159,6 @@ def main() -> int:
     )
     ingest_parser.add_argument("--condition", required=True, help="e.g. mdd")
 
-    dataset_parser = subparsers.add_parser(
-        "load-dataset",
-        help="Load the psych_drug_dataset.csv export into the graph",
-    )
-    dataset_parser.add_argument(
-        "--csv",
-        default="data_exports/psych_drug_dataset.csv",
-        help="Path to the dataset CSV",
-    )
-    dataset_parser.add_argument(
-        "--reset",
-        action="store_true",
-        help="Delete all existing graph data before loading (CSV becomes the source of truth)",
-    )
-
     profile_parser = subparsers.add_parser(
         "profile", help="Show a medication's side-effect profile, most-reported first"
     )
@@ -232,8 +187,6 @@ def main() -> int:
     try:
         if args.command == "ingest":
             _ingest(args.condition)
-        elif args.command == "load-dataset":
-            _load_dataset(args.csv, args.reset)
         elif args.command == "profile":
             _profile(args.rxcui, args.name, args.limit)
         elif args.command == "meds":
@@ -251,7 +204,6 @@ def main() -> int:
         SourceFetchError,
         UnknownConditionError,
         MedicationNotFoundError,
-        DatasetLoadError,
     ) as error:
         print(f"Error: {error}", file=sys.stderr)
         return 1
