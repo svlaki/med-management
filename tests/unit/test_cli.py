@@ -73,10 +73,10 @@ def test_stats_on_empty_graph(fake_client, monkeypatch, capsys):
 
 
 def test_stats_prints_counts(fake_client, monkeypatch, capsys):
-    fake_client.rows = [{"label": "Medication", "count": 38}]
+    fake_client.rows = [{"label": "Drug", "count": 306}]
     monkeypatch.setattr("sys.argv", ["med-graph", "stats"])
     assert cli.main() == 0
-    assert "Medication: 38" in capsys.readouterr().out
+    assert "Drug: 306" in capsys.readouterr().out
 
 
 class FakeSource:
@@ -135,9 +135,44 @@ class FakeEnricher:
         )
 
 
+class FakeIndications:
+    """Stands in for OpenFdaIndicationSource (no network)."""
+
+    def __enter__(self):
+        return self
+
+    def __exit__(self, *exc_info):
+        return None
+
+    def approved_rxcuis(self, spec, medications):
+        return {med.rxcui for med in medications}
+
+
+class FakeLabeler:
+    """Stands in for OpenFdaLabelSource (no network)."""
+
+    def __enter__(self):
+        return self
+
+    def __exit__(self, *exc_info):
+        return None
+
+    def confirm(self, medications, batch):
+        return batch.model_copy(
+            update={
+                "causes": tuple(
+                    edge.model_copy(update={"label_confirmed": True})
+                    for edge in batch.causes
+                )
+            }
+        )
+
+
 def test_ingest_loads_condition_with_side_effects(fake_client, monkeypatch, capsys):
     monkeypatch.setattr(cli, "RxClassSource", FakeSource)
     monkeypatch.setattr(cli, "OpenFdaFaersSource", FakeEnricher)
+    monkeypatch.setattr(cli, "OpenFdaIndicationSource", FakeIndications)
+    monkeypatch.setattr(cli, "OpenFdaLabelSource", FakeLabeler)
     monkeypatch.setattr("sys.argv", ["med-graph", "ingest", "--condition", "mdd"])
     assert cli.main() == 0
     output = capsys.readouterr().out
@@ -158,9 +193,8 @@ _DETAIL_ROW = {
     "rxcui": "36437",
     "generic_name": "Sertraline",
     "drug_class": "Antidepressant",
-    "atc_codes": "N06AB06",
-    "mechanism": "Serotonin Reuptake Inhibitors",
-    "neurotransmitters": "Serotonin(+)",
+    "has_label": True,
+    "product_type": "HUMAN PRESCRIPTION DRUG",
 }
 
 
@@ -168,12 +202,7 @@ def test_profile_by_rxcui_prints_side_effects(fake_client, monkeypatch, capsys):
     fake_client.row_sequence = [
         [_DETAIL_ROW],
         [
-            {
-                "side_effect_id": "nausea",
-                "name": "Nausea",
-                "source": "faers",
-                "report_count": 13644,
-            }
+            {"side_effect_id": "nausea", "name": "Nausea", "report_count": 13644}
         ],
     ]
     monkeypatch.setattr("sys.argv", ["med-graph", "profile", "--rxcui", "36437"])
@@ -185,35 +214,37 @@ def test_profile_by_rxcui_prints_side_effects(fake_client, monkeypatch, capsys):
     assert "13,644" in output
 
 
-def test_profile_shows_ascii_label_confirmation_marker(fake_client, monkeypatch, capsys):
-    fake_client.row_sequence = [
-        [_DETAIL_ROW],
-        [
-            {
-                "side_effect_id": "nausea",
-                "name": "Nausea",
-                "source": "faers",
-                "report_count": 100,
-                "label_confirmed": True,
-            }
-        ],
-    ]
+def test_profile_prints_drug_class_and_label_status(fake_client, monkeypatch, capsys):
+    fake_client.row_sequence = [[_DETAIL_ROW], []]
     monkeypatch.setattr("sys.argv", ["med-graph", "profile", "--rxcui", "36437"])
     assert cli.main() == 0
     output = capsys.readouterr().out
-    assert "[label]" in output
-    assert "✓" not in output  # no check-mark glyph
+    assert "Drug Class: Antidepressant" in output
+    assert "FDA Label: yes" in output
 
 
-def test_profile_confirmed_flag_passes_through(fake_client, monkeypatch, capsys):
-    from med_graph.queries.medications import SIDE_EFFECT_PROFILE_CONFIRMED
+def test_profile_reports_absent_fda_label(fake_client, monkeypatch, capsys):
+    fake_client.row_sequence = [[{**_DETAIL_ROW, "has_label": False}], []]
+    monkeypatch.setattr("sys.argv", ["med-graph", "profile", "--rxcui", "36437"])
+    assert cli.main() == 0
+    assert "FDA Label: no" in capsys.readouterr().out
 
-    fake_client.rows = []
+
+def test_profile_with_no_side_effects_says_so(fake_client, monkeypatch, capsys):
+    fake_client.row_sequence = [[_DETAIL_ROW], []]
+    monkeypatch.setattr("sys.argv", ["med-graph", "profile", "--rxcui", "36437"])
+    assert cli.main() == 0
+    assert "No side effects recorded" in capsys.readouterr().out
+
+
+def test_profile_rejects_removed_confirmed_flag(fake_client, monkeypatch):
+    # HAS_SIDE_EFFECT carries only report_count, so label-confirmed filtering
+    # is no longer offered; the flag must not silently no-op.
     monkeypatch.setattr(
         "sys.argv", ["med-graph", "profile", "--rxcui", "36437", "--confirmed"]
     )
-    assert cli.main() == 0
-    assert any(q == SIDE_EFFECT_PROFILE_CONFIRMED for q in fake_client.queries)
+    with pytest.raises(SystemExit):
+        cli.main()
 
 
 def test_profile_by_unknown_name_exits_nonzero(fake_client, monkeypatch, capsys):
@@ -269,3 +300,10 @@ def test_who_causes_lists_medications(fake_client, monkeypatch, capsys):
     )
     assert cli.main() == 0
     assert "fluoxetine" in capsys.readouterr().out
+
+
+def test_export_command_is_gone(fake_client, monkeypatch):
+    # The static-snapshot deploy path was retired; the frontend reads the API.
+    monkeypatch.setattr("sys.argv", ["med-graph", "export"])
+    with pytest.raises(SystemExit):
+        cli.main()

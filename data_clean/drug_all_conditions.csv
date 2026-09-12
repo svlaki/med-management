@@ -1,19 +1,4 @@
 class_id,rxcui,generic_name,rela,condition_name
-D000686,91235,Digitalis preparation,ci_with,Amyloidosis
-D002312,91235,Digitalis preparation,ci_with,"Cardiomyopathy, Hypertrophic"
-D004342,91235,Digitalis preparation,ci_with,Drug Hypersensitivity
-D006327,91235,Digitalis preparation,ci_with,Heart Block
-D010494,91235,Digitalis preparation,ci_with,"Pericarditis, Constrictive"
-D017180,91235,Digitalis preparation,ci_with,"Tachycardia, Ventricular"
-D014693,91235,Digitalis preparation,ci_with,Ventricular Fibrillation
-D006333,91235,Digitalis preparation,may_prevent,Heart Failure
-D001008,91235,Digitalis preparation,may_treat,Anxiety Disorders
-D001281,91235,Digitalis preparation,may_treat,Atrial Fibrillation
-D001282,91235,Digitalis preparation,may_treat,Atrial Flutter
-D002303,91235,Digitalis preparation,may_treat,"Cardiac Output, Low"
-D006333,91235,Digitalis preparation,may_treat,Heart Failure
-D012770,91235,Digitalis preparation,may_treat,"Shock, Cardiogenic"
-D013617,91235,Digitalis preparation,may_treat,"Tachycardia, Supraventricular"
 D004342,82819,acamprosate,ci_with,Drug Hypersensitivity
 D007674,82819,acamprosate,ci_with,Kidney Diseases
 D000437,82819,acamprosate,may_treat,Alcoholism

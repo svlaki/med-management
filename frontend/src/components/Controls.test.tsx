@@ -4,82 +4,79 @@ import { Controls } from "./Controls";
 import type { ConditionInfo } from "../types";
 
 const CONDITIONS: ConditionInfo[] = [
-  { id: "mdd", name: "Major Depressive Disorder", icd10: "F33" },
-  { id: "bipolar", name: "Bipolar Disorder", icd10: "F31" },
+  { id: "mdd", name: "Major Depressive Disorder" },
+  { id: "bipolar", name: "Bipolar Disorder" },
 ];
 
 afterEach(cleanup);
 
 function setup(selectedIds: string[], drugClasses: string[] = []) {
   const onSelectionChange = vi.fn();
-  const onApprovedChange = vi.fn();
   const onClassFilterChange = vi.fn();
   render(
     <Controls
       conditions={CONDITIONS}
       selectedIds={selectedIds}
-      confirmedOnly={false}
-      approvedOnly={false}
       perMed={6}
       drugClasses={drugClasses}
       classFilter={[]}
       onSelectionChange={onSelectionChange}
-      onConfirmedChange={vi.fn()}
-      onApprovedChange={onApprovedChange}
       onPerMedChange={vi.fn()}
       onClassFilterChange={onClassFilterChange}
     />,
   );
-  return { onSelectionChange, onApprovedChange, onClassFilterChange };
+  return { onSelectionChange, onClassFilterChange };
 }
 
 function box(name: RegExp) {
   return screen.getByRole("checkbox", { name }) as HTMLInputElement;
 }
 
-describe("Controls condition multi-select", () => {
-  it("adds a condition when toggled on", () => {
+describe("Controls disorder multi-select", () => {
+  it("adds a disorder when toggled on", () => {
     const { onSelectionChange } = setup([]);
     fireEvent.click(box(/Bipolar Disorder/));
     expect(onSelectionChange).toHaveBeenCalledWith(["bipolar"]);
   });
 
-  it("removes a condition when toggled off", () => {
+  it("removes a disorder when toggled off", () => {
     const { onSelectionChange } = setup(["mdd", "bipolar"]);
     fireEvent.click(box(/Major Depressive Disorder/));
     expect(onSelectionChange).toHaveBeenCalledWith(["bipolar"]);
   });
 
-  it("the master toggle selects every condition", () => {
+  it("the master toggle selects every disorder", () => {
     const { onSelectionChange } = setup([]);
-    fireEvent.click(box(/All conditions/));
+    fireEvent.click(box(/All disorders/));
     expect(onSelectionChange).toHaveBeenCalledWith(["mdd", "bipolar"]);
   });
 
   it("the master toggle clears the selection when all are selected", () => {
     const { onSelectionChange } = setup(["mdd", "bipolar"]);
-    fireEvent.click(box(/All conditions/));
+    fireEvent.click(box(/All disorders/));
     expect(onSelectionChange).toHaveBeenCalledWith([]);
   });
 
   it("shows the master as indeterminate on a partial selection", () => {
     setup(["mdd"]);
-    const master = box(/All conditions/);
+    const master = box(/All disorders/);
     expect(master.checked).toBe(false);
     expect(master.indeterminate).toBe(true);
   });
 
   it("shows the master as checked when all are selected", () => {
     setup(["mdd", "bipolar"]);
-    const master = box(/All conditions/);
+    const master = box(/All disorders/);
     expect(master.checked).toBe(true);
     expect(master.indeterminate).toBe(false);
   });
 
-  it("toggles the FDA-approved-only filter", () => {
-    const { onApprovedChange } = setup([]);
-    fireEvent.click(box(/FDA-approved for the condition only/));
-    expect(onApprovedChange).toHaveBeenCalledWith(true);
+  it("offers no filter that the backend cannot honour", () => {
+    // label_confirmed / fda_approved are not on the graph, so those toggles
+    // were removed rather than left silently inert.
+    setup([]);
+    expect(screen.queryByText(/FDA-approved for the condition only/)).toBeNull();
+    expect(screen.queryByText(/Label-confirmed side effects only/)).toBeNull();
   });
 });
 

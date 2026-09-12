@@ -59,7 +59,7 @@ def create_app() -> FastAPI:
     async def unhandled_error(_: Request, __: Exception) -> JSONResponse:
         return _envelope_error(500, "Internal server error")
 
-    app.include_router(router)
+    app.include_router(router, prefix="/api")
     return app
 
 

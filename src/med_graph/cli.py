@@ -1,5 +1,4 @@
 import argparse
-import json
 import sys
 from pathlib import Path
 
@@ -7,9 +6,8 @@ from dotenv import load_dotenv
 
 from med_graph.graph.client import GraphClient, GraphConfigError, GraphSchemaError
 from med_graph.graph.loader import load_batch
-from med_graph.snapshot import build_snapshot
 from med_graph.queries.medications import (
-    medication_detail,
+    drug_detail,
     medications_by_side_effect,
     medications_for_condition,
     medications_without_side_effect,
@@ -108,35 +106,31 @@ def _fmt_count(value: int | None) -> str:
     return f"{value:,}" if value is not None else "-"
 
 
-def _confirmation_marker(label_confirmed: bool | None) -> str:
-    if label_confirmed is True:
-        return "[label]"
-    if label_confirmed is False:
-        return "faers-only"
-    return "unchecked"
-
-
-def _profile(rxcui: str | None, name: str | None, limit: int, confirmed_only: bool) -> None:
+def _profile(rxcui: str | None, name: str | None, limit: int) -> None:
     with GraphClient.from_env() as client:
         if rxcui is None:
             rxcui = resolve_rxcui(client, name)
             if rxcui is None:
                 raise MedicationNotFoundError(f"No medication named '{name}' in graph")
-        detail = medication_detail(client, rxcui)
-        reports = side_effect_profile(client, rxcui, limit, confirmed_only)
+        detail = drug_detail(client, rxcui)
+        reports = side_effect_profile(client, rxcui, limit)
     if detail:
-        print(f"{detail['generic_name']}  (rxcui {rxcui})")
-        for key in ("drug_class", "mechanism", "neurotransmitters", "atc_codes"):
-            value = detail.get(key)
+        print(f"{detail.generic_name}  (rxcui {rxcui})")
+        fields = (
+            ("Drug Class", detail.drug_class),
+            ("Product Type", detail.product_type),
+            ("FDA Label", None if detail.has_label is None else
+             ("yes" if detail.has_label else "no")),
+        )
+        for field, value in fields:
             if value:
-                print(f"  {key.replace('_', ' ').title()}: {value}")
+                print(f"  {field}: {value}")
         print()
     if not reports:
         print(f"No side effects recorded for rxcui {rxcui}.")
         return
     for report in reports:
-        marker = _confirmation_marker(report.label_confirmed)
-        print(f"{_fmt_count(report.report_count):>12}  {marker:<12}  {report.name}")
+        print(f"{_fmt_count(report.report_count):>12}  {report.name}")
 
 
 def _meds(condition_id: str) -> None:
@@ -149,8 +143,6 @@ def _meds(condition_id: str) -> None:
         parts = [med.generic_name, f"({med.side_effect_count} side effects)"]
         if med.drug_class:
             parts.append(f"[{med.drug_class}]")
-        if med.mechanism:
-            parts.append(f"mechanism={med.mechanism}")
         print("  ".join(parts))
 
 
@@ -172,19 +164,6 @@ def _who_causes(side_effect_id: str) -> None:
         return
     for cause in causes:
         print(f"{_fmt_count(cause.report_count):>12}  {cause.generic_name}")
-
-
-def _export(out_path: str) -> None:
-    with GraphClient.from_env() as client:
-        snapshot = build_snapshot(client)
-    path = Path(out_path)
-    path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(snapshot, indent=2))
-    med_count = sum(len(g["medications"]) for g in snapshot["graphs"].values())
-    print(
-        f"Wrote {path} — {len(snapshot['conditions'])} condition(s), "
-        f"{med_count} medication(s)."
-    )
 
 
 def _stats() -> None:
@@ -232,11 +211,6 @@ def main() -> int:
     profile_target.add_argument("--rxcui", help="RxNorm CUI, e.g. 36437")
     profile_target.add_argument("--name", help="Generic name, e.g. sertraline")
     profile_parser.add_argument("--limit", type=int, default=20)
-    profile_parser.add_argument(
-        "--confirmed",
-        action="store_true",
-        help="Only show side effects confirmed in the FDA label",
-    )
 
     meds_parser = subparsers.add_parser(
         "meds", help="List medications that treat a condition"
@@ -254,15 +228,6 @@ def main() -> int:
     )
     who_parser.add_argument("--side-effect", required=True, help="e.g. insomnia")
 
-    export_parser = subparsers.add_parser(
-        "export", help="Write a static JSON snapshot for the standalone web app"
-    )
-    export_parser.add_argument(
-        "--out",
-        default="frontend/public/snapshot.json",
-        help="Output path for the snapshot JSON",
-    )
-
     args = parser.parse_args()
     try:
         if args.command == "ingest":
@@ -270,15 +235,13 @@ def main() -> int:
         elif args.command == "load-dataset":
             _load_dataset(args.csv, args.reset)
         elif args.command == "profile":
-            _profile(args.rxcui, args.name, args.limit, args.confirmed)
+            _profile(args.rxcui, args.name, args.limit)
         elif args.command == "meds":
             _meds(args.condition)
         elif args.command == "avoid":
             _avoid(args.condition, args.side_effect)
         elif args.command == "who-causes":
             _who_causes(args.side_effect)
-        elif args.command == "export":
-            _export(args.out)
         else:
             commands = {"init-schema": _init_schema, "stats": _stats}
             commands[args.command]()

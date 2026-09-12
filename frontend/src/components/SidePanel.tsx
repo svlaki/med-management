@@ -14,16 +14,12 @@ function formatCount(value: number | null | undefined): string {
   return value.toLocaleString();
 }
 
-function badgeClass(confirmed: boolean | null | undefined): string {
-  if (confirmed) return "badge badge--confirmed";
-  if (confirmed === false) return "badge badge--faers";
-  return "badge badge--unknown";
+function badgeClass(_badge: string): string {
+  return "badge";
 }
 
-function badgeLabel(confirmed: boolean | null | undefined): string {
-  if (confirmed) return "label";
-  if (confirmed === false) return "faers-only";
-  return "unchecked";
+function badgeLabel(badge: string): string {
+  return badge;
 }
 
 export function SidePanel({

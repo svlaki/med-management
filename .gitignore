@@ -8,5 +8,22 @@ htmlcov/
 dist/
 *.egg-info/
 
+# macOS / editor cruft
+.DS_Store
+
+# node + TypeScript build artifacts
+node_modules/
+*.tsbuildinfo
+
 # generated dataset dumps (scripts/export_tables.py)
 data_exports/
+
+# Large regenerable pipeline intermediates. Rebuild with:
+#   scripts/export_rxnorm_classes.py, scripts/export_openfda_labels.py,
+#   scripts/export_faers.py, scripts/build_drug_dataset.py
+# Remove these two lines if you'd rather version them (~14MB) or use Git LFS.
+data_clean/drug_master.csv
+data_clean/faers_raw.csv
+
+# spreadsheet copies of the CSVs in this directory
+data_clean/*.xlsx

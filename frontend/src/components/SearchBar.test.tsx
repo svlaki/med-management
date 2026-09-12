@@ -4,10 +4,10 @@ import { SearchBar } from "./SearchBar";
 import type { SearchEntry } from "../types";
 
 const ENTRIES: SearchEntry[] = [
-  { nodeId: "condition:mdd", label: "Major Depressive Disorder", type: "condition", conditionIds: ["mdd"] },
-  { nodeId: "medication:1", label: "sertraline", type: "medication", conditionIds: ["mdd"] },
-  { nodeId: "medication:2", label: "sertraline hydrochloride", type: "medication", conditionIds: ["mdd"] },
-  { nodeId: "side_effect:nausea", label: "Nausea", type: "side_effect", conditionIds: ["mdd"] },
+  { nodeId: "condition:mdd", label: "Major Depressive Disorder", type: "condition" },
+  { nodeId: "drug:1", label: "sertraline", type: "drug" },
+  { nodeId: "drug:2", label: "sertraline hydrochloride", type: "drug" },
+  { nodeId: "side_effect:nausea", label: "Nausea", type: "side_effect" },
 ];
 
 afterEach(cleanup);
@@ -38,7 +38,6 @@ describe("SearchBar", () => {
     const { input } = setup();
     fireEvent.change(input, { target: { value: "sertraline" } });
     const labels = screen.getAllByRole("button").map((b) => b.textContent);
-    // both start with "sertraline"; shorter label first
     expect(labels[0]).toContain("sertraline");
     expect(labels[0]).not.toContain("hydrochloride");
   });
@@ -48,7 +47,7 @@ describe("SearchBar", () => {
     fireEvent.change(input, { target: { value: "sertra" } });
     fireEvent.click(screen.getAllByRole("button")[0]);
     expect(onPick).toHaveBeenCalledWith(
-      expect.objectContaining({ nodeId: "medication:1" }),
+      expect.objectContaining({ nodeId: "drug:1" }),
     );
     expect((input as HTMLInputElement).value).toBe("");
   });

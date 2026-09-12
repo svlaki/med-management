@@ -17,8 +17,7 @@ export function SearchBar({ entries, onPick }: Props) {
     const q = query.trim().toLowerCase();
     if (q === "") return [];
     const matches = (e: SearchEntry) =>
-      e.label.toLowerCase().includes(q) ||
-      (e.aliases ?? []).some((a) => a.toLowerCase().includes(q));
+      e.label.toLowerCase().includes(q);
     return entries
       .filter(matches)
       .sort((a, b) => {
@@ -42,7 +41,7 @@ export function SearchBar({ entries, onPick }: Props) {
         className="search__input"
         type="search"
         value={query}
-        placeholder="Search a condition, medication, or side effect…"
+        placeholder="Search a disorder, drug, or side effect…"
         onChange={(e) => {
           setQuery(e.target.value);
           setOpen(true);

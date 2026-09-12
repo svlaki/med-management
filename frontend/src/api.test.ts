@@ -1,306 +1,206 @@
-import { beforeAll, describe, expect, it, vi } from "vitest";
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import {
   fetchConditionGraph,
   fetchConditions,
-  fetchConditionsForMedication,
+  fetchConditionsForDrug,
   fetchDrugClasses,
-  fetchMedicationPharmacology,
+  fetchDrugDetail,
   fetchMedicationsForCondition,
   fetchMedicationsForSideEffect,
   fetchSearchIndex,
   fetchSideEffects,
 } from "./api";
+import type { GraphPayload } from "./types";
 
-// Two conditions; med "3" (shared) treats both — the dedup-critical case.
-const SNAPSHOT = {
-  generated_at: "2026-07-09T00:00:00Z",
-  conditions: [
-    { id: "mdd", name: "Major Depressive Disorder", icd10: "F33" },
-    { id: "bipolar", name: "Bipolar Disorder", icd10: "F31" },
+/** Records requested URLs and replies with `success: true` envelopes. */
+function stubFetch(responder: (url: string) => unknown) {
+  const calls: string[] = [];
+  const fake = vi.fn(async (url: string) => {
+    calls.push(url);
+    return {
+      ok: true,
+      status: 200,
+      json: async () => ({ success: true, data: responder(url) }),
+    } as Response;
+  });
+  vi.stubGlobal("fetch", fake);
+  return calls;
+}
+
+beforeEach(() => vi.unstubAllGlobals());
+afterEach(() => vi.unstubAllGlobals());
+
+describe("request envelope", () => {
+  it("prefixes every path with /api", async () => {
+    const calls = stubFetch(() => []);
+    await fetchConditions();
+    expect(calls).toEqual(["/api/conditions"]);
+  });
+
+  it("throws on a non-ok HTTP status", async () => {
+    vi.stubGlobal("fetch", async () => ({ ok: false, status: 503 }) as Response);
+    await expect(fetchConditions()).rejects.toThrow(/503/);
+  });
+
+  it("surfaces the server's error message when success is false", async () => {
+    vi.stubGlobal("fetch", async () => ({
+      ok: true,
+      status: 200,
+      json: async () => ({ success: false, error: "Unknown condition 'nope'" }),
+    }) as Response);
+    await expect(fetchConditions()).rejects.toThrow("Unknown condition 'nope'");
+  });
+
+  it("throws when the envelope carries no data", async () => {
+    vi.stubGlobal("fetch", async () => ({
+      ok: true,
+      status: 200,
+      json: async () => ({ success: true }),
+    }) as Response);
+    await expect(fetchConditions()).rejects.toThrow(/no data/);
+  });
+
+  it("percent-encodes path segments", async () => {
+    const calls = stubFetch(() => []);
+    await fetchMedicationsForSideEffect("weight gain/loss");
+    expect(calls[0]).toBe("/api/side-effects/weight%20gain%2Floss/medications");
+  });
+});
+
+const GRAPH_A: GraphPayload = {
+  nodes: [
+    { id: "condition:mdd", label: "MDD", type: "condition" },
+    { id: "drug:36437", label: "sertraline", type: "drug", drug_class: "SSRI" },
+    { id: "side_effect:nausea", label: "Nausea", type: "side_effect" },
   ],
-  graphs: {
-    mdd: {
-      medications: [
-        {
-          rxcui: "1",
-          generic_name: "sertraline",
-          drug_class: "Antidepressant",
-          atc_codes: "N06AB",
-          mechanism: "Serotonin Uptake Inhibitors",
-          neurotransmitters: "Serotonin(+)",
-          fda_approved: true, // approved for MDD
-          side_effects: [
-            { side_effect_id: "nausea", name: "Nausea", source: "faers",
-              report_count: 100, label_confirmed: true },
-            { side_effect_id: "insomnia", name: "Insomnia", source: "faers",
-              report_count: 50, label_confirmed: false },
-          ],
-        },
-        {
-          rxcui: "3",
-          generic_name: "quetiapine",
-          drug_class: "Antipsychotic",
-          atc_codes: "N05AH",
-          mechanism: "Dopamine Antagonists",
-          neurotransmitters: "Dopamine(-)",
-          fda_approved: false, // "may treat" MDD only (off-label)
-          side_effects: [
-            { side_effect_id: "nausea", name: "Nausea", source: "faers",
-              report_count: 80, label_confirmed: true },
-          ],
-        },
-      ],
-    },
-    bipolar: {
-      medications: [
-        {
-          rxcui: "2",
-          generic_name: "lamotrigine",
-          drug_class: "Mood stabilizer",
-          atc_codes: "N03AX",
-          mechanism: null,
-          neurotransmitters: null,
-          fda_approved: true,
-          side_effects: [
-            { side_effect_id: "rash", name: "Rash", source: "faers",
-              report_count: 70, label_confirmed: true },
-          ],
-        },
-        {
-          rxcui: "3",
-          generic_name: "quetiapine",
-          drug_class: "Antipsychotic",
-          atc_codes: "N05AH",
-          mechanism: "Dopamine Antagonists",
-          neurotransmitters: "Dopamine(-)",
-          fda_approved: true, // approved for bipolar
-          side_effects: [
-            { side_effect_id: "nausea", name: "Nausea", source: "faers",
-              report_count: 80, label_confirmed: true },
-          ],
-        },
-      ],
-    },
-  },
+  edges: [
+    { source: "drug:36437", target: "condition:mdd", kind: "may_treat", report_count: null },
+    { source: "drug:36437", target: "side_effect:nausea", kind: "has_side_effect", report_count: 100 },
+  ],
+};
+const GRAPH_B: GraphPayload = {
+  nodes: [
+    { id: "condition:gad", label: "GAD", type: "condition" },
+    // sertraline appears in both graphs and must not be duplicated
+    { id: "drug:36437", label: "sertraline", type: "drug", drug_class: "SSRI" },
+    { id: "drug:42347", label: "bupropion", type: "drug", drug_class: "NDRI" },
+    { id: "side_effect:nausea", label: "Nausea", type: "side_effect" },
+  ],
+  edges: [
+    { source: "drug:36437", target: "condition:gad", kind: "may_treat", report_count: null },
+    { source: "drug:42347", target: "condition:gad", kind: "may_treat", report_count: null },
+    // duplicate of an edge in GRAPH_A
+    { source: "drug:36437", target: "side_effect:nausea", kind: "has_side_effect", report_count: 100 },
+  ],
 };
 
-beforeAll(() => {
-  // api.ts caches the snapshot promise module-wide; one stub serves all tests.
-  vi.stubGlobal(
-    "fetch",
-    vi.fn(async () => ({ ok: true, json: async () => SNAPSHOT })),
-  );
-});
+function stubGraphs() {
+  return stubFetch((url) => (url.includes("/mdd/") ? GRAPH_A : GRAPH_B));
+}
 
-describe("fetchConditions", () => {
-  it("returns the snapshot conditions unchanged", async () => {
-    const conditions = await fetchConditions();
-    expect(conditions.map((c) => c.id)).toEqual(["mdd", "bipolar"]);
-  });
-});
-
-describe("fetchConditionGraph — multi-select", () => {
-  it("returns an empty graph for an empty selection", async () => {
-    const graph = await fetchConditionGraph([], false, 10);
-    expect(graph.nodes).toHaveLength(0);
-    expect(graph.edges).toHaveLength(0);
+describe("fetchConditionGraph", () => {
+  it("returns an empty graph without fetching when nothing is selected", async () => {
+    const calls = stubFetch(() => GRAPH_A);
+    const graph = await fetchConditionGraph([], 6);
+    expect(graph).toEqual({ nodes: [], edges: [] });
+    expect(calls).toEqual([]);
   });
 
-  it("renders a single selected condition's subgraph", async () => {
-    const graph = await fetchConditionGraph(["mdd"], false, 10);
-    expect(graph.nodes.filter((n) => n.type === "condition")).toHaveLength(1);
-    expect(graph.nodes.filter((n) => n.type === "medication")).toHaveLength(2);
-  });
-
-  it("labels condition nodes with the display name", async () => {
-    const graph = await fetchConditionGraph(["mdd", "bipolar"], false, 10);
-    const labels = graph.nodes
-      .filter((n) => n.type === "condition")
-      .map((n) => n.label);
-    expect(new Set(labels)).toEqual(
-      new Set(["Major Depressive Disorder", "Bipolar Disorder"]),
-    );
-  });
-
-  it("dedupes shared medication nodes but keeps a treats edge per condition", async () => {
-    const graph = await fetchConditionGraph(["mdd", "bipolar"], false, 10);
-    expect(graph.nodes.filter((n) => n.type === "medication")).toHaveLength(3);
-    const sharedTreats = graph.edges.filter(
-      (e) => e.kind === "treats" && e.source === "medication:3",
-    );
-    expect(sharedTreats.map((e) => e.target).sort()).toEqual([
-      "condition:bipolar",
-      "condition:mdd",
+  it("requests one graph per selected condition and passes per_med", async () => {
+    const calls = stubGraphs();
+    await fetchConditionGraph(["mdd", "gad"], 3);
+    expect(calls).toEqual([
+      "/api/conditions/mdd/graph?per_med=3",
+      "/api/conditions/gad/graph?per_med=3",
     ]);
   });
 
-  it("adds a shared med's causes edges exactly once", async () => {
-    const graph = await fetchConditionGraph(["mdd", "bipolar"], false, 10);
-    const sharedCauses = graph.edges.filter(
-      (e) => e.kind === "causes" && e.source === "medication:3",
-    );
-    expect(sharedCauses).toHaveLength(1);
-  });
-
-  it("has no duplicate node ids", async () => {
-    const graph = await fetchConditionGraph(["mdd", "bipolar"], false, 10);
+  it("merges multiple conditions instead of dropping all but the first", async () => {
+    stubGraphs();
+    const graph = await fetchConditionGraph(["mdd", "gad"], 6);
     const ids = graph.nodes.map((n) => n.id);
-    expect(new Set(ids).size).toBe(ids.length);
+    expect(ids).toContain("condition:mdd");
+    expect(ids).toContain("condition:gad");
+    expect(ids).toContain("drug:42347");
   });
 
-  it("rejects an unknown condition", async () => {
-    await expect(fetchConditionGraph(["gout"], false, 10)).rejects.toThrow("gout");
-  });
-
-  it("applies confirmed-only filtering and the per-med limit", async () => {
-    const confirmed = await fetchConditionGraph(["mdd"], true, 10);
-    const sertralineCauses = confirmed.edges.filter(
-      (e) => e.kind === "causes" && e.source === "medication:1",
+  it("dedupes nodes and edges shared between conditions", async () => {
+    stubGraphs();
+    const graph = await fetchConditionGraph(["mdd", "gad"], 6);
+    expect(graph.nodes.filter((n) => n.id === "drug:36437")).toHaveLength(1);
+    const nausea = graph.edges.filter(
+      (e) => e.source === "drug:36437" && e.target === "side_effect:nausea",
     );
-    expect(sertralineCauses).toHaveLength(1); // insomnia (unconfirmed) dropped
-
-    const limited = await fetchConditionGraph(["mdd"], false, 1);
-    const limitedCauses = limited.edges.filter(
-      (e) => e.kind === "causes" && e.source === "medication:1",
-    );
-    expect(limitedCauses).toHaveLength(1); // top-1 by report count
-    expect(limitedCauses[0].target).toBe("side_effect:nausea");
+    expect(nausea).toHaveLength(1);
   });
 
-  it("tags treats edges with FDA approval", async () => {
-    const graph = await fetchConditionGraph(["mdd"], false, 10);
-    const treats = graph.edges.filter((e) => e.kind === "treats");
-    const byMed = Object.fromEntries(treats.map((e) => [e.source, e.fda_approved]));
-    expect(byMed["medication:1"]).toBe(true); // sertraline approved
-    expect(byMed["medication:3"]).toBe(false); // quetiapine may-treat only
+  it("keeps only drugs in the selected classes", async () => {
+    stubGraphs();
+    const graph = await fetchConditionGraph(["mdd", "gad"], 6, ["NDRI"]);
+    const drugs = graph.nodes.filter((n) => n.type === "drug").map((n) => n.id);
+    expect(drugs).toEqual(["drug:42347"]);
   });
 
-  it("approved-only drops may-treat meds for that condition", async () => {
-    const graph = await fetchConditionGraph(["mdd"], false, 10, true);
-    const medNodes = graph.nodes.filter((n) => n.type === "medication");
-    expect(medNodes.map((n) => n.id)).toEqual(["medication:1"]); // quetiapine gone
+  it("drops nodes orphaned by the class filter", async () => {
+    stubGraphs();
+    const graph = await fetchConditionGraph(["mdd", "gad"], 6, ["NDRI"]);
+    const ids = graph.nodes.map((n) => n.id);
+    // bupropion only links to gad, so mdd and nausea have no kept edges
+    expect(ids).toContain("condition:gad");
+    expect(ids).not.toContain("condition:mdd");
+    expect(ids).not.toContain("side_effect:nausea");
   });
 
-  it("respects per-condition approval in a multi-select approved view", async () => {
-    // quetiapine is approved for bipolar but not MDD; approved-only keeps its
-    // bipolar treats edge and drops the MDD one.
-    const graph = await fetchConditionGraph(["mdd", "bipolar"], false, 10, true);
-    const quetTreats = graph.edges.filter(
-      (e) => e.kind === "treats" && e.source === "medication:3",
-    );
-    expect(quetTreats.map((e) => e.target)).toEqual(["condition:bipolar"]);
-  });
-
-  it("filters medications by drug class", async () => {
-    const graph = await fetchConditionGraph(["mdd"], false, 10, false, [
-      "Antidepressant",
-    ]);
-    const medNodes = graph.nodes.filter((n) => n.type === "medication");
-    expect(medNodes.map((n) => n.id)).toEqual(["medication:1"]); // quetiapine dropped
-  });
-
-  it("treats an empty class filter as all classes", async () => {
-    const graph = await fetchConditionGraph(["mdd"], false, 10, false, []);
-    const medNodes = graph.nodes.filter((n) => n.type === "medication");
-    expect(medNodes).toHaveLength(2);
+  it("an empty class filter keeps every drug", async () => {
+    stubGraphs();
+    const graph = await fetchConditionGraph(["mdd", "gad"], 6, []);
+    const drugs = graph.nodes.filter((n) => n.type === "drug").map((n) => n.id).sort();
+    expect(drugs).toEqual(["drug:36437", "drug:42347"]);
   });
 });
 
-describe("pharmacology & drug classes", () => {
-  it("lists distinct drug classes, sorted", async () => {
-    expect(await fetchDrugClasses()).toEqual([
-      "Antidepressant",
-      "Antipsychotic",
-      "Mood stabilizer",
+describe("endpoint shapes", () => {
+  it("fetchSideEffects caps the result set", async () => {
+    const calls = stubFetch(() => []);
+    await fetchSideEffects("36437");
+    expect(calls[0]).toBe("/api/medications/36437/side-effects?limit=25");
+  });
+
+  it("fetchDrugClasses returns just the names", async () => {
+    stubFetch(() => [
+      { id: "ssri", name: "SSRI" },
+      { id: "ndri", name: "NDRI" },
     ]);
+    expect(await fetchDrugClasses()).toEqual(["SSRI", "NDRI"]);
   });
 
-  it("returns a medication's pharmacology columns", async () => {
-    const pharm = await fetchMedicationPharmacology("1");
-    expect(pharm).toEqual({
-      drug_class: "Antidepressant",
-      atc_codes: "N06AB",
-      mechanism: "Serotonin Uptake Inhibitors",
-      neurotransmitters: "Serotonin(+)",
-    });
+  it("fetchDrugDetail passes a null body through", async () => {
+    stubFetch(() => null);
+    expect(await fetchDrugDetail("00000")).toBeNull();
   });
 
-  it("returns null for an unknown medication", async () => {
-    expect(await fetchMedicationPharmacology("999")).toBeNull();
-  });
-});
-
-describe("panel lookups", () => {
-  it("lists the conditions a medication treats, with per-condition approval", async () => {
-    const treats = await fetchConditionsForMedication("3");
-    expect(treats.map((c) => c.id).sort()).toEqual(["bipolar", "mdd"]);
-    const approvalById = Object.fromEntries(treats.map((c) => [c.id, c.fda_approved]));
-    expect(approvalById).toEqual({ mdd: false, bipolar: true });
-    const single = await fetchConditionsForMedication("1");
-    expect(single.map((c) => c.id)).toEqual(["mdd"]);
+  it("fetchConditionsForDrug requests the drug's conditions", async () => {
+    const calls = stubFetch(() => []);
+    await fetchConditionsForDrug("36437");
+    expect(calls[0]).toBe("/api/drugs/36437/conditions");
   });
 
-  it("lists a condition's medications with counts and approval", async () => {
-    const meds = await fetchMedicationsForCondition("mdd");
-    expect(meds.map((m) => m.generic_name).sort()).toEqual([
-      "quetiapine",
-      "sertraline",
+  it("fetchMedicationsForCondition requests the condition's drugs", async () => {
+    const calls = stubFetch(() => []);
+    await fetchMedicationsForCondition("mdd");
+    expect(calls[0]).toBe("/api/conditions/mdd/medications");
+  });
+
+  it("fetchSearchIndex builds graph node ids from type and id", async () => {
+    stubFetch(() => [
+      { type: "drug", id: "36437", label: "sertraline" },
+      { type: "condition", id: "mdd", label: "Major Depressive Disorder" },
+      { type: "side_effect", id: "nausea", label: "Nausea" },
     ]);
-    const sertraline = meds.find((m) => m.rxcui === "1");
-    expect(sertraline?.side_effect_count).toBe(2);
-    expect(sertraline?.fda_approved).toBe(true);
-    expect(meds.find((m) => m.rxcui === "3")?.fda_approved).toBe(false);
-  });
-
-  it("lists a shared side effect's medications once each", async () => {
-    const causes = await fetchMedicationsForSideEffect("nausea");
-    const rxcuis = causes.map((c) => c.rxcui);
-    expect(new Set(rxcuis).size).toBe(rxcuis.length);
-    expect(rxcuis.sort()).toEqual(["1", "3"]);
-  });
-
-  it("finds side effects for a med regardless of which condition entry holds it", async () => {
-    const effects = await fetchSideEffects("2", false);
-    expect(effects.map((e) => e.side_effect_id)).toEqual(["rash"]);
-  });
-});
-
-describe("fetchSearchIndex", () => {
-  it("indexes conditions, deduped medications, and deduped side effects", async () => {
-    const index = await fetchSearchIndex();
-    const byType = (t: string) => index.filter((e) => e.type === t);
-    expect(byType("condition").map((e) => e.nodeId).sort()).toEqual([
-      "condition:bipolar",
-      "condition:mdd",
+    expect(await fetchSearchIndex()).toEqual([
+      { nodeId: "drug:36437", label: "sertraline", type: "drug" },
+      { nodeId: "condition:mdd", label: "Major Depressive Disorder", type: "condition" },
+      { nodeId: "side_effect:nausea", label: "Nausea", type: "side_effect" },
     ]);
-    expect(byType("medication")).toHaveLength(3); // shared med once
-    // nausea, insomnia, rash — nausea appears under two meds but indexes once
-    expect(byType("side_effect")).toHaveLength(3);
-  });
-
-  it("records which conditions each entry belongs to", async () => {
-    const index = await fetchSearchIndex();
-    const shared = index.find((e) => e.nodeId === "medication:3");
-    expect(shared?.conditionIds.sort()).toEqual(["bipolar", "mdd"]);
-    const rash = index.find((e) => e.nodeId === "side_effect:rash");
-    expect(rash?.conditionIds).toEqual(["bipolar"]);
-  });
-
-  it("includes pharmacology aliases on medication entries", async () => {
-    const index = await fetchSearchIndex();
-    const sertraline = index.find((e) => e.nodeId === "medication:1");
-    expect(sertraline?.aliases).toContain("Antidepressant");
-    expect(sertraline?.aliases).toContain("Serotonin Uptake Inhibitors");
-    expect(sertraline?.aliases).toContain("Serotonin(+)");
-  });
-});
-
-describe("fetchConditionGraph — drug_class on nodes", () => {
-  it("populates drug_class on medication nodes", async () => {
-    const graph = await fetchConditionGraph(["mdd"], false, 10);
-    const sertraline = graph.nodes.find((n) => n.id === "medication:1");
-    expect(sertraline?.drug_class).toBe("Antidepressant");
-    const quetiapine = graph.nodes.find((n) => n.id === "medication:3");
-    expect(quetiapine?.drug_class).toBe("Antipsychotic");
   });
 });

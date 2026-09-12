@@ -7,11 +7,12 @@ import { SidePanel } from "./components/SidePanel";
 import {
   fetchConditionGraph,
   fetchConditions,
-  fetchConditionsForMedication,
+  fetchConditionsForDrug,
   fetchDrugClasses,
-  fetchMedicationPharmacology,
+  fetchDrugDetail,
   fetchMedicationsForCondition,
   fetchMedicationsForSideEffect,
+  fetchNeighborhood,
   fetchSearchIndex,
   fetchSideEffects,
 } from "./api";
@@ -31,14 +32,13 @@ function stripPrefix(id: string, prefix: string): string {
 export default function App() {
   const [conditions, setConditions] = useState<ConditionInfo[]>([]);
   const [selectedIds, setSelectedIds] = useState<string[]>([]);
-  const [confirmedOnly, setConfirmedOnly] = useState(false);
-  const [approvedOnly, setApprovedOnly] = useState(false);
   const [perMed, setPerMed] = useState(6);
   const [searchIndex, setSearchIndex] = useState<SearchEntry[]>([]);
   const [drugClasses, setDrugClasses] = useState<string[]>([]);
   const [classFilter, setClassFilter] = useState<string[]>([]);
 
-  const [graph, setGraph] = useState<GraphPayload | null>(null);
+  const [baseGraph, setBaseGraph] = useState<GraphPayload | null>(null);
+  const [neighborhoodGraph, setNeighborhoodGraph] = useState<GraphPayload | null>(null);
   const [graphError, setGraphError] = useState<string | null>(null);
 
   const [selected, setSelected] = useState<GraphNode | null>(null);
@@ -52,8 +52,6 @@ export default function App() {
 
   const canvasRef = useRef<HTMLDivElement>(null);
   const [size, setSize] = useState({ width: 800, height: 600 });
-  // Monotonic id so a slow panel response for a previously-selected node can
-  // never overwrite the panel for the node the user is now viewing.
   const panelRequestRef = useRef(0);
 
   useEffect(() => {
@@ -69,19 +67,19 @@ export default function App() {
   useEffect(() => {
     let active = true;
     setGraphError(null);
-    fetchConditionGraph(selectedIds, confirmedOnly, perMed, approvedOnly, classFilter)
+    fetchConditionGraph(selectedIds, perMed, classFilter)
       .then((g) => {
-        if (active) setGraph(g);
+        if (active) setBaseGraph(g);
       })
       .catch((err) => {
         if (!active) return;
-        setGraph(null);
+        setBaseGraph(null);
         setGraphError(err.message);
       });
     return () => {
       active = false;
     };
-  }, [selectedIds, confirmedOnly, perMed, approvedOnly, classFilter]);
+  }, [selectedIds, perMed, classFilter]);
 
   useEffect(() => {
     const element = canvasRef.current;
@@ -95,44 +93,46 @@ export default function App() {
   }, []);
 
   async function buildSections(node: GraphNode): Promise<PanelSection[]> {
-    if (node.type === "medication") {
-      const rxcui = stripPrefix(node.id, "medication:");
-      const [pharm, treats, effects] = await Promise.all([
-        fetchMedicationPharmacology(rxcui),
-        fetchConditionsForMedication(rxcui),
-        fetchSideEffects(rxcui, confirmedOnly),
+    if (node.type === "drug") {
+      const rxcui = stripPrefix(node.id, "drug:");
+      const [detail, drugConds, effects] = await Promise.all([
+        fetchDrugDetail(rxcui),
+        fetchConditionsForDrug(rxcui),
+        fetchSideEffects(rxcui),
       ]);
-      const pharmRows: PanelSection["rows"] = [
-        { id: "class", label: "Class", value: pharm?.drug_class },
-        { id: "mechanism", label: "Mechanism", value: pharm?.mechanism },
-        {
-          id: "neurotransmitters",
-          label: "Neurotransmitters",
-          value: pharm?.neurotransmitters,
-        },
-        { id: "atc", label: "ATC codes", value: pharm?.atc_codes },
+      const detailRows: PanelSection["rows"] = [
+        { id: "class", label: "Class", value: detail?.drug_class },
+        { id: "product_type", label: "Product type", value: detail?.product_type },
       ]
         .filter((row) => row.value)
         .map((row) => ({ id: row.id, label: row.label, primary: row.value as string }));
+
+      const mayTreat = drugConds.filter((c) => c.rela === "may_treat");
+      const mayPrevent = drugConds.filter((c) => c.rela === "may_prevent");
+
+      const condSections: PanelSection[] = [];
+      if (mayTreat.length > 0) {
+        condSections.push({
+          heading: "May treat",
+          rows: mayTreat.map((c) => ({ id: c.condition_id, primary: c.name })),
+        });
+      }
+      if (mayPrevent.length > 0) {
+        condSections.push({
+          heading: "May prevent",
+          rows: mayPrevent.map((c) => ({ id: c.condition_id, primary: c.name })),
+        });
+      }
+
       return [
-        ...(pharmRows.length > 0
-          ? [{ heading: "Pharmacology", rows: pharmRows }]
-          : []),
-        {
-          heading: "Treats",
-          rows: treats.map((c) => ({
-            id: c.id,
-            primary: c.name,
-            note: c.fda_approved ? "FDA-approved" : "may treat",
-          })),
-        },
+        ...(detailRows.length > 0 ? [{ heading: "Details", rows: detailRows }] : []),
+        ...condSections,
         {
           heading: "Reported side effects",
           rows: effects.map((e) => ({
             id: e.side_effect_id,
             primary: e.name,
             count: e.report_count,
-            badge: e.label_confirmed,
           })),
         },
       ];
@@ -143,7 +143,7 @@ export default function App() {
       );
       return [
         {
-          heading: "Medications reported to cause this",
+          heading: "Drugs reported to cause this",
           rows: causes.map((c) => ({
             id: c.rxcui,
             primary: c.generic_name,
@@ -156,24 +156,42 @@ export default function App() {
     const meds = await fetchMedicationsForCondition(stripPrefix(node.id, "condition:"));
     return [
       {
-        heading: "Medications",
+        heading: "Drugs that treat this",
         rows: meds.map((m) => ({
           id: m.rxcui,
           primary: m.generic_name,
           count: m.side_effect_count,
-          note: m.fda_approved ? "FDA-approved" : undefined,
+          note: m.drug_class ?? undefined,
         })),
       },
     ];
   }
 
+  const neighborhoodRequestRef = useRef(0);
+
   function selectNode(node: GraphNode) {
     const requestId = ++panelRequestRef.current;
+    const neighborhoodId = ++neighborhoodRequestRef.current;
     const isCurrent = () => panelRequestRef.current === requestId;
     setSelected(node);
     setSections([]);
     setPanelLoading(true);
     setPanelError(null);
+
+    const nodeId = stripPrefix(
+      node.id,
+      node.type === "drug" ? "drug:" : node.type === "side_effect" ? "side_effect:" : "condition:",
+    );
+    fetchNeighborhood(node.type, nodeId, perMed)
+      .then((payload) => {
+        if (neighborhoodRequestRef.current === neighborhoodId) {
+          setNeighborhoodGraph(payload);
+        }
+      })
+      .catch(() => {
+        // neighborhood fetch failed — keep showing the current graph
+      });
+
     buildSections(node)
       .then((built) => {
         if (isCurrent()) setSections(built);
@@ -186,36 +204,45 @@ export default function App() {
       });
   }
 
-  // Keep an open medication panel in sync when the label-confirmed filter
-  // changes (its side-effect list is built with that filter).
+  // Re-fetch the neighborhood graph when perMed changes while a node is selected.
   useEffect(() => {
-    if (selected) selectNode(selected);
-    // selectNode reads the latest confirmedOnly; only re-run on that toggle.
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [confirmedOnly]);
+    if (!selected) return;
+    const neighborhoodId = ++neighborhoodRequestRef.current;
+    const nodeId = stripPrefix(
+      selected.id,
+      selected.type === "drug" ? "drug:" : selected.type === "side_effect" ? "side_effect:" : "condition:",
+    );
+    let active = true;
+    fetchNeighborhood(selected.type, nodeId, perMed)
+      .then((payload) => {
+        if (active && neighborhoodRequestRef.current === neighborhoodId) {
+          setNeighborhoodGraph(payload);
+        }
+      })
+      .catch(() => {});
+    return () => {
+      active = false;
+    };
+  }, [perMed, selected]);
 
   function handleSearchPick(entry: SearchEntry) {
-    // Ensure the node is on screen by selecting the conditions it belongs to.
-    setSelectedIds((prev) => {
-      const merged = new Set(prev);
-      entry.conditionIds.forEach((id) => merged.add(id));
-      return [...merged];
-    });
     selectNode({ id: entry.nodeId, label: entry.label, type: entry.type });
     setFocus((f) => ({ nodeId: entry.nodeId, key: f.key + 1 }));
   }
 
-  const hasSelection = selectedIds.length > 0;
+  function handleClosePanel() {
+    setSelected(null);
+    setNeighborhoodGraph(null);
+  }
+
+  const graph = neighborhoodGraph ?? baseGraph;
+  const hasSelection = selectedIds.length > 0 || neighborhoodGraph !== null;
 
   return (
     <div className="app">
       <header className="app__header">
         <div className="app__titles">
           <h1>med-graph</h1>
-          <p className="app__disclaimer">
-            Research prototype
-            or for clinical use
-          </p>
         </div>
         <SearchBar entries={searchIndex} onPick={handleSearchPick} />
       </header>
@@ -225,33 +252,21 @@ export default function App() {
           <Controls
             conditions={conditions}
             selectedIds={selectedIds}
-            confirmedOnly={confirmedOnly}
-            approvedOnly={approvedOnly}
             perMed={perMed}
             drugClasses={drugClasses}
             classFilter={classFilter}
             onSelectionChange={setSelectedIds}
-            onConfirmedChange={setConfirmedOnly}
-            onApprovedChange={setApprovedOnly}
             onPerMedChange={setPerMed}
             onClassFilterChange={setClassFilter}
           />
           <Legend />
-          {graph && hasSelection && (
-            <p className="app__count">
-              {graph.nodes.length} nodes · {graph.edges.length} edges
-            </p>
-          )}
-          <p className="app__hint">
-            Click a condition, medication, or side effect for its details.
-          </p>
         </div>
 
         <div className="app__canvas" ref={canvasRef}>
           {graphError && <div className="app__error">{graphError}</div>}
           {!hasSelection && (
             <div className="app__empty">
-              Select one or more conditions to build the graph.
+              Select one or more disorders to build the graph.
             </div>
           )}
           {graph && hasSelection && (
@@ -260,7 +275,6 @@ export default function App() {
               width={size.width}
               height={size.height}
               onSelectNode={selectNode}
-              selectedId={selected?.id ?? null}
               focusNodeId={focus.nodeId}
               focusKey={focus.key}
             />
@@ -273,7 +287,7 @@ export default function App() {
           sections={sections}
           loading={panelLoading}
           error={panelError}
-          onClose={() => setSelected(null)}
+          onClose={handleClosePanel}
         />
       </div>
     </div>

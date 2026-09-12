@@ -1,5 +1,4 @@
 class_id,rxcui,generic_name,rela,condition_name
-D001008,91235,Digitalis preparation,may_treat,Anxiety Disorders
 D019973,82819,acamprosate,may_treat,Alcohol-Related Disorders
 D000437,82819,acamprosate,may_treat,Alcoholism
 D019966,82819,acamprosate,may_treat,Substance-Related Disorders

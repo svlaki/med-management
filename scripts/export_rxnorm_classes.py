@@ -27,6 +27,9 @@ OUT_DIR = Path(__file__).resolve().parent.parent / "data_clean"
 ALL_RELAS = ("may_treat", "may_prevent", "ci_with")
 DELAY = 0.03  # seconds between API calls
 
+# Drugs to exclude — not relevant to psychiatric use.
+DROP_DRUGS = {"Digitalis preparation"}
+
 
 def collect_classes(nodes: list, depth: int, out: dict) -> None:
     """Recursively walk the rxclassTree and collect every class node."""
@@ -117,6 +120,7 @@ def build_tree_table(http: httpx.Client, classes: dict) -> pd.DataFrame:
                 print(f"  {call_count} API calls done...")
     df = pd.DataFrame(rows)
     df = df[df.condition_name != "Mental Disorders"]
+    df = df[~df.generic_name.isin(DROP_DRUGS)]
     return df
 
 

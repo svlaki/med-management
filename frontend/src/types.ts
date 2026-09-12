@@ -1,16 +1,16 @@
 export interface ConditionInfo {
   id: string;
   name: string;
-  icd10: string | null;
 }
 
-export type NodeType = "condition" | "medication" | "side_effect";
+/** The graph has exactly three kinds of node. `drug_class` is a property of a
+ *  drug (it backs the class filter), never a node in its own right. */
+export type NodeType = "condition" | "drug" | "side_effect";
 
 export interface GraphNode {
   id: string;
   label: string;
   type: NodeType;
-  // drug class for medication nodes (used for coloring)
   drug_class?: string | null;
   // populated by the force simulation at runtime
   x?: number;
@@ -20,12 +20,8 @@ export interface GraphNode {
 export interface GraphEdge {
   source: string | GraphNode;
   target: string | GraphNode;
-  kind: "treats" | "causes";
+  kind: "may_treat" | "may_prevent" | "has_side_effect" | "belongs_to";
   report_count: number | null;
-  label_confirmed: boolean | null;
-  // treats edges only: true if an FDA label names this condition (approved),
-  // false if only RxClass "may treat" (often off-label)
-  fda_approved?: boolean;
 }
 
 export interface GraphPayload {
@@ -36,9 +32,7 @@ export interface GraphPayload {
 export interface SideEffectReport {
   side_effect_id: string;
   name: string;
-  source: string;
   report_count: number | null;
-  label_confirmed: boolean | null;
 }
 
 export interface MedicationCause {
@@ -51,13 +45,9 @@ export interface MedicationCause {
 export interface PanelRow {
   id: string;
   primary: string;
-  // undefined hides the count cell entirely (e.g. condition rows)
   count?: number | null;
-  // present for side-effect rows (label-confirmed state); absent otherwise
-  badge?: boolean | null;
-  // small muted tag, e.g. "FDA-approved" on a medication's Treats rows
+  badge?: string;
   note?: string;
-  // leading key for key/value rows (e.g. "Mechanism" in the Pharmacology section)
   label?: string;
 }
 
@@ -67,36 +57,33 @@ export interface PanelSection {
   rows: PanelRow[];
 }
 
-/** One searchable node across the whole snapshot. */
+/** One searchable node across the whole graph. */
 export interface SearchEntry {
-  nodeId: string; // e.g. "medication:36437"
+  nodeId: string;
   label: string;
   type: NodeType;
-  /** Conditions this entry appears under (itself, its treats, or its causes). */
-  conditionIds: string[];
-  /** Extra terms that match this entry (drug class, mechanism, neurotransmitters). */
-  aliases?: string[];
 }
 
 /** A condition's medication with how many side effects are recorded for it. */
 export interface MedicationSummary {
   rxcui: string;
   generic_name: string;
-  side_effect_count: number;
-  fda_approved: boolean;
-}
-
-/** A condition a medication treats, plus whether it's FDA-approved for it. */
-export interface MedicationTreats {
-  id: string;
-  name: string;
-  fda_approved: boolean;
-}
-
-/** A medication's pharmacology columns, shown in the side panel. */
-export interface MedicationPharmacology {
   drug_class: string | null;
-  atc_codes: string | null;
-  mechanism: string | null;
-  neurotransmitters: string | null;
+  side_effect_count: number;
+}
+
+/** A condition a drug relates to, with the relationship type. */
+export interface DrugCondition {
+  condition_id: string;
+  name: string;
+  rela: "may_treat" | "may_prevent";
+}
+
+/** A drug's detail from the backend. */
+export interface DrugDetail {
+  rxcui: string;
+  generic_name: string;
+  drug_class: string | null;
+  has_label: boolean | null;
+  product_type: string | null;
 }

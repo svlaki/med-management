@@ -9,11 +9,13 @@ export default defineConfig({
   resolve: {
     dedupe: ["three"],
   },
-  // The app is fully static (reads snapshot.json); no backend proxy needed.
   server: {
     port: 5173,
+    proxy: {
+      "/api": "http://localhost:8000",
+    },
   },
-  // jsdom lets component tests render; api.test.ts stubs fetch and is unaffected.
+  // jsdom lets component tests render.
   test: {
     environment: "jsdom",
   },

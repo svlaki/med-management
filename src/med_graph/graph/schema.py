@@ -5,10 +5,16 @@ SCHEMA_STATEMENTS: tuple[str, ...] = (
     "FOR (c:Condition) REQUIRE c.id IS UNIQUE",
     "CREATE CONSTRAINT medication_rxcui IF NOT EXISTS "
     "FOR (m:Medication) REQUIRE m.rxcui IS UNIQUE",
+    "CREATE CONSTRAINT drug_rxcui IF NOT EXISTS "
+    "FOR (d:Drug) REQUIRE d.rxcui IS UNIQUE",
     "CREATE CONSTRAINT side_effect_id IF NOT EXISTS "
     "FOR (s:SideEffect) REQUIRE s.id IS UNIQUE",
+    "CREATE CONSTRAINT drug_class_id IF NOT EXISTS "
+    "FOR (dc:DrugClass) REQUIRE dc.id IS UNIQUE",
     "CREATE INDEX medication_generic_name IF NOT EXISTS "
     "FOR (m:Medication) ON (m.generic_name)",
+    "CREATE INDEX drug_generic_name IF NOT EXISTS "
+    "FOR (d:Drug) ON (d.generic_name)",
     "CREATE INDEX side_effect_name IF NOT EXISTS "
     "FOR (s:SideEffect) ON (s.name)",
 )

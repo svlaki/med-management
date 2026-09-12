@@ -10,9 +10,7 @@ class SideEffectReport(BaseModel):
 
     side_effect_id: str
     name: str
-    source: str
     report_count: int | None
-    label_confirmed: bool | None = None
 
 
 class MedicationSummary(BaseModel):
@@ -24,10 +22,6 @@ class MedicationSummary(BaseModel):
     generic_name: str
     drug_class: str | None
     side_effect_count: int
-    fda_approved: bool = False
-    atc_codes: str | None = None
-    mechanism: str | None = None
-    neurotransmitters: str | None = None
 
 
 class MedicationCause(BaseModel):
@@ -38,3 +32,25 @@ class MedicationCause(BaseModel):
     rxcui: str
     generic_name: str
     report_count: int | None
+
+
+class DrugDetail(BaseModel):
+    """Full detail for a single drug including its class."""
+
+    model_config = ConfigDict(frozen=True)
+
+    rxcui: str
+    generic_name: str
+    drug_class: str | None
+    has_label: bool | None
+    product_type: str | None
+
+
+class DrugCondition(BaseModel):
+    """A condition related to a drug, with the relationship type."""
+
+    model_config = ConfigDict(frozen=True)
+
+    condition_id: str
+    name: str
+    rela: str  # "may_treat", "may_prevent"

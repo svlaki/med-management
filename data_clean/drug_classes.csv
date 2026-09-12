@@ -1,0 +1,307 @@
+rxcui,generic_name,drug_class,atc_codes
+82819,acamprosate,Other,N07BB
+161203,aceprometazine,Other,
+162,acetanilide,Other,
+16735,acetophenazine,Antipsychotic,N05AB
+272,activated charcoal,Other,A02AF; A07BA
+2557217,aducanumab,Anti-dementia,N06DX
+70223,aldesleukin,Other,L03AC
+237099,alpha tocopherol,Other,A11JA; A11JC; B03AE; C01EX
+596,alprazolam,Anxiolytic,N05BA
+598,alprostadil,Other,C01EA; G04BE
+703,amiodarone,Other,C01BD
+704,amitriptyline,Antidepressant,N06AA; N06CA
+719,amobarbital,Sedative,N05CA; N05CB
+722,amoxapine,Antidepressant,N06AA
+725,amphetamine,Stimulant,N06BA
+17941,anisindione,Other,
+17381,aprobarbital,Sedative,N05CA
+89013,aripiprazole,Antipsychotic,N05AX
+1673265,aripiprazole lauroxil,Antipsychotic,N05AX
+641465,armodafinil,Stimulant,N06BA
+784649,asenapine,Antipsychotic,N05AH
+38400,atomoxetine,Stimulant,N06BA
+1291301,avanafil,Other,G04BE
+1292,baclofen,Other,M03BX
+1359,belladonna alkaloids,Other,A03CB; A03DB; N02CA
+89781,"belladonna extract, USP",Other,
+314517,belladonna leaf extract,Other,
+1373,benperidol,Antipsychotic,N05AD
+2690627,benzgalantamine,Anti-dementia,N06DA
+1422,benzphetamine,Other,A08AA
+2176312,bremelanotide,Other,G02CX
+2121777,brexanolone,Antidepressant,N06AX
+1658314,brexpiprazole,Antipsychotic,N05AX
+1749,bromazepam,Anxiolytic,N05BA
+19759,bromodiphenhydramine,Sedative,
+19777,bromperidol,Antipsychotic,N05AD
+1819,buprenorphine,Other,N02AE; N07BC
+42347,bupropion,Antidepressant,A08AA; N06AX
+1827,buspirone,Anxiolytic,N05BE
+477631,butabarbital,Sedative,N05CA
+19874,butobarbital,Sedative,N05CA
+1841,butorphanol,Other,N02AF
+2002,carbamazepine,Mood Stabilizer,N03AF
+1667655,cariprazine,Antipsychotic,N05AX
+2296,charcoal,Other,
+2356,chlordiazepoxide,Anxiolytic,A03CA; N05BA; N06CA
+2372,chlormethiazole,Sedative,N05CM
+2373,chlormezanone,Other,M03BB
+2403,chlorpromazine,Antipsychotic,N05AA
+2406,chlorprothixene,Antipsychotic,N05AF
+2556,citalopram,Antidepressant,N06AB
+2597,clomipramine,Antidepressant,N06AA
+2598,clonazepam,Mood Stabilizer,N03AE
+2599,clonidine,Other,
+2603,clopamide,Other,C03BA
+2353,clorazepate,Anxiolytic,N05BA
+2622,clotiazepam,Anxiolytic,N05BA
+2626,clozapine,Antipsychotic,N05AH
+2732215,copper histidinate,Other,
+3007,cycloserine,Other,J04AB
+3013,cyproheptadine,Other,
+2591497,daridorexant,Sedative,N05CJ
+62174,deserpidine,Other,C02AA; C02LA
+3247,desipramine,Antidepressant,N06AA
+3251,desmopressin,Other,H01BA
+22656,desogestrel,Other,G03AA; G03AB; G03AC
+734064,desvenlafaxine,Antidepressant,N06AX
+352372,dexmethylphenidate,Stimulant,N06BA
+3288,dextroamphetamine,Stimulant,N06BA
+3322,diazepam,Anxiolytic,N05BA
+3332,dibenzepin,Antidepressant,N06AA
+1598,dicumarol,Other,B01AA
+3389,diethylpropion,Other,A08AA
+3403,digitoxin,Other,C01AA
+3407,digoxin,Other,C01AA
+203223,digoxin antibodies Fab fragments,Other,V03AB
+3415,dihydroergocornine,Other,
+3416,dihydroergocristine,Other,C04AE
+3417,dihydroergocryptine,Other,N04BC
+3498,diphenhydramine,Sedative,
+3554,disulfiram,Other,N07BB; P03AA
+2687966,donanemab,Anti-dementia,N06DX
+135447,donepezil,Anti-dementia,N06DA
+3634,dothiepin,Antidepressant,N06AA
+3637,doxapram,Other,R07AB
+3638,doxepin,Antidepressant,D04AX; N06AA
+3642,doxylamine,Sedative,
+10402,dronabinol,Other,A04AD
+3648,droperidol,Antipsychotic,N05AD
+11636,drospirenone,Other,G03AA; G03AC; G03FA
+72625,duloxetine,Antidepressant,N06AX
+3755,edetic acid,Other,S01XA; V03AB
+2612527,elivaldogene autotemcel,Other,A16AX
+1653781,eluxadoline,Other,A07DA
+4024,"ergoloid mesylates, USP",Other,C04AE
+321988,escitalopram,Antidepressant,N06AB
+2119365,esketamine,Antidepressant,N01AX; N06AX
+4077,estazolam,Sedative,N05CD
+461016,eszopiclone,Sedative,N05CF
+4118,ethchlorvynol,Sedative,N05CM
+24474,ethinamate,Other,
+14584,etonogestrel,Other,G02BB; G03AC
+4328,fenfluramine,Mood Stabilizer,A08AA; N03AX
+1665509,flibanserin,Other,G02CX
+4457,flumazenil,Other,V03AB
+4460,flunitrazepam,Sedative,N05CD
+4493,fluoxetine,Antidepressant,N06AB; N06CA
+4495,flupenthixol,Antipsychotic,N05AF
+4496,fluphenazine,Antipsychotic,N05AB
+4501,flurazepam,Sedative,N05CD
+4507,fluspirilene,Antipsychotic,N05AG
+42355,fluvoxamine,Antidepressant,N06AB
+4603,furosemide,Other,C03CA; C03CB; C03EB
+25480,gabapentin,Mood Stabilizer,
+4637,galantamine,Anti-dementia,N06DA
+2672253,gepirone,Antidepressant,N06AX
+325526,ginseng preparation,Other,
+4850,glucose,Other,A04AD; A16AX; B05BA; B05BB; B05CX; B05DB; V04CA; V06DC
+4903,glutethimide,Sedative,N05CE
+40114,guanfacine,Other,
+26412,halazepam,Anxiolytic,N05BA
+50749,halofantrine,Other,P01BX
+5093,haloperidol,Antipsychotic,N05AD
+2267703,huperzine A,Other,
+5514,hydroxocobalamin,Other,B03BA; V03AB
+5553,hydroxyzine,Anxiolytic,N05BB
+644101,idursulfase,Other,A16AB
+73178,iloperidone,Antipsychotic,N05AX
+5691,imipramine,Antidepressant,N06AA
+5975,ipecac,Other,R05CA; V03AB
+262150,iron carbonyl,Other,A11JB; B03AA; B03AE
+6011,isocarboxazid,Antidepressant,N06AF
+6026,isoflurane,Other,N01AB
+285228,kava preparation,Other,
+6130,ketamine,Other,N01AX
+28439,lamotrigine,Mood Stabilizer,N03AX
+2626143,lecanemab,Anti-dementia,N06DX
+2272403,lemborexant,Sedative,N05CJ
+1731031,lesinurad,Other,M04AA; M04AB
+237005,levomethadyl,Other,
+1433212,levomilnacipran,Antidepressant,N06AX
+6373,levonorgestrel,Other,G03AA; G03AB; G03AC; G03AD; G03FA
+700810,lisdexamfetamine,Stimulant,N06BA
+6448,lithium,Mood Stabilizer,N05AN
+746070,lithium aspartate,Other,A12CX
+42351,lithium carbonate,Mood Stabilizer,N05AN
+52105,lithium citrate,Mood Stabilizer,N05AN
+28863,lofexidine,Other,N07BC
+2569562,lonapegsomatropin,Other,H01AC
+6470,lorazepam,Anxiolytic,N05BA
+28894,lormetazepam,Sedative,N05CD
+6475,loxapine,Antipsychotic,N05AH
+2275602,lumateperone,Antipsychotic,N05AD
+1040028,lurasidone,Antipsychotic,N05AE
+52356,magnesium citrate,Other,A06AD; A11JB; A12CC; B05CB
+6646,maprotiline,Antidepressant,N06AA
+6664,mazindol,Other,A08AA
+6673,mecamylamine,Other,C02BB
+29421,mecobalamin,Other,A11EX; A11JC; B03BA
+6680,medazepam,Anxiolytic,N05BA
+6694,mefloquine,Other,P01BC
+6711,melatonin,Sedative,N02BE; N05CH; N05CX
+6719,memantine,Anti-dementia,N06DA; N06DX
+6760,meprobamate,Anxiolytic,N02BA; N05BC
+6779,mesoridazine,Antipsychotic,N05AC
+6782,mestranol,Other,G03AA
+6813,methadone,Other,N07BC
+6816,methamphetamine,Stimulant,N06BA
+6823,methaqualone,Sedative,N05CM
+29648,methdilazine,Other,R06AD
+6851,methotrexate,Other,L01BA; L04AX
+6852,methotrimeprazine,Antipsychotic,N05AA
+6901,methylphenidate,Stimulant,N06BA
+6904,methyltestosterone,Other,G03BA; G03EA; G03EK
+6910,methyprylon,Sedative,N05CE
+6916,metolazone,Other,C03BA
+6960,midazolam,Sedative,N05CD
+588250,milnacipran,Antidepressant,N06AX
+15996,mirtazapine,Antidepressant,N06AX
+30125,modafinil,Stimulant,N06BA
+7019,molindone,Antipsychotic,N05AE
+31479,nalmefene,Other,N07BB
+7242,naloxone,Other,A06AH; N02AA; N02AD; N02AX; N07BC; V03AB
+7243,naltrexone,Other,A08AA; N02AA; N07BB
+31565,nefazodone,Antidepressant,N06AX
+7407,nicotine,Other,N07BA
+7440,nitrazepam,Sedative,N05CD
+7486,nitrous oxide,Other,N01AX
+3155,nordazepam,Anxiolytic,N05BA
+326374,norelgestromin,Other,G03AA
+31994,norgestimate,Other,G03AA; G03AB; G03FB
+7531,nortriptyline,Antidepressant,N06AA
+61381,olanzapine,Antipsychotic,N05AH; N06CA
+26225,ondansetron,Other,A04AA
+1370971,ospemifene,Other,G03XC
+7781,oxazepam,Anxiolytic,N05BA
+2387302,oxybate,Other,N01AX; N07XX
+2288236,ozanimod,Other,L04AE
+679314,paliperidone,Antipsychotic,N05AX
+7895,papaverine,Other,A03AD; G04BE
+7909,paraldehyde,Sedative,N05CC
+32937,paroxetine,Antidepressant,N06AB
+7966,pemoline,Stimulant,N06BA
+7974,penfluridol,Antipsychotic,N05AG
+8013,pentoxifylline,Other,C04AD
+8042,perazine,Antipsychotic,N05AB
+8047,pergolide,Other,N04BC
+8766,periciazine,Antipsychotic,N05AC
+8076,perphenazine,Antipsychotic,N05AB; N06CA
+33272,phendimetrazine,Other,A08AA
+8123,phenelzine,Antidepressant,N06AF
+8133,phenmetrazine,Other,
+8150,phenprocoumon,Other,B01AA
+8152,phentermine,Other,A08AA
+8156,phenylalanine,Other,B05BA; V06DD
+8331,pimozide,Antipsychotic,N05AG
+33739,pipamperone,Antipsychotic,N05AD
+8338,piperacetazine,Antipsychotic,
+8348,pipothiazine,Antipsychotic,N05AC
+2197878,pitolisant,Other,N07XX
+34345,pralidoxime,Other,V03AB
+746741,pramipexole,Other,
+3143,prasterone,Other,A14AA; G03XX
+8627,prazepam,Anxiolytic,N05BA
+8701,procaine,Other,C05AD; N01BA; S01HA
+8702,procarbazine,Other,L01XB
+8704,prochlorperazine,Antipsychotic,N05AB
+8742,promazine,Antipsychotic,N05AA
+8745,promethazine,Other,D04AA; N02AB; N02BE; R01BA; R05DA; R06AD
+8770,propiomazine,Sedative,N05CM
+8782,propofol,Other,N01AX
+8787,propranolol,Other,
+8825,protamine sulfate (USP),Other,V03AB
+8826,protamines,Other,V03AB
+8886,protriptyline,Antidepressant,N06AA
+35185,quazepam,Sedative,N05CD
+51272,quetiapine,Antipsychotic,N05AH
+9100,racemethionine,Other,N02BE
+596205,ramelteon,Sedative,N05CH
+60842,reboxetine,Antidepressant,N06AX
+9260,reserpine,Other,C02AA; C02LA
+35636,risperidone,Antipsychotic,N05AX
+183379,rivastigmine,Anti-dementia,N06DA
+616739,rotigotine,Other,N04BC
+2559612,samidorphan,Antipsychotic,N05AH
+9624,secobarbital,Sedative,N05CA; N05CB
+9639,selegiline,Antidepressant,
+2562176,serdexmethylphenidate,Stimulant,N06BA
+41996,sertindole,Antipsychotic,N05AE
+36437,sertraline,Antidepressant,N06AB
+36514,sibutramine,Other,A08AA
+136411,sildenafil,Other,G04BE
+36676,sodium bicarbonate,Other,A02AF; A02AH; A02BC; A06AD; B05CB; B05XA; D04AX; N02BA; R01AX
+56570,somatrem,Other,H01AC
+2644503,somatrogon,Other,H01AC
+61148,somatropin,Other,H01AC
+1547099,suvorexant,Sedative,N05CJ
+10318,tacrine,Anti-dementia,N06DA
+358263,tadalafil,Other,C02KX; G04BE; G04CB
+1490468,tasimelteon,Sedative,N05CH
+10355,temazepam,Sedative,N05CD
+10390,tetrabenazine,Other,N07XX
+37985,tetrazepam,Anxiolytic,
+10437,theobromine,Other,C03BD; R03DA
+10454,thiamine,Other,A11AA; A11DA; A11EA; A11EB; A11EC; A11EX; A11JA; A11JC; B03AE
+10464,thiamylal,Sedative,
+38077,thiobutabarbital,Sedative,
+10502,thioridazine,Antipsychotic,N05AC
+10510,thiothixene,Antipsychotic,N05AF
+31914,tiagabine,Mood Stabilizer,N03AG
+38260,tibolone,Other,G03CX
+2740012,tividenofusp alfa,Other,
+314875,"tocopheryl acid succinate,D-alpha",Other,
+38365,tofisopam,Anxiolytic,N05BA
+38404,topiramate,Mood Stabilizer,A08AA; N03AX
+10689,tramadol,Other,N02AJ; N02AX
+10734,tranylcypromine,Antidepressant,N06AF
+10737,trazodone,Antidepressant,N06AX
+10767,triazolam,Sedative,N05CD
+1314420,tricaprylin,Other,
+10800,trifluoperazine,Antipsychotic,N05AB
+10804,trifluperidol,Antipsychotic,N05AD
+10805,triflupromazine,Antipsychotic,N05AA
+10825,trimeprazine,Other,R06AD
+10834,trimipramine,Antidepressant,N06AA
+2632852,trofinetide,Other,N07XX
+10898,tryptophan,Antidepressant,B05BA; N05CX; N06AX
+21406,ubidecarenone,Other,A11JC; C01EB; C01EX; C10AA
+11017,uridine,Other,
+1665222,uridine triacetate,Other,A16AX
+253206,valerian root extract,Sedative,N05CM
+306674,vardenafil,Other,G04BE
+39786,venlafaxine,Antidepressant,N06AX
+1424884,vilanterol,Other,R03AK; R03AL
+1086769,vilazodone,Antidepressant,N06AX
+11248,vitamin B12,Other,A11AA; A11EA; A11EB; A11EC; A11EX; A11JA; A11JB; A11JC; B03AE; B03BA
+11256,vitamin E,Other,A11AA; A11HA; A11JA; A11JB; A11JC; B03AE; C01EX; D02AX
+1455099,vortioxetine,Antidepressant,N06AX
+11289,warfarin,Other,B01AA
+2694828,xanomeline,Antipsychotic,N05AX
+220982,yohimbine,Other,G04BE
+74667,zaleplon,Sedative,N05CF
+68503,ziconotide,Other,N02BG
+115698,ziprasidone,Antipsychotic,N05AE
+39993,zolpidem,Sedative,N05CF
+2669905,zuranolone,Antidepressant,N06AX
