@@ -42,6 +42,9 @@ def create_app() -> FastAPI:
     app.add_middleware(
         CORSMiddleware,
         allow_origins=[origin.strip() for origin in origins if origin.strip()],
+        # Vercel gives every preview deployment a fresh subdomain, so those can
+        # only be allowed by pattern, e.g. https://med-graph-.*\.vercel\.app
+        allow_origin_regex=os.environ.get("MED_GRAPH_CORS_ORIGIN_REGEX"),
         allow_methods=["GET"],
         allow_headers=["*"],
     )
@@ -67,6 +70,13 @@ app = create_app()
 
 
 def run() -> None:
+    """Entry point for the `med-graph-api` script.
+
+    Defaults to localhost for development; a platform that injects HOST/PORT
+    (Railway, Fly, Heroku) is honoured so the same command works deployed.
+    """
     import uvicorn
 
-    uvicorn.run("med_graph.api.app:app", host="127.0.0.1", port=8000, reload=False)
+    host = os.environ.get("HOST", "127.0.0.1")
+    port = int(os.environ.get("PORT", "8000"))
+    uvicorn.run("med_graph.api.app:app", host=host, port=port, reload=False)

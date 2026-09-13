@@ -11,7 +11,11 @@ import type {
   SideEffectReport,
 } from "./types";
 
-// All data comes from the live FastAPI backend, proxied through Vite at /api.
+// All data comes from the live FastAPI backend. In development the base URL is
+// empty and Vite proxies /api to localhost:8000 (see vite.config.ts). In
+// production VITE_API_BASE_URL points at the deployed backend, which must list
+// this origin in MED_GRAPH_CORS_ORIGINS.
+const API_BASE_URL = (import.meta.env.VITE_API_BASE_URL ?? "").replace(/\/+$/, "");
 
 interface ApiResponse<T> {
   success: boolean;
@@ -20,7 +24,7 @@ interface ApiResponse<T> {
 }
 
 async function api<T>(path: string): Promise<T> {
-  const response = await fetch(`/api${path}`);
+  const response = await fetch(`${API_BASE_URL}/api${path}`);
   if (!response.ok) {
     throw new Error(`API error ${response.status}: ${path}`);
   }

@@ -1,0 +1,21 @@
+.git
+.venv
+.pytest_cache
+.coverage
+htmlcov
+__pycache__
+*.pyc
+*.egg-info
+dist
+
+# Not needed by the API: the frontend deploys to Vercel, and the dataset
+# pipeline runs locally.
+frontend
+node_modules
+data_clean
+data_exports
+scripts
+tests
+
+.env
+.DS_Store
