@@ -154,3 +154,55 @@ class TestRealDataset:
         edges, _ = scoped
         assert len(set(edges.rxcui)) > 0
         assert edges.groupby("rxcui").size().min() >= 1
+
+
+class FakeClient:
+    """Captures the rows a loader would send, so no Neo4j is needed."""
+
+    def __init__(self):
+        self.rows = []
+
+    def execute(self, query, params):
+        self.rows = params["rows"]
+
+
+def drug_frame(rows):
+    return pd.DataFrame(
+        rows,
+        columns=[
+            "rxcui", "generic_name", "has_label", "product_type",
+            "neurotransmitters", "mechanism",
+        ],
+    )
+
+
+class TestDrugNodes:
+    """Pharmacology columns from drug_master become Drug properties."""
+
+    SERTRALINE = [
+        "36437", "sertraline", True, "HUMAN PRESCRIPTION DRUG",
+        "Serotonin(+)", "Serotonin Uptake Inhibitors",
+    ]
+
+    def test_pharmacology_is_carried_onto_the_node(self, load_graph):
+        client = FakeClient()
+        load_graph.load_drugs(client, drug_frame([self.SERTRALINE]))
+        assert client.rows[0]["neurotransmitters"] == "Serotonin(+)"
+        assert client.rows[0]["mechanism"] == "Serotonin Uptake Inhibitors"
+
+    def test_the_cypher_sets_both_properties(self, load_graph):
+        assert "d.neurotransmitters = row.neurotransmitters" in load_graph.MERGE_DRUGS
+        assert "d.mechanism = row.mechanism" in load_graph.MERGE_DRUGS
+
+    def test_a_drug_without_pharmacology_gets_an_empty_string(self, load_graph):
+        """An empty CSV cell reads back as NaN, which Neo4j cannot store."""
+        charcoal = ["272", "activated charcoal", True, "HUMAN OTC DRUG", float("nan"), None]
+        client = FakeClient()
+        load_graph.load_drugs(client, drug_frame([charcoal]))
+        assert client.rows[0]["neurotransmitters"] == ""
+        assert client.rows[0]["mechanism"] == ""
+
+    def test_one_node_per_drug_not_per_row(self, load_graph):
+        client = FakeClient()
+        load_graph.load_drugs(client, drug_frame([self.SERTRALINE, self.SERTRALINE]))
+        assert len(client.rows) == 1

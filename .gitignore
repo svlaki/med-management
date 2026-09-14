@@ -20,7 +20,8 @@ data_exports/
 
 # Large regenerable pipeline intermediates. Rebuild with:
 #   scripts/export_rxnorm_classes.py, scripts/export_openfda_labels.py,
-#   scripts/export_faers.py, scripts/build_drug_dataset.py
+#   scripts/export_faers.py, scripts/build_drug_dataset.py,
+#   scripts/merge_pharmacology.py (last: joins the psych pharmacology columns in)
 # Remove these two lines if you'd rather version them (~14MB) or use Git LFS.
 data_clean/drug_master.csv
 data_clean/faers_raw.csv

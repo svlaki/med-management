@@ -51,7 +51,9 @@ UNWIND $rows AS row
 MERGE (d:Drug {rxcui: row.rxcui})
 SET d.generic_name = row.generic_name,
     d.has_label = row.has_label,
-    d.product_type = row.product_type
+    d.product_type = row.product_type,
+    d.neurotransmitters = row.neurotransmitters,
+    d.mechanism = row.mechanism
 """
 
 MERGE_CONDITIONS = """
@@ -168,6 +170,12 @@ def load_drug_classes(client: GraphClient, classes_df: pd.DataFrame) -> int:
     return len(rows)
 
 
+def text(row: pd.Series, column: str) -> str:
+    """Read an optional text column, turning a missing cell into ""."""
+    value = row.get(column)
+    return value if isinstance(value, str) else ""
+
+
 def load_drugs(client: GraphClient, master_df: pd.DataFrame) -> int:
     """Create Drug nodes from unique drugs in master."""
     unique = master_df.drop_duplicates(subset="rxcui")
@@ -176,7 +184,9 @@ def load_drugs(client: GraphClient, master_df: pd.DataFrame) -> int:
             "rxcui": r["rxcui"],
             "generic_name": r["generic_name"],
             "has_label": bool(r["has_label"]),
-            "product_type": r["product_type"] if isinstance(r["product_type"], str) else "",
+            "product_type": text(r, "product_type"),
+            "neurotransmitters": text(r, "neurotransmitters"),
+            "mechanism": text(r, "mechanism"),
         }
         for _, r in unique.iterrows()
     ]
