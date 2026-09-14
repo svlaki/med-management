@@ -28,3 +28,10 @@ data_clean/faers_raw.csv
 
 # spreadsheet copies of the CSVs in this directory
 data_clean/*.xlsx
+
+# Secrets: covers .env plus variants like .env.local.bak. Templates stay tracked.
+.env.*
+!**/.env.example
+
+# Claude Code worktrees are nested git repos; never commit them.
+.claude/worktrees/
