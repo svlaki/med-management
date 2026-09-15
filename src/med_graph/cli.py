@@ -1,8 +1,7 @@
 import argparse
 import sys
 
-from dotenv import load_dotenv
-
+from med_graph.config import DEFAULT_TARGET, EnvFileMissing, load_target
 from med_graph.graph.client import GraphClient, GraphConfigError, GraphSchemaError
 from med_graph.graph.loader import load_batch
 from med_graph.queries.medications import (
@@ -149,8 +148,13 @@ def _stats() -> None:
 
 
 def main() -> int:
-    load_dotenv()
     parser = argparse.ArgumentParser(prog="med-graph")
+    parser.add_argument(
+        "--env",
+        metavar="TARGET",
+        help=f"Neo4j target to talk to, i.e. which .env.<TARGET> to read "
+        f"(default: $MED_GRAPH_ENV, else {DEFAULT_TARGET})",
+    )
     subparsers = parser.add_subparsers(dest="command", required=True)
     subparsers.add_parser("init-schema", help="Create graph constraints and indexes")
     subparsers.add_parser("stats", help="Show node counts by label")
@@ -185,6 +189,7 @@ def main() -> int:
 
     args = parser.parse_args()
     try:
+        load_target(args.env)
         if args.command == "ingest":
             _ingest(args.condition)
         elif args.command == "profile":
@@ -199,6 +204,7 @@ def main() -> int:
             commands = {"init-schema": _init_schema, "stats": _stats}
             commands[args.command]()
     except (
+        EnvFileMissing,
         GraphConfigError,
         GraphSchemaError,
         SourceFetchError,

@@ -43,7 +43,13 @@ class TestDisorderVocabulary:
     def test_symptom_level_terms_are_added(self, load_graph):
         vocab = load_graph.disorder_vocabulary(tree_frame([]))
         # MeSH files these outside "Mental Disorders", but they are psychiatric.
-        assert {"Anxiety", "Depression", "Mania", "Catatonia"} <= vocab
+        assert {"Mania", "Catatonia", "Aggression"} <= vocab
+
+    def test_aliased_names_are_not_disorders_in_their_own_right(self, load_graph):
+        """"Depression" and "Anxiety" merge into their canonical disorder nodes."""
+        vocab = load_graph.disorder_vocabulary(tree_frame([]))
+        for name in load_graph.CONDITION_ALIASES:
+            assert name not in vocab
 
     def test_non_psychiatric_indications_are_absent(self, load_graph):
         tree = tree_frame([
@@ -55,7 +61,9 @@ class TestDisorderVocabulary:
 
 
 class TestTherapeuticEdges:
-    VOCAB = frozenset({"Schizophrenia", "Depressive Disorder", "Anxiety"})
+    # "Anxiety Disorders" and "Depressive Disorder" are the alias targets, so they
+    # must be in the vocabulary for an aliased row to survive the membership test.
+    VOCAB = frozenset({"Schizophrenia", "Depressive Disorder", "Anxiety Disorders"})
 
     def test_semicolon_joined_conditions_are_expanded(self, load_graph):
         master = master_frame([
@@ -98,6 +106,23 @@ class TestTherapeuticEdges:
         edges = load_graph.therapeutic_edges(master_frame([]), self.VOCAB)
         assert len(edges) == 0
         assert list(edges.columns) == ["rxcui", "rela", "condition_name"]
+
+    def test_informal_names_are_aliased_to_their_canonical_disorder(self, load_graph):
+        """A drug listed under "Anxiety" lands on the "Anxiety Disorders" node."""
+        master = master_frame([
+            ["36437", "may_treat", "Anxiety"],
+            ["704", "may_treat", "Depression"],
+        ])
+        edges = load_graph.therapeutic_edges(master, self.VOCAB)
+        assert set(edges.condition_name) == {"Anxiety Disorders", "Depressive Disorder"}
+
+    def test_a_drug_on_both_the_alias_and_its_target_is_not_duplicated(self, load_graph):
+        """MERGE dedupes in Neo4j, but the pair should collapse to one node name."""
+        master = master_frame([
+            ["36437", "may_treat", "Anxiety; Anxiety Disorders"],
+        ])
+        edges = load_graph.therapeutic_edges(master, self.VOCAB)
+        assert set(edges.condition_name) == {"Anxiety Disorders"}
 
 
 class TestGraphShape:
@@ -145,8 +170,16 @@ class TestRealDataset:
         edges, _ = scoped
         present = set(edges.condition_name)
         for name in ("Schizophrenia", "Bipolar Disorder", "Anxiety Disorders",
-                     "Depressive Disorder", "Anxiety", "Depression"):
+                     "Depressive Disorder"):
             assert name in present, f"{name} should be a disorder node"
+
+    def test_merged_names_do_not_survive_as_their_own_disorder(self, scoped, load_graph):
+        """"Anxiety" and "Depression" are folded into their canonical nodes."""
+        edges, _ = scoped
+        present = set(edges.condition_name)
+        for name, canonical in load_graph.CONDITION_ALIASES.items():
+            assert name not in present, f"{name} should have merged into {canonical}"
+            assert canonical in present
 
     def test_no_drug_is_left_without_a_disorder(self, scoped):
         # Drugs and disorders both derive from this edge set, so by construction

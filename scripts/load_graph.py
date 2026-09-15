@@ -22,15 +22,20 @@ side effects reported for them.
 Because drugs and disorders are derived from the same edge set, no node can end
 up isolated.
 
-Run: .venv/bin/python scripts/load_graph.py
-Requires: Neo4j running (docker compose up -d neo4j)
+This wipes the target graph before loading, so it names the target up front and
+requires typed confirmation before touching anything that is not local.
+
+Run: .venv/bin/python scripts/load_graph.py            (local, needs docker compose up -d neo4j)
+     .venv/bin/python scripts/load_graph.py --env aura (production; prompts first)
 """
 
+import argparse
+import sys
 from pathlib import Path
 
 import pandas as pd
-from dotenv import load_dotenv
 
+from med_graph.config import DEFAULT_TARGET, Aborted, EnvFileMissing, confirm_destructive, load_target
 from med_graph.graph.client import GraphClient
 from med_graph.models.slug import slugify
 
@@ -105,11 +110,11 @@ EDGE_QUERIES = {
 }
 
 # Psychiatric targets that MeSH classifies as symptoms or behaviours rather than
-# under "Mental Disorders", so the class tree alone would miss them. Without
-# these the graph has no plain "Depression" or "Anxiety" node.
+# under "Mental Disorders", so the class tree alone would miss them.
+# "Depression" and "Anxiety" are deliberately absent: they are aliased into their
+# canonical disorder nodes below rather than standing on their own.
 PSYCHIATRIC_SYMPTOM_TERMS = frozenset({
     "Aggression",
-    "Anxiety",
     "Bulimia",
     "Catatonia",
     "Mania",
@@ -120,8 +125,11 @@ PSYCHIATRIC_SYMPTOM_TERMS = frozenset({
 
 # Map informal condition names to their canonical disorder name so that e.g.
 # drugs listed under "Depression" merge into the "Depressive Disorder" node.
+# The alias target must itself be in the vocabulary; both of these come from the
+# MeSH tree walk. Applied before the vocabulary test in therapeutic_edges().
 CONDITION_ALIASES: dict[str, str] = {
     "Depression": "Depressive Disorder",
+    "Anxiety": "Anxiety Disorders",
 }
 
 
@@ -258,8 +266,30 @@ def load_belongs_to(client: GraphClient, classes_df: pd.DataFrame) -> int:
     return len(rows)
 
 
-def main() -> None:
-    load_dotenv()
+def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description="Load data_clean/ into Neo4j.")
+    parser.add_argument(
+        "--env",
+        metavar="TARGET",
+        help=f"Neo4j target to load, i.e. which .env.<TARGET> to read "
+        f"(default: $MED_GRAPH_ENV, else {DEFAULT_TARGET})",
+    )
+    parser.add_argument(
+        "--yes",
+        action="store_true",
+        help="skip the confirmation prompt for a remote target",
+    )
+    return parser.parse_args(argv)
+
+
+def main(argv: list[str] | None = None) -> int:
+    args = parse_args(argv)
+    try:
+        target = load_target(args.env)
+        confirm_destructive(target, "Reload the graph (deletes every node)", args.yes)
+    except (EnvFileMissing, Aborted) as error:
+        print(f"Error: {error}", file=sys.stderr)
+        return 1
 
     print("Reading data files...")
     master = pd.read_csv(DATA_DIR / "drug_master.csv", dtype={"rxcui": str})
@@ -326,8 +356,9 @@ def main() -> None:
             result = client.execute(f"MATCH ()-[r:{rel}]->() RETURN count(r) AS c")
             print(f"  {rel}: {result[0]['c']} edges")
 
-    print("\nDone.")
+    print(f"\nDone — loaded into {target.describe()}")
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

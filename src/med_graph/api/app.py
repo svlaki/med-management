@@ -3,7 +3,6 @@
 import os
 from contextlib import asynccontextmanager
 
-from dotenv import load_dotenv
 from fastapi import FastAPI, Request
 from fastapi.exceptions import RequestValidationError
 from fastapi.middleware.cors import CORSMiddleware
@@ -11,6 +10,7 @@ from fastapi.responses import JSONResponse
 from starlette.exceptions import HTTPException as StarletteHTTPException
 
 from med_graph.api.routes import router
+from med_graph.config import load_target
 from med_graph.graph.client import GraphClient, build_driver_from_env
 
 # Vite dev server by default; override for other deployments.
@@ -19,7 +19,9 @@ DEFAULT_CORS_ORIGINS = "http://localhost:5173"
 
 @asynccontextmanager
 async def _lifespan(app: FastAPI):
-    load_dotenv()
+    # Locally this picks .env.local unless MED_GRAPH_ENV says otherwise; on
+    # Railway no env files ship, so the injected variables are used as-is.
+    print(f"Connecting to {load_target().describe()}")
     driver = build_driver_from_env()
     driver.verify_connectivity()
     app.state.client = GraphClient(driver)

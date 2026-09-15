@@ -14,7 +14,7 @@ written for has no parallel edges of the same type between the same pair; if the
 source does contain them, they collapse to one edge and the verification step at
 the end reports the mismatch rather than failing silently.
 
-Run:  .venv/bin/python scripts/copy_graph.py --source-env .env.local.bak --target-env .env
+Run:  .venv/bin/python scripts/copy_graph.py --source-env .env.local --target-env .env.aura
 Check only, no writes:  .venv/bin/python scripts/copy_graph.py --dry-run
 Compare two graphs:     .venv/bin/python scripts/copy_graph.py --verify-only
 """
@@ -289,8 +289,8 @@ def parse_args(argv: tuple[str, ...]) -> argparse.Namespace:
         prog="copy_graph",
         description="Copy a Neo4j graph into another instance, idempotently.",
     )
-    parser.add_argument("--source-env", default=".env.local.bak", help="env file for the source database")
-    parser.add_argument("--target-env", default=".env", help="env file for the target database")
+    parser.add_argument("--source-env", default=".env.local", help="env file for the source database")
+    parser.add_argument("--target-env", default=".env.aura", help="env file for the target database")
     parser.add_argument("--batch-size", type=int, default=DEFAULT_BATCH_SIZE, help="rows per transaction")
     parser.add_argument("--dry-run", action="store_true", help="show the plan, write nothing")
     parser.add_argument("--verify-only", action="store_true", help="compare the two graphs, write nothing")
