@@ -18,4 +18,5 @@ scripts
 tests
 
 .env
+.env.*
 .DS_Store

@@ -35,7 +35,12 @@ from pathlib import Path
 
 import pandas as pd
 
-from med_graph.config import DEFAULT_TARGET, Aborted, EnvFileMissing, confirm_destructive, load_target
+from med_graph.config import (
+    DEFAULT_TARGET,
+    ConfigError,
+    confirm_destructive,
+    load_target,
+)
 from med_graph.graph.client import GraphClient
 from med_graph.models.slug import slugify
 
@@ -287,7 +292,7 @@ def main(argv: list[str] | None = None) -> int:
     try:
         target = load_target(args.env)
         confirm_destructive(target, "Reload the graph (deletes every node)", args.yes)
-    except (EnvFileMissing, Aborted) as error:
+    except ConfigError as error:
         print(f"Error: {error}", file=sys.stderr)
         return 1
 

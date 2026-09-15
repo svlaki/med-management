@@ -1,6 +1,7 @@
 import pytest
 
 from med_graph import cli
+from med_graph.config import load_target
 from med_graph.graph.client import GraphClient
 
 
@@ -10,11 +11,18 @@ def clean_env(monkeypatch):
         monkeypatch.delenv(name, raising=False)
 
 
-def test_missing_config_exits_nonzero(clean_env, monkeypatch, capsys):
-    monkeypatch.setattr(cli, "load_dotenv", lambda: None)
+def test_missing_config_exits_nonzero(clean_env, monkeypatch, capsys, tmp_path):
+    monkeypatch.setattr(cli, "load_target", lambda name: load_target(name, root=tmp_path))
     monkeypatch.setattr("sys.argv", ["med-graph", "init-schema"])
     assert cli.main() == 1
     assert "Error" in capsys.readouterr().err
+
+
+def test_unknown_env_target_is_reported(monkeypatch, capsys, tmp_path):
+    monkeypatch.setattr(cli, "load_target", lambda name: load_target(name, root=tmp_path))
+    monkeypatch.setattr("sys.argv", ["med-graph", "--env", "nope", "init-schema"])
+    assert cli.main() == 1
+    assert ".env.nope" in capsys.readouterr().err
 
 
 def test_unknown_command_is_rejected(monkeypatch):
@@ -307,3 +315,56 @@ def test_export_command_is_gone(fake_client, monkeypatch):
     monkeypatch.setattr("sys.argv", ["med-graph", "export"])
     with pytest.raises(SystemExit):
         cli.main()
+
+
+class TestRemoteWriteGuard:
+    """`med-graph --env aura ingest` writes to production; it must say so and ask."""
+
+    @pytest.fixture
+    def aura(self, monkeypatch):
+        from pathlib import Path
+
+        from med_graph.config import Target
+
+        target = Target("aura", Path(".env.aura"), "neo4j+s://abc.databases.neo4j.io")
+        monkeypatch.setattr(cli, "load_target", lambda name: target)
+        return target
+
+    def test_a_write_command_is_confirmed(self, aura, monkeypatch, capsys):
+        from med_graph.config import Aborted
+
+        def refuse(target, action, assume_yes=False):
+            raise Aborted("declined")
+
+        monkeypatch.setattr(cli, "confirm_destructive", refuse)
+        monkeypatch.setattr(
+            cli.GraphClient,
+            "from_env",
+            lambda: pytest.fail("connected despite a declined confirmation"),
+        )
+        monkeypatch.setattr("sys.argv", ["med-graph", "--env", "aura", "init-schema"])
+        assert cli.main() == 1
+        assert "Error" in capsys.readouterr().err
+
+    def test_yes_skips_the_prompt(self, aura, monkeypatch):
+        seen = {}
+        monkeypatch.setattr(
+            cli,
+            "confirm_destructive",
+            lambda target, action, assume_yes=False: seen.update(assume_yes=assume_yes),
+        )
+        monkeypatch.setattr(cli, "_init_schema", lambda: None)
+        monkeypatch.setattr("sys.argv", ["med-graph", "--env", "aura", "--yes", "init-schema"])
+        assert cli.main() == 0
+        assert seen == {"assume_yes": True}
+
+    def test_a_read_command_announces_the_target_without_asking(
+        self, aura, monkeypatch, capsys
+    ):
+        monkeypatch.setattr(
+            cli, "confirm_destructive", lambda *a, **k: pytest.fail("prompted on a read")
+        )
+        monkeypatch.setattr(cli, "_stats", lambda: None)
+        monkeypatch.setattr("sys.argv", ["med-graph", "--env", "aura", "stats"])
+        assert cli.main() == 0
+        assert "aura" in capsys.readouterr().err

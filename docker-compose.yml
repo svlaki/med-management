@@ -1,3 +1,9 @@
+# Connection settings live in .env.local, not .env, so that one file per target
+# stays the single source of truth (see src/med_graph/config.py). Compose only
+# interpolates from .env by default, so point it at the target file explicitly:
+#
+#   docker compose --env-file .env.local up -d neo4j
+#
 services:
   neo4j:
     image: neo4j:5.26-community
@@ -6,7 +12,7 @@ services:
       - "7474:7474" # HTTP browser UI
       - "7687:7687" # Bolt driver
     environment:
-      NEO4J_AUTH: neo4j/${NEO4J_PASSWORD:?set NEO4J_PASSWORD in .env}
+      NEO4J_AUTH: neo4j/${NEO4J_PASSWORD:?run with --env-file .env.local}
     volumes:
       - neo4j-data:/data
     healthcheck:

@@ -26,11 +26,14 @@ import re
 import sys
 from collections.abc import Iterator
 from dataclasses import dataclass
+from pathlib import Path
 from typing import Any
 
 from dotenv import dotenv_values
 from neo4j import Driver, GraphDatabase
 from neo4j.exceptions import Neo4jError
+
+from med_graph.config import ConfigError, Target, confirm_destructive
 
 DEFAULT_BATCH_SIZE = 5_000
 IDENTIFIER_PATTERN = re.compile(r"^[A-Za-z_][A-Za-z0-9_]*$")
@@ -75,8 +78,13 @@ def quote(identifier: str) -> str:
     return f"`{identifier}`"
 
 
-def connect(env_path: str, role: str) -> Driver:
-    """Build a verified driver from the NEO4J_* vars in an env file."""
+def connect(env_path: str, role: str) -> tuple[Driver, Target]:
+    """Build a verified driver from the NEO4J_* vars in an env file.
+
+    Returns the Target alongside it so callers can tell a throwaway local
+    database from a hosted one before writing. URIs are printed through
+    Target.safe_uri, which strips any credentials embedded in them.
+    """
     values = dotenv_values(env_path)
     missing = tuple(
         name
@@ -87,16 +95,19 @@ def connect(env_path: str, role: str) -> Driver:
         raise CopyError(
             f"{role} env file {env_path!r} is missing {', '.join(missing)}."
         )
-    uri = values["NEO4J_URI"]
+    name = Path(env_path).name.removeprefix(".env.") or env_path
+    target = Target(name, Path(env_path), values["NEO4J_URI"])
     try:
-        driver = GraphDatabase.driver(uri, auth=(values["NEO4J_USER"], values["NEO4J_PASSWORD"]))
+        driver = GraphDatabase.driver(
+            target.uri, auth=(values["NEO4J_USER"], values["NEO4J_PASSWORD"])
+        )
         driver.verify_connectivity()
     except Exception as error:
         raise CopyError(
-            f"Could not connect to the {role} database at {uri}: {error}"
+            f"Could not connect to the {role} database at {target.safe_uri}: {error}"
         ) from error
-    print(f"  {role:<6} {uri}")
-    return driver
+    print(f"  {role:<6} {target.safe_uri}")
+    return driver, target
 
 
 def unique_keys(driver: Driver) -> dict[str, str]:
@@ -293,6 +304,11 @@ def parse_args(argv: tuple[str, ...]) -> argparse.Namespace:
     parser.add_argument("--target-env", default=".env.aura", help="env file for the target database")
     parser.add_argument("--batch-size", type=int, default=DEFAULT_BATCH_SIZE, help="rows per transaction")
     parser.add_argument("--dry-run", action="store_true", help="show the plan, write nothing")
+    parser.add_argument(
+        "--yes",
+        action="store_true",
+        help="skip the confirmation prompt when the target is remote",
+    )
     parser.add_argument("--verify-only", action="store_true", help="compare the two graphs, write nothing")
     parser.add_argument(
         "--allow-nonempty",
@@ -309,8 +325,8 @@ def parse_args(argv: tuple[str, ...]) -> argparse.Namespace:
 
 def run(args: argparse.Namespace) -> int:
     print("Connecting")
-    source = connect(args.source_env, "source")
-    target = connect(args.target_env, "target")
+    source, _ = connect(args.source_env, "source")
+    target, target_info = connect(args.target_env, "target")
     try:
         if args.verify_only:
             print("\nVerifying")
@@ -339,6 +355,10 @@ def run(args: argparse.Namespace) -> int:
         if args.dry_run:
             print("\nDry run — nothing written.")
             return 0
+
+        # MERGE is re-runnable but still overwrites properties via SET n += row,
+        # so a hosted target gets the same typed confirmation as a reload.
+        confirm_destructive(target_info, "Copy the graph", args.yes)
 
         missing = tuple(spec.label for spec in nodes if spec.label not in unique_keys(target))
         if missing:
@@ -369,7 +389,7 @@ def run(args: argparse.Namespace) -> int:
 def main() -> int:
     try:
         return run(parse_args(tuple(sys.argv[1:])))
-    except CopyError as error:
+    except (CopyError, ConfigError) as error:
         print(f"\nError: {error}", file=sys.stderr)
         return 1
     except Neo4jError as error:

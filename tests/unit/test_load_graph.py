@@ -239,3 +239,41 @@ class TestDrugNodes:
         client = FakeClient()
         load_graph.load_drugs(client, drug_frame([self.SERTRALINE, self.SERTRALINE]))
         assert len(client.rows) == 1
+
+
+class TestDestructiveGuard:
+    """main() wipes the target with CLEAR_GRAPH, so a declined confirmation
+    must stop before the data files are even read."""
+
+    def test_declining_returns_nonzero_and_touches_nothing(
+        self, load_graph, monkeypatch, capsys
+    ):
+        from med_graph.config import Aborted
+
+        monkeypatch.setattr(
+            load_graph, "load_target", lambda name: _remote_target()
+        )
+
+        def refuse(target, action, assume_yes=False):
+            raise Aborted("declined")
+
+        monkeypatch.setattr(load_graph, "confirm_destructive", refuse)
+        monkeypatch.setattr(
+            load_graph.GraphClient,
+            "from_env",
+            lambda: pytest.fail("connected despite a declined confirmation"),
+        )
+        assert load_graph.main([]) == 1
+        assert "Error" in capsys.readouterr().err
+
+    def test_an_unknown_target_is_reported_not_raised(self, load_graph, capsys):
+        assert load_graph.main(["--env", "nope"]) == 1
+        assert "Error" in capsys.readouterr().err
+
+
+def _remote_target():
+    from pathlib import Path
+
+    from med_graph.config import Target
+
+    return Target("aura", Path(".env.aura"), "neo4j+s://abc.databases.neo4j.io")

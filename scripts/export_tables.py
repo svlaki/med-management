@@ -4,7 +4,8 @@ Reads the populated Neo4j graph and flattens it into tidy DataFrames grouped by
 data source, so you can explore the RxClass / openFDA / FAERS data in pandas,
 Excel, or anything that opens CSV.
 
-Run:  .venv/bin/python scripts/export_tables.py
+Run:  .venv/bin/python scripts/export_tables.py            (local graph)
+      .venv/bin/python scripts/export_tables.py --env aura (hosted graph)
 Output: data_exports/*.csv  and  data_exports/med_graph_datasets.xlsx
 
 Interactive:
@@ -13,11 +14,13 @@ Interactive:
     faers  = pd.read_csv("data_exports/faers_side_effects.csv")
 """
 
+import argparse
+import sys
 from pathlib import Path
 
 import pandas as pd
-from dotenv import load_dotenv
 
+from med_graph.config import DEFAULT_TARGET, ConfigError, load_target
 from med_graph.graph.client import GraphClient
 
 OUT_DIR = Path(__file__).resolve().parent.parent / "data_exports"
@@ -78,8 +81,26 @@ QUERIES: dict[str, tuple[str, str]] = {
 }
 
 
-def main() -> None:
-    load_dotenv()
+def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description="Export the graph to CSV and Excel.")
+    parser.add_argument(
+        "--env",
+        metavar="TARGET",
+        help=f"Neo4j target to read, i.e. which .env.<TARGET> to use "
+        f"(default: $MED_GRAPH_ENV, else {DEFAULT_TARGET})",
+    )
+    return parser.parse_args(argv)
+
+
+def main(argv: list[str] | None = None) -> int:
+    args = parse_args(argv)
+    try:
+        # Read-only, so no confirmation prompt — just say where the rows came from.
+        print(f"Exporting from {load_target(args.env).describe()}")
+    except ConfigError as error:
+        print(f"Error: {error}", file=sys.stderr)
+        return 1
+
     OUT_DIR.mkdir(exist_ok=True)
     frames: dict[str, pd.DataFrame] = {}
 
@@ -100,7 +121,8 @@ def main() -> None:
             df.to_excel(writer, sheet_name=name[:31], index=False)
     print(f"Wrote workbook: {xlsx_path}")
     print(f"All files in:   {OUT_DIR}")
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

@@ -10,7 +10,7 @@ from fastapi.responses import JSONResponse
 from starlette.exceptions import HTTPException as StarletteHTTPException
 
 from med_graph.api.routes import router
-from med_graph.config import load_target
+from med_graph.config import ConfigError, load_target
 from med_graph.graph.client import GraphClient, build_driver_from_env
 
 # Vite dev server by default; override for other deployments.
@@ -19,8 +19,7 @@ DEFAULT_CORS_ORIGINS = "http://localhost:5173"
 
 @asynccontextmanager
 async def _lifespan(app: FastAPI):
-    # Locally this picks .env.local unless MED_GRAPH_ENV says otherwise; on
-    # Railway no env files ship, so the injected variables are used as-is.
+    # Re-run so a configuration problem tolerated at import fails startup loudly.
     print(f"Connecting to {load_target().describe()}")
     driver = build_driver_from_env()
     driver.verify_connectivity()
@@ -68,6 +67,22 @@ def create_app() -> FastAPI:
     return app
 
 
+def _load_environment() -> None:
+    """Populate os.environ before create_app() reads it, at import time.
+
+    create_app() runs at import, before the lifespan, so CORS settings from an
+    env file would otherwise never be seen and the API would silently fall back
+    to DEFAULT_CORS_ORIGINS. Failures are deferred rather than raised: importing
+    this module (to build a test app, or to inspect routes) should not require a
+    reachable database. The lifespan calls load_target() again and fails there.
+    """
+    try:
+        load_target()
+    except ConfigError as error:
+        print(f"Deferring configuration error until startup: {error}")
+
+
+_load_environment()
 app = create_app()
 
 
