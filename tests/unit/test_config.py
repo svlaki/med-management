@@ -7,6 +7,7 @@ import pytest
 
 from med_graph.config import (
     AMBIENT_TARGET,
+    REPO_ROOT,
     DEFAULT_TARGET,
     Aborted,
     ConfigError,
@@ -198,6 +199,72 @@ class TestAmbientFallback:
             monkeypatch.setenv(name, value)
         monkeypatch.setenv("MED_GRAPH_ENV", "aura")
         assert load_target(root=root).name == "aura"
+
+
+class TestInstalledPackage:
+    """root=None models an installed package: a wheel, or the Railway image,
+    where the code lives in site-packages and there is no source tree to read
+    env files from. Searching site-packages' parent for .env* is meaningless,
+    so the file search is skipped entirely."""
+
+    def test_running_from_source_finds_the_repo(self):
+        """This test suite runs from a checkout, so detection must succeed."""
+        assert REPO_ROOT is not None
+        assert (REPO_ROOT / "pyproject.toml").is_file()
+
+    def test_injected_variables_are_used(self, clean_env, monkeypatch):
+        for name, value in zip(NEO4J_VARS, ("neo4j+s://x.io", "neo4j", "pw")):
+            monkeypatch.setenv(name, value)
+        target = load_target(root=None)
+        assert target.env_file is None
+        assert target.name == AMBIENT_TARGET
+        assert target.uri == "neo4j+s://x.io"
+
+    def test_the_env_var_still_names_the_target(self, clean_env, monkeypatch):
+        for name, value in zip(NEO4J_VARS, ("neo4j+s://x.io", "neo4j", "pw")):
+            monkeypatch.setenv(name, value)
+        monkeypatch.setenv("MED_GRAPH_ENV", "aura")
+        assert load_target(root=None).name == "aura"
+
+    def test_an_explicit_flag_cannot_be_honoured(self, clean_env, monkeypatch):
+        monkeypatch.setenv("NEO4J_URI", "neo4j+s://x.io")
+        with pytest.raises(EnvFileMissing, match="no source checkout"):
+            load_target("aura", root=None)
+
+    def test_missing_injected_variables_are_reported(self, clean_env):
+        with pytest.raises(EnvFileMissing, match="NEO4J_URI"):
+            load_target(root=None)
+
+    def test_a_bad_name_is_still_rejected(self, clean_env, monkeypatch):
+        monkeypatch.setenv("NEO4J_URI", "neo4j+s://x.io")
+        monkeypatch.setenv("MED_GRAPH_ENV", "../../etc/passwd")
+        with pytest.raises(InvalidTarget):
+            load_target(root=None)
+
+    def test_detection_returns_none_for_an_installed_layout(self, monkeypatch, tmp_path):
+        """site-packages/med_graph/config.py has no 'src' parent and no
+        pyproject.toml above it, so neither marker lines up."""
+        from med_graph import config
+
+        installed = tmp_path / "site-packages" / "med_graph" / "config.py"
+        installed.parent.mkdir(parents=True)
+        installed.write_text("")
+        monkeypatch.setattr(config, "__file__", str(installed))
+        assert config._detect_repo_root() is None
+
+    def test_env_file_for_refuses_without_a_checkout(self):
+        with pytest.raises(EnvFileMissing, match="no source checkout"):
+            env_file_for("aura", None)
+
+    def test_no_targets_are_listed_without_a_checkout(self):
+        assert available_targets(None) == []
+
+    def test_no_stray_env_file_beside_site_packages_is_read(self, clean_env, monkeypatch, tmp_path):
+        """The bug this closes: REPO_ROOT resolved to /usr/local/lib/python3.12
+        in the image. A file that happened to sit there must not be picked up."""
+        (tmp_path / ".env.local").write_text("NEO4J_URI=bolt://stray:7687\n")
+        monkeypatch.setenv("NEO4J_URI", "neo4j+s://injected.io")
+        assert load_target(root=None).uri == "neo4j+s://injected.io"
 
 
 class TestCredentialRedaction:

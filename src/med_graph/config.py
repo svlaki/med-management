@@ -47,7 +47,26 @@ TARGET_NAME_PATTERN = re.compile(r"^[A-Za-z0-9_-]+$")
 # Connection settings that must come from a per-target file, never the shared one.
 TARGET_ONLY_VARS = ("NEO4J_URI", "NEO4J_USER", "NEO4J_PASSWORD")
 
-REPO_ROOT = Path(__file__).resolve().parents[2]
+def _detect_repo_root() -> Path | None:
+    """The checkout this module was loaded from, or None if installed.
+
+    From source the layout is <root>/src/med_graph/config.py. Installed into
+    site-packages it is <site-packages>/med_graph/config.py, where the same
+    arithmetic lands on the interpreter's lib directory — a place that has
+    nothing to do with this project, and whose contents must never be treated
+    as its configuration. Both markers have to line up before a directory is
+    accepted as the repo root.
+    """
+    here = Path(__file__).resolve()
+    root = here.parents[2]
+    if here.parents[1].name == "src" and (root / "pyproject.toml").is_file():
+        return root
+    return None
+
+
+# None when running as an installed package (a wheel, the Railway image):
+# there is no source tree, so there are no env files to read.
+REPO_ROOT = _detect_repo_root()
 
 # Distinguishes "caller passed nothing" from "caller passed stdin=None", which
 # means non-interactive. Resolving sys.stdin at call time keeps a reassigned
@@ -131,21 +150,33 @@ class Target:
         return f"target {self.name} ({scope}): {self.safe_uri}"
 
 
-def env_file_for(name: str, root: Path = REPO_ROOT) -> Path:
-    """Path of the env file backing a target name."""
+def _validate_target_name(name: str) -> str:
     if not TARGET_NAME_PATTERN.match(name or ""):
         raise InvalidTarget(
             f"Invalid target name {name!r}; expected a bare word such as 'local' or 'aura'."
         )
+    return name
+
+
+def env_file_for(name: str, root: Path | None = REPO_ROOT) -> Path:
+    """Path of the env file backing a target name."""
+    _validate_target_name(name)
+    if root is None:
+        raise EnvFileMissing(
+            f"Cannot look for .env.{name}: no source checkout (running as an "
+            "installed package). Configure the database with environment variables."
+        )
     return Path(root) / f".env.{name}"
 
 
-def available_targets(root: Path = REPO_ROOT) -> list[str]:
+def available_targets(root: Path | None = REPO_ROOT) -> list[str]:
     """Target names that have an env file, for use in error messages.
 
     Templates (.env.aura.example) and stray backups (.env.local.bak) are
     excluded: the dot in what is left of their name fails the pattern.
     """
+    if root is None:
+        return []
     names = (
         path.name.removeprefix(".env.")
         for path in Path(root).glob(".env.*")
@@ -187,20 +218,34 @@ def _load_shared(root: Path) -> None:
     _apply(values)
 
 
-def load_target(name: str | None = None, root: Path = REPO_ROOT) -> Target:
+def load_target(name: str | None = None, root: Path | None = REPO_ROOT) -> Target:
     """Load the chosen target's settings into os.environ and describe it.
 
     Resolution order for the name: the argument, then MED_GRAPH_ENV, then
-    DEFAULT_TARGET.
+    DEFAULT_TARGET. A root of None means there is no source checkout, so the
+    file search is skipped and only injected variables are considered.
     """
-    root = Path(root)
     requested = name or os.environ.get(TARGET_ENV_VAR)
-    resolved = requested or DEFAULT_TARGET
+    resolved = _validate_target_name(requested or DEFAULT_TARGET)
 
     # Read before any file is applied, so that "already in the environment"
     # cannot be satisfied by a value this function itself just loaded.
     ambient_uri = os.environ.get("NEO4J_URI")
 
+    if root is None:
+        if name:
+            raise EnvFileMissing(
+                f"Cannot read .env.{resolved}: no source checkout (running as an "
+                "installed package). Configure the database with environment variables."
+            )
+        if not ambient_uri:
+            raise EnvFileMissing(
+                "NEO4J_URI is not set. Running as an installed package, so there "
+                "are no env files to fall back on — set it in the environment."
+            )
+        return Target(requested or AMBIENT_TARGET, None, ambient_uri)
+
+    root = Path(root)
     env_file = env_file_for(resolved, root)
     _load_shared(root)
 
