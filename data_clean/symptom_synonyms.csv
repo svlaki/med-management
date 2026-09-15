@@ -1,0 +1,26 @@
+icd11_code,synonym,note
+MB21.A,difficulty concentrating,CDDR phrases concentration loss as a difficulty rather than a noun
+MB21.A,impaired concentration,same concept stated as an impairment
+MB21.A,reduced concentration,same concept stated as a reduction
+MB21.5,easily distracted,CDDR describes the behaviour rather than the trait noun
+MB21.B,thoughts racing,CDDR inverts the word order
+MB21.B,flight of ideas,clinical synonym used in the manic episode description
+MB22.7,fatigue,the ordinary clinical word for tiredness
+MB22.7,loss of energy,CDDR phrases tiredness as an energy loss
+MB22.7,reduced energy,same concept stated as a reduction
+MB22.4,increase in energy,CDDR uses a noun phrase rather than the adjective
+MB24.61,affective flattening,standard term for blunting in the psychosis literature
+MB24.61,blunting of affect,same concept with the noun first
+MB24.62,flattened affect,adjectival variant of flat affect
+MB24.8,elevation of mood,CDDR uses a noun phrase
+MB25.02,formal thought disorder,the CDDR's own parenthetical gloss for disorganized thinking
+MB23.6,disorganized behaviour,US spelling variant carried in the CDDR text
+MG41,sleep disturbance,title carries a not-elsewhere-classified qualifier the text never uses
+MG41,insomnia,the ordinary clinical word for the same finding
+MG42,somnolence,title carries a not-elsewhere-classified qualifier the text never uses
+MG42,excessive sleepiness,plain-language phrasing used in the sleep sections
+MG42,hypersomnia,clinical synonym
+MB24.2,diminished interest or pleasure,CDDR phrases anhedonia descriptively in the depressive episode
+MB24.2,loss of interest or pleasure,variant used in the melancholia specifier
+MB21.A,reduced ability to concentrate,CDDR phrasing in the depressive episode
+MB23.N,agitation or retardation,CDDR pairs the two directions in one bullet

@@ -1,0 +1,813 @@
+icd11_code,icd11_title,icd11_uri,browser_link,pool_tier
+MB20.0,Stupor,http://id.who.int/icd/entity/1000337196,https://icd.who.int/browse/2025-01/mms/en#1000337196,A
+MB20.1,Coma,http://id.who.int/icd/entity/1328725971,https://icd.who.int/browse/2025-01/mms/en#1328725971,A
+MB20.2,Clouding of consciousness,http://id.who.int/icd/entity/1505501372,https://icd.who.int/browse/2025-01/mms/en#1505501372,A
+MB21.0,Age-associated cognitive decline,http://id.who.int/icd/entity/584231559,https://icd.who.int/browse/2025-01/mms/en#584231559,A
+MB21.10,Anterograde amnesia,http://id.who.int/icd/entity/661071789,https://icd.who.int/browse/2025-01/mms/en#661071789,A
+MB21.11,Retrograde amnesia,http://id.who.int/icd/entity/1405777748,https://icd.who.int/browse/2025-01/mms/en#1405777748,A
+MB21.12,Transient global amnesia,http://id.who.int/icd/entity/1524600518,https://icd.who.int/browse/2025-01/mms/en#1524600518,A
+MB21.2,Anosognosia,http://id.who.int/icd/entity/833222383,https://icd.who.int/browse/2025-01/mms/en#833222383,A
+MB21.3,Confabulation,http://id.who.int/icd/entity/292722503,https://icd.who.int/browse/2025-01/mms/en#292722503,A
+MB21.4,Disorientation,http://id.who.int/icd/entity/1110239801,https://icd.who.int/browse/2025-01/mms/en#1110239801,A
+MB21.5,Distractibility,http://id.who.int/icd/entity/1112468506,https://icd.who.int/browse/2025-01/mms/en#1112468506,A
+MB21.6,Impaired abstract thinking,http://id.who.int/icd/entity/1736683994,https://icd.who.int/browse/2025-01/mms/en#1736683994,A
+MB21.7,Impaired executive functioning,http://id.who.int/icd/entity/1675353974,https://icd.who.int/browse/2025-01/mms/en#1675353974,A
+MB21.8,Impaired judgment,http://id.who.int/icd/entity/47640305,https://icd.who.int/browse/2025-01/mms/en#47640305,A
+MB21.9,Perseveration,http://id.who.int/icd/entity/1965065010,https://icd.who.int/browse/2025-01/mms/en#1965065010,A
+MB21.A,Poor concentration,http://id.who.int/icd/entity/656126771,https://icd.who.int/browse/2025-01/mms/en#656126771,A
+MB21.B,Racing thoughts,http://id.who.int/icd/entity/1868362076,https://icd.who.int/browse/2025-01/mms/en#1868362076,A
+MB22.0,Avolition,http://id.who.int/icd/entity/564332684,https://icd.who.int/browse/2025-01/mms/en#564332684,A
+MB22.1,Decreased libido,http://id.who.int/icd/entity/867236062,https://icd.who.int/browse/2025-01/mms/en#867236062,A
+MB22.2,Demoralization,http://id.who.int/icd/entity/1581226979,https://icd.who.int/browse/2025-01/mms/en#1581226979,A
+MB22.3,Hopelessness,http://id.who.int/icd/entity/1637562054,https://icd.who.int/browse/2025-01/mms/en#1637562054,A
+MB22.4,Increased energy,http://id.who.int/icd/entity/1858128407,https://icd.who.int/browse/2025-01/mms/en#1858128407,A
+MB22.5,Increased goal-directed activity,http://id.who.int/icd/entity/234408840,https://icd.who.int/browse/2025-01/mms/en#234408840,A
+MB22.6,Increased libido,http://id.who.int/icd/entity/744774024,https://icd.who.int/browse/2025-01/mms/en#744774024,A
+MB22.7,Tiredness,http://id.who.int/icd/entity/507899211,https://icd.who.int/browse/2025-01/mms/en#507899211,A
+MB23.0,Aggressive behaviour,http://id.who.int/icd/entity/501393848,https://icd.who.int/browse/2025-01/mms/en#501393848,A
+MB23.1,Antisocial behaviour,http://id.who.int/icd/entity/2004913297,https://icd.who.int/browse/2025-01/mms/en#2004913297,A
+MB23.2,Avoidance behaviour,http://id.who.int/icd/entity/1521194458,https://icd.who.int/browse/2025-01/mms/en#1521194458,A
+MB23.3,Bradyphrenia,http://id.who.int/icd/entity/1460125105,https://icd.who.int/browse/2025-01/mms/en#1460125105,A
+MB23.4,Compulsions,http://id.who.int/icd/entity/1682814866,https://icd.who.int/browse/2025-01/mms/en#1682814866,A
+MB23.5,Coprolalia,http://id.who.int/icd/entity/1014102510,https://icd.who.int/browse/2025-01/mms/en#1014102510,A
+MB23.6,Disorganised behaviour,http://id.who.int/icd/entity/1756562962,https://icd.who.int/browse/2025-01/mms/en#1756562962,A
+MB23.7,Disheveled appearance,http://id.who.int/icd/entity/785834121,https://icd.who.int/browse/2025-01/mms/en#785834121,A
+MB23.8,Disruptive behaviour,http://id.who.int/icd/entity/1421010536,https://icd.who.int/browse/2025-01/mms/en#1421010536,A
+MB23.9,Echolalia,http://id.who.int/icd/entity/928818606,https://icd.who.int/browse/2025-01/mms/en#928818606,A
+MB23.A,"Excessive crying of child, adolescent, or adult",http://id.who.int/icd/entity/18409657,https://icd.who.int/browse/2025-01/mms/en#18409657,A
+MB23.C,Increased sociability,http://id.who.int/icd/entity/15373899,https://icd.who.int/browse/2025-01/mms/en#15373899,A
+MB23.D,Mutism,http://id.who.int/icd/entity/1275861519,https://icd.who.int/browse/2025-01/mms/en#1275861519,A
+MB23.E,Non-suicidal self-injury,http://id.who.int/icd/entity/1430296724,https://icd.who.int/browse/2025-01/mms/en#1430296724,A
+MB23.F,Odd or peculiar appearance,http://id.who.int/icd/entity/471750381,https://icd.who.int/browse/2025-01/mms/en#471750381,A
+MB23.G,Odd or peculiar behaviour,http://id.who.int/icd/entity/11067051,https://icd.who.int/browse/2025-01/mms/en#11067051,A
+MB23.H,Panic attack,http://id.who.int/icd/entity/1707067746,https://icd.who.int/browse/2025-01/mms/en#1707067746,A
+MB23.J,Poor personal hygiene,http://id.who.int/icd/entity/2035653497,https://icd.who.int/browse/2025-01/mms/en#2035653497,A
+MB23.K,Poverty of speech,http://id.who.int/icd/entity/384775286,https://icd.who.int/browse/2025-01/mms/en#384775286,A
+MB23.L,Pressured speech,http://id.who.int/icd/entity/1237884357,https://icd.who.int/browse/2025-01/mms/en#1237884357,A
+MB23.M,Psychomotor agitation,http://id.who.int/icd/entity/1014897080,https://icd.who.int/browse/2025-01/mms/en#1014897080,A
+MB23.N,Psychomotor retardation,http://id.who.int/icd/entity/2115393556,https://icd.who.int/browse/2025-01/mms/en#2115393556,A
+MB23.Q,Social withdrawal,http://id.who.int/icd/entity/858782921,https://icd.who.int/browse/2025-01/mms/en#858782921,A
+MB23.R,Suicide attempt,http://id.who.int/icd/entity/179322472,https://icd.who.int/browse/2025-01/mms/en#179322472,A
+MB23.S,Suicidal behaviour,http://id.who.int/icd/entity/322139749,https://icd.who.int/browse/2025-01/mms/en#322139749,A
+MB24.0,Ambivalence,http://id.who.int/icd/entity/51458534,https://icd.who.int/browse/2025-01/mms/en#51458534,A
+MB24.1,Anger,http://id.who.int/icd/entity/1552396120,https://icd.who.int/browse/2025-01/mms/en#1552396120,A
+MB24.2,Anhedonia,http://id.who.int/icd/entity/1206818866,https://icd.who.int/browse/2025-01/mms/en#1206818866,A
+MB24.3,Anxiety,http://id.who.int/icd/entity/2027043655,https://icd.who.int/browse/2025-01/mms/en#2027043655,A
+MB24.4,Apathy,http://id.who.int/icd/entity/209677240,https://icd.who.int/browse/2025-01/mms/en#209677240,A
+MB24.5,Depressed mood,http://id.who.int/icd/entity/1093742821,https://icd.who.int/browse/2025-01/mms/en#1093742821,A
+MB24.60,Constricted affect,http://id.who.int/icd/entity/533592874,https://icd.who.int/browse/2025-01/mms/en#533592874,A
+MB24.61,Blunted affect,http://id.who.int/icd/entity/1243987221,https://icd.who.int/browse/2025-01/mms/en#1243987221,A
+MB24.62,Flat affect,http://id.who.int/icd/entity/791849696,https://icd.who.int/browse/2025-01/mms/en#791849696,A
+MB24.63,Labile affect,http://id.who.int/icd/entity/728417392,https://icd.who.int/browse/2025-01/mms/en#728417392,A
+MB24.64,Inappropriate affect,http://id.who.int/icd/entity/180207614,https://icd.who.int/browse/2025-01/mms/en#180207614,A
+MB24.7,Dysphoria,http://id.who.int/icd/entity/1979628747,https://icd.who.int/browse/2025-01/mms/en#1979628747,A
+MB24.8,Elevated mood,http://id.who.int/icd/entity/1059562290,https://icd.who.int/browse/2025-01/mms/en#1059562290,A
+MB24.9,Euphoria,http://id.who.int/icd/entity/451608306,https://icd.who.int/browse/2025-01/mms/en#451608306,A
+MB24.A,Fear,http://id.who.int/icd/entity/1096385425,https://icd.who.int/browse/2025-01/mms/en#1096385425,A
+MB24.B,Feelings of guilt,http://id.who.int/icd/entity/487481744,https://icd.who.int/browse/2025-01/mms/en#487481744,A
+MB24.C,Irritability,http://id.who.int/icd/entity/2140272684,https://icd.who.int/browse/2025-01/mms/en#2140272684,A
+MB24.D,Leaden paralysis,http://id.who.int/icd/entity/1189315647,https://icd.who.int/browse/2025-01/mms/en#1189315647,A
+MB24.E,Mental rumination,http://id.who.int/icd/entity/1248345308,https://icd.who.int/browse/2025-01/mms/en#1248345308,A
+MB24.F,Restlessness,http://id.who.int/icd/entity/496629459,https://icd.who.int/browse/2025-01/mms/en#496629459,A
+MB24.G,Tantrum,http://id.who.int/icd/entity/2033724521,https://icd.who.int/browse/2025-01/mms/en#2033724521,A
+MB24.H,Worry,http://id.who.int/icd/entity/2143265241,https://icd.who.int/browse/2025-01/mms/en#2143265241,A
+MB25.00,Circumstantiality,http://id.who.int/icd/entity/180029677,https://icd.who.int/browse/2025-01/mms/en#180029677,A
+MB25.01,Tangentiality,http://id.who.int/icd/entity/1035925984,https://icd.who.int/browse/2025-01/mms/en#1035925984,A
+MB25.02,Disorganised thinking,http://id.who.int/icd/entity/1746204479,https://icd.who.int/browse/2025-01/mms/en#1746204479,A
+MB25.03,Incoherence,http://id.who.int/icd/entity/1937621077,https://icd.who.int/browse/2025-01/mms/en#1937621077,A
+MB25.1,Flight of ideas,http://id.who.int/icd/entity/2099706633,https://icd.who.int/browse/2025-01/mms/en#2099706633,A
+MB25.2,Neologisms,http://id.who.int/icd/entity/680326614,https://icd.who.int/browse/2025-01/mms/en#680326614,A
+MB25.3,Thought blocking,http://id.who.int/icd/entity/2103751657,https://icd.who.int/browse/2025-01/mms/en#2103751657,A
+MB26.00,Bizarre delusion,http://id.who.int/icd/entity/1466049255,https://icd.who.int/browse/2025-01/mms/en#1466049255,A
+MB26.01,Delusion of being controlled,http://id.who.int/icd/entity/1240694797,https://icd.who.int/browse/2025-01/mms/en#1240694797,A
+MB26.02,Delusion of guilt,http://id.who.int/icd/entity/1997906501,https://icd.who.int/browse/2025-01/mms/en#1997906501,A
+MB26.03,Delusion of reference,http://id.who.int/icd/entity/922964532,https://icd.who.int/browse/2025-01/mms/en#922964532,A
+MB26.04,Erotomanic delusion,http://id.who.int/icd/entity/1943270217,https://icd.who.int/browse/2025-01/mms/en#1943270217,A
+MB26.05,Grandiose delusion,http://id.who.int/icd/entity/202188998,https://icd.who.int/browse/2025-01/mms/en#202188998,A
+MB26.06,Jealous delusion,http://id.who.int/icd/entity/1380368421,https://icd.who.int/browse/2025-01/mms/en#1380368421,A
+MB26.07,Persecutory delusion,http://id.who.int/icd/entity/860615074,https://icd.who.int/browse/2025-01/mms/en#860615074,A
+MB26.08,Religious delusion,http://id.who.int/icd/entity/1284844079,https://icd.who.int/browse/2025-01/mms/en#1284844079,A
+MB26.09,Somatic delusion,http://id.who.int/icd/entity/1549775769,https://icd.who.int/browse/2025-01/mms/en#1549775769,A
+MB26.0A,Nihilistic delusion,http://id.who.int/icd/entity/560479779,https://icd.who.int/browse/2025-01/mms/en#560479779,A
+MB26.0B,Misidentification delusion,http://id.who.int/icd/entity/925881600,https://icd.who.int/browse/2025-01/mms/en#925881600,A
+MB26.0C,Delusion of impoverishment,http://id.who.int/icd/entity/1745386829,https://icd.who.int/browse/2025-01/mms/en#1745386829,A
+MB26.10,Thought broadcasting,http://id.who.int/icd/entity/1005583817,https://icd.who.int/browse/2025-01/mms/en#1005583817,A
+MB26.11,Thought insertion,http://id.who.int/icd/entity/84533121,https://icd.who.int/browse/2025-01/mms/en#84533121,A
+MB26.12,Thought withdrawal,http://id.who.int/icd/entity/624695235,https://icd.who.int/browse/2025-01/mms/en#624695235,A
+MB26.2,Grandiosity,http://id.who.int/icd/entity/905350773,https://icd.who.int/browse/2025-01/mms/en#905350773,A
+MB26.3,Homicidal ideation,http://id.who.int/icd/entity/1244157434,https://icd.who.int/browse/2025-01/mms/en#1244157434,A
+MB26.4,Identity disturbance,http://id.who.int/icd/entity/2067118018,https://icd.who.int/browse/2025-01/mms/en#2067118018,A
+MB26.5,Obsessions,http://id.who.int/icd/entity/1638858328,https://icd.who.int/browse/2025-01/mms/en#1638858328,A
+MB26.6,Overvalued ideas,http://id.who.int/icd/entity/510666199,https://icd.who.int/browse/2025-01/mms/en#510666199,A
+MB26.7,Paranoid ideation,http://id.who.int/icd/entity/1642903226,https://icd.who.int/browse/2025-01/mms/en#1642903226,A
+MB26.8,Referential thinking,http://id.who.int/icd/entity/781153315,https://icd.who.int/browse/2025-01/mms/en#781153315,A
+MB26.9,Suspiciousness,http://id.who.int/icd/entity/459117958,https://icd.who.int/browse/2025-01/mms/en#459117958,A
+MB26.A,Suicidal ideation,http://id.who.int/icd/entity/778734771,https://icd.who.int/browse/2025-01/mms/en#778734771,A
+MB27.0,Depersonalisation,http://id.who.int/icd/entity/36155616,https://icd.who.int/browse/2025-01/mms/en#36155616,A
+MB27.1,Derealisation,http://id.who.int/icd/entity/109043312,https://icd.who.int/browse/2025-01/mms/en#109043312,A
+MB27.20,Auditory hallucinations,http://id.who.int/icd/entity/1680536520,https://icd.who.int/browse/2025-01/mms/en#1680536520,A
+MB27.21,Gustatory hallucinations,http://id.who.int/icd/entity/842865082,https://icd.who.int/browse/2025-01/mms/en#842865082,A
+MB27.22,Hypnopompic hallucinations,http://id.who.int/icd/entity/1306772021,https://icd.who.int/browse/2025-01/mms/en#1306772021,A
+MB27.23,Hypnagogic hallucinations,http://id.who.int/icd/entity/329788118,https://icd.who.int/browse/2025-01/mms/en#329788118,A
+MB27.24,Olfactory hallucinations,http://id.who.int/icd/entity/1717922199,https://icd.who.int/browse/2025-01/mms/en#1717922199,A
+MB27.25,Somatic hallucinations,http://id.who.int/icd/entity/431731224,https://icd.who.int/browse/2025-01/mms/en#431731224,A
+MB27.26,Tactile hallucinations,http://id.who.int/icd/entity/158411694,https://icd.who.int/browse/2025-01/mms/en#158411694,A
+MB27.27,Visual hallucinations,http://id.who.int/icd/entity/23150162,https://icd.who.int/browse/2025-01/mms/en#23150162,A
+MB27.3,Disturbance of body image,http://id.who.int/icd/entity/1055529043,https://icd.who.int/browse/2025-01/mms/en#1055529043,A
+MB27.4,Illusions,http://id.who.int/icd/entity/17527109,https://icd.who.int/browse/2025-01/mms/en#17527109,A
+MB28.0,Attention seeking,http://id.who.int/icd/entity/1323057339,https://icd.who.int/browse/2025-01/mms/en#1323057339,A
+MB28.1,Callousness,http://id.who.int/icd/entity/1959115821,https://icd.who.int/browse/2025-01/mms/en#1959115821,A
+MB28.2,Eccentricity,http://id.who.int/icd/entity/947136557,https://icd.who.int/browse/2025-01/mms/en#947136557,A
+MB28.3,Entitlement,http://id.who.int/icd/entity/374903763,https://icd.who.int/browse/2025-01/mms/en#374903763,A
+MB28.4,Hostility,http://id.who.int/icd/entity/450508218,https://icd.who.int/browse/2025-01/mms/en#450508218,A
+MB28.5,Impulsivity,http://id.who.int/icd/entity/932178015,https://icd.who.int/browse/2025-01/mms/en#932178015,A
+MB28.6,Indecisiveness,http://id.who.int/icd/entity/2028743366,https://icd.who.int/browse/2025-01/mms/en#2028743366,A
+MB28.7,Irresponsibility,http://id.who.int/icd/entity/406970479,https://icd.who.int/browse/2025-01/mms/en#406970479,A
+MB28.8,Low frustration tolerance,http://id.who.int/icd/entity/2024694308,https://icd.who.int/browse/2025-01/mms/en#2024694308,A
+MB28.9,Low self-esteem,http://id.who.int/icd/entity/892657943,https://icd.who.int/browse/2025-01/mms/en#892657943,A
+MB28.A,Negative affectivity,http://id.who.int/icd/entity/1314368678,https://icd.who.int/browse/2025-01/mms/en#1314368678,A
+MB28.B,Negativism,http://id.who.int/icd/entity/465562265,https://icd.who.int/browse/2025-01/mms/en#465562265,A
+MB28.C,Perfectionism,http://id.who.int/icd/entity/1084958604,https://icd.who.int/browse/2025-01/mms/en#1084958604,A
+MB28.D,Pessimism,http://id.who.int/icd/entity/2118976964,https://icd.who.int/browse/2025-01/mms/en#2118976964,A
+MB28.E,Recklessness,http://id.who.int/icd/entity/1046214069,https://icd.who.int/browse/2025-01/mms/en#1046214069,A
+MB28.F,Sensation seeking,http://id.who.int/icd/entity/1057897271,https://icd.who.int/browse/2025-01/mms/en#1057897271,A
+MB28.G,Stubbornness,http://id.who.int/icd/entity/995513753,https://icd.who.int/browse/2025-01/mms/en#995513753,A
+MB28.H,Submissiveness,http://id.who.int/icd/entity/444673557,https://icd.who.int/browse/2025-01/mms/en#444673557,A
+MB29.0,Avoidant or restrictive eating,http://id.who.int/icd/entity/1517485083,https://icd.who.int/browse/2025-01/mms/en#1517485083,A
+MB29.1,Binge eating,http://id.who.int/icd/entity/1535148777,https://icd.who.int/browse/2025-01/mms/en#1535148777,A
+MB29.2,Eating of non-nutritive substances,http://id.who.int/icd/entity/2124949435,https://icd.who.int/browse/2025-01/mms/en#2124949435,A
+MB29.3,Purging behaviour,http://id.who.int/icd/entity/1856898163,https://icd.who.int/browse/2025-01/mms/en#1856898163,A
+MB29.4,Rumination-regurgitation,http://id.who.int/icd/entity/292610046,https://icd.who.int/browse/2025-01/mms/en#292610046,A
+MB2A.0,Soiling,http://id.who.int/icd/entity/2140551646,https://icd.who.int/browse/2025-01/mms/en#2140551646,A
+MB2A.1,Wetting,http://id.who.int/icd/entity/364270617,https://icd.who.int/browse/2025-01/mms/en#364270617,A
+MA00,Symptom or complaint of the blood,http://id.who.int/icd/entity/424309212,https://icd.who.int/browse/2025-01/mms/en#424309212,B
+MA01.0,Localised lymph node enlargement,http://id.who.int/icd/entity/667642868,https://icd.who.int/browse/2025-01/mms/en#667642868,B
+MA01.1,Generalised lymph node enlargement,http://id.who.int/icd/entity/1115727458,https://icd.who.int/browse/2025-01/mms/en#1115727458,B
+MA10.0,Elevation of levels of transaminase or lactic acid dehydrogenase,http://id.who.int/icd/entity/1409586837,https://icd.who.int/browse/2025-01/mms/en#1409586837,B
+MA10.1,Abnormal levels of other specified serum enzymes,http://id.who.int/icd/entity/1518538819,https://icd.who.int/browse/2025-01/mms/en#1518538819,B
+MA10.2,Abnormal level of unspecified serum enzyme,http://id.who.int/icd/entity/1070128599,https://icd.who.int/browse/2025-01/mms/en#1070128599,B
+MA11,"Clinical findings of hormones in blood, blood-forming organs, or the immune system",http://id.who.int/icd/entity/718299950,https://icd.who.int/browse/2025-01/mms/en#718299950,B
+MA12.0,Finding of opiate drug in blood,http://id.who.int/icd/entity/2118920323,https://icd.who.int/browse/2025-01/mms/en#2118920323,B
+MA12.1,Finding of cocaine in blood,http://id.who.int/icd/entity/182548604,https://icd.who.int/browse/2025-01/mms/en#182548604,B
+MA12.2,Finding of hallucinogen in blood,http://id.who.int/icd/entity/1873458666,https://icd.who.int/browse/2025-01/mms/en#1873458666,B
+MA12.3,Finding of psychotropic drug in blood,http://id.who.int/icd/entity/2031086568,https://icd.who.int/browse/2025-01/mms/en#2031086568,B
+MA12.4,Finding of steroid agent in blood,http://id.who.int/icd/entity/228768535,https://icd.who.int/browse/2025-01/mms/en#228768535,B
+MA13.00,Abnormal level of lead in blood,http://id.who.int/icd/entity/1183434772,https://icd.who.int/browse/2025-01/mms/en#1183434772,B
+MA13.0Y,Finding of abnormal level of other specified heavy metals in blood,,,B
+MA13.1,Finding of alcohol in blood,http://id.who.int/icd/entity/453502231,https://icd.who.int/browse/2025-01/mms/en#453502231,B
+MA13.Y,"Abnormal level of other specified substances chiefly nonmedicinal as to source in blood, blood-forming organs and the immune system",,,B
+MA14.0,Laboratory evidence of human immunodeficiency virus,http://id.who.int/icd/entity/82994689,https://icd.who.int/browse/2025-01/mms/en#82994689,B
+MA14.10,Abnormal reaction to tuberculin test,http://id.who.int/icd/entity/741356478,https://icd.who.int/browse/2025-01/mms/en#741356478,B
+MA14.11,Anticitrullinated protein antibody negative,http://id.who.int/icd/entity/688021914,https://icd.who.int/browse/2025-01/mms/en#688021914,B
+MA14.12,Anticitrullinated protein antibody positive,http://id.who.int/icd/entity/214907994,https://icd.who.int/browse/2025-01/mms/en#214907994,B
+MA14.13,Anti-nuclear antibody negative,http://id.who.int/icd/entity/1470117497,https://icd.who.int/browse/2025-01/mms/en#1470117497,B
+MA14.14,Anti-nuclear antibody positive,http://id.who.int/icd/entity/1987530229,https://icd.who.int/browse/2025-01/mms/en#1987530229,B
+MA14.15,Elevated C-reactive protein,http://id.who.int/icd/entity/1009806764,https://icd.who.int/browse/2025-01/mms/en#1009806764,B
+MA14.16,False-positive serological test for syphilis,http://id.who.int/icd/entity/1486709569,https://icd.who.int/browse/2025-01/mms/en#1486709569,B
+MA14.17,Human leukocyte antigen negative,http://id.who.int/icd/entity/841555474,https://icd.who.int/browse/2025-01/mms/en#841555474,B
+MA14.18,Human leukocyte antigen positive,http://id.who.int/icd/entity/2103054775,https://icd.who.int/browse/2025-01/mms/en#2103054775,B
+MA14.19,Neural autoantibody negative,http://id.who.int/icd/entity/569084462,https://icd.who.int/browse/2025-01/mms/en#569084462,B
+MA14.1A,Neural autoantibody positive,http://id.who.int/icd/entity/1580552609,https://icd.who.int/browse/2025-01/mms/en#1580552609,B
+MA14.1B,Prostate specific antigen positive,http://id.who.int/icd/entity/2145207011,https://icd.who.int/browse/2025-01/mms/en#2145207011,B
+MA14.1C,Raised antibody titre,http://id.who.int/icd/entity/1232862764,https://icd.who.int/browse/2025-01/mms/en#1232862764,B
+MA14.1D,Rheumatoid factor negative,http://id.who.int/icd/entity/1486310517,https://icd.who.int/browse/2025-01/mms/en#1486310517,B
+MA14.1E,Rheumatoid factor positive,http://id.who.int/icd/entity/307123086,https://icd.who.int/browse/2025-01/mms/en#307123086,B
+MA15.0,Bacteraemia,http://id.who.int/icd/entity/770483821,https://icd.who.int/browse/2025-01/mms/en#770483821,B
+MA15.1,Fungaemia,http://id.who.int/icd/entity/910665623,https://icd.who.int/browse/2025-01/mms/en#910665623,B
+MA16.00,"Haemolysis, not elsewhere classified",http://id.who.int/icd/entity/1493458947,https://icd.who.int/browse/2025-01/mms/en#1493458947,B
+MA16.10,Decreased white blood cell count,http://id.who.int/icd/entity/1437714107,https://icd.who.int/browse/2025-01/mms/en#1437714107,B
+MA16.11,Elevated white blood cell count,http://id.who.int/icd/entity/1887214457,https://icd.who.int/browse/2025-01/mms/en#1887214457,B
+MA17,"Histological findings in blood, blood-forming organs, or the immune system",http://id.who.int/icd/entity/603838085,https://icd.who.int/browse/2025-01/mms/en#603838085,B
+MA18.00,Abnormal glucose tolerance test,http://id.who.int/icd/entity/1870522325,https://icd.who.int/browse/2025-01/mms/en#1870522325,B
+MA18.1,Abnormal level of blood mineral,http://id.who.int/icd/entity/134163862,https://icd.who.int/browse/2025-01/mms/en#134163862,B
+MA18.2,Abnormal arterial blood-gas level,http://id.who.int/icd/entity/1084917859,https://icd.who.int/browse/2025-01/mms/en#1084917859,B
+MA18.3,Abnormal coagulation profile,http://id.who.int/icd/entity/1621049377,https://icd.who.int/browse/2025-01/mms/en#1621049377,B
+MA18.4,Low haemoglobin,http://id.who.int/icd/entity/1471205771,https://icd.who.int/browse/2025-01/mms/en#1471205771,B
+MA19.0,Abnormality of albumin,http://id.who.int/icd/entity/1434662571,https://icd.who.int/browse/2025-01/mms/en#1434662571,B
+MA19.1,Abnormality of alphafetoprotein,http://id.who.int/icd/entity/1147513794,https://icd.who.int/browse/2025-01/mms/en#1147513794,B
+MA19.2,Abnormality of globulin,http://id.who.int/icd/entity/818477887,https://icd.who.int/browse/2025-01/mms/en#818477887,B
+MA19.Y,Abnormalities of other specified plasma proteins,,,B
+MA19.Z,Abnormalities of unspecified plasma proteins,,,B
+MA1A.0,Elevated erythrocyte sedimentation rate,http://id.who.int/icd/entity/1861896171,https://icd.who.int/browse/2025-01/mms/en#1861896171,B
+MA1A.1,Abnormal plasma viscosity,http://id.who.int/icd/entity/196184703,https://icd.who.int/browse/2025-01/mms/en#196184703,B
+MA50,Abnormal results of thyroid function studies,http://id.who.int/icd/entity/1574167621,https://icd.who.int/browse/2025-01/mms/en#1574167621,B
+MA51,Abnormal results of other endocrine function studies,http://id.who.int/icd/entity/949496273,https://icd.who.int/browse/2025-01/mms/en#949496273,B
+MA80.0,Aphasia,http://id.who.int/icd/entity/1167055901,https://icd.who.int/browse/2025-01/mms/en#1167055901,B
+MA80.1,Dysphasia,http://id.who.int/icd/entity/1705858040,https://icd.who.int/browse/2025-01/mms/en#1705858040,B
+MA80.20,Anarthria,http://id.who.int/icd/entity/962553582,https://icd.who.int/browse/2025-01/mms/en#962553582,B
+MA81,Speech dysfluency,http://id.who.int/icd/entity/1809393168,https://icd.who.int/browse/2025-01/mms/en#1809393168,B
+MA82.0,Aphonia,http://id.who.int/icd/entity/1385858385,https://icd.who.int/browse/2025-01/mms/en#1385858385,B
+MA82.10,Hoarseness,http://id.who.int/icd/entity/741286458,https://icd.who.int/browse/2025-01/mms/en#741286458,B
+MA82.2,Nasality,http://id.who.int/icd/entity/641193392,https://icd.who.int/browse/2025-01/mms/en#641193392,B
+MB40.0,Asomatognosia,http://id.who.int/icd/entity/615692343,https://icd.who.int/browse/2025-01/mms/en#615692343,B
+MB40.1,Allodynia,http://id.who.int/icd/entity/1043938451,https://icd.who.int/browse/2025-01/mms/en#1043938451,B
+MB40.2,Anacusis,http://id.who.int/icd/entity/1154730210,https://icd.who.int/browse/2025-01/mms/en#1154730210,B
+MB40.3,Anaesthesia of skin,http://id.who.int/icd/entity/1049159712,https://icd.who.int/browse/2025-01/mms/en#1049159712,B
+MB40.4,Tingling fingers or feet or toes,http://id.who.int/icd/entity/1099683690,https://icd.who.int/browse/2025-01/mms/en#1099683690,B
+MB40.5,Hyperaesthesia,http://id.who.int/icd/entity/1243986145,https://icd.who.int/browse/2025-01/mms/en#1243986145,B
+MB40.6,Dysesthesia,http://id.who.int/icd/entity/1467981209,https://icd.who.int/browse/2025-01/mms/en#1467981209,B
+MB40.7,Acroparaesthesia,http://id.who.int/icd/entity/257890715,https://icd.who.int/browse/2025-01/mms/en#257890715,B
+MB40.8,Analgesia,http://id.who.int/icd/entity/1314811790,https://icd.who.int/browse/2025-01/mms/en#1314811790,B
+MB40.9,Neurological neglect syndrome,http://id.who.int/icd/entity/1853164458,https://icd.who.int/browse/2025-01/mms/en#1853164458,B
+MB41.0,Anosmia,http://id.who.int/icd/entity/1599308422,https://icd.who.int/browse/2025-01/mms/en#1599308422,B
+MB41.1,Parosmia,http://id.who.int/icd/entity/974671636,https://icd.who.int/browse/2025-01/mms/en#974671636,B
+MB41.2,Dysgeusia,http://id.who.int/icd/entity/1320493037,https://icd.who.int/browse/2025-01/mms/en#1320493037,B
+MB41.3,Hyposmia,http://id.who.int/icd/entity/1944522457,https://icd.who.int/browse/2025-01/mms/en#1944522457,B
+MB42,Phonophobia,http://id.who.int/icd/entity/1433385296,https://icd.who.int/browse/2025-01/mms/en#1433385296,B
+MB43,Dyssomnia,http://id.who.int/icd/entity/1037107906,https://icd.who.int/browse/2025-01/mms/en#1037107906,B
+MB44.0,Ataxic gait,http://id.who.int/icd/entity/420041183,https://icd.who.int/browse/2025-01/mms/en#420041183,B
+MB44.1,Paralytic gait,http://id.who.int/icd/entity/2084740171,https://icd.who.int/browse/2025-01/mms/en#2084740171,B
+MB44.2,Difficulty in walking,http://id.who.int/icd/entity/149933236,https://icd.who.int/browse/2025-01/mms/en#149933236,B
+MB44.3,Immobility,http://id.who.int/icd/entity/1839464738,https://icd.who.int/browse/2025-01/mms/en#1839464738,B
+MB45.1,Automatism,http://id.who.int/icd/entity/502784164,https://icd.who.int/browse/2025-01/mms/en#502784164,B
+MB45.2,Atonia,http://id.who.int/icd/entity/396345176,https://icd.who.int/browse/2025-01/mms/en#396345176,B
+MB45.3,Head drop,http://id.who.int/icd/entity/325289630,https://icd.who.int/browse/2025-01/mms/en#325289630,B
+MB45.4,Intention tremor,http://id.who.int/icd/entity/151911082,https://icd.who.int/browse/2025-01/mms/en#151911082,B
+MB46.0,Asterixis,http://id.who.int/icd/entity/343686120,https://icd.who.int/browse/2025-01/mms/en#343686120,B
+MB46.1,Abnormal head movements,http://id.who.int/icd/entity/412021217,https://icd.who.int/browse/2025-01/mms/en#412021217,B
+MB46.2,Athetosis,http://id.who.int/icd/entity/1038838282,https://icd.who.int/browse/2025-01/mms/en#1038838282,B
+MB46.3,Drop attack,http://id.who.int/icd/entity/416343420,https://icd.who.int/browse/2025-01/mms/en#416343420,B
+MB46.4,Titubation,http://id.who.int/icd/entity/1941277445,https://icd.who.int/browse/2025-01/mms/en#1941277445,B
+MB46.5,Shuddering,http://id.who.int/icd/entity/863964208,https://icd.who.int/browse/2025-01/mms/en#863964208,B
+MB47.0,Abnormal reflex,http://id.who.int/icd/entity/1181425418,https://icd.who.int/browse/2025-01/mms/en#1181425418,B
+MB47.1,Abnormal posture,http://id.who.int/icd/entity/589353628,https://icd.who.int/browse/2025-01/mms/en#589353628,B
+MB47.2,Clonus,http://id.who.int/icd/entity/770525634,https://icd.who.int/browse/2025-01/mms/en#770525634,B
+MB47.3,Cramp or spasm,http://id.who.int/icd/entity/157838476,https://icd.who.int/browse/2025-01/mms/en#157838476,B
+MB47.4,Dystonia,http://id.who.int/icd/entity/1257505996,https://icd.who.int/browse/2025-01/mms/en#1257505996,B
+MB47.5,Fasciculation,http://id.who.int/icd/entity/1814274334,https://icd.who.int/browse/2025-01/mms/en#1814274334,B
+MB47.6,Meningismus,http://id.who.int/icd/entity/851857399,https://icd.who.int/browse/2025-01/mms/en#851857399,B
+MB47.7,Muscle fibrillation,http://id.who.int/icd/entity/1928445764,https://icd.who.int/browse/2025-01/mms/en#1928445764,B
+MB47.8,Muscular hypertonia,http://id.who.int/icd/entity/1447123221,https://icd.who.int/browse/2025-01/mms/en#1447123221,B
+MB47.9,Myotonia,http://id.who.int/icd/entity/1082840130,https://icd.who.int/browse/2025-01/mms/en#1082840130,B
+MB47.A,Ophthalmoparesis,http://id.who.int/icd/entity/830465499,https://icd.who.int/browse/2025-01/mms/en#830465499,B
+MB47.B,Opisthotonos,http://id.who.int/icd/entity/1659266639,https://icd.who.int/browse/2025-01/mms/en#1659266639,B
+MB47.C,Tendency to fall,http://id.who.int/icd/entity/1093196899,https://icd.who.int/browse/2025-01/mms/en#1093196899,B
+MB47.D,Tetany,http://id.who.int/icd/entity/1468891747,https://icd.who.int/browse/2025-01/mms/en#1468891747,B
+MB48.00,Vertigo of central origin,http://id.who.int/icd/entity/796932381,https://icd.who.int/browse/2025-01/mms/en#796932381,B
+MB48.1,Disorder of equilibrium,http://id.who.int/icd/entity/1817247302,https://icd.who.int/browse/2025-01/mms/en#1817247302,B
+MB48.2,Exertional dizziness,http://id.who.int/icd/entity/590560479,https://icd.who.int/browse/2025-01/mms/en#590560479,B
+MB48.3,Light-headedness,http://id.who.int/icd/entity/220170017,https://icd.who.int/browse/2025-01/mms/en#220170017,B
+MB48.4,Presyncope,http://id.who.int/icd/entity/751369389,https://icd.who.int/browse/2025-01/mms/en#751369389,B
+MB49,Aura,http://id.who.int/icd/entity/1191288441,https://icd.who.int/browse/2025-01/mms/en#1191288441,B
+MB4A,Apraxia,http://id.who.int/icd/entity/986651951,https://icd.who.int/browse/2025-01/mms/en#986651951,B
+MB4B.0,Dyslexia and alexia,http://id.who.int/icd/entity/724140102,https://icd.who.int/browse/2025-01/mms/en#724140102,B
+MB4B.1,Agnosia,http://id.who.int/icd/entity/1315065296,https://icd.who.int/browse/2025-01/mms/en#1315065296,B
+MB4B.2,Acalculia,http://id.who.int/icd/entity/1954421964,https://icd.who.int/browse/2025-01/mms/en#1954421964,B
+MB4B.3,Agraphia,http://id.who.int/icd/entity/1372096058,https://icd.who.int/browse/2025-01/mms/en#1372096058,B
+MB4B.4,Anomia,http://id.who.int/icd/entity/730186299,https://icd.who.int/browse/2025-01/mms/en#730186299,B
+MB4B.5,Dyscalculia,http://id.who.int/icd/entity/308101648,https://icd.who.int/browse/2025-01/mms/en#308101648,B
+MB4C,Gerstmann syndrome,http://id.who.int/icd/entity/1121787098,https://icd.who.int/browse/2025-01/mms/en#1121787098,B
+MB4D,"Headache, not elsewhere classified",http://id.who.int/icd/entity/1405405864,https://icd.who.int/browse/2025-01/mms/en#1405405864,B
+MB50.0,Flaccid tetraplegia,http://id.who.int/icd/entity/755893924,https://icd.who.int/browse/2025-01/mms/en#755893924,B
+MB50.1,Spastic tetraplegia,http://id.who.int/icd/entity/1591776568,https://icd.who.int/browse/2025-01/mms/en#1591776568,B
+MB51.0,Flaccid diplegia of upper extremities,http://id.who.int/icd/entity/432727256,https://icd.who.int/browse/2025-01/mms/en#432727256,B
+MB51.1,Spastic diplegia of upper extremities,http://id.who.int/icd/entity/1983602303,https://icd.who.int/browse/2025-01/mms/en#1983602303,B
+MB52,Diplegia of lower extremities,http://id.who.int/icd/entity/913303272,https://icd.who.int/browse/2025-01/mms/en#913303272,B
+MB53.0,Alternating hemiplegia,http://id.who.int/icd/entity/774373615,https://icd.who.int/browse/2025-01/mms/en#774373615,B
+MB53.1,Flaccid hemiplegia,http://id.who.int/icd/entity/1478817379,https://icd.who.int/browse/2025-01/mms/en#1478817379,B
+MB53.2,Spastic hemiplegia,http://id.who.int/icd/entity/1030700023,https://icd.who.int/browse/2025-01/mms/en#1030700023,B
+MB54.0,Flaccid monoplegia of upper extremity,http://id.who.int/icd/entity/1718614123,https://icd.who.int/browse/2025-01/mms/en#1718614123,B
+MB54.1,Spastic monoplegia of upper extremity,http://id.who.int/icd/entity/1914238947,https://icd.who.int/browse/2025-01/mms/en#1914238947,B
+MB55.0,Flaccid monoplegia of lower extremity,http://id.who.int/icd/entity/122391296,https://icd.who.int/browse/2025-01/mms/en#122391296,B
+MB55.1,Spastic monoplegia of lower extremity,http://id.who.int/icd/entity/1572730333,https://icd.who.int/browse/2025-01/mms/en#1572730333,B
+MB56,Paraplegia,http://id.who.int/icd/entity/1212533558,https://icd.who.int/browse/2025-01/mms/en#1212533558,B
+MB57.0,Functional level of injury of cervical spinal cord,http://id.who.int/icd/entity/2090628044,https://icd.who.int/browse/2025-01/mms/en#2090628044,B
+MB57.1,Functional level of injury of thoracic spinal cord,http://id.who.int/icd/entity/327692789,https://icd.who.int/browse/2025-01/mms/en#327692789,B
+MB57.2,Functional level of injury of lumbar spinal cord,http://id.who.int/icd/entity/1844842838,https://icd.who.int/browse/2025-01/mms/en#1844842838,B
+MB57.3,"Functional level of injury of spinal cord, sacrum",http://id.who.int/icd/entity/1393570590,https://icd.who.int/browse/2025-01/mms/en#1393570590,B
+MB60,Sleeptalking,http://id.who.int/icd/entity/1552856729,https://icd.who.int/browse/2025-01/mms/en#1552856729,B
+MB70.0,Abnormal level of enzymes in cerebrospinal fluid,http://id.who.int/icd/entity/1612048438,https://icd.who.int/browse/2025-01/mms/en#1612048438,B
+MB70.1,Abnormal level of hormones in cerebrospinal fluid,http://id.who.int/icd/entity/90056096,https://icd.who.int/browse/2025-01/mms/en#90056096,B
+MB70.2,"Abnormal level of drugs, medicaments and biological substances in cerebrospinal fluid",http://id.who.int/icd/entity/1911780703,https://icd.who.int/browse/2025-01/mms/en#1911780703,B
+MB70.3,Abnormal level of substances chiefly nonmedicinal as to source in cerebrospinal fluid,http://id.who.int/icd/entity/347650251,https://icd.who.int/browse/2025-01/mms/en#347650251,B
+MB70.4,Abnormal immunological findings in cerebrospinal fluid,http://id.who.int/icd/entity/1733700447,https://icd.who.int/browse/2025-01/mms/en#1733700447,B
+MB70.5,Abnormal microbiological findings in cerebrospinal fluid,http://id.who.int/icd/entity/35514059,https://icd.who.int/browse/2025-01/mms/en#35514059,B
+MB70.6,Abnormal cytological findings in cerebrospinal fluid,http://id.who.int/icd/entity/1991292468,https://icd.who.int/browse/2025-01/mms/en#1991292468,B
+MB70.7,Abnormal histological findings in cerebrospinal fluid,http://id.who.int/icd/entity/335248290,https://icd.who.int/browse/2025-01/mms/en#335248290,B
+MB70.8,Other abnormal findings in cerebrospinal fluid,http://id.who.int/icd/entity/1855090404,https://icd.who.int/browse/2025-01/mms/en#1855090404,B
+MB71.0,Intracranial space-occupying lesion,http://id.who.int/icd/entity/1904765755,https://icd.who.int/browse/2025-01/mms/en#1904765755,B
+MB72,Results of function studies of the nervous system,http://id.who.int/icd/entity/449566259,https://icd.who.int/browse/2025-01/mms/en#449566259,B
+MC10,Eye appearance abnormal,http://id.who.int/icd/entity/1995293728,https://icd.who.int/browse/2025-01/mms/en#1995293728,B
+MC11,Eye sensation abnormal,http://id.who.int/icd/entity/1677539077,https://icd.who.int/browse/2025-01/mms/en#1677539077,B
+MC12,Chronic enlargement of lacrimal gland,http://id.who.int/icd/entity/1319974781,https://icd.who.int/browse/2025-01/mms/en#1319974781,B
+MC13,Epiphora,http://id.who.int/icd/entity/1611503766,https://icd.who.int/browse/2025-01/mms/en#1611503766,B
+MC14,Eye discharge,http://id.who.int/icd/entity/1075869307,https://icd.who.int/browse/2025-01/mms/en#1075869307,B
+MC15,Red eye,http://id.who.int/icd/entity/1187945554,https://icd.who.int/browse/2025-01/mms/en#1187945554,B
+MC16,Pallor conjunctiva,http://id.who.int/icd/entity/1920226292,https://icd.who.int/browse/2025-01/mms/en#1920226292,B
+MC17,Icteric sclera,http://id.who.int/icd/entity/135288091,https://icd.who.int/browse/2025-01/mms/en#135288091,B
+MC18,Ocular pain,http://id.who.int/icd/entity/1163249568,https://icd.who.int/browse/2025-01/mms/en#1163249568,B
+MC19,Quadrantanopia,http://id.who.int/icd/entity/817108219,https://icd.who.int/browse/2025-01/mms/en#817108219,B
+MC1A,Visual floaters,http://id.who.int/icd/entity/1682787895,https://icd.who.int/browse/2025-01/mms/en#1682787895,B
+MC1B,Symptom or complaint of the eyelid,http://id.who.int/icd/entity/1339161323,https://icd.who.int/browse/2025-01/mms/en#1339161323,B
+MC1C,Symptom or complaint of glasses,http://id.who.int/icd/entity/1834100878,https://icd.who.int/browse/2025-01/mms/en#1834100878,B
+MC1D,Symptom or complaint of contact lens,http://id.who.int/icd/entity/1522600432,https://icd.who.int/browse/2025-01/mms/en#1522600432,B
+MC20.0,Staphyloma,http://id.who.int/icd/entity/530476225,https://icd.who.int/browse/2025-01/mms/en#530476225,B
+MC20.1,Small drusen of the macula,http://id.who.int/icd/entity/928230143,https://icd.who.int/browse/2025-01/mms/en#928230143,B
+MC20.2,Hypopyon,http://id.who.int/icd/entity/803985395,https://icd.who.int/browse/2025-01/mms/en#803985395,B
+MC21.0,Profound impairment of electrooculogram,http://id.who.int/icd/entity/1150458544,https://icd.who.int/browse/2025-01/mms/en#1150458544,B
+MC21.1,Normal electroretinogram,http://id.who.int/icd/entity/1591059562,https://icd.who.int/browse/2025-01/mms/en#1591059562,B
+MC40,Plugged feeling ear,http://id.who.int/icd/entity/742767859,https://icd.who.int/browse/2025-01/mms/en#742767859,B
+MC41,Tinnitus,http://id.who.int/icd/entity/1089305710,https://icd.who.int/browse/2025-01/mms/en#1089305710,B
+MC80.00,White coat hypertension,http://id.who.int/icd/entity/461779987,https://icd.who.int/browse/2025-01/mms/en#461779987,B
+MC80.01,Combined diastolic and systolic elevated blood pressure reading without diagnosis of hypertension,http://id.who.int/icd/entity/805200733,https://icd.who.int/browse/2025-01/mms/en#805200733,B
+MC80.02,Diastolic elevated blood pressure reading without diagnosis of hypertension,http://id.who.int/icd/entity/1893321454,https://icd.who.int/browse/2025-01/mms/en#1893321454,B
+MC80.03,Systolic elevated blood pressure reading without diagnosis of hypertension,http://id.who.int/icd/entity/630602913,https://icd.who.int/browse/2025-01/mms/en#630602913,B
+MC80.1,Nonspecific low blood-pressure reading,http://id.who.int/icd/entity/2054210520,https://icd.who.int/browse/2025-01/mms/en#2054210520,B
+MC81.2,Palpitations,http://id.who.int/icd/entity/257569559,https://icd.who.int/browse/2025-01/mms/en#257569559,B
+MC81.3,Paroxysmal tachycardia,http://id.who.int/icd/entity/1926915195,https://icd.who.int/browse/2025-01/mms/en#1926915195,B
+MC81.4,"Pulseless electrical activity, not elsewhere classified",http://id.who.int/icd/entity/1551889515,https://icd.who.int/browse/2025-01/mms/en#1551889515,B
+MC82.0,Ventricular tachycardia and fibrillation cardiac arrest,http://id.who.int/icd/entity/1966487547,https://icd.who.int/browse/2025-01/mms/en#1966487547,B
+MC82.1,Bradycardic cardiac arrest,http://id.who.int/icd/entity/1782916831,https://icd.who.int/browse/2025-01/mms/en#1782916831,B
+MC82.2,Asystolic cardiac arrest,http://id.who.int/icd/entity/1903057237,https://icd.who.int/browse/2025-01/mms/en#1903057237,B
+MC82.3,Cardiac arrest with pulseless electrical activity,http://id.who.int/icd/entity/547109156,https://icd.who.int/browse/2025-01/mms/en#547109156,B
+MC82.4,Cardiopulmonary arrest,http://id.who.int/icd/entity/2121132007,https://icd.who.int/browse/2025-01/mms/en#2121132007,B
+MC83.0,Benign or innocent cardiac murmurs,http://id.who.int/icd/entity/38037245,https://icd.who.int/browse/2025-01/mms/en#38037245,B
+MC83.1,Other cardiac sounds,http://id.who.int/icd/entity/329448344,https://icd.who.int/browse/2025-01/mms/en#329448344,B
+MC84,Cardiovascular pain,http://id.who.int/icd/entity/1092998509,https://icd.who.int/browse/2025-01/mms/en#1092998509,B
+MC85,Gangrene,http://id.who.int/icd/entity/188156827,https://icd.who.int/browse/2025-01/mms/en#188156827,B
+MC86,Precordial pain,http://id.who.int/icd/entity/874725975,https://icd.who.int/browse/2025-01/mms/en#874725975,B
+MC87,Pressure or tightness of heart,http://id.who.int/icd/entity/741803000,https://icd.who.int/browse/2025-01/mms/en#741803000,B
+MC88,Prominent veins,http://id.who.int/icd/entity/1412769398,https://icd.who.int/browse/2025-01/mms/en#1412769398,B
+MC90,Clinical findings on diagnostic imaging of heart or coronary circulation,http://id.who.int/icd/entity/356779665,https://icd.who.int/browse/2025-01/mms/en#356779665,B
+MC91,Results of function studies of the circulatory system,http://id.who.int/icd/entity/1071377082,https://icd.who.int/browse/2025-01/mms/en#1071377082,B
+MD10,Abnormal sputum,http://id.who.int/icd/entity/51680510,https://icd.who.int/browse/2025-01/mms/en#51680510,B
+MD11.0,Apnoea,http://id.who.int/icd/entity/992235907,https://icd.who.int/browse/2025-01/mms/en#992235907,B
+MD11.1,Asphyxia,http://id.who.int/icd/entity/2008663041,https://icd.who.int/browse/2025-01/mms/en#2008663041,B
+MD11.2,Ataxic breathing,http://id.who.int/icd/entity/1942458143,https://icd.who.int/browse/2025-01/mms/en#1942458143,B
+MD11.3,Breath holding,http://id.who.int/icd/entity/1569331933,https://icd.who.int/browse/2025-01/mms/en#1569331933,B
+MD11.4,Sleep related Cheyne-Stokes respiration,http://id.who.int/icd/entity/1301301060,https://icd.who.int/browse/2025-01/mms/en#1301301060,B
+MD11.5,Dyspnoea,http://id.who.int/icd/entity/960305085,https://icd.who.int/browse/2025-01/mms/en#960305085,B
+MD11.6,Hiccough,http://id.who.int/icd/entity/798509501,https://icd.who.int/browse/2025-01/mms/en#798509501,B
+MD11.7,Hyperventilation,http://id.who.int/icd/entity/1048499416,https://icd.who.int/browse/2025-01/mms/en#1048499416,B
+MD11.80,Stertor,http://id.who.int/icd/entity/1448630017,https://icd.who.int/browse/2025-01/mms/en#1448630017,B
+MD11.9,Nasal congestion,http://id.who.int/icd/entity/1251924794,https://icd.who.int/browse/2025-01/mms/en#1251924794,B
+MD11.A,Sneezing,http://id.who.int/icd/entity/1255375913,https://icd.who.int/browse/2025-01/mms/en#1255375913,B
+MD11.B,Stridor,http://id.who.int/icd/entity/1551292969,https://icd.who.int/browse/2025-01/mms/en#1551292969,B
+MD11.C,Wheezing,http://id.who.int/icd/entity/685476566,https://icd.who.int/browse/2025-01/mms/en#685476566,B
+MD11.D,Yawning,http://id.who.int/icd/entity/1198766532,https://icd.who.int/browse/2025-01/mms/en#1198766532,B
+MD12,Cough,http://id.who.int/icd/entity/2027526159,https://icd.who.int/browse/2025-01/mms/en#2027526159,B
+MD20,Epistaxis,http://id.who.int/icd/entity/608337668,https://icd.who.int/browse/2025-01/mms/en#608337668,B
+MD21,Haemorrhage from throat,http://id.who.int/icd/entity/1091154582,https://icd.who.int/browse/2025-01/mms/en#1091154582,B
+MD22,Haemoptysis,http://id.who.int/icd/entity/899998313,https://icd.who.int/browse/2025-01/mms/en#899998313,B
+MD23,Haemorrhage from other sites in respiratory passages,http://id.who.int/icd/entity/717617622,https://icd.who.int/browse/2025-01/mms/en#717617622,B
+MD24,Acute idiopathic pulmonary haemorrhage in infants over 28 days of age,http://id.who.int/icd/entity/2102609238,https://icd.who.int/browse/2025-01/mms/en#2102609238,B
+MD30.0,Chest pain on breathing,http://id.who.int/icd/entity/1083052714,https://icd.who.int/browse/2025-01/mms/en#1083052714,B
+MD30.1,Other chest pain,http://id.who.int/icd/entity/1365807043,https://icd.who.int/browse/2025-01/mms/en#1365807043,B
+MD31,Pleurisy,http://id.who.int/icd/entity/317852053,https://icd.who.int/browse/2025-01/mms/en#317852053,B
+MD32,Rales,http://id.who.int/icd/entity/1428101439,https://icd.who.int/browse/2025-01/mms/en#1428101439,B
+MD33,Respiratory arrest,http://id.who.int/icd/entity/1717524844,https://icd.who.int/browse/2025-01/mms/en#1717524844,B
+MD34,Symptom or complaint of the nose,http://id.who.int/icd/entity/975143938,https://icd.who.int/browse/2025-01/mms/en#975143938,B
+MD35,Symptom or complaint of the sinus,http://id.who.int/icd/entity/357068563,https://icd.who.int/browse/2025-01/mms/en#357068563,B
+MD36.0,Pain in throat,http://id.who.int/icd/entity/633724732,https://icd.who.int/browse/2025-01/mms/en#633724732,B
+MD40.0,Abnormal level of enzymes in specimens from respiratory organs and thorax,http://id.who.int/icd/entity/1533843828,https://icd.who.int/browse/2025-01/mms/en#1533843828,B
+MD40.1,Abnormal level of hormones in specimens from respiratory organs and thorax,http://id.who.int/icd/entity/1042765026,https://icd.who.int/browse/2025-01/mms/en#1042765026,B
+MD40.2,"Abnormal level of drugs, medicaments and biological substances in specimens from respiratory organs and thorax",http://id.who.int/icd/entity/1250559007,https://icd.who.int/browse/2025-01/mms/en#1250559007,B
+MD40.3,Abnormal level of substances chiefly nonmedicinal as to source in specimens from respiratory organs and thorax,http://id.who.int/icd/entity/801229195,https://icd.who.int/browse/2025-01/mms/en#801229195,B
+MD40.4,Abnormal immunological findings in specimens from respiratory organs and thorax,http://id.who.int/icd/entity/1546607135,https://icd.who.int/browse/2025-01/mms/en#1546607135,B
+MD40.50,Positive culture from nose,http://id.who.int/icd/entity/2116727174,https://icd.who.int/browse/2025-01/mms/en#2116727174,B
+MD40.51,Positive sputum culture,http://id.who.int/icd/entity/1541925958,https://icd.who.int/browse/2025-01/mms/en#1541925958,B
+MD40.52,Positive throat culture,http://id.who.int/icd/entity/5542181,https://icd.who.int/browse/2025-01/mms/en#5542181,B
+MD40.6,Abnormal cytological findings in specimens from respiratory organs and thorax,http://id.who.int/icd/entity/1305069430,https://icd.who.int/browse/2025-01/mms/en#1305069430,B
+MD40.7,Abnormal histological findings in specimens from respiratory organs and thorax,http://id.who.int/icd/entity/679611104,https://icd.who.int/browse/2025-01/mms/en#679611104,B
+MD41,Clinical findings on diagnostic imaging of lung,http://id.who.int/icd/entity/68789898,https://icd.who.int/browse/2025-01/mms/en#68789898,B
+MD42,Results of function studies of the respiratory system,http://id.who.int/icd/entity/1095887296,https://icd.who.int/browse/2025-01/mms/en#1095887296,B
+MD80.0,Symptom or complaint of the teeth or gum,http://id.who.int/icd/entity/992277424,https://icd.who.int/browse/2025-01/mms/en#992277424,B
+MD80.1,"Symptom or complaint of the mouth, tongue or lip",http://id.who.int/icd/entity/430383563,https://icd.who.int/browse/2025-01/mms/en#430383563,B
+MD81.0,Abdominal tenderness,http://id.who.int/icd/entity/553875709,https://icd.who.int/browse/2025-01/mms/en#553875709,B
+MD81.10,Pain localised to upper abdomen,http://id.who.int/icd/entity/1810710745,https://icd.who.int/browse/2025-01/mms/en#1810710745,B
+MD81.11,Pelvic or perineal pain,http://id.who.int/icd/entity/524292134,https://icd.who.int/browse/2025-01/mms/en#524292134,B
+MD81.12,Pain localised to other parts of lower abdomen,http://id.who.int/icd/entity/2047598004,https://icd.who.int/browse/2025-01/mms/en#2047598004,B
+MD81.2,Generalised abdominal pain,http://id.who.int/icd/entity/330423944,https://icd.who.int/browse/2025-01/mms/en#330423944,B
+MD81.3,Acute abdomen,http://id.who.int/icd/entity/245796173,https://icd.who.int/browse/2025-01/mms/en#245796173,B
+MD81.4,Other and unspecified abdominal pain,http://id.who.int/icd/entity/166022696,https://icd.who.int/browse/2025-01/mms/en#166022696,B
+MD82,"Intra-abdominal or pelvic swelling, mass or lump",http://id.who.int/icd/entity/1738794800,https://icd.who.int/browse/2025-01/mms/en#1738794800,B
+MD90.0,Nausea,http://id.who.int/icd/entity/596805318,https://icd.who.int/browse/2025-01/mms/en#596805318,B
+MD90.1,Vomiting,http://id.who.int/icd/entity/447658033,https://icd.who.int/browse/2025-01/mms/en#447658033,B
+MD91,Belching,http://id.who.int/icd/entity/1093292760,https://icd.who.int/browse/2025-01/mms/en#1093292760,B
+MD92,Dyspepsia,http://id.who.int/icd/entity/869622187,https://icd.who.int/browse/2025-01/mms/en#869622187,B
+MD93,Dysphagia,http://id.who.int/icd/entity/968461848,https://icd.who.int/browse/2025-01/mms/en#968461848,B
+MD94,Halitosis,http://id.who.int/icd/entity/1896266034,https://icd.who.int/browse/2025-01/mms/en#1896266034,B
+MD95,Heartburn,http://id.who.int/icd/entity/1559380866,https://icd.who.int/browse/2025-01/mms/en#1559380866,B
+ME00,Abdominal compartment syndrome,http://id.who.int/icd/entity/918157973,https://icd.who.int/browse/2025-01/mms/en#918157973,B
+ME01,Abdominal distension,http://id.who.int/icd/entity/898362405,https://icd.who.int/browse/2025-01/mms/en#898362405,B
+ME02,Abdominal rigidity,http://id.who.int/icd/entity/319731663,https://icd.who.int/browse/2025-01/mms/en#319731663,B
+ME03.0,Hyperactive bowel sounds,http://id.who.int/icd/entity/794938483,https://icd.who.int/browse/2025-01/mms/en#794938483,B
+ME03.1,Absent bowel sounds,http://id.who.int/icd/entity/1833425233,https://icd.who.int/browse/2025-01/mms/en#1833425233,B
+ME04.0,Fluid in peritoneal cavity,http://id.who.int/icd/entity/1783043910,https://icd.who.int/browse/2025-01/mms/en#1783043910,B
+ME05.0,Constipation,http://id.who.int/icd/entity/502284069,https://icd.who.int/browse/2025-01/mms/en#502284069,B
+ME05.1,Diarrhoea,http://id.who.int/icd/entity/116759077,https://icd.who.int/browse/2025-01/mms/en#116759077,B
+ME06,Chronic enteritis of uncertain aetiology,http://id.who.int/icd/entity/2036452902,https://icd.who.int/browse/2025-01/mms/en#2036452902,B
+ME07.0,Faecal smearing,http://id.who.int/icd/entity/581626198,https://icd.who.int/browse/2025-01/mms/en#581626198,B
+ME07.1,Incomplete defaecation,http://id.who.int/icd/entity/577131308,https://icd.who.int/browse/2025-01/mms/en#577131308,B
+ME07.2,Faecal urgency,http://id.who.int/icd/entity/1637975213,https://icd.who.int/browse/2025-01/mms/en#1637975213,B
+ME08,Flatulence and related conditions,http://id.who.int/icd/entity/1247223172,https://icd.who.int/browse/2025-01/mms/en#1247223172,B
+ME09,Rectal tenesmus,http://id.who.int/icd/entity/1328152138,https://icd.who.int/browse/2025-01/mms/en#1328152138,B
+ME0A,Visible peristalsis,http://id.who.int/icd/entity/1984264795,https://icd.who.int/browse/2025-01/mms/en#1984264795,B
+ME0B,"Problems with defaecation, not otherwise specified",http://id.who.int/icd/entity/210393504,https://icd.who.int/browse/2025-01/mms/en#210393504,B
+ME10.00,"Hepatomegaly, not elsewhere classified",http://id.who.int/icd/entity/690435214,https://icd.who.int/browse/2025-01/mms/en#690435214,B
+ME10.01,"Splenomegaly, not elsewhere classified",http://id.who.int/icd/entity/1282210072,https://icd.who.int/browse/2025-01/mms/en#1282210072,B
+ME10.02,Hepatomegaly with splenomegaly,http://id.who.int/icd/entity/952216039,https://icd.who.int/browse/2025-01/mms/en#952216039,B
+ME10.1,Unspecified jaundice,http://id.who.int/icd/entity/1056591229,https://icd.who.int/browse/2025-01/mms/en#1056591229,B
+ME20.0,Abnormal level of enzymes in specimens from digestive organs or abdominal cavity,http://id.who.int/icd/entity/1200902645,https://icd.who.int/browse/2025-01/mms/en#1200902645,B
+ME20.1,Abnormal level of hormones in specimens from digestive organs or abdominal cavity,http://id.who.int/icd/entity/585079905,https://icd.who.int/browse/2025-01/mms/en#585079905,B
+ME20.2,"Abnormal level of drugs, medicaments or biological substances in specimens from digestive organs of abdominal cavity",http://id.who.int/icd/entity/1450364062,https://icd.who.int/browse/2025-01/mms/en#1450364062,B
+ME20.3,Abnormal level of substances chiefly nonmedicinal as to source in specimens from digestive organs and abdominal cavity,http://id.who.int/icd/entity/859373836,https://icd.who.int/browse/2025-01/mms/en#859373836,B
+ME20.4,Abnormal immunological findings in specimens from digestive organs and abdominal cavity,http://id.who.int/icd/entity/1087869600,https://icd.who.int/browse/2025-01/mms/en#1087869600,B
+ME20.5,Abnormal microbiological findings in specimens from digestive organs and abdominal cavity,http://id.who.int/icd/entity/631004938,https://icd.who.int/browse/2025-01/mms/en#631004938,B
+ME20.6,Abnormal cytological findings in specimens from digestive organs and abdominal cavity,http://id.who.int/icd/entity/1362169845,https://icd.who.int/browse/2025-01/mms/en#1362169845,B
+ME20.7,Abnormal histological findings in specimens from digestive organs and abdominal cavity,http://id.who.int/icd/entity/880460385,https://icd.who.int/browse/2025-01/mms/en#880460385,B
+ME21,Clinical findings on diagnostic imaging of liver or biliary tract,http://id.who.int/icd/entity/1642681966,https://icd.who.int/browse/2025-01/mms/en#1642681966,B
+ME22,Clinical findings on diagnostic imaging of digestive tract,http://id.who.int/icd/entity/77765628,https://icd.who.int/browse/2025-01/mms/en#77765628,B
+ME23,Results of function studies of the digestive system,http://id.who.int/icd/entity/1908781638,https://icd.who.int/browse/2025-01/mms/en#1908781638,B
+ME24.0,Digestive system abscess,http://id.who.int/icd/entity/1317981822,https://icd.who.int/browse/2025-01/mms/en#1317981822,B
+ME24.1,Digestive system fistula,http://id.who.int/icd/entity/1035286886,https://icd.who.int/browse/2025-01/mms/en#1035286886,B
+ME24.2,Digestive system obstruction,http://id.who.int/icd/entity/953394726,https://icd.who.int/browse/2025-01/mms/en#953394726,B
+ME24.30,Perforation of small intestine,http://id.who.int/icd/entity/250657475,https://icd.who.int/browse/2025-01/mms/en#250657475,B
+ME24.31,Perforation of large intestine,http://id.who.int/icd/entity/291026076,https://icd.who.int/browse/2025-01/mms/en#291026076,B
+ME24.35,Perforation of gallbladder or bile ducts,http://id.who.int/icd/entity/1796445107,https://icd.who.int/browse/2025-01/mms/en#1796445107,B
+ME24.3Y,Digestive system perforation of other specified site,,,B
+ME24.3Z,Digestive system perforation of unspecified site,,,B
+ME24.4,Digestive system stenosis,http://id.who.int/icd/entity/1810113484,https://icd.who.int/browse/2025-01/mms/en#1810113484,B
+ME24.5,Digestive system ulcer,http://id.who.int/icd/entity/1202109372,https://icd.who.int/browse/2025-01/mms/en#1202109372,B
+ME24.6,Digestive system dilatation,http://id.who.int/icd/entity/1058809993,https://icd.who.int/browse/2025-01/mms/en#1058809993,B
+ME24.7,Digestive system incarceration,http://id.who.int/icd/entity/711344157,https://icd.who.int/browse/2025-01/mms/en#711344157,B
+ME24.8,Digestive system strangulation or gangrene,http://id.who.int/icd/entity/1438161812,https://icd.who.int/browse/2025-01/mms/en#1438161812,B
+ME24.90,"Acute gastrointestinal bleeding, not elsewhere classified",http://id.who.int/icd/entity/294460566,https://icd.who.int/browse/2025-01/mms/en#294460566,B
+ME24.91,"Chronic gastrointestinal bleeding, not elsewhere classified",http://id.who.int/icd/entity/985094335,https://icd.who.int/browse/2025-01/mms/en#985094335,B
+ME24.A0,Obscure gastrointestinal bleeding,http://id.who.int/icd/entity/1605692345,https://icd.who.int/browse/2025-01/mms/en#1605692345,B
+ME24.A1,Haemorrhage of anus and rectum,http://id.who.int/icd/entity/460842104,https://icd.who.int/browse/2025-01/mms/en#460842104,B
+ME24.A2,Oesophageal haemorrhage,http://id.who.int/icd/entity/752713197,https://icd.who.int/browse/2025-01/mms/en#752713197,B
+ME24.A3,Haematochezia,http://id.who.int/icd/entity/279136456,https://icd.who.int/browse/2025-01/mms/en#279136456,B
+ME24.A4,Melaena,http://id.who.int/icd/entity/262463613,https://icd.who.int/browse/2025-01/mms/en#262463613,B
+ME24.A5,Haematemesis,http://id.who.int/icd/entity/1794059753,https://icd.who.int/browse/2025-01/mms/en#1794059753,B
+ME24.A6,Positive occult blood in stool,http://id.who.int/icd/entity/1048974920,https://icd.who.int/browse/2025-01/mms/en#1048974920,B
+ME60.0,Skin lesion of uncertain nature,http://id.who.int/icd/entity/2072089922,https://icd.who.int/browse/2025-01/mms/en#2072089922,B
+ME60.1,Pigmented skin lesion of uncertain nature,http://id.who.int/icd/entity/330822053,https://icd.who.int/browse/2025-01/mms/en#330822053,B
+ME60.2,Ulcer of skin of uncertain nature,http://id.who.int/icd/entity/596352530,https://icd.who.int/browse/2025-01/mms/en#596352530,B
+ME60.3,Keratosis of skin of uncertain or unspecified nature,http://id.who.int/icd/entity/1831523271,https://icd.who.int/browse/2025-01/mms/en#1831523271,B
+ME60.Z,Skin lesion of unspecified nature,,,B
+ME61,"Subcutaneous swelling, mass or lump of uncertain or unspecified nature",http://id.who.int/icd/entity/1531077719,https://icd.who.int/browse/2025-01/mms/en#1531077719,B
+ME62.0,Acute erythematous skin eruption,http://id.who.int/icd/entity/1906886516,https://icd.who.int/browse/2025-01/mms/en#1906886516,B
+ME62.1,Acute purpuric skin eruption,http://id.who.int/icd/entity/1585857185,https://icd.who.int/browse/2025-01/mms/en#1585857185,B
+ME62.2,Acute urticarial skin eruption,http://id.who.int/icd/entity/179272822,https://icd.who.int/browse/2025-01/mms/en#179272822,B
+ME62.3,Acute maculopapular skin eruption,http://id.who.int/icd/entity/1238846563,https://icd.who.int/browse/2025-01/mms/en#1238846563,B
+ME62.4,Acute papular skin eruption,http://id.who.int/icd/entity/1173786143,https://icd.who.int/browse/2025-01/mms/en#1173786143,B
+ME62.5,Acute exudative skin eruption,http://id.who.int/icd/entity/458739593,https://icd.who.int/browse/2025-01/mms/en#458739593,B
+ME62.6,Acute blistering skin eruption,http://id.who.int/icd/entity/1954443,https://icd.who.int/browse/2025-01/mms/en#1954443,B
+ME62.7,Acute desquamating skin eruption,http://id.who.int/icd/entity/317520014,https://icd.who.int/browse/2025-01/mms/en#317520014,B
+ME62.8,Acute discoid or annular skin eruption,http://id.who.int/icd/entity/205263095,https://icd.who.int/browse/2025-01/mms/en#205263095,B
+ME62.9,Acute excoriation of skin,http://id.who.int/icd/entity/1764982361,https://icd.who.int/browse/2025-01/mms/en#1764982361,B
+ME63.0,Chronic erythematous skin disorder,http://id.who.int/icd/entity/1944251246,https://icd.who.int/browse/2025-01/mms/en#1944251246,B
+ME63.1,Chronic urticarial skin disorder,http://id.who.int/icd/entity/2015013184,https://icd.who.int/browse/2025-01/mms/en#2015013184,B
+ME63.2,Chronic papular skin disorder,http://id.who.int/icd/entity/735102585,https://icd.who.int/browse/2025-01/mms/en#735102585,B
+ME63.3,Chronic blistering skin disorder,http://id.who.int/icd/entity/2061271525,https://icd.who.int/browse/2025-01/mms/en#2061271525,B
+ME63.4,Chronic scaling or hyperkeratotic skin disorder,http://id.who.int/icd/entity/785218967,https://icd.who.int/browse/2025-01/mms/en#785218967,B
+ME63.5,Chronic lichenified skin disorder,http://id.who.int/icd/entity/1903229601,https://icd.who.int/browse/2025-01/mms/en#1903229601,B
+ME63.6,Chronic discoid or annular skin disorder,http://id.who.int/icd/entity/975730054,https://icd.who.int/browse/2025-01/mms/en#975730054,B
+ME63.7,Chronic excoriation of skin,http://id.who.int/icd/entity/2102474973,https://icd.who.int/browse/2025-01/mms/en#2102474973,B
+ME64.0,Erythema,http://id.who.int/icd/entity/800313204,https://icd.who.int/browse/2025-01/mms/en#800313204,B
+ME64.1,Cyanosis,http://id.who.int/icd/entity/1057966112,https://icd.who.int/browse/2025-01/mms/en#1057966112,B
+ME64.2,Pallor,http://id.who.int/icd/entity/1514440118,https://icd.who.int/browse/2025-01/mms/en#1514440118,B
+ME64.3,Petechiae,http://id.who.int/icd/entity/262492020,https://icd.who.int/browse/2025-01/mms/en#262492020,B
+ME64.4,Flushing,http://id.who.int/icd/entity/787076427,https://icd.who.int/browse/2025-01/mms/en#787076427,B
+ME65.0,Burning of skin,http://id.who.int/icd/entity/577499518,https://icd.who.int/browse/2025-01/mms/en#577499518,B
+ME65.1,Itching of skin,http://id.who.int/icd/entity/86210128,https://icd.who.int/browse/2025-01/mms/en#86210128,B
+ME65.2,Pain or tenderness of skin,http://id.who.int/icd/entity/1181522088,https://icd.who.int/browse/2025-01/mms/en#1181522088,B
+ME65.3,Stinging of skin,http://id.who.int/icd/entity/1477238965,https://icd.who.int/browse/2025-01/mms/en#1477238965,B
+ME65.4,Tingling of skin,http://id.who.int/icd/entity/136421763,https://icd.who.int/browse/2025-01/mms/en#136421763,B
+ME66.0,Abnormal sensitivity to light or UV radiation of uncertain or unspecified nature,http://id.who.int/icd/entity/654408969,https://icd.who.int/browse/2025-01/mms/en#654408969,B
+ME66.1,Changes in skin texture,http://id.who.int/icd/entity/944540491,https://icd.who.int/browse/2025-01/mms/en#944540491,B
+ME66.2,Excess and redundant skin,http://id.who.int/icd/entity/1440651997,https://icd.who.int/browse/2025-01/mms/en#1440651997,B
+ME66.3,Symptom or complaint relating to hair or scalp,http://id.who.int/icd/entity/1825782219,https://icd.who.int/browse/2025-01/mms/en#1825782219,B
+ME66.4,Symptom or complaint relating to nails,http://id.who.int/icd/entity/2003621211,https://icd.who.int/browse/2025-01/mms/en#2003621211,B
+ME66.5,Complaint of abnormal sweating,http://id.who.int/icd/entity/1665798650,https://icd.who.int/browse/2025-01/mms/en#1665798650,B
+ME66.60,Rash localised,http://id.who.int/icd/entity/1667183601,https://icd.who.int/browse/2025-01/mms/en#1667183601,B
+ME66.61,Rash generalised,http://id.who.int/icd/entity/1256786790,https://icd.who.int/browse/2025-01/mms/en#1256786790,B
+ME67,Skin disorder of uncertain or unspecified nature,http://id.who.int/icd/entity/2044170142,https://icd.who.int/browse/2025-01/mms/en#2044170142,B
+ME80,Clicking hip,http://id.who.int/icd/entity/1355694344,https://icd.who.int/browse/2025-01/mms/en#1355694344,B
+ME81.0,Intercostal pain,http://id.who.int/icd/entity/1027978531,https://icd.who.int/browse/2025-01/mms/en#1027978531,B
+ME82,Pain in joint,http://id.who.int/icd/entity/9272848,https://icd.who.int/browse/2025-01/mms/en#9272848,B
+ME84.0,Cervical spine pain,http://id.who.int/icd/entity/534629524,https://icd.who.int/browse/2025-01/mms/en#534629524,B
+ME84.1,Thoracic spine pain,http://id.who.int/icd/entity/2125857013,https://icd.who.int/browse/2025-01/mms/en#2125857013,B
+ME84.20,Lumbago with sciatica,http://id.who.int/icd/entity/158896786,https://icd.who.int/browse/2025-01/mms/en#158896786,B
+ME84.3,Sciatica,http://id.who.int/icd/entity/2056651014,https://icd.who.int/browse/2025-01/mms/en#2056651014,B
+ME85,Stiffness of joint,http://id.who.int/icd/entity/1948266223,https://icd.who.int/browse/2025-01/mms/en#1948266223,B
+ME86.0,Symptom or complaint of the ankle,http://id.who.int/icd/entity/31745707,https://icd.who.int/browse/2025-01/mms/en#31745707,B
+ME86.1,Symptom or complaint of the arm,http://id.who.int/icd/entity/1069030395,https://icd.who.int/browse/2025-01/mms/en#1069030395,B
+ME86.20,Back syndrome without radiating pain,http://id.who.int/icd/entity/727435208,https://icd.who.int/browse/2025-01/mms/en#727435208,B
+ME86.21,Back syndrome with radiating pain,http://id.who.int/icd/entity/820259670,https://icd.who.int/browse/2025-01/mms/en#820259670,B
+ME86.22,Symptom or complaint of the low back,http://id.who.int/icd/entity/261833655,https://icd.who.int/browse/2025-01/mms/en#261833655,B
+ME86.3,Symptom or complaint of the chest,http://id.who.int/icd/entity/756584914,https://icd.who.int/browse/2025-01/mms/en#756584914,B
+ME86.4,Symptom or complaint of the elbow,http://id.who.int/icd/entity/109323534,https://icd.who.int/browse/2025-01/mms/en#109323534,B
+ME86.5,Symptom or complaint of the flank or axilla,http://id.who.int/icd/entity/38763203,https://icd.who.int/browse/2025-01/mms/en#38763203,B
+ME86.6,Symptom or complaint of the foot or toe,http://id.who.int/icd/entity/676486716,https://icd.who.int/browse/2025-01/mms/en#676486716,B
+ME86.7,Symptom or complaint of the hand or finger,http://id.who.int/icd/entity/328521237,https://icd.who.int/browse/2025-01/mms/en#328521237,B
+ME86.8,Symptom or complaint of the hip,http://id.who.int/icd/entity/742996838,https://icd.who.int/browse/2025-01/mms/en#742996838,B
+ME86.9,Symptom or complaint of the jaw,http://id.who.int/icd/entity/715712738,https://icd.who.int/browse/2025-01/mms/en#715712738,B
+ME86.A,Symptom or complaint of the knee,http://id.who.int/icd/entity/913786837,https://icd.who.int/browse/2025-01/mms/en#913786837,B
+ME86.B,Symptom or complaint of the leg or thigh,http://id.who.int/icd/entity/351573424,https://icd.who.int/browse/2025-01/mms/en#351573424,B
+ME86.C,Symptom or complaint of the neck,http://id.who.int/icd/entity/297687646,https://icd.who.int/browse/2025-01/mms/en#297687646,B
+ME86.D0,Shoulder syndrome,http://id.who.int/icd/entity/1763637838,https://icd.who.int/browse/2025-01/mms/en#1763637838,B
+ME86.E,Symptom or complaint of the wrist,http://id.who.int/icd/entity/604501867,https://icd.who.int/browse/2025-01/mms/en#604501867,B
+ME86.F,"Symptom or complaint of joint, not otherwise specified",http://id.who.int/icd/entity/303384120,https://icd.who.int/browse/2025-01/mms/en#303384120,B
+ME86.G,"Symptom or complaint of muscle, not otherwise specified",http://id.who.int/icd/entity/629565258,https://icd.who.int/browse/2025-01/mms/en#629565258,B
+ME86.Y,Problem of other specified body part,,,B
+ME86.Z,Problem of unspecified body part,,,B
+ME90,Clinical findings on diagnostic imaging of skull and head,http://id.who.int/icd/entity/1880083205,https://icd.who.int/browse/2025-01/mms/en#1880083205,B
+ME91,Clinical findings on diagnostic imaging of limbs,http://id.who.int/icd/entity/1722455301,https://icd.who.int/browse/2025-01/mms/en#1722455301,B
+ME92.0,Wedging of vertebra,http://id.who.int/icd/entity/554681605,https://icd.who.int/browse/2025-01/mms/en#554681605,B
+ME92.1,Bony erosion,http://id.who.int/icd/entity/1706598783,https://icd.who.int/browse/2025-01/mms/en#1706598783,B
+ME93.0,Segmental and somatic dysfunction,http://id.who.int/icd/entity/1652981832,https://icd.who.int/browse/2025-01/mms/en#1652981832,B
+ME93.1,Subluxation stenosis of neural canal,http://id.who.int/icd/entity/1935678755,https://icd.who.int/browse/2025-01/mms/en#1935678755,B
+ME93.2,Osseous stenosis of neural canal,http://id.who.int/icd/entity/371970231,https://icd.who.int/browse/2025-01/mms/en#371970231,B
+ME93.3,Connective tissue stenosis of neural canal,http://id.who.int/icd/entity/1707426595,https://icd.who.int/browse/2025-01/mms/en#1707426595,B
+ME93.40,"Intervertebral disc stenosis of neural canal, head region",http://id.who.int/icd/entity/537438973,https://icd.who.int/browse/2025-01/mms/en#537438973,B
+ME93.41,"Intervertebral disc stenosis of neural canal, cervical region",http://id.who.int/icd/entity/1162045289,https://icd.who.int/browse/2025-01/mms/en#1162045289,B
+ME93.42,"Intervertebral disc stenosis of neural canal, thoracic region",http://id.who.int/icd/entity/837695384,https://icd.who.int/browse/2025-01/mms/en#837695384,B
+ME93.43,"Intervertebral disc stenosis of neural canal, lumbar region",http://id.who.int/icd/entity/1420163586,https://icd.who.int/browse/2025-01/mms/en#1420163586,B
+ME93.44,"Intervertebral disc stenosis of neural canal, sacral region",http://id.who.int/icd/entity/659253654,https://icd.who.int/browse/2025-01/mms/en#659253654,B
+ME93.5,Osseous and subluxation stenosis of intervertebral foramina,http://id.who.int/icd/entity/1948507722,https://icd.who.int/browse/2025-01/mms/en#1948507722,B
+ME93.6,Connective tissue and disc stenosis of intervertebral foramina,http://id.who.int/icd/entity/292033500,https://icd.who.int/browse/2025-01/mms/en#292033500,B
+MF30,Breast lump or mass female,http://id.who.int/icd/entity/961359349,https://icd.who.int/browse/2025-01/mms/en#961359349,B
+MF31,Breast or lactation symptom or complaint,http://id.who.int/icd/entity/349281581,https://icd.who.int/browse/2025-01/mms/en#349281581,B
+MF32,Menopausal symptom or complaint,http://id.who.int/icd/entity/1224852602,https://icd.who.int/browse/2025-01/mms/en#1224852602,B
+MF33,Premenstrual symptom or complaint,http://id.who.int/icd/entity/1388194024,https://icd.who.int/browse/2025-01/mms/en#1388194024,B
+MF34,Pregnancy symptom or complaint,http://id.who.int/icd/entity/119586226,https://icd.who.int/browse/2025-01/mms/en#119586226,B
+MF35,Postpartum symptom or complaint,http://id.who.int/icd/entity/651708716,https://icd.who.int/browse/2025-01/mms/en#651708716,B
+MF36,Other symptom or complaint of vagina,http://id.who.int/icd/entity/1095698549,https://icd.who.int/browse/2025-01/mms/en#1095698549,B
+MF37,Symptom or complaint of female nipple,http://id.who.int/icd/entity/284890466,https://icd.who.int/browse/2025-01/mms/en#284890466,B
+MF38,Symptom or complaint of female pelvis,http://id.who.int/icd/entity/249433227,https://icd.who.int/browse/2025-01/mms/en#249433227,B
+MF39,Symptom or complaint of the vulva,http://id.who.int/icd/entity/198224539,https://icd.who.int/browse/2025-01/mms/en#198224539,B
+MF3A,Vaginal discharge,http://id.who.int/icd/entity/2123556104,https://icd.who.int/browse/2025-01/mms/en#2123556104,B
+MF40.00,Pain in penis,http://id.who.int/icd/entity/176864342,https://icd.who.int/browse/2025-01/mms/en#176864342,B
+MF40.1,Problems of the prostate,http://id.who.int/icd/entity/2072779926,https://icd.who.int/browse/2025-01/mms/en#2072779926,B
+MF40.20,Acute scrotal pain,http://id.who.int/icd/entity/961335766,https://icd.who.int/browse/2025-01/mms/en#961335766,B
+MF40.21,Testicular pain,http://id.who.int/icd/entity/1149252262,https://icd.who.int/browse/2025-01/mms/en#1149252262,B
+MF40.3,Retrograde ejaculation,http://id.who.int/icd/entity/988651013,https://icd.who.int/browse/2025-01/mms/en#988651013,B
+MF41,Symptom or complaint of male sexual function,http://id.who.int/icd/entity/1458214967,https://icd.who.int/browse/2025-01/mms/en#1458214967,B
+MF42,Retractile testis migrans,http://id.who.int/icd/entity/322471536,https://icd.who.int/browse/2025-01/mms/en#322471536,B
+MF50.0,Frequent micturition,http://id.who.int/icd/entity/403610249,https://icd.who.int/browse/2025-01/mms/en#403610249,B
+MF50.1,Pollakiuria,http://id.who.int/icd/entity/1684227885,https://icd.who.int/browse/2025-01/mms/en#1684227885,B
+MF50.20,Stress incontinence,http://id.who.int/icd/entity/444605491,https://icd.who.int/browse/2025-01/mms/en#444605491,B
+MF50.21,Urge Incontinence,http://id.who.int/icd/entity/1342466282,https://icd.who.int/browse/2025-01/mms/en#1342466282,B
+MF50.22,Mixed incontinence,http://id.who.int/icd/entity/411472164,https://icd.who.int/browse/2025-01/mms/en#411472164,B
+MF50.23,Functional urinary incontinence,http://id.who.int/icd/entity/1140964489,https://icd.who.int/browse/2025-01/mms/en#1140964489,B
+MF50.24,Reflex incontinence,http://id.who.int/icd/entity/138852207,https://icd.who.int/browse/2025-01/mms/en#138852207,B
+MF50.3,Retention of urine,http://id.who.int/icd/entity/1775034842,https://icd.who.int/browse/2025-01/mms/en#1775034842,B
+MF50.40,Macroscopic haematuria,http://id.who.int/icd/entity/839024767,https://icd.who.int/browse/2025-01/mms/en#839024767,B
+MF50.41,Microscopic haematuria,http://id.who.int/icd/entity/978078836,https://icd.who.int/browse/2025-01/mms/en#978078836,B
+MF50.5,Extravasation of urine,http://id.who.int/icd/entity/1201119570,https://icd.who.int/browse/2025-01/mms/en#1201119570,B
+MF50.60,Hesitancy of micturition,http://id.who.int/icd/entity/1323766251,https://icd.who.int/browse/2025-01/mms/en#1323766251,B
+MF50.61,Poor urinary stream,http://id.who.int/icd/entity/246655356,https://icd.who.int/browse/2025-01/mms/en#246655356,B
+MF50.62,Splitting of urinary stream,http://id.who.int/icd/entity/735659214,https://icd.who.int/browse/2025-01/mms/en#735659214,B
+MF50.63,Urgency of urination,http://id.who.int/icd/entity/2063029245,https://icd.who.int/browse/2025-01/mms/en#2063029245,B
+MF50.64,Feeling of incomplete bladder emptying,http://id.who.int/icd/entity/1085073291,https://icd.who.int/browse/2025-01/mms/en#1085073291,B
+MF50.65,Straining to void,http://id.who.int/icd/entity/1042185558,https://icd.who.int/browse/2025-01/mms/en#1042185558,B
+MF50.7,Dysuria,http://id.who.int/icd/entity/781372207,https://icd.who.int/browse/2025-01/mms/en#781372207,B
+MF50.8,Vesical tenesmus,http://id.who.int/icd/entity/1272514235,https://icd.who.int/browse/2025-01/mms/en#1272514235,B
+MF51,Anuria or oliguria,http://id.who.int/icd/entity/438465102,https://icd.who.int/browse/2025-01/mms/en#438465102,B
+MF52,Bladder pain,http://id.who.int/icd/entity/615316952,https://icd.who.int/browse/2025-01/mms/en#615316952,B
+MF53,Extrarenal uraemia,http://id.who.int/icd/entity/1450261561,https://icd.who.int/browse/2025-01/mms/en#1450261561,B
+MF54.0,Smooth contracted kidney,http://id.who.int/icd/entity/117862072,https://icd.who.int/browse/2025-01/mms/en#117862072,B
+MF54.1,Irregularly contracted kidney,http://id.who.int/icd/entity/1697216126,https://icd.who.int/browse/2025-01/mms/en#1697216126,B
+MF54.2,Small kidney,http://id.who.int/icd/entity/1649255214,https://icd.who.int/browse/2025-01/mms/en#1649255214,B
+MF55,Polyuria,http://id.who.int/icd/entity/2137636828,https://icd.who.int/browse/2025-01/mms/en#2137636828,B
+MF56,Renal colic,http://id.who.int/icd/entity/821552851,https://icd.who.int/browse/2025-01/mms/en#821552851,B
+MF57,Symptom or complaint of bladder,http://id.who.int/icd/entity/983950059,https://icd.who.int/browse/2025-01/mms/en#983950059,B
+MF58,Urethral discharge,http://id.who.int/icd/entity/197455653,https://icd.who.int/browse/2025-01/mms/en#197455653,B
+MF59,Urinary symptom or complaint,http://id.who.int/icd/entity/873135456,https://icd.who.int/browse/2025-01/mms/en#873135456,B
+MF60,Abnormal level of enzymes in specimens from female genital organs,http://id.who.int/icd/entity/1525365068,https://icd.who.int/browse/2025-01/mms/en#1525365068,B
+MF61,Abnormal level of hormones in specimens from female genital organs,http://id.who.int/icd/entity/1067513054,https://icd.who.int/browse/2025-01/mms/en#1067513054,B
+MF62,"Abnormal level of drugs, medicaments and biological substances in specimens from female genital organs",http://id.who.int/icd/entity/1259185185,https://icd.who.int/browse/2025-01/mms/en#1259185185,B
+MF63,Abnormal level of substances chiefly nonmedicinal as to source in specimens from female genital organs,http://id.who.int/icd/entity/776366517,https://icd.who.int/browse/2025-01/mms/en#776366517,B
+MF64,Abnormal immunological findings in specimens from female genital organs,http://id.who.int/icd/entity/1571355169,https://icd.who.int/browse/2025-01/mms/en#1571355169,B
+MF65,Abnormal microbiological findings in specimens from female genital organs,http://id.who.int/icd/entity/954415029,https://icd.who.int/browse/2025-01/mms/en#954415029,B
+MF66.0,Abnormal cervix smear,http://id.who.int/icd/entity/1322223068,https://icd.who.int/browse/2025-01/mms/en#1322223068,B
+MF67,Abnormal histological findings in specimens from female genital organs,http://id.who.int/icd/entity/688237280,https://icd.who.int/browse/2025-01/mms/en#688237280,B
+MF68,Abnormal chromosomal findings in specimens from female genital organs,http://id.who.int/icd/entity/134457129,https://icd.who.int/browse/2025-01/mms/en#134457129,B
+MF70,Abnormal level of enzymes in specimens from male genital organs,http://id.who.int/icd/entity/1175712203,https://icd.who.int/browse/2025-01/mms/en#1175712203,B
+MF71,Abnormal level of hormones in specimens from male genital organs,http://id.who.int/icd/entity/592985183,https://icd.who.int/browse/2025-01/mms/en#592985183,B
+MF72,"Abnormal level of drugs, medicaments and biological substances in specimens from male genital organs",http://id.who.int/icd/entity/1475701922,https://icd.who.int/browse/2025-01/mms/en#1475701922,B
+MF73,Abnormal level of substances chiefly nonmedicinal as to source in specimens from male genital organs,http://id.who.int/icd/entity/851353908,https://icd.who.int/browse/2025-01/mms/en#851353908,B
+MF74,Abnormal immunological findings in specimens from male genital organs,http://id.who.int/icd/entity/1095774880,https://icd.who.int/browse/2025-01/mms/en#1095774880,B
+MF75,Abnormal microbiological findings in specimens from male genital organs,http://id.who.int/icd/entity/605814582,https://icd.who.int/browse/2025-01/mms/en#605814582,B
+MF76,Abnormal cytological findings in specimens from male genital organs,http://id.who.int/icd/entity/1354149835,https://icd.who.int/browse/2025-01/mms/en#1354149835,B
+MF77,Abnormal histological findings in specimens from male genital organs,http://id.who.int/icd/entity/905798239,https://icd.who.int/browse/2025-01/mms/en#905798239,B
+MF78,Abnormal chromosomal findings in specimens from male genital organs,http://id.who.int/icd/entity/470773651,https://icd.who.int/browse/2025-01/mms/en#470773651,B
+MF80,Diffuse mesangial sclerosis,http://id.who.int/icd/entity/84161233,https://icd.who.int/browse/2025-01/mms/en#84161233,B
+MF81,Fibronectin glomerulopathy,http://id.who.int/icd/entity/1877494378,https://icd.who.int/browse/2025-01/mms/en#1877494378,B
+MF82,Lipoprotein glomerulopathy,http://id.who.int/icd/entity/69778702,https://icd.who.int/browse/2025-01/mms/en#69778702,B
+MF83,Diabetic glomerular changes,http://id.who.int/icd/entity/923657942,https://icd.who.int/browse/2025-01/mms/en#923657942,B
+MF84,Pauci-immune proliferative glomerulonephritis,http://id.who.int/icd/entity/1359757645,https://icd.who.int/browse/2025-01/mms/en#1359757645,B
+MF85,Anti-glomerular basement membrane antibody mediated disease,http://id.who.int/icd/entity/591736785,https://icd.who.int/browse/2025-01/mms/en#591736785,B
+MF90,Acetonuria,http://id.who.int/icd/entity/2075059166,https://icd.who.int/browse/2025-01/mms/en#2075059166,B
+MF91,Bilirubinuria,http://id.who.int/icd/entity/1829486048,https://icd.who.int/browse/2025-01/mms/en#1829486048,B
+MF92,Chyluria,http://id.who.int/icd/entity/2095915189,https://icd.who.int/browse/2025-01/mms/en#2095915189,B
+MF93,Glycosuria,http://id.who.int/icd/entity/1406987921,https://icd.who.int/browse/2025-01/mms/en#1406987921,B
+MF94,Haemoglobinuria,http://id.who.int/icd/entity/138440778,https://icd.who.int/browse/2025-01/mms/en#138440778,B
+MF95,Myoglobinuria,http://id.who.int/icd/entity/430370081,https://icd.who.int/browse/2025-01/mms/en#430370081,B
+MF96.0,Orthostatic proteinuria,http://id.who.int/icd/entity/2144070055,https://icd.who.int/browse/2025-01/mms/en#2144070055,B
+MF96.1,Bence Jones proteinuria,http://id.who.int/icd/entity/696187905,https://icd.who.int/browse/2025-01/mms/en#696187905,B
+MF97,Pyuria,http://id.who.int/icd/entity/2000630356,https://icd.who.int/browse/2025-01/mms/en#2000630356,B
+MF98.0,Hypercalciuria,http://id.who.int/icd/entity/1256480681,https://icd.who.int/browse/2025-01/mms/en#1256480681,B
+MF98.1,Hyperkaluria,http://id.who.int/icd/entity/2039492057,https://icd.who.int/browse/2025-01/mms/en#2039492057,B
+MF98.2,Hypermagnesuria,http://id.who.int/icd/entity/1820384962,https://icd.who.int/browse/2025-01/mms/en#1820384962,B
+MF98.3,Hypocalciuria,http://id.who.int/icd/entity/229495305,https://icd.who.int/browse/2025-01/mms/en#229495305,B
+MF98.4,Hypokaluria,http://id.who.int/icd/entity/520968226,https://icd.who.int/browse/2025-01/mms/en#520968226,B
+MF98.5,Hypomagnesuria,http://id.who.int/icd/entity/78820528,https://icd.who.int/browse/2025-01/mms/en#78820528,B
+MF98.6,Hypophosphaturia,http://id.who.int/icd/entity/7990141,https://icd.who.int/browse/2025-01/mms/en#7990141,B
+MF99,"Elevated urine levels of drugs, medicaments and biological substances",http://id.who.int/icd/entity/518336076,https://icd.who.int/browse/2025-01/mms/en#518336076,B
+MF9A,Abnormal urine levels of substances chiefly nonmedicinal as to source,http://id.who.int/icd/entity/1783135925,https://icd.who.int/browse/2025-01/mms/en#1783135925,B
+MF9B,Abnormal findings on microbiological examination of urine,http://id.who.int/icd/entity/251900705,https://icd.who.int/browse/2025-01/mms/en#251900705,B
+MF9C,Abnormal findings on cytological and histological examination of urine,http://id.who.int/icd/entity/1919592035,https://icd.who.int/browse/2025-01/mms/en#1919592035,B
+MG00,Clinical findings on diagnostic imaging of breast,http://id.who.int/icd/entity/1890907767,https://icd.who.int/browse/2025-01/mms/en#1890907767,B
+MG01,Clinical findings on diagnostic imaging of urinary organs,http://id.who.int/icd/entity/2001471600,https://icd.who.int/browse/2025-01/mms/en#2001471600,B
+MG02,Results of kidney function studies,http://id.who.int/icd/entity/1278572846,https://icd.who.int/browse/2025-01/mms/en#1278572846,B
+MG20.0,Malignant cachexia,http://id.who.int/icd/entity/1976188786,https://icd.who.int/browse/2025-01/mms/en#1976188786,B
+MG21,Chills,http://id.who.int/icd/entity/1495646237,https://icd.who.int/browse/2025-01/mms/en#1495646237,B
+MG22,Fatigue,http://id.who.int/icd/entity/1109546957,https://icd.who.int/browse/2025-01/mms/en#1109546957,B
+MG23,Fear of death or dying,http://id.who.int/icd/entity/1395867488,https://icd.who.int/browse/2025-01/mms/en#1395867488,B
+MG24.00,Fear of cancer of digestive system,http://id.who.int/icd/entity/173408598,https://icd.who.int/browse/2025-01/mms/en#173408598,B
+MG24.01,Fear of breast cancer female,http://id.who.int/icd/entity/434402267,https://icd.who.int/browse/2025-01/mms/en#434402267,B
+MG24.02,Fear of genital cancer male,http://id.who.int/icd/entity/2028788114,https://icd.who.int/browse/2025-01/mms/en#2028788114,B
+MG24.1,Fear of human immunodeficiency virus,http://id.who.int/icd/entity/785993890,https://icd.who.int/browse/2025-01/mms/en#785993890,B
+MG24.2,Fear of haematological disease,http://id.who.int/icd/entity/588081624,https://icd.who.int/browse/2025-01/mms/en#588081624,B
+MG24.3,Fear of digestive disease,http://id.who.int/icd/entity/1036329000,https://icd.who.int/browse/2025-01/mms/en#1036329000,B
+MG24.4,Fear of eye disease,http://id.who.int/icd/entity/1696392323,https://icd.who.int/browse/2025-01/mms/en#1696392323,B
+MG24.5,Fear of heart disease,http://id.who.int/icd/entity/1334495976,https://icd.who.int/browse/2025-01/mms/en#1334495976,B
+MG24.6,Fear of hypertension,http://id.who.int/icd/entity/1884759957,https://icd.who.int/browse/2025-01/mms/en#1884759957,B
+MG24.7,Fear of cardiovascular disease,http://id.who.int/icd/entity/1204029163,https://icd.who.int/browse/2025-01/mms/en#1204029163,B
+MG24.8,Fear of musculoskeletal disease,http://id.who.int/icd/entity/150667282,https://icd.who.int/browse/2025-01/mms/en#150667282,B
+MG24.9,Fear of neurological disease,http://id.who.int/icd/entity/1895376276,https://icd.who.int/browse/2025-01/mms/en#1895376276,B
+MG24.A,Fear of respiratory disease,http://id.who.int/icd/entity/683609643,https://icd.who.int/browse/2025-01/mms/en#683609643,B
+MG24.B,"Fear of endocrine, metabolic or nutritional disease",http://id.who.int/icd/entity/1092141037,https://icd.who.int/browse/2025-01/mms/en#1092141037,B
+MG24.C,Fear of urinary disease,http://id.who.int/icd/entity/800395762,https://icd.who.int/browse/2025-01/mms/en#800395762,B
+MG24.D,Fear of complications of pregnancy,http://id.who.int/icd/entity/183796932,https://icd.who.int/browse/2025-01/mms/en#183796932,B
+MG24.E,Fear of sexually transmitted disease female,http://id.who.int/icd/entity/716967274,https://icd.who.int/browse/2025-01/mms/en#716967274,B
+MG24.F,Fear of female genital or breast disease,http://id.who.int/icd/entity/779571877,https://icd.who.int/browse/2025-01/mms/en#779571877,B
+MG24.G,Fear of sexually transmitted disease male,http://id.who.int/icd/entity/1364910341,https://icd.who.int/browse/2025-01/mms/en#1364910341,B
+MG24.H,Fear of genital disease male,http://id.who.int/icd/entity/1256525205,https://icd.who.int/browse/2025-01/mms/en#1256525205,B
+MG24.J,Fear of mental disorder,http://id.who.int/icd/entity/1787333796,https://icd.who.int/browse/2025-01/mms/en#1787333796,B
+MG24.Y,Fear of other specified disease,,,B
+MG25,Feeling ill,http://id.who.int/icd/entity/1841264793,https://icd.who.int/browse/2025-01/mms/en#1841264793,B
+MG26,Fever of other or unknown origin,http://id.who.int/icd/entity/915343154,https://icd.who.int/browse/2025-01/mms/en#915343154,B
+MG27,"Haemorrhage, not elsewhere classified",http://id.who.int/icd/entity/940081636,https://icd.who.int/browse/2025-01/mms/en#940081636,B
+MG28,"Hypothermia, not associated with low environmental temperature",http://id.who.int/icd/entity/186500648,https://icd.who.int/browse/2025-01/mms/en#186500648,B
+MG29.00,Ankle oedema,http://id.who.int/icd/entity/2061373715,https://icd.who.int/browse/2025-01/mms/en#2061373715,B
+MG29.01,Oedema of legs,http://id.who.int/icd/entity/243933420,https://icd.who.int/browse/2025-01/mms/en#243933420,B
+MG29.02,Pitting of lip,http://id.who.int/icd/entity/13704120,https://icd.who.int/browse/2025-01/mms/en#13704120,B
+MG29.10,Oedema due to increased capillary pressure,http://id.who.int/icd/entity/635930769,https://icd.who.int/browse/2025-01/mms/en#635930769,B
+MG29.2,Infectious oedema,http://id.who.int/icd/entity/818655954,https://icd.who.int/browse/2025-01/mms/en#818655954,B
+MG29.3,Pitting oedema,http://id.who.int/icd/entity/1348892793,https://icd.who.int/browse/2025-01/mms/en#1348892793,B
+MG2A,Ageing associated decline in intrinsic capacity,http://id.who.int/icd/entity/835503193,https://icd.who.int/browse/2025-01/mms/en#835503193,B
+MG30.00,Chronic primary visceral pain,http://id.who.int/icd/entity/679352876,https://icd.who.int/browse/2025-01/mms/en#679352876,B
+MG30.01,Chronic widespread pain,http://id.who.int/icd/entity/849253504,https://icd.who.int/browse/2025-01/mms/en#849253504,B
+MG30.02,Chronic primary musculoskeletal pain,http://id.who.int/icd/entity/1236923870,https://icd.who.int/browse/2025-01/mms/en#1236923870,B
+MG30.03,Chronic primary headache or orofacial pain,http://id.who.int/icd/entity/2104869000,https://icd.who.int/browse/2025-01/mms/en#2104869000,B
+MG30.04,Complex regional pain syndrome,http://id.who.int/icd/entity/1834504950,https://icd.who.int/browse/2025-01/mms/en#1834504950,B
+MG30.10,Chronic cancer pain,http://id.who.int/icd/entity/322466810,https://icd.who.int/browse/2025-01/mms/en#322466810,B
+MG30.11,Chronic post cancer treatment pain,http://id.who.int/icd/entity/1640181609,https://icd.who.int/browse/2025-01/mms/en#1640181609,B
+MG30.20,Chronic post traumatic pain,http://id.who.int/icd/entity/1034914433,https://icd.who.int/browse/2025-01/mms/en#1034914433,B
+MG30.21,Chronic postsurgical pain,http://id.who.int/icd/entity/302680255,https://icd.who.int/browse/2025-01/mms/en#302680255,B
+MG30.30,Chronic secondary musculoskeletal pain from persistent inflammation,http://id.who.int/icd/entity/390684604,https://icd.who.int/browse/2025-01/mms/en#390684604,B
+MG30.31,Chronic secondary musculoskeletal pain associated with structural changes,http://id.who.int/icd/entity/1569734721,https://icd.who.int/browse/2025-01/mms/en#1569734721,B
+MG30.32,Chronic secondary musculoskeletal pain due to disease of the nervous system,http://id.who.int/icd/entity/2019368323,https://icd.who.int/browse/2025-01/mms/en#2019368323,B
+MG30.40,Chronic visceral pain from mechanical factors,http://id.who.int/icd/entity/1507624466,https://icd.who.int/browse/2025-01/mms/en#1507624466,B
+MG30.41,Chronic visceral pain from vascular mechanisms,http://id.who.int/icd/entity/1119203708,https://icd.who.int/browse/2025-01/mms/en#1119203708,B
+MG30.42,Chronic visceral pain from persistent inflammation,http://id.who.int/icd/entity/1290701352,https://icd.who.int/browse/2025-01/mms/en#1290701352,B
+MG30.50,Chronic central neuropathic pain,http://id.who.int/icd/entity/1297540670,https://icd.who.int/browse/2025-01/mms/en#1297540670,B
+MG30.51,Chronic peripheral neuropathic pain,http://id.who.int/icd/entity/425464783,https://icd.who.int/browse/2025-01/mms/en#425464783,B
+MG30.61,Chronic dental pain,http://id.who.int/icd/entity/411578227,https://icd.who.int/browse/2025-01/mms/en#411578227,B
+MG30.62,Chronic neuropathic orofacial pain,http://id.who.int/icd/entity/1027961521,https://icd.who.int/browse/2025-01/mms/en#1027961521,B
+MG30.63,Headache or orofacial pain associated with chronic secondary temporomandibular disorders,http://id.who.int/icd/entity/1916173590,https://icd.who.int/browse/2025-01/mms/en#1916173590,B
+MG30.64,Chronic headache or orofacial pain associated with disorders of homoeostasis or their nonpharmacological treatment,http://id.who.int/icd/entity/1839497823,https://icd.who.int/browse/2025-01/mms/en#1839497823,B
+MG30.65,Chronic headache or orofacial pain associated with cranial or cervical vascular disorder,http://id.who.int/icd/entity/190956303,https://icd.who.int/browse/2025-01/mms/en#190956303,B
+MG30.66,Chronic headache or orofacial pain associated with non-vascular intracranial disorder,http://id.who.int/icd/entity/995240069,https://icd.who.int/browse/2025-01/mms/en#995240069,B
+MG30.67,Chronic headache associated with a substance or its withdrawal,http://id.who.int/icd/entity/316533152,https://icd.who.int/browse/2025-01/mms/en#316533152,B
+MG31.0,"Acute pain in the face, not elsewhere classified",http://id.who.int/icd/entity/1964077040,https://icd.who.int/browse/2025-01/mms/en#1964077040,B
+MG31.1,"Acute headache, not elsewhere classified",http://id.who.int/icd/entity/1068555332,https://icd.who.int/browse/2025-01/mms/en#1068555332,B
+MG31.2,"Acute postoperative pain, not elsewhere classified",http://id.who.int/icd/entity/1081968428,https://icd.who.int/browse/2025-01/mms/en#1081968428,B
+MG40.0,Cardiogenic shock,http://id.who.int/icd/entity/1974956233,https://icd.who.int/browse/2025-01/mms/en#1974956233,B
+MG40.1,Hypovolaemic shock,http://id.who.int/icd/entity/284999005,https://icd.who.int/browse/2025-01/mms/en#284999005,B
+MG41,"Sleep disturbance, not elsewhere classified",http://id.who.int/icd/entity/1207299072,https://icd.who.int/browse/2025-01/mms/en#1207299072,B
+MG42,"Somnolence, not elsewhere classified",http://id.who.int/icd/entity/1590960826,https://icd.who.int/browse/2025-01/mms/en#1590960826,B
+MG43.0,Polydipsia,http://id.who.int/icd/entity/439093618,https://icd.who.int/browse/2025-01/mms/en#439093618,B
+MG43.1,Overeating,http://id.who.int/icd/entity/1853970831,https://icd.who.int/browse/2025-01/mms/en#1853970831,B
+MG43.2,Abulia,http://id.who.int/icd/entity/2129902504,https://icd.who.int/browse/2025-01/mms/en#2129902504,B
+MG43.30,Feeding problem of infant,http://id.who.int/icd/entity/2010788903,https://icd.who.int/browse/2025-01/mms/en#2010788903,B
+MG43.31,Feeding problem of child,http://id.who.int/icd/entity/1911425995,https://icd.who.int/browse/2025-01/mms/en#1911425995,B
+MG43.32,Feeding problem of adult,http://id.who.int/icd/entity/1337434216,https://icd.who.int/browse/2025-01/mms/en#1337434216,B
+MG43.40,"Refusal of food, not elsewhere classified",http://id.who.int/icd/entity/1673651528,https://icd.who.int/browse/2025-01/mms/en#1673651528,B
+MG43.41,"Refusal of fluid, not elsewhere classified",http://id.who.int/icd/entity/913042329,https://icd.who.int/browse/2025-01/mms/en#913042329,B
+MG43.5,Excessive weight loss,http://id.who.int/icd/entity/2015627151,https://icd.who.int/browse/2025-01/mms/en#2015627151,B
+MG43.6,Excessive weight gain,http://id.who.int/icd/entity/493865499,https://icd.who.int/browse/2025-01/mms/en#493865499,B
+MG43.7,Anorexia,http://id.who.int/icd/entity/2137507044,https://icd.who.int/browse/2025-01/mms/en#2137507044,B
+MG43.8,Decreased appetite,http://id.who.int/icd/entity/2119032619,https://icd.who.int/browse/2025-01/mms/en#2119032619,B
+MG43.9,Increased appetite,http://id.who.int/icd/entity/1587408889,https://icd.who.int/browse/2025-01/mms/en#1587408889,B
+MG44.0,Excessive crying of infant,http://id.who.int/icd/entity/1851132850,https://icd.who.int/browse/2025-01/mms/en#1851132850,B
+MG44.10,Delayed milestone,http://id.who.int/icd/entity/1671367781,https://icd.who.int/browse/2025-01/mms/en#1671367781,B
+MG44.11,Failure to thrive in infant or child,http://id.who.int/icd/entity/1232517390,https://icd.who.int/browse/2025-01/mms/en#1232517390,B
+MG44.12,Short stature of child,http://id.who.int/icd/entity/428234313,https://icd.who.int/browse/2025-01/mms/en#428234313,B
+MG44.13,Constitutional delay of growth and puberty,http://id.who.int/icd/entity/1683573263,https://icd.who.int/browse/2025-01/mms/en#1683573263,B
+MG44.14,Familial short stature,http://id.who.int/icd/entity/1962465719,https://icd.who.int/browse/2025-01/mms/en#1962465719,B
+MG45.0,Cardiac syncope,http://id.who.int/icd/entity/433311545,https://icd.who.int/browse/2025-01/mms/en#433311545,B
+MG46,Systemic inflammatory response syndrome of noninfectious origin,http://id.who.int/icd/entity/973161881,https://icd.who.int/browse/2025-01/mms/en#973161881,B
+MG47,Toxicosis not further specified,http://id.who.int/icd/entity/159529856,https://icd.who.int/browse/2025-01/mms/en#159529856,B
+MG48,Unknown or unspecified causes of morbidity,http://id.who.int/icd/entity/1525902245,https://icd.who.int/browse/2025-01/mms/en#1525902245,B
+MG49,Hangover,http://id.who.int/icd/entity/1466202482,https://icd.who.int/browse/2025-01/mms/en#1466202482,B
+MG4A,Multi organ failure,http://id.who.int/icd/entity/243925837,https://icd.who.int/browse/2025-01/mms/en#243925837,B
+MG50.00,Tetracycline resistant Acinetobacter baumannii,http://id.who.int/icd/entity/985248618,https://icd.who.int/browse/2025-01/mms/en#985248618,B
+MG50.01,Aminoglycoside resistant Acinetobacter baumannii,http://id.who.int/icd/entity/460245224,https://icd.who.int/browse/2025-01/mms/en#460245224,B
+MG50.02,Carbapenem resistant Acinetobacter baumannii,http://id.who.int/icd/entity/501000672,https://icd.who.int/browse/2025-01/mms/en#501000672,B
+MG50.03,Polymyxin resistant Acinetobacter baumannii,http://id.who.int/icd/entity/1038705052,https://icd.who.int/browse/2025-01/mms/en#1038705052,B
+MG50.0Y,Acinetobacter resistant to other antibiotic,,,B
+MG50.0Z,Acinetobacter resistant to unspecified antibiotic,,,B
+MG50.10,Fluoroquinolone resistant Campylobacter,http://id.who.int/icd/entity/1071250765,https://icd.who.int/browse/2025-01/mms/en#1071250765,B
+MG50.1Z,Campylobacter resistant to unspecified antibiotic,,,B
+MG50.20,Sulfonamide or trimethoprim resistant Escherichia coli,http://id.who.int/icd/entity/419354269,https://icd.who.int/browse/2025-01/mms/en#419354269,B
+MG50.21,Fluoroquinolone resistant Escherichia coli,http://id.who.int/icd/entity/1297406018,https://icd.who.int/browse/2025-01/mms/en#1297406018,B
+MG50.22,Third generation cephalosporin resistant Escherichia coli,http://id.who.int/icd/entity/81233849,https://icd.who.int/browse/2025-01/mms/en#81233849,B
+MG50.23,Fourth-generation cephalosporins resistant Escherichia coli,http://id.who.int/icd/entity/1446899496,https://icd.who.int/browse/2025-01/mms/en#1446899496,B
+MG50.24,Carbapenem resistant Escherichia coli,http://id.who.int/icd/entity/146561458,https://icd.who.int/browse/2025-01/mms/en#146561458,B
+MG50.25,Polymyxin resistant Escherichia coli,http://id.who.int/icd/entity/410435592,https://icd.who.int/browse/2025-01/mms/en#410435592,B
+MG50.26,Penicillin resistant Escherichia coli,http://id.who.int/icd/entity/1483134068,https://icd.who.int/browse/2025-01/mms/en#1483134068,B
+MG50.27,Extended spectrum beta-lactamase producing Escherichia coli,http://id.who.int/icd/entity/976332273,https://icd.who.int/browse/2025-01/mms/en#976332273,B
+MG50.2Y,Escherichia coli resistant to other antibiotic,,,B
+MG50.2Z,Escherichia coli resistant to unspecified antibiotic,,,B
+MG50.30,Ampicillin resistant Haemophilus influenzae,http://id.who.int/icd/entity/1773711561,https://icd.who.int/browse/2025-01/mms/en#1773711561,B
+MG50.40,Clarithromycin resistant Helicobacter pylori,http://id.who.int/icd/entity/2003524291,https://icd.who.int/browse/2025-01/mms/en#2003524291,B
+MG50.50,Sulfonamide or trimethoprim resistant Klebsiella pneumoniae,http://id.who.int/icd/entity/231529131,https://icd.who.int/browse/2025-01/mms/en#231529131,B
+MG50.51,Fluoroquinolone resistant Klebsiella pneumoniae,http://id.who.int/icd/entity/1478794390,https://icd.who.int/browse/2025-01/mms/en#1478794390,B
+MG50.52,Third-generation cephalosporin resistant Klebsiella pneumoniae,http://id.who.int/icd/entity/939163862,https://icd.who.int/browse/2025-01/mms/en#939163862,B
+MG50.53,Fourth-generation cephalosporin resistant Klebsiella pneumoniae,http://id.who.int/icd/entity/1054989766,https://icd.who.int/browse/2025-01/mms/en#1054989766,B
+MG50.54,Carbapenem resistant Klebsiella pneumoniae,http://id.who.int/icd/entity/1210342233,https://icd.who.int/browse/2025-01/mms/en#1210342233,B
+MG50.55,Polymyxin resistant Klebsiella pneumoniae,http://id.who.int/icd/entity/376419258,https://icd.who.int/browse/2025-01/mms/en#376419258,B
+MG50.56,Extended-spectrum beta-lactamase producing Klebsiella pneumoniae,http://id.who.int/icd/entity/1681393140,https://icd.who.int/browse/2025-01/mms/en#1681393140,B
+MG50.5Y,Klebsiella pneumoniae resistant to other antibiotic,,,B
+MG50.5Z,Klebsiella pneumoniae resistant to unspecified antibiotic,,,B
+MG50.60,Third generation cephalosporin resistant Neisseria gonorrhoeae,http://id.who.int/icd/entity/2135031716,https://icd.who.int/browse/2025-01/mms/en#2135031716,B
+MG50.61,Macrolide resistant Neisseria gonorrhoeae,http://id.who.int/icd/entity/1146062162,https://icd.who.int/browse/2025-01/mms/en#1146062162,B
+MG50.62,Aminocyclitol resistant Neisseria gonorrhoeae,http://id.who.int/icd/entity/1924181975,https://icd.who.int/browse/2025-01/mms/en#1924181975,B
+MG50.63,Fluoroquinolone resistant Neisseria gonorrhoeae,http://id.who.int/icd/entity/754665268,https://icd.who.int/browse/2025-01/mms/en#754665268,B
+MG50.64,Aminoglycoside resistant Neisseria gonorrhoeae,http://id.who.int/icd/entity/303916412,https://icd.who.int/browse/2025-01/mms/en#303916412,B
+MG50.6Y,Neisseria gonorrhoeae resistant to other antibiotic,,,B
+MG50.6Z,Neisseria gonorrhoeae resistant to unspecified antibiotic,,,B
+MG50.70,Penicillin resistant Neisseria meningitidis,http://id.who.int/icd/entity/1071495840,https://icd.who.int/browse/2025-01/mms/en#1071495840,B
+MG50.80,Carbapenem-resistant Pseudomonas aeruginosa,http://id.who.int/icd/entity/2104583029,https://icd.who.int/browse/2025-01/mms/en#2104583029,B
+MG50.81,Polymyxin-resistant Pseudomonas aeruginosa,http://id.who.int/icd/entity/591039384,https://icd.who.int/browse/2025-01/mms/en#591039384,B
+MG50.8Y,Pseudomonas aeruginosa resistant to other antibiotic,,,B
+MG50.8Z,Pseudomonas aeruginosa resistant to unspecified antibiotic,,,B
+MG50.90,Fluoroquinolone resistant Salmonella,http://id.who.int/icd/entity/1891254232,https://icd.who.int/browse/2025-01/mms/en#1891254232,B
+MG50.91,Third generation cephalosporin resistant Salmonella,http://id.who.int/icd/entity/1586922538,https://icd.who.int/browse/2025-01/mms/en#1586922538,B
+MG50.92,Carbapenem resistant Salmonella,http://id.who.int/icd/entity/292396308,https://icd.who.int/browse/2025-01/mms/en#292396308,B
+MG50.9Y,Salmonella resistant to other antibiotic,,,B
+MG50.9Z,Salmonella resistant to unspecified antibiotic,,,B
+MG50.A0,Carbapenem resistant Shigella,http://id.who.int/icd/entity/149575780,https://icd.who.int/browse/2025-01/mms/en#149575780,B
+MG50.A1,Fluoroquinolone resistant Shigella,http://id.who.int/icd/entity/1067169197,https://icd.who.int/browse/2025-01/mms/en#1067169197,B
+MG50.A2,Third-generation cephalosporins resistant Shigella,http://id.who.int/icd/entity/657712104,https://icd.who.int/browse/2025-01/mms/en#657712104,B
+MG50.A3,Macrolides resistant Shigella,http://id.who.int/icd/entity/50249252,https://icd.who.int/browse/2025-01/mms/en#50249252,B
+MG50.AY,Shigella resistant to other antibiotic,,,B
+MG50.AZ,Shigella resistant to unspecified antibiotic,,,B
+MG50.B0,Fluoroquinolone resistant Vibrio,http://id.who.int/icd/entity/1078292002,https://icd.who.int/browse/2025-01/mms/en#1078292002,B
+MG50.BY,Vibrio resistant to other antibiotic,,,B
+MG50.BZ,Vibrio resistant to unspecified antibiotic,,,B
+MG50.C0,Other carbapenem resistant Enterobacterales,http://id.who.int/icd/entity/116308496,https://icd.who.int/browse/2025-01/mms/en#116308496,B
+MG50.C1,Other third-generation cephalosporin resistant Enterobacterales,http://id.who.int/icd/entity/135241972,https://icd.who.int/browse/2025-01/mms/en#135241972,B
+MG51.00,Methicillin resistant Staphylococcus aureus,http://id.who.int/icd/entity/1710270895,https://icd.who.int/browse/2025-01/mms/en#1710270895,B
+MG51.01,Vancomycin resistant Staphylococcus aureus,http://id.who.int/icd/entity/1225527575,https://icd.who.int/browse/2025-01/mms/en#1225527575,B
+MG51.02,Penicillinase-stable beta lactams resistant Staphylococcus aureus,http://id.who.int/icd/entity/1557041653,https://icd.who.int/browse/2025-01/mms/en#1557041653,B
+MG51.10,Penicillin resistant Streptococcus pneumoniae,http://id.who.int/icd/entity/614467355,https://icd.who.int/browse/2025-01/mms/en#614467355,B
+MG51.11,Sulfonamide and trimethoprim resistant Streptococcus pneumoniae,http://id.who.int/icd/entity/2121916205,https://icd.who.int/browse/2025-01/mms/en#2121916205,B
+MG51.12,Third-generation cephalosporins resistant Streptococcus pneumoniae,http://id.who.int/icd/entity/882950360,https://icd.who.int/browse/2025-01/mms/en#882950360,B
+MG51.1Y,Streptococcus pneumoniae resistant to other antibiotic,,,B
+MG51.1Z,Streptococcus pneumoniae resistant to unspecified antibiotic,,,B
+MG51.20,Vancomycin resistant Enterococcus,http://id.who.int/icd/entity/2002944575,https://icd.who.int/browse/2025-01/mms/en#2002944575,B
+MG51.2Y,Enterococcus resistant to other antibiotic,,,B
+MG51.2Z,Enteroccus resistant to unspecified antibiotic,,,B
+MG52.00,Multi-drug resistant Mycobacterium tuberculosis,http://id.who.int/icd/entity/757332010,https://icd.who.int/browse/2025-01/mms/en#757332010,B
+MG52.01,Antibiotic resistant non-tuberculous Mycobacterium,http://id.who.int/icd/entity/1876329639,https://icd.who.int/browse/2025-01/mms/en#1876329639,B
+MG52.02,Extensively drug-resistant mycobacterium tuberculosis,http://id.who.int/icd/entity/1947911830,https://icd.who.int/browse/2025-01/mms/en#1947911830,B
+MG53.0,Antiretroviral therapy resistant Human immunodeficiency virus,http://id.who.int/icd/entity/132072037,https://icd.who.int/browse/2025-01/mms/en#132072037,B
+MG54,Finding of fungus resistant to antimicrobial drugs,http://id.who.int/icd/entity/828922344,https://icd.who.int/browse/2025-01/mms/en#828922344,B
+MG55.0,Artemisinin resistant Plasmodium falciparum,http://id.who.int/icd/entity/716575694,https://icd.who.int/browse/2025-01/mms/en#716575694,B
+MG56,Finding of microorganism resistant to other multiple antimicrobial drugs,http://id.who.int/icd/entity/612672352,https://icd.who.int/browse/2025-01/mms/en#612672352,B
+MG5Y,Finding of other microorganism resistant to antimicrobial drugs,,,B
+MG60,"Abnormal level of enzymes in specimens from other organs, systems and tissues",http://id.who.int/icd/entity/144122487,https://icd.who.int/browse/2025-01/mms/en#144122487,B
+MG61,"Abnormal level of hormones in specimens from other organs, systems and tissues",http://id.who.int/icd/entity/1843195875,https://icd.who.int/browse/2025-01/mms/en#1843195875,B
+MG62,"Abnormal level of drugs, medicaments and biological substances in specimens from other organs, systems and tissues",http://id.who.int/icd/entity/426884892,https://icd.who.int/browse/2025-01/mms/en#426884892,B
+MG63,"Abnormal level of substances chiefly nonmedicinal as to source in specimens from other organs, systems and tissues",http://id.who.int/icd/entity/2084205194,https://icd.who.int/browse/2025-01/mms/en#2084205194,B
+MG64,"Abnormal immunological findings in specimens from other organs, systems and tissues",http://id.who.int/icd/entity/265609502,https://icd.who.int/browse/2025-01/mms/en#265609502,B
+MG65,"Abnormal microbiological findings in specimens from other organs, systems and tissues",http://id.who.int/icd/entity/1788816520,https://icd.who.int/browse/2025-01/mms/en#1788816520,B
+MG66,"Abnormal cytological findings in specimens from other organs, systems and tissues",http://id.who.int/icd/entity/506625143,https://icd.who.int/browse/2025-01/mms/en#506625143,B
+MG67,"Abnormal histological findings in specimens from other organs, systems and tissues",http://id.who.int/icd/entity/2071572963,https://icd.who.int/browse/2025-01/mms/en#2071572963,B
+MG70,Abnormal diagnostic imaging results not elsewhere classified,http://id.who.int/icd/entity/2122862035,https://icd.who.int/browse/2025-01/mms/en#2122862035,B
+MG71.0,Abnormal findings on neonatal screening,http://id.who.int/icd/entity/201152505,https://icd.who.int/browse/2025-01/mms/en#201152505,B
+MG72,Abnormal results of function studies of other organs and systems,http://id.who.int/icd/entity/1173437587,https://icd.who.int/browse/2025-01/mms/en#1173437587,B
+MH10,Brain death,http://id.who.int/icd/entity/1228918777,https://icd.who.int/browse/2025-01/mms/en#1228918777,B
+MH11.0,Sudden infant death syndrome with mention of autopsy,http://id.who.int/icd/entity/1908408156,https://icd.who.int/browse/2025-01/mms/en#1908408156,B
+MH11.1,Sudden infant death syndrome without autopsy,http://id.who.int/icd/entity/1729798490,https://icd.who.int/browse/2025-01/mms/en#1729798490,B
+MH12.0,Instantaneous death,http://id.who.int/icd/entity/1443484410,https://icd.who.int/browse/2025-01/mms/en#1443484410,B
+MH12.1,"Death occurring less than 24 hours from onset of symptoms, not otherwise explained",http://id.who.int/icd/entity/859971440,https://icd.who.int/browse/2025-01/mms/en#859971440,B
+MH13,Unattended death,http://id.who.int/icd/entity/1876291018,https://icd.who.int/browse/2025-01/mms/en#1876291018,B
+MH14,Other ill-defined or unspecified causes of mortality,http://id.who.int/icd/entity/178135136,https://icd.who.int/browse/2025-01/mms/en#178135136,B
+MH15,Sudden unexpected death in epilepsy,http://id.who.int/icd/entity/1370023741,https://icd.who.int/browse/2025-01/mms/en#1370023741,B

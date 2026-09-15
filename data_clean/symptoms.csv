@@ -1,0 +1,26 @@
+id,name,description,mesh_id,mesh_term
+depressed-mood,Depressed mood,Persistent sadness or emptiness,D003863,Depression
+anhedonia,Anhedonia,Loss of interest or capacity for pleasure,D059445,Anhedonia
+low-energy,Low energy,Fatigue and reduced physical drive,D005221,Fatigue
+amotivation,Amotivation,Reduced goal-directed initiative and apathy,D057565,Apathy
+anxiety-worry,Anxiety and worry,Excessive apprehension and tension,D001007,Anxiety
+panic,Panic,Abrupt surges of fear with autonomic symptoms,D010200,Panic
+obsessions-compulsions,Obsessions and compulsions,Intrusive thoughts and ritualized behaviour,,
+insomnia,Insomnia,Difficulty falling or staying asleep,D007319,Sleep Initiation and Maintenance Disorders
+hypersomnia,Hypersomnia,Excessive daytime sleepiness,D006970,Disorders of Excessive Somnolence
+hyperarousal,Hyperarousal,Trauma-related arousal nightmares and startle,,
+appetite-change,Appetite change,Disturbed appetite or weight regulation,,
+psychomotor-agitation,Psychomotor agitation,Restlessness and purposeless motor activity,D011595,Psychomotor Agitation
+psychomotor-slowing,Psychomotor slowing,Slowed movement speech and thought,,
+irritability,Irritability,Low frustration tolerance and irritable mood,D007508,Irritable Mood
+aggression,Aggression,Hostile or assaultive behaviour,D000374,Aggression
+inattention,Inattention,Difficulty sustaining focus and concentration,,
+hyperactivity,Hyperactivity,Excessive motor activity and restlessness,D006948,Hyperkinesis
+impulsivity,Impulsivity,Acting without forethought,D007175,Impulsive Behavior
+hallucinations,Hallucinations,Perceptions without external stimulus,D006212,Hallucinations
+delusions,Delusions,Fixed beliefs held against contrary evidence,D003702,Delusions
+disorganization,Disorganization,Disorganized thought speech or behaviour,,
+elevated-mood,Elevated mood,Elevated expansive or euphoric mood,,
+emotional-blunting,Emotional blunting,Restricted range of emotional expression,,
+cognitive-decline,Cognitive decline,Decline in memory and executive function,D060825,Cognitive Dysfunction
+craving-withdrawal,Craving and withdrawal,Substance craving and withdrawal distress,D066249,Craving

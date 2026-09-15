@@ -1,0 +1,621 @@
+disorder_icd11_code,disorder_title,symptom_icd11_code,matched_form,section,cddr_page
+6A00.Z,"Disorder of intellectual development, unspecified",MB21.3,confabulation,Additional clinical features,95
+6A01.0,Developmental speech sound disorder,MB4A,apraxia,Additional clinical features,112
+6A01.1,Developmental speech fluency disorder,MA81,speech dysfluency,Essential (required) features,115
+6A01.1,Developmental speech fluency disorder,MB24.3,anxiety,Additional clinical features,115
+6A01.23,Developmental language disorder with other specified language impairment,MB23.8,disruptive behavior,Additional clinical features,119
+6A02,Autism spectrum disorder,MB24.3,anxiety,Additional clinical features,124
+6A05,Attention deficit hyperactivity disorder,MB21.5,easily distracted,Essential (required) features,142
+6A05,Attention deficit hyperactivity disorder,MB24.3,anxiety,Essential (required) features,142
+6A05,Attention deficit hyperactivity disorder,MB24.A,fear,Essential (required) features,142
+6A05,Attention deficit hyperactivity disorder,MB24.F,restlessness,Essential (required) features,142
+6A05,Attention deficit hyperactivity disorder,MB28.5,impulsivity,Essential (required) features,142
+6A05.1,"Attention deficit hyperactivity disorder, predominantly hyperactive-",MB28.5,impulsivity,(unsectioned),144
+6A05.Z,"Attention deficit hyperactivity disorder, presentation unspecified",MB24.F,restlessness,Additional clinical features,144
+6A05.Z,"Attention deficit hyperactivity disorder, presentation unspecified",MB28.5,impulsivity,Additional clinical features,144
+6A05.Z,"Attention deficit hyperactivity disorder, presentation unspecified",MB28.8,low frustration tolerance,Additional clinical features,144
+6A20,Schizophrenia,MB20.0,stupor,Essential (required) features,162
+6A20,Schizophrenia,MB22.0,avolition,Essential (required) features,162
+6A20,Schizophrenia,MB23.6,disorganized behavior,Essential (required) features,162
+6A20,Schizophrenia,MB23.D,mutism,Essential (required) features,162
+6A20,Schizophrenia,MB24.2,anhedonia,Essential (required) features,162
+6A20,Schizophrenia,MB24.61,affective flattening,Essential (required) features,162
+6A20,Schizophrenia,MB24.F,restlessness,Essential (required) features,162
+6A20,Schizophrenia,MB25.01,tangentiality,Essential (required) features,162
+6A20,Schizophrenia,MB25.02,disorganized thinking,Essential (required) features,162
+6A20,Schizophrenia,MB25.2,neologisms,Essential (required) features,162
+6A20,Schizophrenia,MB26.05,grandiose delusion,Essential (required) features,162
+6A20,Schizophrenia,MB26.07,persecutory delusion,Essential (required) features,162
+6A20,Schizophrenia,MB28.B,negativism,Essential (required) features,162
+6A20.Z,"Schizophrenia, episode unspecified",MB24.3,anxiety,Additional clinical features,166
+6A21,Schizoaffective disorder,MB24.2,diminished interest or pleasure,Essential (required) features,170
+6A21,Schizoaffective disorder,MB24.5,depressed mood,Essential (required) features,170
+6A21.Z,"Schizoaffective disorder, unspecified",MB24.3,anxiety,Additional clinical features,174
+6A22,Schizotypal disorder,MB23.Q,social withdrawal,Essential (required) features,177
+6A22,Schizotypal disorder,MB24.60,constricted affect,Essential (required) features,177
+6A22,Schizotypal disorder,MB25.02,formal thought disorder,Essential (required) features,177
+6A22,Schizotypal disorder,MB25.03,incoherence,Essential (required) features,177
+6A22,Schizotypal disorder,MB26.5,obsessions,Essential (required) features,177
+6A22,Schizotypal disorder,MB26.9,suspiciousness,Essential (required) features,177
+6A22,Schizotypal disorder,MB27.0,depersonalization,Essential (required) features,177
+6A22,Schizotypal disorder,MB27.1,derealization,Essential (required) features,177
+6A22,Schizotypal disorder,MB27.4,illusions,Essential (required) features,177
+6A23,Acute and transient psychotic disorder,MB22.0,avolition,Essential (required) features,180
+6A23,Acute and transient psychotic disorder,MB24.2,anhedonia,Essential (required) features,180
+6A23,Acute and transient psychotic disorder,MB24.61,affective flattening,Essential (required) features,180
+6A23,Acute and transient psychotic disorder,MB25.02,disorganized thinking,Essential (required) features,180
+6A24,Delusional disorder,MB25.02,disorganized thinking,Essential (required) features,185
+6A24,Delusional disorder,MB27.26,tactile hallucinations,Essential (required) features,185
+6A2Y,Other specified primary psychotic disorder,MB25.02,formal thought disorder,Essential (required) features,189
+6A2Z,"Schizophrenia or other primary psychotic disorder,",MB24.A,fear,(unsectioned),161
+6A2Z,"Schizophrenia or other primary psychotic disorder,",MB26.6,overvalued ideas,(unsectioned),161
+6A2Z,"Schizophrenia or other primary psychotic disorder,",MB27.27,visual hallucinations,(unsectioned),161
+6A41,Catatonia induced by substances or medications,MB20.0,stupor,Essential (required) features,204
+6A41,Catatonia induced by substances or medications,MB23.M,psychomotor agitation,Essential (required) features,204
+6A62,Cyclothymic disorder,MB24.5,depressed mood,Essential (required) features,240
+6A62,Cyclothymic disorder,MB24.C,irritability,Essential (required) features,240
+6A6Y,Other specified bipolar or related disorder,MB24.8,elevation of mood,Essential (required) features,243
+6A71.Z,"Recurrent depressive disorder, unspecified",MB23.H,panic attack,(unsectioned),248
+6A71.Z,"Recurrent depressive disorder, unspecified",MB23.N,psychomotor retardation,(unsectioned),248
+6A71.Z,"Recurrent depressive disorder, unspecified",MB24.2,loss of interest or pleasure,(unsectioned),248
+6A71.Z,"Recurrent depressive disorder, unspecified",MB24.3,anxiety,(unsectioned),248
+6A71.Z,"Recurrent depressive disorder, unspecified",MB24.A,fear,(unsectioned),248
+6A71.Z,"Recurrent depressive disorder, unspecified",MG41,insomnia,(unsectioned),248
+6A72,Dysthymic disorder,MB21.A,reduced concentration,Essential (required) features,255
+6A72,Dysthymic disorder,MB22.3,hopelessness,Essential (required) features,255
+6A72,Dysthymic disorder,MB22.7,fatigue,Essential (required) features,255
+6A72,Dysthymic disorder,MB24.2,diminished interest or pleasure,Essential (required) features,255
+6A72,Dysthymic disorder,MB24.3,anxiety,Additional clinical features,255
+6A72,Dysthymic disorder,MB24.5,depressed mood,Essential (required) features,255
+6A72,Dysthymic disorder,MB24.A,fear,Additional clinical features,255
+6A72,Dysthymic disorder,MB24.C,irritability,Essential (required) features,255
+6A72,Dysthymic disorder,MB28.6,indecisiveness,Essential (required) features,255
+6A72,Dysthymic disorder,MG22,fatigue,Essential (required) features,255
+6A72,Dysthymic disorder,MG43.9,increased appetite,Essential (required) features,255
+6A73,Mixed depressive and anxiety disorder,MB24.2,diminished interest or pleasure,Essential (required) features,258
+6A73,Mixed depressive and anxiety disorder,MB24.3,anxiety,Essential (required) features,258
+6A73,Mixed depressive and anxiety disorder,MB24.5,depressed mood,Essential (required) features,258
+6A73,Mixed depressive and anxiety disorder,MB24.A,fear,Essential (required) features,258
+6A7Y,Other specified depressive disorder,MB24.3,anxiety,Essential (required) features,260
+6A7Y,Other specified depressive disorder,MB24.5,depressed mood,Essential (required) features,260
+6A7Y,Other specified depressive disorder,MB24.A,fear,Essential (required) features,260
+6A8Y,Other specified mood disorder,MB24.1,anger,Essential (required) features,263
+6A8Y,Other specified mood disorder,MB24.3,anxiety,Essential (required) features,263
+6A8Y,Other specified mood disorder,MB24.A,fear,Essential (required) features,263
+6A8Y,Other specified mood disorder,MB24.C,irritability,Essential (required) features,263
+6B00,Generalized anxiety disorder,MB21.A,difficulty concentrating,Essential (required) features,266
+6B00,Generalized anxiety disorder,MB24.3,anxiety,Essential (required) features,266
+6B00,Generalized anxiety disorder,MB24.F,restlessness,Essential (required) features,266
+6B00,Generalized anxiety disorder,MB24.H,worry,Essential (required) features,266
+6B00,Generalized anxiety disorder,MC81.2,palpitations,Essential (required) features,266
+6B00,Generalized anxiety disorder,MD90.0,nausea,Essential (required) features,266
+6B00,Generalized anxiety disorder,MG41,sleep disturbance,Essential (required) features,266
+6B01,Panic disorder,MB23.2,avoidance behavior,Additional clinical features,271
+6B01,Panic disorder,MB23.H,panic attack,Essential (required) features,271
+6B01,Panic disorder,MB24.3,anxiety,Essential (required) features,271
+6B01,Panic disorder,MB24.A,fear,Essential (required) features,271
+6B01,Panic disorder,MB24.H,worry,Essential (required) features,271
+6B01,Panic disorder,MB27.0,depersonalization,Essential (required) features,271
+6B01,Panic disorder,MB27.1,derealization,Essential (required) features,271
+6B01,Panic disorder,MC81.2,palpitations,Essential (required) features,271
+6B01,Panic disorder,MD90.0,nausea,Essential (required) features,271
+6B01,Panic disorder,MG21,chills,Essential (required) features,271
+6B02,Agoraphobia,MB23.H,panic attack,Essential (required) features,275
+6B02,Agoraphobia,MB23.Q,social withdrawal,Essential (required) features,275
+6B02,Agoraphobia,MB24.3,anxiety,Essential (required) features,275
+6B02,Agoraphobia,MB24.A,fear,Essential (required) features,275
+6B02,Agoraphobia,MB26.7,paranoid ideation,Essential (required) features,275
+6B02,Agoraphobia,MC81.2,palpitations,Additional clinical features,275
+6B02,Agoraphobia,MD90.1,vomiting,Additional clinical features,275
+6B03,Specific phobia,MB23.2,avoidance behavior,Additional clinical features,280
+6B03,Specific phobia,MB24.3,anxiety,Essential (required) features,280
+6B03,Specific phobia,MB24.A,fear,Essential (required) features,280
+6B04,Social anxiety disorder,MB23.2,avoidance behavior,Additional clinical features,284
+6B04,Social anxiety disorder,MB24.3,anxiety,Essential (required) features,284
+6B04,Social anxiety disorder,MB24.A,fear,Essential (required) features,284
+6B05,Separation anxiety disorder,MB23.Q,social withdrawal,Essential (required) features,289
+6B05,Separation anxiety disorder,MB24.3,anxiety,Essential (required) features,289
+6B05,Separation anxiety disorder,MB24.A,fear,Essential (required) features,289
+6B05,Separation anxiety disorder,MB24.G,tantrum,Essential (required) features,289
+6B05,Separation anxiety disorder,MB4D,headache,Essential (required) features,289
+6B05,Separation anxiety disorder,MD90.0,nausea,Essential (required) features,289
+6B05,Separation anxiety disorder,MD90.1,vomiting,Essential (required) features,289
+6B06,Selective mutism,MB23.D,mutism,Additional clinical features,293
+6B06,Selective mutism,MB24.3,anxiety,Additional clinical features,293
+6B06,Selective mutism,MB24.A,fear,Additional clinical features,293
+6B06,Selective mutism,MB28.A,negative affectivity,Additional clinical features,293
+6B0Y,Other specified anxiety or fear-related disorder,MB23.2,avoidance behavior,Essential (required) features,296
+6B0Y,Other specified anxiety or fear-related disorder,MB24.3,anxiety,Essential (required) features,296
+6B0Y,Other specified anxiety or fear-related disorder,MB24.A,fear,Essential (required) features,296
+6B0Z,"Anxiety or fear-related disorder, unspecified.",MB24.3,anxiety,(unsectioned),265
+6B0Z,"Anxiety or fear-related disorder, unspecified.",MB24.A,fear,(unsectioned),265
+6B20,Obsessive-compulsive disorder,MB23.4,compulsions,Essential (required) features,300
+6B20,Obsessive-compulsive disorder,MB24.3,anxiety,Essential (required) features,300
+6B20,Obsessive-compulsive disorder,MB26.5,obsessions,Essential (required) features,300
+6B20.1,Obsessive-compulsive disorder with poor to absent insight,MB24.3,anxiety,(unsectioned),301
+6B20.Z,"Obsessive-compulsive disorder, unspecified",MB23.4,compulsions,Additional clinical features,301
+6B20.Z,"Obsessive-compulsive disorder, unspecified",MB23.H,panic attack,Additional clinical features,301
+6B20.Z,"Obsessive-compulsive disorder, unspecified",MB24.3,anxiety,Additional clinical features,301
+6B20.Z,"Obsessive-compulsive disorder, unspecified",MB24.A,fear,Additional clinical features,301
+6B20.Z,"Obsessive-compulsive disorder, unspecified",MB26.5,obsessions,Additional clinical features,301
+6B20.Z,"Obsessive-compulsive disorder, unspecified",MB28.C,perfectionism,Additional clinical features,301
+6B21,Body dysmorphic disorder,MB24.3,anxiety,Essential (required) features,308
+6B21.1,Body dysmorphic disorder with poor to absent insight,MB24.3,anxiety,(unsectioned),309
+6B21.Z,"Body dysmorphic disorder, unspecified",MB22.3,hopelessness,Additional clinical features,309
+6B21.Z,"Body dysmorphic disorder, unspecified",MB23.S,suicidal behavior,Additional clinical features,309
+6B21.Z,"Body dysmorphic disorder, unspecified",MB24.3,anxiety,Additional clinical features,309
+6B21.Z,"Body dysmorphic disorder, unspecified",ME64.2,pallor,Additional clinical features,309
+6B22,Olfactory reference disorder,MB24.3,anxiety,Essential (required) features,314
+6B22,Olfactory reference disorder,MD94,halitosis,Essential (required) features,314
+6B22.1,Olfactory reference disorder with poor to absent insight,MB24.3,anxiety,(unsectioned),315
+6B23,Hypochondriasis (health anxiety disorder),MB23.2,avoidance behavior,Essential (required) features,317
+6B23,Hypochondriasis (health anxiety disorder),MB24.3,anxiety,Essential (required) features,317
+6B23,Hypochondriasis (health anxiety disorder),MB24.A,fear,Essential (required) features,317
+6B23.1,Hypochondriasis with poor to absent insight,MB24.3,anxiety,(unsectioned),318
+6B23.Z,"Hypochondriasis, unspecified",MB23.H,panic attack,Additional clinical features,318
+6B23.Z,"Hypochondriasis, unspecified",MB24.3,anxiety,Additional clinical features,318
+6B23.Z,"Hypochondriasis, unspecified",MB4D,headache,Additional clinical features,318
+6B24,Hoarding disorder,MB24.3,anxiety,Essential (required) features,322
+6B24.1,Hoarding disorder with poor to absent insight,MB24.3,anxiety,(unsectioned),323
+6B25.0,Trichotillomania (hair-pulling disorder),MB24.3,anxiety,Additional clinical features,327
+6B25.0,Trichotillomania (hair-pulling disorder),MB24.A,fear,Additional clinical features,327
+6B25.1,Excoriation (skin-picking) disorder,MB24.3,anxiety,Additional clinical features,330
+6B40,Post-traumatic stress disorder,MB23.4,compulsions,Additional clinical features,339
+6B40,Post-traumatic stress disorder,MB23.Q,social withdrawal,Additional clinical features,339
+6B40,Post-traumatic stress disorder,MB24.1,anger,Additional clinical features,339
+6B40,Post-traumatic stress disorder,MB24.3,anxiety,Additional clinical features,339
+6B40,Post-traumatic stress disorder,MB24.7,dysphoria,Additional clinical features,339
+6B40,Post-traumatic stress disorder,MB24.A,fear,Essential (required) features,339
+6B40,Post-traumatic stress disorder,MB26.5,obsessions,Additional clinical features,339
+6B40,Post-traumatic stress disorder,MB26.A,suicidal ideation,Additional clinical features,339
+6B41,Complex post-traumatic stress disorder,MB24.A,fear,Essential (required) features,344
+6B41,Complex post-traumatic stress disorder,MB26.A,suicidal ideation,Additional clinical features,344
+6B42,Prolonged grief disorder,MB23.Q,social withdrawal,Additional clinical features,348
+6B42,Prolonged grief disorder,MB24.1,anger,Essential (required) features,348
+6B42,Prolonged grief disorder,MB26.A,suicidal ideation,Additional clinical features,348
+6B43,Adjustment disorder,MB24.3,anxiety,Additional clinical features,352
+6B43,Adjustment disorder,MB24.H,worry,Essential (required) features,352
+6B44,Reactive attachment disorder,MB24.A,fear,Additional clinical features,355
+6B44,Reactive attachment disorder,MB24.C,irritability,Additional clinical features,355
+6B45,Disinhibited social engagement disorder,MB24.A,fear,Additional clinical features,358
+6B45,Disinhibited social engagement disorder,MB28.5,impulsivity,Additional clinical features,358
+6B4Y,Other specified disorder specifically associated with stress,MB24.3,anxiety,Essential (required) features,361
+6B4Y,Other specified disorder specifically associated with stress,MB24.A,fear,Essential (required) features,361
+6B4Z,"Disorder specifically associated with stress, unspecified",MB20.0,stupor,Essential (required) features,361
+6B4Z,"Disorder specifically associated with stress, unspecified.",MB22.7,tiredness,(unsectioned),337
+6B4Z,"Disorder specifically associated with stress, unspecified",MB23.Q,social withdrawal,Essential (required) features,361
+6B4Z,"Disorder specifically associated with stress, unspecified",MB24.1,anger,Essential (required) features,361
+6B4Z,"Disorder specifically associated with stress, unspecified",MB24.3,anxiety,Essential (required) features,361
+6B4Z,"Disorder specifically associated with stress, unspecified",MB27.0,depersonalization,Essential (required) features,361
+6B4Z,"Disorder specifically associated with stress, unspecified",MB27.1,derealization,Essential (required) features,361
+6B4Z,"Disorder specifically associated with stress, unspecified",ME64.4,flushing,Essential (required) features,361
+6B60,Dissociative neurological symptom disorder,MA82.0,aphonia,Essential (required) features,366
+6B60,Dissociative neurological symptom disorder,MB27.20,auditory hallucinations,Essential (required) features,366
+6B60,Dissociative neurological symptom disorder,MB47.1,abnormal posture,Essential (required) features,366
+6B60,Dissociative neurological symptom disorder,MB47.4,dystonia,Essential (required) features,366
+6B61.Z,"Dissociative amnesia, unspecified",MB23.R,suicide attempt,Additional clinical features,373
+6B61.Z,"Dissociative amnesia, unspecified",MB27.0,depersonalization,Additional clinical features,373
+6B64,Dissociative identity disorder,MB24.1,anger,Additional clinical features,382
+6B64,Dissociative identity disorder,MB24.A,fear,Additional clinical features,382
+6B65,Partial dissociative identity disorder,MB24.1,anger,Essential (required) features,387
+6B65,Partial dissociative identity disorder,MB24.A,fear,Essential (required) features,387
+6B66,Depersonalization-derealization disorder,MB24.3,anxiety,Essential (required) features,391
+6B66,Depersonalization-derealization disorder,MB24.A,fear,Essential (required) features,391
+6B66,Depersonalization-derealization disorder,MB27.0,depersonalization,Essential (required) features,391
+6B66,Depersonalization-derealization disorder,MB27.1,derealization,Essential (required) features,391
+6B80,Anorexia nervosa,MB24.A,fear,Essential (required) features,398
+6B80,Anorexia nervosa,MB29.3,purging behavior,Essential (required) features,398
+6B80,Anorexia nervosa,MD90.1,vomiting,Essential (required) features,398
+6B80,Anorexia nervosa,MG43.7,anorexia,Essential (required) features,398
+6B80.0,Anorexia nervosa with significantly low body weight,MG43.7,anorexia,(unsectioned),399
+6B80.1,Anorexia nervosa with dangerously low body weight,MG43.7,anorexia,(unsectioned),399
+6B80.2,Anorexia nervosa in recovery with normal body weight,MG43.7,anorexia,(unsectioned),399
+6B80.Z,"Anorexia nervosa, unspecified",MB23.2,avoidance behavior,Additional clinical features,399
+6B80.Z,"Anorexia nervosa, unspecified",MB24.A,fear,Additional clinical features,399
+6B80.Z,"Anorexia nervosa, unspecified",MG43.7,anorexia,Additional clinical features,399
+6B81,Bulimia nervosa,MB29.1,binge eating,Essential (required) features,404
+6B81,Bulimia nervosa,MD90.1,vomiting,Essential (required) features,404
+6B81,Bulimia nervosa,MG43.1,overeating,Essential (required) features,404
+6B81,Bulimia nervosa,MG43.7,anorexia,Essential (required) features,404
+6B82,Binge-eating disorder,MB29.1,binge eating,Essential (required) features,407
+6B82,Binge-eating disorder,MG43.1,overeating,Essential (required) features,407
+6B82,Binge-eating disorder,MG43.7,anorexia,Additional clinical features,407
+6B83,Avoidant-restrictive food intake disorder,MB21.5,distractibility,Additional clinical features,410
+6B83,Avoidant-restrictive food intake disorder,MD90.1,vomiting,Additional clinical features,410
+6B85,Rumination-regurgitation disorder,MB24.3,anxiety,Additional clinical features,416
+6B85,Rumination-regurgitation disorder,MB29.4,rumination-regurgitation,Essential (required) features,416
+6B85,Rumination-regurgitation disorder,MD12,cough,Additional clinical features,416
+6B85,Rumination-regurgitation disorder,MD90.0,nausea,Essential (required) features,416
+6B85,Rumination-regurgitation disorder,MD90.1,vomiting,Essential (required) features,416
+6C00,Enuresis,MF55,polyuria,Essential (required) features,421
+6C00.Z,"Enuresis, unspecified",MB24.3,anxiety,Additional clinical features,422
+6C01,Encopresis,MB2A.0,soiling,Essential (required) features,424
+6C01,Encopresis,ME05.0,constipation,Essential (required) features,424
+6C01,Encopresis,ME05.1,diarrhea,Essential (required) features,424
+6C01.0,Encopresis with constipation and overflow incontinence,MB2A.0,soiling,(unsectioned),425
+6C01.0,Encopresis with constipation and overflow incontinence,ME05.0,constipation,(unsectioned),425
+6C01.1,Encopresis without constipation and overflow incontinence,ME05.0,constipation,(unsectioned),425
+6C01.Z,"Encopresis, unspecified",MB24.3,anxiety,Additional clinical features,425
+6C01.Z,"Encopresis, unspecified",MB24.A,fear,Additional clinical features,425
+6C01.Z,"Encopresis, unspecified",ME05.0,constipation,Additional clinical features,425
+6C20,Bodily distress disorder,MB22.7,fatigue,Essential (required) features,429
+6C20,Bodily distress disorder,MB24.3,anxiety,Essential (required) features,429
+6C20,Bodily distress disorder,MB24.A,fear,Essential (required) features,429
+6C20,Bodily distress disorder,MG22,fatigue,Essential (required) features,429
+6C20.Z,"Bodily distress disorder, unspecified",MB22.7,fatigue,Additional clinical features,431
+6C20.Z,"Bodily distress disorder, unspecified",MB24.3,anxiety,Additional clinical features,431
+6C20.Z,"Bodily distress disorder, unspecified",MB24.A,fear,Additional clinical features,431
+6C20.Z,"Bodily distress disorder, unspecified",MB4D,headache,Additional clinical features,431
+6C20.Z,"Bodily distress disorder, unspecified",MG22,fatigue,Additional clinical features,431
+6C21,Body integrity dysphoria,MB24.7,dysphoria,Essential (required) features,435
+6C21,Body integrity dysphoria,MB24.A,fear,Additional clinical features,435
+6C21,Body integrity dysphoria,MB56,paraplegia,Essential (required) features,435
+6C40.2Z,"Alcohol dependence, unspecified",MB24.3,anxiety,Additional clinical features,465
+6C4G.0,Episode of harmful use of unknown or unspecified psychoactive substances,MB23.0,aggressive behavior,Essential (required) features,455
+6C4G.3,Intoxication due to unknown or unspecified psychoactive substances,MG27,haemorrhage,Essential (required) features,469
+6C4G.4,Withdrawal due to unknown or unspecified psychoactive substances,MB27.26,tactile hallucinations,Essential (required) features,479
+6C4G.4,Withdrawal due to unknown or unspecified psychoactive substances,MB27.4,illusions,Essential (required) features,479
+6C4G.6,Psychotic disorder induced by unknown or unspecified psychoactive,MB23.2,avoidance behavior,Essential (required) features,489
+6C4G.6,Psychotic disorder induced by unknown or unspecified psychoactive,MB23.H,panic attack,Essential (required) features,489
+6C4G.6,Psychotic disorder induced by unknown or unspecified psychoactive,MB24.3,anxiety,Essential (required) features,489
+6C4G.6,Psychotic disorder induced by unknown or unspecified psychoactive,MB24.8,elevated mood,Essential (required) features,489
+6C4G.6,Psychotic disorder induced by unknown or unspecified psychoactive,MB24.A,fear,Essential (required) features,489
+6C4G.6,Psychotic disorder induced by unknown or unspecified psychoactive,MB24.H,worry,Essential (required) features,489
+6C4G.6,Psychotic disorder induced by unknown or unspecified psychoactive,MB25.02,disorganized thinking,Essential (required) features,489
+6C4G.73,Impulse control disorder induced by unknown or unspecified psychoactive,MB27.4,illusions,Additional clinical features,495
+6C4H.0,Episode of harmful use of non-psychoactive substances,MG43.7,anorexia,Additional clinical features,500
+6C4H.1Z,"Harmful pattern of use of non-psychoactive substances, unspecified",MG43.7,anorexia,Additional clinical features,503
+6C4Z,"Disorders due to substance use, unspecified",MB24.3,anxiety,(unsectioned),448
+6C50.Z,"Gambling disorder, unspecified",MB23.R,suicide attempt,Additional clinical features,507
+6C50.Z,"Gambling disorder, unspecified",MB24.3,anxiety,Additional clinical features,507
+6C50.Z,"Gambling disorder, unspecified",MB24.A,fear,Additional clinical features,507
+6C50.Z,"Gambling disorder, unspecified",MB26.A,suicidal ideation,Additional clinical features,507
+6C51.Z,"Gaming disorder, unspecified",MB24.3,anxiety,Additional clinical features,512
+6C51.Z,"Gaming disorder, unspecified",MB24.7,dysphoria,Additional clinical features,512
+6C51.Z,"Gaming disorder, unspecified",MB24.A,fear,Additional clinical features,512
+6C70,Pyromania,MB23.8,disruptive behavior,Additional clinical features,520
+6C70,Pyromania,MB24.3,anxiety,Additional clinical features,520
+6C70,Pyromania,MB24.5,depressed mood,Additional clinical features,520
+6C71,Kleptomania,MB24.3,anxiety,Additional clinical features,523
+6C71,Kleptomania,MB24.5,depressed mood,Additional clinical features,523
+6C71,Kleptomania,MB24.A,fear,Additional clinical features,523
+6C72,Compulsive sexual behaviour disorder,MB24.3,anxiety,Additional clinical features,526
+6C73,Intermittent explosive disorder,MB22.7,fatigue,Additional clinical features,530
+6C73,Intermittent explosive disorder,MB23.0,aggressive behavior,Essential (required) features,530
+6C73,Intermittent explosive disorder,MB24.1,anger,Essential (required) features,530
+6C73,Intermittent explosive disorder,MB24.3,anxiety,Additional clinical features,530
+6C73,Intermittent explosive disorder,MB24.5,depressed mood,Additional clinical features,530
+6C73,Intermittent explosive disorder,MB24.A,fear,Additional clinical features,530
+6C73,Intermittent explosive disorder,MB24.C,irritability,Essential (required) features,530
+6C73,Intermittent explosive disorder,MB28.4,hostility,Additional clinical features,530
+6C73,Intermittent explosive disorder,MB29.1,binge eating,Additional clinical features,530
+6C73,Intermittent explosive disorder,MG22,fatigue,Additional clinical features,530
+6C90,Oppositional defiant disorder,MB24.1,anger,Essential (required) features,538
+6C90,Oppositional defiant disorder,MB24.C,irritability,Essential (required) features,538
+6C90.0,"Oppositional defiant disorder, with chronic irritability-anger",MB24.1,anger,(unsectioned),539
+6C90.0,"Oppositional defiant disorder, with chronic irritability-anger",MB24.C,irritability,(unsectioned),539
+6C90.0,"Oppositional defiant disorder, with chronic irritability-anger",MB24.G,tantrum,(unsectioned),539
+6C90.1,"Oppositional defiant disorder, without chronic irritability-anger",MB24.1,anger,(unsectioned),539
+6C90.1,"Oppositional defiant disorder, without chronic irritability-anger",MB24.C,irritability,(unsectioned),539
+6C90.Z,"Oppositional defiant disorder, unspecified",MB23.1,antisocial behavior,Additional clinical features,539
+6C90.Z,"Oppositional defiant disorder, unspecified",MB24.1,anger,Additional clinical features,539
+6C90.Z,"Oppositional defiant disorder, unspecified",MB24.3,anxiety,Additional clinical features,539
+6C90.Z,"Oppositional defiant disorder, unspecified",MB24.A,fear,Additional clinical features,539
+6C90.Z,"Oppositional defiant disorder, unspecified",MB24.C,irritability,Additional clinical features,539
+6C90.Z,"Oppositional defiant disorder, unspecified",MB24.G,tantrum,Additional clinical features,539
+6C91.Z,"Conduct-dissocial disorder, unspecified",MB23.1,antisocial behavior,Additional clinical features,545
+6C91.Z,"Conduct-dissocial disorder, unspecified",MB24.3,anxiety,Additional clinical features,545
+6C91.Z,"Conduct-dissocial disorder, unspecified",MB24.A,fear,Additional clinical features,545
+6C9Y,Other specified disruptive behaviour or dissocial disorder,MB23.8,disruptive behavior,Essential (required) features,550
+6C9Y,Other specified disruptive behaviour or dissocial disorder,MB24.3,anxiety,Essential (required) features,550
+6C9Y,Other specified disruptive behaviour or dissocial disorder,MB24.A,fear,Essential (required) features,550
+6D10.1,Moderate personality disorder,MB28.H,submissiveness,Essential (required) features,557
+6D10.2,Severe personality disorder,MB21.9,perseveration,Essential (required) features,558
+6D10.2,Severe personality disorder,MB24.1,anger,Essential (required) features,558
+6D11.5,Borderline pattern,MB23.R,suicide attempt,(unsectioned),563
+6D11.5,Borderline pattern,MB24.1,anger,(unsectioned),563
+6D11.5,Borderline pattern,MB24.3,anxiety,Additional clinical features,563
+6D11.5,Borderline pattern,MB24.A,fear,(unsectioned),563
+6D11.5,Borderline pattern,MB26.4,identity disturbance,(unsectioned),563
+6D11.5,Borderline pattern,MB29.1,binge eating,(unsectioned),563
+6D71,Mild neurocognitive disorder,MB24.3,anxiety,Additional clinical features,608
+6D71,Mild neurocognitive disorder,MB24.5,depressed mood,Additional clinical features,608
+6D71,Mild neurocognitive disorder,MG41,sleep disturbance,Additional clinical features,608
+6D82,Dementia due to Lewy body disease,MB27.27,visual hallucinations,Essential (required) features,624
+6D83,Frontotemporal dementia,MA80.0,aphasia,Additional clinical features,625
+6D83,Frontotemporal dementia,MB24.4,apathy,Additional clinical features,625
+6D83,Frontotemporal dementia,MB47.4,dystonia,Additional clinical features,625
+6D83,Frontotemporal dementia,MB47.5,fasciculation,Additional clinical features,625
+6D83,Frontotemporal dementia,MB4A,apraxia,Additional clinical features,625
+6D85.0,Dementia due to Parkinson disease,MB24.4,apathy,Additional clinical features,627
+6D85.4,Dementia due to multiple sclerosis,MB22.7,fatigue,Essential (required) features,629
+6D85.4,Dementia due to multiple sclerosis,MG22,fatigue,Essential (required) features,629
+6D85.5,Dementia due to prion disease,MB47.4,dystonia,Additional clinical features,630
+6D85.6,Dementia due to normal-pressure hydrocephalus,MG27,haemorrhage,Additional clinical features,630
+6D85.7,Dementia due to injury to the head,MB21.4,disorientation,Additional clinical features,631
+6D85.8,Dementia due to pellagra,MB24.F,restlessness,Additional clinical features,632
+6D85.8,Dementia due to pellagra,ME05.1,diarrhea,Additional clinical features,632
+6E20,"Mental and behavioural disorders associated with pregnancy,",MB22.7,fatigue,Additional clinical features,640
+6E20,"Mental and behavioural disorders associated with pregnancy,",MB23.4,compulsions,Additional clinical features,640
+6E20,"Mental and behavioural disorders associated with pregnancy,",MB23.H,panic attack,Additional clinical features,640
+6E20,"Mental and behavioural disorders associated with pregnancy,",MB24.1,anger,Additional clinical features,640
+6E20,"Mental and behavioural disorders associated with pregnancy,",MB24.3,anxiety,Essential (required) features,640
+6E20,"Mental and behavioural disorders associated with pregnancy,",MB24.5,depressed mood,Additional clinical features,640
+6E20,"Mental and behavioural disorders associated with pregnancy,",MB24.A,fear,Essential (required) features,640
+6E20,"Mental and behavioural disorders associated with pregnancy,",MB24.C,irritability,Additional clinical features,640
+6E20,"Mental and behavioural disorders associated with pregnancy,",MB24.H,worry,Additional clinical features,640
+6E20,"Mental and behavioural disorders associated with pregnancy,",MB26.5,obsessions,Additional clinical features,640
+6E20,"Mental and behavioural disorders associated with pregnancy,",MG22,fatigue,Additional clinical features,640
+6E20,"Mental and behavioural disorders associated with pregnancy,",MG41,insomnia,Additional clinical features,640
+6E21,"Mental and behavioural disorders associated with pregnancy,",MB21.4,disorientation,Additional clinical features,642
+6E21,"Mental and behavioural disorders associated with pregnancy,",MB23.4,compulsions,Additional clinical features,642
+6E21,"Mental and behavioural disorders associated with pregnancy,",MB23.H,panic attack,Additional clinical features,236
+6E21,"Mental and behavioural disorders associated with pregnancy,",MB23.N,psychomotor retardation,Additional clinical features,250
+6E21,"Mental and behavioural disorders associated with pregnancy,",MB24.3,anxiety,Additional clinical features,236
+6E21,"Mental and behavioural disorders associated with pregnancy,",MB24.A,fear,Additional clinical features,236
+6E21,"Mental and behavioural disorders associated with pregnancy,",MB26.5,obsessions,Additional clinical features,642
+6E21,"Mental and behavioural disorders associated with pregnancy,",MB26.7,paranoid ideation,Additional clinical features,642
+6E21,"Mental and behavioural disorders associated with pregnancy,",MG41,sleep disturbance,Additional clinical features,250
+6E40,Psychological or behavioural factors affecting disorders and diseases,MB24.3,anxiety,Essential (required) features,645
+6E40,Psychological or behavioural factors affecting disorders and diseases,MB29.1,binge eating,Essential (required) features,645
+6E40.0,Mental disorder affecting disorders and diseases classified elsewhere,MB29.1,binge eating,(unsectioned),646
+6E40.3,Maladaptive health behaviours affecting disorders and diseases classified,MG43.1,overeating,(unsectioned),646
+6E40.4,Stress-related physiological response affecting disorders and diseases,MB4D,headache,(unsectioned),647
+6E40.Z,Psychological or behavioural factor affecting disorders and diseases classified,MB22.7,fatigue,Additional clinical features,647
+6E40.Z,Psychological or behavioural factor affecting disorders and diseases classified,MB24.3,anxiety,Additional clinical features,647
+6E40.Z,Psychological or behavioural factor affecting disorders and diseases classified,MC41,tinnitus,Additional clinical features,647
+6E40.Z,Psychological or behavioural factor affecting disorders and diseases classified,MG22,fatigue,Additional clinical features,647
+6E63,Secondary anxiety syndrome,MB23.H,panic attack,Essential (required) features,663
+6E63,Secondary anxiety syndrome,MB24.3,anxiety,Essential (required) features,663
+6E63,Secondary anxiety syndrome,MB24.A,fear,Essential (required) features,663
+6E63,Secondary anxiety syndrome,MB24.H,worry,Essential (required) features,663
+6E64,Secondary obsessive-compulsive or related syndrome,MB23.4,compulsions,Essential (required) features,665
+6E64,Secondary obsessive-compulsive or related syndrome,MB26.5,obsessions,Essential (required) features,665
+6E65,Secondary dissociative syndrome,MB27.0,depersonalization,Essential (required) features,667
+6E65,Secondary dissociative syndrome,MB27.1,derealization,Essential (required) features,667
+6E68,Secondary personality change,MB24.4,apathy,Essential (required) features,672
+6E68,Secondary personality change,MB26.7,paranoid ideation,Essential (required) features,672
+6E68,Secondary personality change,MB26.9,suspiciousness,Essential (required) features,672
+6E69,Secondary catatonia syndrome,MB23.D,mutism,Additional clinical features,205
+6E69,Secondary catatonia syndrome,MB44.3,immobility,Additional clinical features,205
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MA81,speech dysfluency,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB20.0,stupor,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB20.1,coma,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB20.2,clouding of consciousness,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB21.0,age-associated cognitive decline,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB21.10,anterograde amnesia,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB21.11,retrograde amnesia,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB21.12,transient global amnesia,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB21.2,anosognosia,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB21.3,confabulation,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB21.4,disorientation,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB21.5,distractibility,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB21.6,impaired abstract thinking,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB21.7,impaired executive functioning,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB21.9,perseveration,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB21.A,poor concentration,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB21.B,racing thoughts,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB22.0,avolition,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB22.1,decreased libido,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB22.2,demoralization,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB22.3,hopelessness,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB22.4,increased energy,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB22.5,increased goal-directed activity,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB22.6,increased libido,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB22.7,tiredness,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB23.0,aggressive behavior,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB23.1,antisocial behavior,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB23.2,avoidance behavior,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB23.3,bradyphrenia,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB23.4,compulsions,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB23.5,coprolalia,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB23.6,disorganized behavior,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified          674",MB23.8,disruptive behavior,(unsectioned),-4
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB23.9,echolalia,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB23.C,increased sociability,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB23.D,mutism,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB23.E,non-suicidal self-injury,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB23.F,odd or peculiar appearance,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB23.G,odd or peculiar behavior,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified          674",MB23.H,panic attack,(unsectioned),-4
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB23.J,poor personal hygiene,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB23.K,poverty of speech,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB23.L,pressured speech,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB23.M,psychomotor agitation,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB23.N,psychomotor retardation,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB23.Q,social withdrawal,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB23.R,suicide attempt,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB23.S,suicidal behavior,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB24.0,ambivalence,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB24.1,anger,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB24.2,anhedonia,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified          674",MB24.3,anxiety,(unsectioned),-4
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB24.4,apathy,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB24.5,depressed mood,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB24.60,constricted affect,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB24.61,blunted affect,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB24.62,flat affect,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB24.63,labile affect,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB24.64,inappropriate affect,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB24.7,dysphoria,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB24.8,elevated mood,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB24.9,euphoria,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified          674",MB24.A,fear,(unsectioned),-4
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB24.B,feelings of guilt,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified          674",MB24.C,irritability,(unsectioned),-4
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB24.D,leaden paralysis,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB24.E,mental rumination,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB24.F,restlessness,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB24.G,tantrum,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB24.H,worry,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB25.00,circumstantiality,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB25.01,tangentiality,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB25.02,disorganized thinking,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB25.03,incoherence,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB25.1,flight of ideas,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB25.2,neologisms,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB25.3,thought blocking,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB26.00,bizarre delusion,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB26.01,delusion of being controlled,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB26.02,delusion of guilt,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB26.03,delusion of reference,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB26.04,erotomanic delusion,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified          674",MB26.05,grandiose delusion,(unsectioned),-4
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB26.06,jealous delusion,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified          674",MB26.07,persecutory delusion,(unsectioned),-4
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB26.08,religious delusion,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified          674",MB26.09,somatic delusion,(unsectioned),-4
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB26.0A,nihilistic delusion,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB26.0B,misidentification delusion,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB26.0C,delusion of impoverishment,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB26.10,thought broadcasting,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB26.11,thought insertion,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB26.12,thought withdrawal,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB26.2,grandiosity,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB26.3,homicidal ideation,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB26.4,identity disturbance,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB26.5,obsessions,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB26.6,overvalued ideas,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB26.7,paranoid ideation,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB26.8,referential thinking,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB26.9,suspiciousness,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB26.A,suicidal ideation,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB27.0,depersonalization,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB27.1,derealization,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB27.20,auditory hallucinations,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB27.21,gustatory hallucinations,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB27.22,hypnopompic hallucinations,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB27.23,hypnagogic hallucinations,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB27.24,olfactory hallucinations,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB27.25,somatic hallucinations,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB27.26,tactile hallucinations,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB27.27,visual hallucinations,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB27.3,disturbance of body image,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB27.4,illusions,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB28.0,attention seeking,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB28.1,callousness,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB28.2,eccentricity,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB28.3,entitlement,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB28.4,hostility,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB28.5,impulsivity,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB28.6,indecisiveness,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB28.7,irresponsibility,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB28.8,low frustration tolerance,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB28.9,low self-esteem,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified          674",MB28.A,negative affectivity,(unsectioned),-4
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB28.B,negativism,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB28.C,perfectionism,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB28.D,pessimism,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB28.E,recklessness,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB28.F,sensation seeking,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB28.G,stubbornness,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB28.H,submissiveness,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB29.0,avoidant or restrictive eating,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB29.1,binge eating,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB29.2,eating of non-nutritive substances,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB29.3,purging behavior,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB29.4,rumination-regurgitation,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB2A.0,soiling,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB2A.1,wetting,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB47.C,tendency to fall,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB4B.0,dyslexia and alexia,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB4B.1,agnosia,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB4B.2,acalculia,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB4B.3,agraphia,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB4B.4,anomia,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MB4B.5,dyscalculia,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MC81.2,palpitations,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MD90.0,nausea,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MD90.1,vomiting,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MG21,chills,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MG22,fatigue,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MG43.1,overeating,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MG43.5,excessive weight loss,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MG43.6,excessive weight gain,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MG43.8,decreased appetite,(unsectioned),674
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",MG43.9,increased appetite,(unsectioned),674
+8A05.00,Tourette syndrome,MB24.3,anxiety,Additional clinical features,154
+8A05.00,Tourette syndrome,MB28.5,impulsivity,Additional clinical features,154
+Depressive episode,Depressive episode,MB21.A,reduced ability to concentrate,Essential (required) features,212
+Depressive episode,Depressive episode,MB22.3,hopelessness,Essential (required) features,212
+Depressive episode,Depressive episode,MB22.7,tiredness,Essential (required) features,212
+Depressive episode,Depressive episode,MB23.M,psychomotor agitation,Essential (required) features,212
+Depressive episode,Depressive episode,MB23.N,agitation or retardation,Essential (required) features,212
+Depressive episode,Depressive episode,MB24.2,diminished interest or pleasure,Essential (required) features,212
+Depressive episode,Depressive episode,MB24.5,depressed mood,Essential (required) features,212
+Depressive episode,Depressive episode,MB24.A,fear,Essential (required) features,212
+Depressive episode,Depressive episode,MB24.C,irritability,Essential (required) features,212
+Depressive episode,Depressive episode,MB24.F,restlessness,Essential (required) features,212
+Depressive episode,Depressive episode,MB26.A,suicidal ideation,Essential (required) features,212
+Depressive episode,Depressive episode,MB28.6,indecisiveness,Essential (required) features,212
+Depressive episode,Depressive episode,MG22,fatigue,Essential (required) features,212
+GA34.41   Premenstrual dysphoric disorder,GA34.41   Premenstrual dysphoric disorder,MB24.3,anxiety,Essential (required) features,261
+GA34.41   Premenstrual dysphoric disorder,GA34.41   Premenstrual dysphoric disorder,MB24.5,depressed mood,Essential (required) features,261
+GA34.41   Premenstrual dysphoric disorder,GA34.41   Premenstrual dysphoric disorder,MB24.A,fear,Essential (required) features,261
+GA34.41   Premenstrual dysphoric disorder,GA34.41   Premenstrual dysphoric disorder,MB24.C,irritability,Essential (required) features,261
+GA34.41   Premenstrual dysphoric disorder,GA34.41   Premenstrual dysphoric disorder,MG42,hypersomnia,Essential (required) features,261
+GA34.41   Premenstrual dysphoric disorder,GA34.41   Premenstrual dysphoric disorder,MG43.1,overeating,Essential (required) features,261
+General diagnostic requirements for amnestic disorder,General diagnostic requirements for amnestic disorder,MB21.12,transient global amnesia,Essential (required) features,612
+General diagnostic requirements for catatonia,General diagnostic requirements for catatonia,MB20.0,stupor,Essential (required) features,202
+General diagnostic requirements for catatonia,General diagnostic requirements for catatonia,MB23.9,echolalia,Essential (required) features,202
+General diagnostic requirements for catatonia,General diagnostic requirements for catatonia,MB23.D,mutism,Essential (required) features,202
+General diagnostic requirements for catatonia,General diagnostic requirements for catatonia,MB28.5,impulsivity,Essential (required) features,202
+General diagnostic requirements for catatonia,General diagnostic requirements for catatonia,MB28.B,negativism,Essential (required) features,202
+General diagnostic requirements for catatonia,General diagnostic requirements for catatonia,MB44.3,immobility,Essential (required) features,202
+General diagnostic requirements for catatonia,General diagnostic requirements for catatonia,MC80.1,nonspecific low blood-pressure reading,Essential (required) features,202
+General diagnostic requirements for catatonia,General diagnostic requirements for catatonia,MG26,fever of other or unknown origin,Essential (required) features,202
+General diagnostic requirements for catatonia,General diagnostic requirements for catatonia,MG28,"hypothermia, not associated with low environmental temperature",Essential (required) features,202
+General diagnostic requirements for delirium,General diagnostic requirements for delirium,MB24.1,anger,Additional clinical features,602
+General diagnostic requirements for delirium,General diagnostic requirements for delirium,MB24.3,anxiety,Additional clinical features,602
+General diagnostic requirements for delirium,General diagnostic requirements for delirium,MB24.4,apathy,Additional clinical features,602
+General diagnostic requirements for delirium,General diagnostic requirements for delirium,MB24.5,depressed mood,Additional clinical features,602
+General diagnostic requirements for delirium,General diagnostic requirements for delirium,MB24.9,euphoria,Additional clinical features,602
+General diagnostic requirements for delirium,General diagnostic requirements for delirium,MB24.A,fear,Additional clinical features,602
+General diagnostic requirements for delirium,General diagnostic requirements for delirium,MB24.C,irritability,Additional clinical features,602
+General diagnostic requirements for delirium,General diagnostic requirements for delirium,MB24.F,restlessness,Additional clinical features,602
+General diagnostic requirements for delirium,General diagnostic requirements for delirium,MB27.4,illusions,Additional clinical features,602
+General diagnostic requirements for delirium,General diagnostic requirements for delirium,MB28.5,impulsivity,Additional clinical features,602
+General diagnostic requirements for dementia,General diagnostic requirements for dementia,MB24.C,irritability,Essential (required) features,618
+General diagnostic requirements for personality disorder,General diagnostic requirements for personality disorder,MB24.1,anger,Essential (required) features,554
+Hypomanic episode,Hypomanic episode,MB21.5,distractibility,Essential (required) features,222
+Hypomanic episode,Hypomanic episode,MB21.B,flight of ideas,Essential (required) features,222
+Hypomanic episode,Hypomanic episode,MB22.4,increased energy,Essential (required) features,222
+Hypomanic episode,Hypomanic episode,MB23.L,pressured speech,Essential (required) features,222
+Hypomanic episode,Hypomanic episode,MB24.8,elevation of mood,Essential (required) features,222
+Hypomanic episode,Hypomanic episode,MB24.C,irritability,Essential (required) features,222
+Hypomanic episode,Hypomanic episode,MB25.1,flight of ideas,Essential (required) features,222
+Hypomanic episode,Hypomanic episode,MB26.2,grandiosity,Essential (required) features,222
+Hypomanic episode,Hypomanic episode,MG41,insomnia,Essential (required) features,222
+Manic episode,Manic episode,MB21.5,distractibility,Essential (required) features,217
+Manic episode,Manic episode,MB21.B,flight of ideas,Essential (required) features,217
+Manic episode,Manic episode,MB22.4,increased energy,Essential (required) features,217
+Manic episode,Manic episode,MB23.L,pressured speech,Essential (required) features,217
+Manic episode,Manic episode,MB24.9,euphoria,Essential (required) features,217
+Manic episode,Manic episode,MB24.C,irritability,Essential (required) features,217
+Manic episode,Manic episode,MB25.1,flight of ideas,Essential (required) features,217
+Manic episode,Manic episode,MB26.05,grandiose delusion,Essential (required) features,217
+Manic episode,Manic episode,MB26.07,persecutory delusion,Additional clinical features,217
+Manic episode,Manic episode,MB26.2,grandiosity,Essential (required) features,217
+Manic episode,Manic episode,MG41,insomnia,Essential (required) features,217
+Mixed episode,Mixed episode,MB22.3,hopelessness,Essential (required) features,220
+Mixed episode,Mixed episode,MB24.62,flat affect,Essential (required) features,220
+Mixed episode,Mixed episode,MB24.7,dysphoria,Essential (required) features,220
+Mixed episode,Mixed episode,MB24.9,euphoria,Essential (required) features,220
+Mixed episode,Mixed episode,MB24.C,irritability,Essential (required) features,220
+Mixed episode,Mixed episode,MB26.A,suicidal ideation,Essential (required) features,220
+"QE51.12            partner violence, sexual","QE51.12            partner violence, sexual",MB24.3,anxiety,Additional clinical features,716
+"QE51.12            partner violence, sexual","QE51.12            partner violence, sexual",MB24.A,fear,Additional clinical features,716
+QE51.13         neglect,QE51.13         neglect,MB24.3,anxiety,Additional clinical features,719
+QE51.13         neglect,QE51.13         neglect,MB24.A,fear,Additional clinical features,719
+QE52.0       Caregiver–child relationship problem,QE52.0       Caregiver–child relationship problem,MB24.1,anger,Essential (required) features,721
+QE52.0       Caregiver–child relationship problem,QE52.0       Caregiver–child relationship problem,MB24.4,apathy,Essential (required) features,721
+QE82.0       as a child,QE82.0       as a child,MB24.3,anxiety,Additional clinical features,723
+QE82.0       as a child,QE82.0       as a child,MB24.A,fear,Additional clinical features,723
+QE82.0       as a child,QE82.0       as a child,MB4D,headache,Additional clinical features,723
+QE82.0       as a child,QE82.0       as a child,MG27,haemorrhage,Additional clinical features,723
+QE82.1       as child,QE82.1       as child,MB24.3,anxiety,Additional clinical features,725
+QE82.1       as child,QE82.1       as child,MB24.A,fear,Additional clinical features,725
+QE82.2       psychological abuse as child,QE82.2       psychological abuse as child,MB24.3,anxiety,Additional clinical features,727
+QE82.2       psychological abuse as child,QE82.2       psychological abuse as child,MB24.A,fear,Additional clinical features,727
+QE82.3,QE82.3,MB24.3,anxiety,Additional clinical features,729
+QE82.3,QE82.3,MB24.A,fear,Essential (required) features,729
